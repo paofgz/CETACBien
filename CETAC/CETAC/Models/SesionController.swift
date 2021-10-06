@@ -46,7 +46,7 @@ class SesionesController{
                 print("Error adding document: \(err)")
                 completion(.failure(err))
             } else {
-                completion(.success("Documento agregado ID: \(ref!.documentID)"))
+                completion(.success(ref!.documentID))
             }
         }
     }

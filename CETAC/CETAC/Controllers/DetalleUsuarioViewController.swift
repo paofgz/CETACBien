@@ -105,7 +105,7 @@ class DetalleUsuarioViewController: UIViewController {
             let now = Date()
             if ((convertedDate == nil || convertedDate! < now) && self.elUsuario?.status == 1) {
                 self.status.image = UIImage(named: "amarillo")
-            } else if (convertedDate == nil && self.elUsuario?.status == 0) {
+            } else if (self.elUsuario?.status == 0) {
                 self.status.image = UIImage(named: "rojo")
             } else {
                 self.status.image = UIImage(named: "verde")

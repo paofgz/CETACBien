@@ -26,7 +26,7 @@ class UsuarioTableViewCell: UITableViewCell {
         let now = Date()
         if ((convertedDate == nil || convertedDate! < now) && usuario.status == 1) {
             semaforo.image = UIImage(named: "amarillo")
-        } else if (convertedDate == nil && usuario.status == 0) {
+        } else if (usuario.status == 0) {
             semaforo.image = UIImage(named: "rojo")
         } else {
             semaforo.image = UIImage(named: "verde")

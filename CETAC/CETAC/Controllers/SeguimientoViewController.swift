@@ -92,12 +92,25 @@ class SeguimientoViewController: UIViewController,UIPickerViewDelegate, UIPicker
             let newSesion = Sesion(fecha: fecha, herramienta: herramienta, tipoDeIntervencion: inter, evaluacionSesion: self.evaluacionSes.text ?? "", servicio: servicio, cuotaDeRecuperacion: cuota ?? 0.0, cerrarExpediente: switchCase)
                                   
                
-            let alert = UIAlertController(title: "¿Guardar encuadre de seguimiento?", message: "Se guardarán los datos del seguimiento", preferredStyle: .alert)
+            let alert = UIAlertController(title: "¿Guardar hoja de seguimiento?", message: "Se guardarán los datos del seguimiento", preferredStyle: .alert)
             
         alert.addAction(UIAlertAction(title: "Si", style: .cancel, handler: { action in self.sesionControlador.insertSesion(idUsuario: usuarioId , nuevaSesion: newSesion, completion:{ (result) in
             switch result {
             case .success(let retorno):
-                    self.displayExito(title: retorno, detalle: "Se guardó la sesión")
+                var status = 1
+                if switchCase == true {
+                    status = 0
+                } else {
+                    status = 1
+                }
+                    self.usuarioControlador.updateStatus(usuarioId: usuarioId, status: status, completion: { (result) in
+                        switch result {
+                        case .success(_):
+                            print("Se actualizó el status del usuario")
+                        case .failure(let error): self.displayError(error, title:"No se pudo guardar la sesión")
+                        }
+                })
+                    self.displayExito(title: "Se guardó la sesión con id: \(retorno)", detalle: "Se guardó la sesión")
                     self.viewWillappear()
             case .failure(let error):self.displayError(error, title: "No se pudo guardar la sesión")
                 }
@@ -148,7 +161,7 @@ class SeguimientoViewController: UIViewController,UIPickerViewDelegate, UIPicker
                 }
             func displayExito(title: String, detalle:String) {
                     DispatchQueue.main.async {
-                        let alert = UIAlertController(title: "Se guardó el usuario con ID: \(title)", message: detalle, preferredStyle: .alert)
+                        let alert = UIAlertController(title: title, message: detalle, preferredStyle: .alert)
                         alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
                         self.present(alert, animated: true, completion: nil)
                     }
