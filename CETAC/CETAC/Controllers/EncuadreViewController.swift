@@ -201,7 +201,7 @@ class EncuadreViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         }
         
         func getSelected(_ pickerView: UIPickerView, selectedRow row: Int) -> String? {
-            return tanatologos[row].uid
+            return tanatologos[row].correo
         }
 }
 

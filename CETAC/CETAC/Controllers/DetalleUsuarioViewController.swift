@@ -165,7 +165,6 @@ class DetalleUsuarioViewController: UIViewController {
                 }
             case .failure(let error):self.displayError(error, title: "No se pudo modificar el registro")
             }
-            
         }
     }
     
