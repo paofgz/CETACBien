@@ -2,7 +2,7 @@
 //  UsuarioController.swift
 //  CETAC
 //
-//  Created by Paola Fernández on 06/10/21.
+//  Created by Paola Fernández on 28/09/21.
 //
 
 import Foundation
@@ -94,6 +94,5 @@ class UsuarioController{
         }
     }
 }
-
 
 

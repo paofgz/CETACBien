@@ -90,3 +90,4 @@ struct Usuario: Codable {
 }
 
 typealias Usuarios = [Usuario]
+

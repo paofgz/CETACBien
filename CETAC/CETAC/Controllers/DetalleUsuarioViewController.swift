@@ -12,7 +12,6 @@ class DetalleUsuarioViewController: UIViewController {
     
     var usuarioControlador = UsuarioController()
     var sesionControlador = SesionesController()
-    var tanatologoControlador = TanatologoController()
     
     let dateFormatter = DateFormatter()
     
@@ -34,8 +33,9 @@ class DetalleUsuarioViewController: UIViewController {
     
     @IBOutlet weak var eliminarCita: UIButton!
     
+    @IBOutlet weak var sesionesTable: SesionesTableView! 
     
-    @IBOutlet weak var editButton: UIButton!
+    @IBOutlet weak var editButton: UIBarButtonItem!
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var saveButton: UIButton!
     
@@ -45,14 +45,8 @@ class DetalleUsuarioViewController: UIViewController {
         super.viewDidAppear(animated)
         sesionControlador.fetchSesiones(self.elUsuario!.id){ (result) in
             switch result{
-            case .success(let sesiones):
-                self.tanatologoControlador.getTanatologo(id: self.elUsuario!.idTanatologo){(res) in
-                        switch res{
-                        case .success(let tanatologo):self.updateUI(with: sesiones, tanatologo:tanatologo)
-                        case .failure(_):print("No se pudo acceder a los tanatolgos")
-                        }
-                }
-            case .failure(_):print("No se pudo acceder a las sesiones")
+            case .success(let sesiones):self.updateUI(with: sesiones)
+            case .failure(_):print("No se pudo acceder a los usuarios")
             }
         }
         self.navigationController?.navigationBar.topItem?.title = elUsuario?.nombre;
@@ -72,22 +66,15 @@ class DetalleUsuarioViewController: UIViewController {
         status.clipsToBounds = true
         sesionControlador.fetchSesiones(self.elUsuario!.id){ (result) in
             switch result{
-            case .success(let sesiones):
-                self.tanatologoControlador.getTanatologo(id: self.elUsuario!.idTanatologo){(res) in
-                        switch res{
-                        case .success(let tanatologo):self.updateUI(with: sesiones, tanatologo:tanatologo)
-                        case .failure(_):print("No se pudo acceder a los tanatolgos")
-                        }
-                }
-            case .failure(_):print("No se pudo acceder a las sesiones")
+            case .success(let sesiones):self.updateUI(with: sesiones)
+            case .failure(_):print("No se pudo acceder a los usuarios")
             }
         }
     }
         
         
-        func updateUI(with sesiones:Sesiones, tanatologo:Tanatologo) {
+    func updateUI(with sesiones:Sesiones) {
         DispatchQueue.main.async {
-            print("here: \(tanatologo)")
             let length = sesiones.count
             let lastSes = sesiones[length-1]
             self.nombre.text = self.elUsuario?.nombre
@@ -95,7 +82,7 @@ class DetalleUsuarioViewController: UIViewController {
             self.numSes.text = String(length)
             self.motiv.text = self.elUsuario?.motivo
             self.serv.text = lastSes.servicio
-            self.tan.text = tanatologo.nombre
+            self.tan.text = self.elUsuario?.idTanatologo // falta ver cómo sacar el nombre
             self.int.text = lastSes.tipoDeIntervencion
             self.herr.text = lastSes.herramienta
             self.proxSes.text = self.elUsuario?.proximaSesion
@@ -111,6 +98,7 @@ class DetalleUsuarioViewController: UIViewController {
             } else {
                 self.status.image = UIImage(named: "verde")
             }
+            self.sesionesTable.sesiones = sesiones
         }
     }
     
@@ -135,10 +123,11 @@ class DetalleUsuarioViewController: UIViewController {
     }
     
     
-    @IBAction func editarProxSesion(_ sender: UIButton) {
+    @IBAction func editarProxSesion(_ sender: UIBarButtonItem) {
         editar = !editar
         botones(estado: editar)
     }
+    
     @IBAction func cancelarEdicion(_ sender: UIButton) {
         editar = !editar
         botones(estado: editar)
