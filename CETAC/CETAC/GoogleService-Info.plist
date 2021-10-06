@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>134542187159-sou0rb2hj6abjag15hbub4o5pei2jt8i.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.134542187159-sou0rb2hj6abjag15hbub4o5pei2jt8i</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCaGUJbDzAiaIF_REAPx12f6P_oLYsXVlo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>134542187159</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>mx.chicasSuperpoderosas.CETAC</string>
+	<key>PROJECT_ID</key>
+	<string>app-cetac</string>
+	<key>STORAGE_BUCKET</key>
+	<string>app-cetac.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:134542187159:ios:61cf29a06a126ab1a8e7d2</string>
+</dict>
+</plist>
