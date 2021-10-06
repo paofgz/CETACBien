@@ -44,8 +44,8 @@
 		652B6A44270DE3FB007E4FD7 /* intervencionPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A43270DE3FB007E4FD7 /* intervencionPickerView.swift */; };
 		652B6A46270DE417007E4FD7 /* servicioPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A45270DE417007E4FD7 /* servicioPickerView.swift */; };
 		652B6A48270DE434007E4FD7 /* estadoCivilPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A47270DE434007E4FD7 /* estadoCivilPickerView.swift */; };
-		652B6A4A270DF36C007E4FD7 /* Tanatologo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A49270DF36C007E4FD7 /* Tanatologo.swift */; };
-		652B6A4C270DF4C4007E4FD7 /* TanatologoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A4B270DF4C4007E4FD7 /* TanatologoController.swift */; };
+		652B6A51270E14E4007E4FD7 /* Tanatologo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A50270E14E4007E4FD7 /* Tanatologo.swift */; };
+		652B6A53270E1503007E4FD7 /* TanatologoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A52270E1503007E4FD7 /* TanatologoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,8 +88,8 @@
 		652B6A43270DE3FB007E4FD7 /* intervencionPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intervencionPickerView.swift; sourceTree = "<group>"; };
 		652B6A45270DE417007E4FD7 /* servicioPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = servicioPickerView.swift; sourceTree = "<group>"; };
 		652B6A47270DE434007E4FD7 /* estadoCivilPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = estadoCivilPickerView.swift; sourceTree = "<group>"; };
-		652B6A49270DF36C007E4FD7 /* Tanatologo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tanatologo.swift; sourceTree = "<group>"; };
-		652B6A4B270DF4C4007E4FD7 /* TanatologoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanatologoController.swift; sourceTree = "<group>"; };
+		652B6A50270E14E4007E4FD7 /* Tanatologo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tanatologo.swift; sourceTree = "<group>"; };
+		652B6A52270E1503007E4FD7 /* TanatologoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanatologoController.swift; sourceTree = "<group>"; };
 		9BD5A2CAF36B072AAB80F4AC /* Pods-CETAC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CETAC.release.xcconfig"; path = "Target Support Files/Pods-CETAC/Pods-CETAC.release.xcconfig"; sourceTree = "<group>"; };
 		B85A41DF25D81D44DDF917DB /* Pods_CETAC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CETAC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -197,8 +197,8 @@
 				652B6A31270DDF87007E4FD7 /* UsuarioController.swift */,
 				652B6A33270DDF9D007E4FD7 /* Sesion.swift */,
 				652B6A35270DDFB5007E4FD7 /* SesionController.swift */,
-				652B6A49270DF36C007E4FD7 /* Tanatologo.swift */,
-				652B6A4B270DF4C4007E4FD7 /* TanatologoController.swift */,
+				652B6A50270E14E4007E4FD7 /* Tanatologo.swift */,
+				652B6A52270E1503007E4FD7 /* TanatologoController.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -337,8 +337,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				652B6A4A270DF36C007E4FD7 /* Tanatologo.swift in Sources */,
 				652B6A30270DDF69007E4FD7 /* Usuario.swift in Sources */,
+				652B6A51270E14E4007E4FD7 /* Tanatologo.swift in Sources */,
 				652B6A3C270DE216007E4FD7 /* DetalleUsuarioViewController.swift in Sources */,
 				48CB2025270CCE3A00E2DB22 /* SingUp2Controller.swift in Sources */,
 				652B6A42270DE3DE007E4FD7 /* herramientasPickerView.swift in Sources */,
@@ -358,7 +358,6 @@
 				652B6A34270DDF9D007E4FD7 /* Sesion.swift in Sources */,
 				652B6A46270DE417007E4FD7 /* servicioPickerView.swift in Sources */,
 				48C9E0C3270A2931002B72A9 /* TanatologoPerfilViewController.swift in Sources */,
-				652B6A4C270DF4C4007E4FD7 /* TanatologoController.swift in Sources */,
 				48DA50552705119E00745442 /* SingUpViewController.swift in Sources */,
 				48CB2027270CCE5400E2DB22 /* SingUpController.swift in Sources */,
 				652B6A3A270DE1D0007E4FD7 /* UsuariosTableViewController.swift in Sources */,
@@ -367,6 +366,7 @@
 				48C9E0CD270A961D002B72A9 /* AdminPerfilController.swift in Sources */,
 				481EC14C27092A2500987AE1 /* SingUp2ViewController.swift in Sources */,
 				48C9E0CB270A8055002B72A9 /* TanatologoPerfilController.swift in Sources */,
+				652B6A53270E1503007E4FD7 /* TanatologoController.swift in Sources */,
 				3E8C3680270E10520028F832 /* SeguimientoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -957,7 +957,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
             <objects>
                 <viewController id="5Zb-rA-dNv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oYe-MR-B0p">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="996"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cuota_recuperacion" translatesAutoresizingMaskIntoConstraints="NO" id="a50-JW-SH9">
@@ -1011,7 +1011,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
             <objects>
                 <viewController id="GGo-ff-3ga" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ems-VX-jKE">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="996"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Usuarios_atendidos" translatesAutoresizingMaskIntoConstraints="NO" id="ejv-Rx-BB7">
@@ -1841,7 +1841,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
             <objects>
                 <viewController id="qwZ-mP-qLD" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mMp-FB-mzn">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="996"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intervencion_servicio.png" translatesAutoresizingMaskIntoConstraints="NO" id="aUQ-Tg-e5d">
@@ -1868,7 +1868,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
             <objects>
                 <viewController id="DRT-cs-BNt" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SDq-5R-ipM">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="996"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Motivo" translatesAutoresizingMaskIntoConstraints="NO" id="OEK-gf-KZX">
@@ -2563,7 +2563,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
             <objects>
                 <viewController id="TMO-d9-HKG" customClass="DetalleUsuarioViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TMA-AF-o5j">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="996"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z3m-Cy-pIU">
@@ -2782,7 +2782,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                 <rect key="frame" x="609" y="45" width="40" height="30"/>
                                 <state key="normal" title="Editar"/>
                                 <connections>
-                                    <action selector="editarProxSesion:" destination="TMO-d9-HKG" eventType="touchUpInside" id="cvy-EH-tPc"/>
+                                    <action selector="editarProxSesion:" destination="TMO-d9-HKG" eventType="touchUpInside" id="Mqa-55-cp4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -2846,11 +2846,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="1iP-IJ-Jw9">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="edit" id="dot-UF-Q9f">
-                            <connections>
-                                <action selector="editarProxSesion:" destination="TMO-d9-HKG" id="IB8-2d-5UD"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="edit" id="dot-UF-Q9f"/>
                     </navigationItem>
                     <connections>
                         <outlet property="cancelButton" destination="GyA-lv-dQm" id="QuC-dl-Niw"/>
@@ -2936,7 +2932,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
             <objects>
                 <viewController id="1wN-aq-pGM" customClass="DetalleUsuarioViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oxl-Rp-Gvx">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="996"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5j7-6l-kRY">

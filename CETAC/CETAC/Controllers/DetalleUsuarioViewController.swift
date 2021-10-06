@@ -12,6 +12,7 @@ class DetalleUsuarioViewController: UIViewController {
     
     var usuarioControlador = UsuarioController()
     var sesionControlador = SesionesController()
+    var tanatologoControlador = TanatologoController()
     
     let dateFormatter = DateFormatter()
     
@@ -33,9 +34,8 @@ class DetalleUsuarioViewController: UIViewController {
     
     @IBOutlet weak var eliminarCita: UIButton!
     
-    @IBOutlet weak var sesionesTable: SesionesTableView! 
     
-    @IBOutlet weak var editButton: UIBarButtonItem!
+    @IBOutlet weak var editButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var saveButton: UIButton!
     
@@ -44,9 +44,15 @@ class DetalleUsuarioViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         sesionControlador.fetchSesiones(self.elUsuario!.id){ (result) in
-            switch result{
-            case .success(let sesiones):self.updateUI(with: sesiones)
-            case .failure(_):print("No se pudo acceder a los usuarios")
+                    switch result{
+                    case .success(let sesiones):
+                        self.tanatologoControlador.getTanatologo(id: self.elUsuario!.idTanatologo){(res) in
+                                switch res{
+                                case .success(let tanatologo):self.updateUI(with: sesiones, tanatologo: tanatologo)
+                                case .failure(_):print("No se pudo acceder a los tanatolgos")
+                                }
+                        }
+                    case .failure(_):print("No se pudo acceder a las sesiones")
             }
         }
         self.navigationController?.navigationBar.topItem?.title = elUsuario?.nombre;
@@ -65,15 +71,21 @@ class DetalleUsuarioViewController: UIViewController {
         status.layer.cornerRadius = status.frame.height/2
         status.clipsToBounds = true
         sesionControlador.fetchSesiones(self.elUsuario!.id){ (result) in
-            switch result{
-            case .success(let sesiones):self.updateUI(with: sesiones)
-            case .failure(_):print("No se pudo acceder a los usuarios")
+                    switch result{
+                    case .success(let sesiones):
+                        self.tanatologoControlador.getTanatologo(id: self.elUsuario!.idTanatologo){(res) in
+                                switch res{
+                                case .success(let tanatologo):self.updateUI(with: sesiones, tanatologo:tanatologo)
+                                case .failure(_):print("No se pudo acceder a los tanatolgos")
+                                }
+                        }
+                    case .failure(_):print("No se pudo acceder a las sesiones")
             }
         }
     }
         
         
-    func updateUI(with sesiones:Sesiones) {
+    func updateUI(with sesiones:Sesiones, tanatologo:Tanatologo) {
         DispatchQueue.main.async {
             let length = sesiones.count
             let lastSes = sesiones[length-1]
@@ -82,7 +94,7 @@ class DetalleUsuarioViewController: UIViewController {
             self.numSes.text = String(length)
             self.motiv.text = self.elUsuario?.motivo
             self.serv.text = lastSes.servicio
-            self.tan.text = self.elUsuario?.idTanatologo // falta ver cómo sacar el nombre
+            self.tan.text = tanatologo.nombre
             self.int.text = lastSes.tipoDeIntervencion
             self.herr.text = lastSes.herramienta
             self.proxSes.text = self.elUsuario?.proximaSesion
@@ -98,13 +110,12 @@ class DetalleUsuarioViewController: UIViewController {
             } else {
                 self.status.image = UIImage(named: "verde")
             }
-            self.sesionesTable.sesiones = sesiones
         }
     }
     
     func botones(estado:Bool){
         if estado{
-            editButton.isEnabled = false
+            editButton.isHidden = true
             saveButton.isHidden =  false
             cancelButton.isHidden =  false
             proxSes.isHidden = true
@@ -112,7 +123,7 @@ class DetalleUsuarioViewController: UIViewController {
             eliminarCita.isHidden = false
         }
         else{
-            editButton.isEnabled = true
+            editButton.isHidden = false
             saveButton.isHidden =  true
             cancelButton.isHidden =  true
             proxSes.isHidden = false
@@ -123,7 +134,7 @@ class DetalleUsuarioViewController: UIViewController {
     }
     
     
-    @IBAction func editarProxSesion(_ sender: UIBarButtonItem) {
+    @IBAction func editarProxSesion(_ sender: UIButton) {
         editar = !editar
         botones(estado: editar)
     }
