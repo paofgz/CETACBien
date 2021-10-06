@@ -8,6 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		153E16C81561D04153BF4EE3 /* Pods_CETAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85A41DF25D81D44DDF917DB /* Pods_CETAC.framework */; };
+		3E8C365C270D6A2E0028F832 /* motivosPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C365B270D6A2E0028F832 /* motivosPickerView.swift */; };
+		3E8C365E270D6A3A0028F832 /* herramientasPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C365D270D6A3A0028F832 /* herramientasPickerView.swift */; };
+		3E8C3660270D6A430028F832 /* intervencionPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C365F270D6A430028F832 /* intervencionPickerView.swift */; };
+		3E8C3662270D6A4E0028F832 /* servicioPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C3661270D6A4E0028F832 /* servicioPickerView.swift */; };
+		3E8C3664270D6A560028F832 /* estadoCivilPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C3663270D6A560028F832 /* estadoCivilPickerView.swift */; };
+		3E8C3666270D6A640028F832 /* SeguimientoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C3665270D6A640028F832 /* SeguimientoViewController.swift */; };
+		3E8C366C270D6C090028F832 /* UsuarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C3668270D6C090028F832 /* UsuarioController.swift */; };
+		3E8C366D270D6C090028F832 /* Sesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C3669270D6C090028F832 /* Sesion.swift */; };
+		3E8C366E270D6C090028F832 /* SesionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C366A270D6C090028F832 /* SesionController.swift */; };
+		3E8C366F270D6C090028F832 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C366B270D6C090028F832 /* Usuario.swift */; };
+		3E8C3671270D6C2B0028F832 /* UsuarioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C3670270D6C2B0028F832 /* UsuarioTableViewCell.swift */; };
+		3E8C3673270D6C350028F832 /* UsuariosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C3672270D6C350028F832 /* UsuariosTableViewController.swift */; };
+		3E8C3675270D6C3F0028F832 /* DetalleUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C3674270D6C3F0028F832 /* DetalleUsuarioViewController.swift */; };
+		3E8C3677270D6C560028F832 /* EncuadreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C3676270D6C560028F832 /* EncuadreViewController.swift */; };
+		3E8C367A270D6CA60028F832 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C3679270D6CA60028F832 /* Colors.swift */; };
+		3E8C367C270D6CD90028F832 /* SesionesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C367B270D6CD90028F832 /* SesionesTableView.swift */; };
+		3E8C367E270D6CFB0028F832 /* SesionesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C367D270D6CFB0028F832 /* SesionesTableViewCell.swift */; };
 		481EC14C27092A2500987AE1 /* SingUp2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481EC14B27092A2500987AE1 /* SingUp2ViewController.swift */; };
 		482FC93526D9C98E0008D31F /* ContactoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482FC93426D9C98E0008D31F /* ContactoViewController.swift */; };
 		4881CC8B26DEA1A600258340 /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = 4881CC8A26DEA1A600258340 /* AppIcon.appiconset */; };
@@ -33,6 +50,23 @@
 
 /* Begin PBXFileReference section */
 		1EEA6879E585D199710BA2A9 /* Pods-CETAC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CETAC.debug.xcconfig"; path = "Target Support Files/Pods-CETAC/Pods-CETAC.debug.xcconfig"; sourceTree = "<group>"; };
+		3E8C365B270D6A2E0028F832 /* motivosPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = motivosPickerView.swift; sourceTree = "<group>"; };
+		3E8C365D270D6A3A0028F832 /* herramientasPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = herramientasPickerView.swift; sourceTree = "<group>"; };
+		3E8C365F270D6A430028F832 /* intervencionPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = intervencionPickerView.swift; sourceTree = "<group>"; };
+		3E8C3661270D6A4E0028F832 /* servicioPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = servicioPickerView.swift; sourceTree = "<group>"; };
+		3E8C3663270D6A560028F832 /* estadoCivilPickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = estadoCivilPickerView.swift; sourceTree = "<group>"; };
+		3E8C3665270D6A640028F832 /* SeguimientoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeguimientoViewController.swift; sourceTree = "<group>"; };
+		3E8C3668270D6C090028F832 /* UsuarioController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsuarioController.swift; sourceTree = "<group>"; };
+		3E8C3669270D6C090028F832 /* Sesion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sesion.swift; sourceTree = "<group>"; };
+		3E8C366A270D6C090028F832 /* SesionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SesionController.swift; sourceTree = "<group>"; };
+		3E8C366B270D6C090028F832 /* Usuario.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		3E8C3670270D6C2B0028F832 /* UsuarioTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsuarioTableViewCell.swift; sourceTree = "<group>"; };
+		3E8C3672270D6C350028F832 /* UsuariosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsuariosTableViewController.swift; sourceTree = "<group>"; };
+		3E8C3674270D6C3F0028F832 /* DetalleUsuarioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalleUsuarioViewController.swift; sourceTree = "<group>"; };
+		3E8C3676270D6C560028F832 /* EncuadreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncuadreViewController.swift; sourceTree = "<group>"; };
+		3E8C3679270D6CA60028F832 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		3E8C367B270D6CD90028F832 /* SesionesTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SesionesTableView.swift; sourceTree = "<group>"; };
+		3E8C367D270D6CFB0028F832 /* SesionesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SesionesTableViewCell.swift; sourceTree = "<group>"; };
 		481EC14B27092A2500987AE1 /* SingUp2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUp2ViewController.swift; sourceTree = "<group>"; };
 		482FC93426D9C98E0008D31F /* ContactoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactoViewController.swift; sourceTree = "<group>"; };
 		4881CC8A26DEA1A600258340 /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
@@ -72,15 +106,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E8C3667270D6C090028F832 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3E8C3668270D6C090028F832 /* UsuarioController.swift */,
+				3E8C3669270D6C090028F832 /* Sesion.swift */,
+				3E8C366A270D6C090028F832 /* SesionController.swift */,
+				3E8C366B270D6C090028F832 /* Usuario.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3E8C3678270D6CA60028F832 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3E8C3679270D6CA60028F832 /* Colors.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		482FC93326D9C9530008D31F /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				482FC93426D9C98E0008D31F /* ContactoViewController.swift */,
+				3E8C3674270D6C3F0028F832 /* DetalleUsuarioViewController.swift */,
+				3E8C3670270D6C2B0028F832 /* UsuarioTableViewCell.swift */,
+				3E8C3672270D6C350028F832 /* UsuariosTableViewController.swift */,
 				48C9E0C8270A6001002B72A9 /* LoginController.swift */,
+				3E8C367B270D6CD90028F832 /* SesionesTableView.swift */,
+				3E8C367D270D6CFB0028F832 /* SesionesTableViewCell.swift */,
 				48C9E0CA270A8055002B72A9 /* TanatologoPerfilController.swift */,
 				48C9E0CC270A961D002B72A9 /* AdminPerfilController.swift */,
 				48CB2024270CCE3A00E2DB22 /* SingUp2Controller.swift */,
 				48CB2026270CCE5400E2DB22 /* SingUpController.swift */,
+				3E8C3676270D6C560028F832 /* EncuadreViewController.swift */,
+				3E8C365B270D6A2E0028F832 /* motivosPickerView.swift */,
+				3E8C365D270D6A3A0028F832 /* herramientasPickerView.swift */,
+				3E8C365F270D6A430028F832 /* intervencionPickerView.swift */,
+				3E8C3663270D6A560028F832 /* estadoCivilPickerView.swift */,
+				3E8C3661270D6A4E0028F832 /* servicioPickerView.swift */,
+				3E8C3665270D6A640028F832 /* SeguimientoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -118,6 +183,8 @@
 		48D29C3126D5B9AD007FF79B /* CETAC */ = {
 			isa = PBXGroup;
 			children = (
+				3E8C3678270D6CA60028F832 /* Helpers */,
+				3E8C3667270D6C090028F832 /* Models */,
 				4887CEC2270D227600160313 /* SingUp-Login */,
 				48C66E532700E13000EA57B9 /* GoogleService-Info.plist */,
 				482FC93326D9C9530008D31F /* Controllers */,
@@ -270,20 +337,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E8C365C270D6A2E0028F832 /* motivosPickerView.swift in Sources */,
+				3E8C367E270D6CFB0028F832 /* SesionesTableViewCell.swift in Sources */,
+				3E8C3664270D6A560028F832 /* estadoCivilPickerView.swift in Sources */,
 				48CB2025270CCE3A00E2DB22 /* SingUp2Controller.swift in Sources */,
+				3E8C3660270D6A430028F832 /* intervencionPickerView.swift in Sources */,
+				3E8C367C270D6CD90028F832 /* SesionesTableView.swift in Sources */,
 				48DA5057270511BA00745442 /* LoginViewController.swift in Sources */,
+				3E8C365E270D6A3A0028F832 /* herramientasPickerView.swift in Sources */,
+				3E8C3666270D6A640028F832 /* SeguimientoViewController.swift in Sources */,
 				48D29C3726D5B9AD007FF79B /* ViewController.swift in Sources */,
+				3E8C3673270D6C350028F832 /* UsuariosTableViewController.swift in Sources */,
+				3E8C366F270D6C090028F832 /* Usuario.swift in Sources */,
+				3E8C3671270D6C2B0028F832 /* UsuarioTableViewCell.swift in Sources */,
 				48C9E0C9270A6001002B72A9 /* LoginController.swift in Sources */,
+				3E8C3675270D6C3F0028F832 /* DetalleUsuarioViewController.swift in Sources */,
 				482FC93526D9C98E0008D31F /* ContactoViewController.swift in Sources */,
+				3E8C3662270D6A4E0028F832 /* servicioPickerView.swift in Sources */,
 				48C9E0C5270A44D8002B72A9 /* AdminPerfilViewController.swift in Sources */,
 				48D29C3326D5B9AD007FF79B /* AppDelegate.swift in Sources */,
+				3E8C3677270D6C560028F832 /* EncuadreViewController.swift in Sources */,
 				48C9E0C3270A2931002B72A9 /* TanatologoPerfilViewController.swift in Sources */,
 				48DA50552705119E00745442 /* SingUpViewController.swift in Sources */,
+				3E8C367A270D6CA60028F832 /* Colors.swift in Sources */,
 				48CB2027270CCE5400E2DB22 /* SingUpController.swift in Sources */,
+				3E8C366D270D6C090028F832 /* Sesion.swift in Sources */,
+				3E8C366C270D6C090028F832 /* UsuarioController.swift in Sources */,
 				48D29C3526D5B9AD007FF79B /* SceneDelegate.swift in Sources */,
 				48C9E0CD270A961D002B72A9 /* AdminPerfilController.swift in Sources */,
 				481EC14C27092A2500987AE1 /* SingUp2ViewController.swift in Sources */,
 				48C9E0CB270A8055002B72A9 /* TanatologoPerfilController.swift in Sources */,
+				3E8C366E270D6C090028F832 /* SesionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

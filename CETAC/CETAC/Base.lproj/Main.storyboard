@@ -906,7 +906,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
         <!--Hoja de seguimiento-->
         <scene sceneID="iU3-cO-ggv">
             <objects>
-                <viewController id="cKf-UH-xKF" sceneMemberID="viewController">
+                <viewController id="cKf-UH-xKF" customClass="SeguimientoViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Is8-D0-OKm">
                         <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1043,10 +1043,20 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                     </view>
                     <tabBarItem key="tabBarItem" title="Seguimiento" image="pencil" catalog="system" id="ftT-KI-I94"/>
                     <navigationItem key="navigationItem" title="Hoja de seguimiento" id="aUE-86-tg4"/>
+                    <connections>
+                        <outlet property="FechaSelect" destination="W2o-oU-yL9" id="rfP-nT-WoU"/>
+                        <outlet property="HerramientaSeg" destination="71A-c7-86h" id="RXw-vL-PrT"/>
+                        <outlet property="IntervencionSeg" destination="SEw-cD-iFt" id="3TT-5F-yvq"/>
+                        <outlet property="action" destination="ObI-aP-PN8" id="Bq8-tw-NdX"/>
+                        <outlet property="cuotaRe" destination="cZ4-dR-NJn" id="UX5-tb-f68"/>
+                        <outlet property="evaluacionSes" destination="ca0-MT-QGC" id="Wf3-Fl-ls7"/>
+                        <outlet property="servicioSeg" destination="mIl-3J-gFq" id="ZPn-jz-Mf3"/>
+                        <outlet property="usuariosPV" destination="EV7-ys-5oI" id="aVn-yw-qAW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xAm-nY-cVE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1920.7407407407406" y="3152.7777777777778"/>
+            <point key="canvasLocation" x="2130" y="3125"/>
         </scene>
         <!--Cuota de recuperación -->
         <scene sceneID="iTk-zb-Z8A">
