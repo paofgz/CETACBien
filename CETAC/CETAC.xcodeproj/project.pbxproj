@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		153E16C81561D04153BF4EE3 /* Pods_CETAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85A41DF25D81D44DDF917DB /* Pods_CETAC.framework */; };
+		3E8C3680270E10520028F832 /* SeguimientoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C367F270E10520028F832 /* SeguimientoViewController.swift */; };
 		481EC14C27092A2500987AE1 /* SingUp2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481EC14B27092A2500987AE1 /* SingUp2ViewController.swift */; };
 		482FC93526D9C98E0008D31F /* ContactoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482FC93426D9C98E0008D31F /* ContactoViewController.swift */; };
 		4881CC8B26DEA1A600258340 /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = 4881CC8A26DEA1A600258340 /* AppIcon.appiconset */; };
@@ -49,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		1EEA6879E585D199710BA2A9 /* Pods-CETAC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CETAC.debug.xcconfig"; path = "Target Support Files/Pods-CETAC/Pods-CETAC.debug.xcconfig"; sourceTree = "<group>"; };
+		3E8C367F270E10520028F832 /* SeguimientoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeguimientoViewController.swift; sourceTree = "<group>"; };
 		481EC14B27092A2500987AE1 /* SingUp2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUp2ViewController.swift; sourceTree = "<group>"; };
 		482FC93426D9C98E0008D31F /* ContactoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactoViewController.swift; sourceTree = "<group>"; };
 		4881CC8A26DEA1A600258340 /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				652B6A43270DE3FB007E4FD7 /* intervencionPickerView.swift */,
 				652B6A45270DE417007E4FD7 /* servicioPickerView.swift */,
 				652B6A47270DE434007E4FD7 /* estadoCivilPickerView.swift */,
+				3E8C367F270E10520028F832 /* SeguimientoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				48C9E0CD270A961D002B72A9 /* AdminPerfilController.swift in Sources */,
 				481EC14C27092A2500987AE1 /* SingUp2ViewController.swift in Sources */,
 				48C9E0CB270A8055002B72A9 /* TanatologoPerfilController.swift in Sources */,
+				3E8C3680270E10520028F832 /* SeguimientoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
