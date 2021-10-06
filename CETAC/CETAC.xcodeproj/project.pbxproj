@@ -29,6 +29,22 @@
 		48DA50552705119E00745442 /* SingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DA50542705119E00745442 /* SingUpViewController.swift */; };
 		48DA5057270511BA00745442 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DA5056270511BA00745442 /* LoginViewController.swift */; };
 		48F81A0326F59FAB000197FB /* iconos in Resources */ = {isa = PBXBuildFile; fileRef = 48F81A0226F59FAB000197FB /* iconos */; };
+		652B6A2E270DDF49007E4FD7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A2D270DDF49007E4FD7 /* Colors.swift */; };
+		652B6A30270DDF69007E4FD7 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A2F270DDF69007E4FD7 /* Usuario.swift */; };
+		652B6A32270DDF87007E4FD7 /* UsuarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A31270DDF87007E4FD7 /* UsuarioController.swift */; };
+		652B6A34270DDF9D007E4FD7 /* Sesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A33270DDF9D007E4FD7 /* Sesion.swift */; };
+		652B6A36270DDFB5007E4FD7 /* SesionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A35270DDFB5007E4FD7 /* SesionController.swift */; };
+		652B6A38270DE1A7007E4FD7 /* UsuarioTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A37270DE1A7007E4FD7 /* UsuarioTableViewCell.swift */; };
+		652B6A3A270DE1D0007E4FD7 /* UsuariosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A39270DE1D0007E4FD7 /* UsuariosTableViewController.swift */; };
+		652B6A3C270DE216007E4FD7 /* DetalleUsuarioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A3B270DE216007E4FD7 /* DetalleUsuarioViewController.swift */; };
+		652B6A3E270DE36A007E4FD7 /* EncuadreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A3D270DE36A007E4FD7 /* EncuadreViewController.swift */; };
+		652B6A40270DE3C4007E4FD7 /* motivosPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A3F270DE3C4007E4FD7 /* motivosPickerView.swift */; };
+		652B6A42270DE3DE007E4FD7 /* herramientasPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A41270DE3DE007E4FD7 /* herramientasPickerView.swift */; };
+		652B6A44270DE3FB007E4FD7 /* intervencionPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A43270DE3FB007E4FD7 /* intervencionPickerView.swift */; };
+		652B6A46270DE417007E4FD7 /* servicioPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A45270DE417007E4FD7 /* servicioPickerView.swift */; };
+		652B6A48270DE434007E4FD7 /* estadoCivilPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A47270DE434007E4FD7 /* estadoCivilPickerView.swift */; };
+		652B6A4A270DF36C007E4FD7 /* Tanatologo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A49270DF36C007E4FD7 /* Tanatologo.swift */; };
+		652B6A4C270DF4C4007E4FD7 /* TanatologoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A4B270DF4C4007E4FD7 /* TanatologoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +72,22 @@
 		48DA50542705119E00745442 /* SingUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewController.swift; sourceTree = "<group>"; };
 		48DA5056270511BA00745442 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		48F81A0226F59FAB000197FB /* iconos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iconos; sourceTree = "<group>"; };
+		652B6A2D270DDF49007E4FD7 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		652B6A2F270DDF69007E4FD7 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		652B6A31270DDF87007E4FD7 /* UsuarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioController.swift; sourceTree = "<group>"; };
+		652B6A33270DDF9D007E4FD7 /* Sesion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sesion.swift; sourceTree = "<group>"; };
+		652B6A35270DDFB5007E4FD7 /* SesionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SesionController.swift; sourceTree = "<group>"; };
+		652B6A37270DE1A7007E4FD7 /* UsuarioTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioTableViewCell.swift; sourceTree = "<group>"; };
+		652B6A39270DE1D0007E4FD7 /* UsuariosTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuariosTableViewController.swift; sourceTree = "<group>"; };
+		652B6A3B270DE216007E4FD7 /* DetalleUsuarioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleUsuarioViewController.swift; sourceTree = "<group>"; };
+		652B6A3D270DE36A007E4FD7 /* EncuadreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncuadreViewController.swift; sourceTree = "<group>"; };
+		652B6A3F270DE3C4007E4FD7 /* motivosPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = motivosPickerView.swift; sourceTree = "<group>"; };
+		652B6A41270DE3DE007E4FD7 /* herramientasPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = herramientasPickerView.swift; sourceTree = "<group>"; };
+		652B6A43270DE3FB007E4FD7 /* intervencionPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intervencionPickerView.swift; sourceTree = "<group>"; };
+		652B6A45270DE417007E4FD7 /* servicioPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = servicioPickerView.swift; sourceTree = "<group>"; };
+		652B6A47270DE434007E4FD7 /* estadoCivilPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = estadoCivilPickerView.swift; sourceTree = "<group>"; };
+		652B6A49270DF36C007E4FD7 /* Tanatologo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tanatologo.swift; sourceTree = "<group>"; };
+		652B6A4B270DF4C4007E4FD7 /* TanatologoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanatologoController.swift; sourceTree = "<group>"; };
 		9BD5A2CAF36B072AAB80F4AC /* Pods-CETAC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CETAC.release.xcconfig"; path = "Target Support Files/Pods-CETAC/Pods-CETAC.release.xcconfig"; sourceTree = "<group>"; };
 		B85A41DF25D81D44DDF917DB /* Pods_CETAC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CETAC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -81,6 +113,15 @@
 				48C9E0CC270A961D002B72A9 /* AdminPerfilController.swift */,
 				48CB2024270CCE3A00E2DB22 /* SingUp2Controller.swift */,
 				48CB2026270CCE5400E2DB22 /* SingUpController.swift */,
+				652B6A37270DE1A7007E4FD7 /* UsuarioTableViewCell.swift */,
+				652B6A39270DE1D0007E4FD7 /* UsuariosTableViewController.swift */,
+				652B6A3B270DE216007E4FD7 /* DetalleUsuarioViewController.swift */,
+				652B6A3D270DE36A007E4FD7 /* EncuadreViewController.swift */,
+				652B6A3F270DE3C4007E4FD7 /* motivosPickerView.swift */,
+				652B6A41270DE3DE007E4FD7 /* herramientasPickerView.swift */,
+				652B6A43270DE3FB007E4FD7 /* intervencionPickerView.swift */,
+				652B6A45270DE417007E4FD7 /* servicioPickerView.swift */,
+				652B6A47270DE434007E4FD7 /* estadoCivilPickerView.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -118,6 +159,8 @@
 		48D29C3126D5B9AD007FF79B /* CETAC */ = {
 			isa = PBXGroup;
 			children = (
+				652B6A2C270DDF20007E4FD7 /* Helpers */,
+				652B6A2B270DDF0C007E4FD7 /* Models */,
 				4887CEC2270D227600160313 /* SingUp-Login */,
 				48C66E532700E13000EA57B9 /* GoogleService-Info.plist */,
 				482FC93326D9C9530008D31F /* Controllers */,
@@ -142,6 +185,27 @@
 				9BD5A2CAF36B072AAB80F4AC /* Pods-CETAC.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		652B6A2B270DDF0C007E4FD7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				652B6A2F270DDF69007E4FD7 /* Usuario.swift */,
+				652B6A31270DDF87007E4FD7 /* UsuarioController.swift */,
+				652B6A33270DDF9D007E4FD7 /* Sesion.swift */,
+				652B6A35270DDFB5007E4FD7 /* SesionController.swift */,
+				652B6A49270DF36C007E4FD7 /* Tanatologo.swift */,
+				652B6A4B270DF4C4007E4FD7 /* TanatologoController.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		652B6A2C270DDF20007E4FD7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				652B6A2D270DDF49007E4FD7 /* Colors.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		AAD7926F723DFA16EE32D01A /* Frameworks */ = {
@@ -270,16 +334,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				652B6A4A270DF36C007E4FD7 /* Tanatologo.swift in Sources */,
+				652B6A30270DDF69007E4FD7 /* Usuario.swift in Sources */,
+				652B6A3C270DE216007E4FD7 /* DetalleUsuarioViewController.swift in Sources */,
 				48CB2025270CCE3A00E2DB22 /* SingUp2Controller.swift in Sources */,
+				652B6A42270DE3DE007E4FD7 /* herramientasPickerView.swift in Sources */,
+				652B6A44270DE3FB007E4FD7 /* intervencionPickerView.swift in Sources */,
+				652B6A2E270DDF49007E4FD7 /* Colors.swift in Sources */,
 				48DA5057270511BA00745442 /* LoginViewController.swift in Sources */,
+				652B6A38270DE1A7007E4FD7 /* UsuarioTableViewCell.swift in Sources */,
 				48D29C3726D5B9AD007FF79B /* ViewController.swift in Sources */,
 				48C9E0C9270A6001002B72A9 /* LoginController.swift in Sources */,
+				652B6A48270DE434007E4FD7 /* estadoCivilPickerView.swift in Sources */,
+				652B6A32270DDF87007E4FD7 /* UsuarioController.swift in Sources */,
+				652B6A36270DDFB5007E4FD7 /* SesionController.swift in Sources */,
 				482FC93526D9C98E0008D31F /* ContactoViewController.swift in Sources */,
 				48C9E0C5270A44D8002B72A9 /* AdminPerfilViewController.swift in Sources */,
+				652B6A40270DE3C4007E4FD7 /* motivosPickerView.swift in Sources */,
 				48D29C3326D5B9AD007FF79B /* AppDelegate.swift in Sources */,
+				652B6A34270DDF9D007E4FD7 /* Sesion.swift in Sources */,
+				652B6A46270DE417007E4FD7 /* servicioPickerView.swift in Sources */,
 				48C9E0C3270A2931002B72A9 /* TanatologoPerfilViewController.swift in Sources */,
+				652B6A4C270DF4C4007E4FD7 /* TanatologoController.swift in Sources */,
 				48DA50552705119E00745442 /* SingUpViewController.swift in Sources */,
 				48CB2027270CCE5400E2DB22 /* SingUpController.swift in Sources */,
+				652B6A3A270DE1D0007E4FD7 /* UsuariosTableViewController.swift in Sources */,
+				652B6A3E270DE36A007E4FD7 /* EncuadreViewController.swift in Sources */,
 				48D29C3526D5B9AD007FF79B /* SceneDelegate.swift in Sources */,
 				48C9E0CD270A961D002B72A9 /* AdminPerfilController.swift in Sources */,
 				481EC14C27092A2500987AE1 /* SingUp2ViewController.swift in Sources */,

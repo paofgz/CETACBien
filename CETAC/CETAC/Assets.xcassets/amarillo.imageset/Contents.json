@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "AcompañamientoInd.png",
+      "filename" : "amarillo.jpeg",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "AcompañamientoInd-1.png",
+      "filename" : "amarillo-1.jpeg",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "AcompañamientoInd-2.png",
+      "filename" : "amarillo-2.jpeg",
       "idiom" : "universal",
       "scale" : "3x"
     }
