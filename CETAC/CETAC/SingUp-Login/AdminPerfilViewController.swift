@@ -10,6 +10,7 @@ import Firebase
 import FirebaseAuth
 
 class AdminPerfilViewController: UIViewController {
+    var perfilController = PerfilController()
 
     @IBOutlet weak var correoLabel: UILabel!
     @IBOutlet weak var nombreLabel: UILabel!
@@ -30,8 +31,8 @@ class AdminPerfilViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        authActua(){ (email) in
-            fetchAdmin(email: email){
+        perfilController.authActua(){ (email) in
+            self.perfilController.fetchPerfil(email: email, perfil: "Administradores"){
                 (st)in
                 self.cargar(st: st)
                 self.correoLabel.text = email

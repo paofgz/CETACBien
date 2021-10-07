@@ -10,7 +10,7 @@ import FirebaseAuth
 import Firebase
 
 class TanatologoPerfilViewController: UIViewController {
-    
+    var perfilController = PerfilController()
     
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var correoLabel: UILabel!
@@ -29,8 +29,8 @@ class TanatologoPerfilViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        authActual(){ (email) in
-            fetchTanatologo(email: email){
+        perfilController.authActua(){ (email) in
+            self.perfilController.fetchPerfil(email: email, perfil: "Tanatologo"){
                 (st)in
                 self.cargar(st: st)
                 self.correoLabel.text = email
