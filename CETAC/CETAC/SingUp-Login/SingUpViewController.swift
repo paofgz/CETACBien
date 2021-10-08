@@ -57,8 +57,8 @@ class SingUpViewController: UIViewController, UITextFieldDelegate {
     
   
     @IBAction func signUpTapped(_ sender: Any) {
-        let error = validators.validateFieldsSingUp(nombreText:nombreText, apellidoText:apellidoText,correoText:correoText,passwordText:passwordText)
-        
+        let error = validators.validateFields(nombreText:nombreText.text!, apellidoText:apellidoText.text!, correoText:correoText.text!, passwordText:passwordText.text!)
+
         if error != nil {
             showError(error!)
         }else {

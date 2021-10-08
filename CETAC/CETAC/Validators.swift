@@ -41,17 +41,17 @@ class Validators{
         return emailPred.evaluate(with: name)
     }
     
-    func validateFieldsLogin(correoText : UITextField!, passwordText : UITextField!) -> String? {
+    func validateFields(correoText : String!, passwordText : String!) -> String? {
         
-        if correoText.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-            passwordText.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
+        if correoText.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            passwordText.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
             return "Llene todos los campos"
         }
-        let cleanPass = passwordText.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let cleanPass = passwordText.trimmingCharacters(in: .whitespacesAndNewlines)
         if !isPasswordValid(cleanPass){
             return "Ponga una contraseña segura, mínimo 8 caracteres, y 1 caracter especial"
         }
-        let cleanCo = correoText.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let cleanCo = correoText.trimmingCharacters(in: .whitespacesAndNewlines)
         if !isValidEmail(cleanCo){
             return "Ponga un email correcto"
         }
@@ -59,14 +59,14 @@ class Validators{
         return nil
     }
     
-    func validateFieldsSingUp(nombreText:UITextField! , apellidoText:UITextField!, correoText:UITextField!,passwordText:UITextField!) -> String? {
-        if nombreText.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-            apellidoText.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-            correoText.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-            passwordText.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
+    func validateFields(nombreText:String! , apellidoText:String!, correoText:String!,passwordText:String!) -> String? {
+        if nombreText.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            apellidoText.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            correoText.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            passwordText.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
             return "Llene todos los campos"
         }
-        var ret = validateFieldsLogin(correoText: correoText, passwordText: passwordText)
+        let ret = validateFields(correoText: correoText, passwordText: passwordText)
         
         /*let cleanPass = passwordText.text!.trimmingCharacters(in: .whitespacesAndNewlines)
         if !isPasswordValid(cleanPass){
@@ -77,11 +77,11 @@ class Validators{
             return "Ponga un email correcto"
         }
         */
-        let cleanName = nombreText.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let cleanName = nombreText.trimmingCharacters(in: .whitespacesAndNewlines)
         if !isValidName(cleanName){
             return "Ponga un nombre válido"
         }
-        let cleanSurname = apellidoText.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+        let cleanSurname = apellidoText.trimmingCharacters(in: .whitespacesAndNewlines)
         if !isValidName(cleanSurname){
             return "Ponga un apellido válido"
         }

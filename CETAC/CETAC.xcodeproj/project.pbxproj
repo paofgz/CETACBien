@@ -30,6 +30,9 @@
 		48D29C3F26D5B9B3007FF79B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48D29C3D26D5B9B3007FF79B /* LaunchScreen.storyboard */; };
 		48DA50552705119E00745442 /* SingUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DA50542705119E00745442 /* SingUpViewController.swift */; };
 		48DA5057270511BA00745442 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DA5056270511BA00745442 /* LoginViewController.swift */; };
+		48DAC8CD2710F105005B8598 /* PerfilTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DAC8CC2710F105005B8598 /* PerfilTestCase.swift */; };
+		48DAC8CF2710F129005B8598 /* SingUpTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DAC8CE2710F129005B8598 /* SingUpTestCase.swift */; };
+		48DAC8D12710F14A005B8598 /* LoginTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DAC8D02710F14A005B8598 /* LoginTestCase.swift */; };
 		48F81A0326F59FAB000197FB /* iconos in Resources */ = {isa = PBXBuildFile; fileRef = 48F81A0226F59FAB000197FB /* iconos */; };
 		652B6A2E270DDF49007E4FD7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A2D270DDF49007E4FD7 /* Colors.swift */; };
 		652B6A30270DDF69007E4FD7 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A2F270DDF69007E4FD7 /* Usuario.swift */; };
@@ -89,6 +92,9 @@
 		48D29C4026D5B9B3007FF79B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48DA50542705119E00745442 /* SingUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpViewController.swift; sourceTree = "<group>"; };
 		48DA5056270511BA00745442 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		48DAC8CC2710F105005B8598 /* PerfilTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilTestCase.swift; sourceTree = "<group>"; };
+		48DAC8CE2710F129005B8598 /* SingUpTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpTestCase.swift; sourceTree = "<group>"; };
+		48DAC8D02710F14A005B8598 /* LoginTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTestCase.swift; sourceTree = "<group>"; };
 		48F81A0226F59FAB000197FB /* iconos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iconos; sourceTree = "<group>"; };
 		5B5B7F7EDB61D7FA45856C70 /* Pods-CETACTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CETACTests.debug.xcconfig"; path = "Target Support Files/Pods-CETACTests/Pods-CETACTests.debug.xcconfig"; sourceTree = "<group>"; };
 		652B6A2D270DDF49007E4FD7 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -138,6 +144,9 @@
 				4823AA39270FA62100DDDC25 /* CETACTests.swift */,
 				4823AA3B270FA62100DDDC25 /* Info.plist */,
 				4823AA45270FB21400DDDC25 /* ValidatorsTestCase.swift */,
+				48DAC8CC2710F105005B8598 /* PerfilTestCase.swift */,
+				48DAC8CE2710F129005B8598 /* SingUpTestCase.swift */,
+				48DAC8D02710F14A005B8598 /* LoginTestCase.swift */,
 			);
 			path = CETACTests;
 			sourceTree = "<group>";
@@ -448,8 +457,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48DAC8D12710F14A005B8598 /* LoginTestCase.swift in Sources */,
 				4823AA46270FB21400DDDC25 /* ValidatorsTestCase.swift in Sources */,
+				48DAC8CF2710F129005B8598 /* SingUpTestCase.swift in Sources */,
 				4823AA3A270FA62100DDDC25 /* CETACTests.swift in Sources */,
+				48DAC8CD2710F105005B8598 /* PerfilTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +538,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3GV9933GJ;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"${PODS_ROOT}/Firebase/Core/Sources/**",
@@ -550,6 +563,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H3GV9933GJ;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"${PODS_ROOT}/Firebase/Core/Sources/**",

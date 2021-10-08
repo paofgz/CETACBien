@@ -36,7 +36,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func loginTapped(_ sender: Any) {
         
-        let error = validators.validateFieldsLogin(correoText:correoText, passwordText: passwordText)
+        let error = validators.validateFields(correoText:correoText.text!, passwordText: passwordText.text!)
         if error != nil {
             showError(error!)
         }else {
