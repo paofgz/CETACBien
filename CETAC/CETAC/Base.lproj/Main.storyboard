@@ -2125,8 +2125,8 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                     <constraint firstAttribute="width" constant="560" id="JDs-pz-lAX"/>
                                     <constraint firstAttribute="height" constant="180" id="ecK-UK-bob"/>
                                 </constraints>
-                                <mutableString key="text"> Proceso  en  donde  las  personas  no  se  enjuician,  se  comparten  las experiencias que al mismo tiempo está siendo vivida por el resto de los participantes. Se crean lazos de  confianza,  compasión,  empatía  y  aceptación  en  un  espacio  seguro  en  donde  se  es  libre  de comunicar y dar solución ante una situación.
-</mutableString>
+                                <string key="text"> Proceso  en  donde  las  personas  no  se  enjuician,  se  comparten  las experiencias que al mismo tiempo está siendo vivida por el resto de los participantes. Se crean lazos de  confianza,  compasión,  empatía  y  aceptación  en  un  espacio  seguro  en  donde  se  es  libre  de comunicar y dar solución ante una situación.
+</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2183,8 +2183,8 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                     <constraint firstAttribute="height" constant="210" id="3x2-ih-JTW"/>
                                     <constraint firstAttribute="width" constant="560" id="9M6-Ov-W5B"/>
                                 </constraints>
-                                <mutableString key="text"> Proceso individual en donde se crea un vínculo de afecto y confianza, la persona se siente escuchada, comprendida, respetada y aceptada. Se busca resignificar su propia vida de alguna situación que está viviendo o vivió (miedos, violencia, dudas, inseguridades, bloqueos, vicios, etc.) con el fin de ayudarlos a desarrollar soluciones en su propio beneficio y vivir el aquí y el ahora.
-</mutableString>
+                                <string key="text"> Proceso individual en donde se crea un vínculo de afecto y confianza, la persona se siente escuchada, comprendida, respetada y aceptada. Se busca resignificar su propia vida de alguna situación que está viviendo o vivió (miedos, violencia, dudas, inseguridades, bloqueos, vicios, etc.) con el fin de ayudarlos a desarrollar soluciones en su propio beneficio y vivir el aquí y el ahora.
+</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -2751,7 +2751,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                     <constraint firstAttribute="width" constant="536" id="7rv-Sb-ihX"/>
                                     <constraint firstAttribute="height" constant="225" id="LoT-vX-ZRT"/>
                                 </constraints>
-                                <mutableString key="text">                                                                                                            Es una práctica que ayuda a la persona a enfocarse en el presente reconociendo que puede pasar por momentos de estrés, momentos de crisis laboral y personal, de baja autoestima y depresión.  A  través  de  herramientas  de  autoconocimiento,  autoreconocimiento  y  autocontrol podemos entrenar la mente para tener una actitud de apertura, aceptación y solución en cualquier situación de nuestra vida para un balance y dominio emocional.</mutableString>
+                                <string key="text">                                                                                                            Es una práctica que ayuda a la persona a enfocarse en el presente reconociendo que puede pasar por momentos de estrés, momentos de crisis laboral y personal, de baja autoestima y depresión.  A  través  de  herramientas  de  autoconocimiento,  autoreconocimiento  y  autocontrol podemos entrenar la mente para tener una actitud de apertura, aceptación y solución en cualquier situación de nuestra vida para un balance y dominio emocional.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

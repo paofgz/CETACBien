@@ -50,6 +50,10 @@
 		652B6A48270DE434007E4FD7 /* estadoCivilPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A47270DE434007E4FD7 /* estadoCivilPickerView.swift */; };
 		652B6A51270E14E4007E4FD7 /* Tanatologo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A50270E14E4007E4FD7 /* Tanatologo.swift */; };
 		652B6A53270E1503007E4FD7 /* TanatologoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A52270E1503007E4FD7 /* TanatologoController.swift */; };
+		659C4A4E27120C670096679B /* CerrarExpedienteTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659C4A4D27120C670096679B /* CerrarExpedienteTestCase.swift */; };
+		659C4A502712111D0096679B /* UpdateProximaSesionTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659C4A4F2712111D0096679B /* UpdateProximaSesionTestCase.swift */; };
+		659C4A54271212EE0096679B /* CrearUsusariosTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659C4A53271212EE0096679B /* CrearUsusariosTestCase.swift */; };
+		659C4A58271217810096679B /* GetUsuariosTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659C4A57271217810096679B /* GetUsuariosTestCase.swift */; };
 		DCF8254EDF6171D39ED93474 /* Pods_CETACTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DEC5B153361C3CECCD32DD0 /* Pods_CETACTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -113,6 +117,10 @@
 		652B6A47270DE434007E4FD7 /* estadoCivilPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = estadoCivilPickerView.swift; sourceTree = "<group>"; };
 		652B6A50270E14E4007E4FD7 /* Tanatologo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tanatologo.swift; sourceTree = "<group>"; };
 		652B6A52270E1503007E4FD7 /* TanatologoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanatologoController.swift; sourceTree = "<group>"; };
+		659C4A4D27120C670096679B /* CerrarExpedienteTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CerrarExpedienteTestCase.swift; sourceTree = "<group>"; };
+		659C4A4F2712111D0096679B /* UpdateProximaSesionTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProximaSesionTestCase.swift; sourceTree = "<group>"; };
+		659C4A53271212EE0096679B /* CrearUsusariosTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearUsusariosTestCase.swift; sourceTree = "<group>"; };
+		659C4A57271217810096679B /* GetUsuariosTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsuariosTestCase.swift; sourceTree = "<group>"; };
 		9BD5A2CAF36B072AAB80F4AC /* Pods-CETAC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CETAC.release.xcconfig"; path = "Target Support Files/Pods-CETAC/Pods-CETAC.release.xcconfig"; sourceTree = "<group>"; };
 		B85A41DF25D81D44DDF917DB /* Pods_CETAC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CETAC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE9AE2A54981A2671564708F /* Pods-CETACTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CETACTests.release.xcconfig"; path = "Target Support Files/Pods-CETACTests/Pods-CETACTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,6 +155,10 @@
 				48DAC8CC2710F105005B8598 /* PerfilTestCase.swift */,
 				48DAC8CE2710F129005B8598 /* SingUpTestCase.swift */,
 				48DAC8D02710F14A005B8598 /* LoginTestCase.swift */,
+				659C4A4D27120C670096679B /* CerrarExpedienteTestCase.swift */,
+				659C4A53271212EE0096679B /* CrearUsusariosTestCase.swift */,
+				659C4A4F2712111D0096679B /* UpdateProximaSesionTestCase.swift */,
+				659C4A57271217810096679B /* GetUsuariosTestCase.swift */,
 			);
 			path = CETACTests;
 			sourceTree = "<group>";
@@ -461,7 +473,11 @@
 				4823AA46270FB21400DDDC25 /* ValidatorsTestCase.swift in Sources */,
 				48DAC8CF2710F129005B8598 /* SingUpTestCase.swift in Sources */,
 				4823AA3A270FA62100DDDC25 /* CETACTests.swift in Sources */,
+				659C4A58271217810096679B /* GetUsuariosTestCase.swift in Sources */,
+				659C4A502712111D0096679B /* UpdateProximaSesionTestCase.swift in Sources */,
 				48DAC8CD2710F105005B8598 /* PerfilTestCase.swift in Sources */,
+				659C4A54271212EE0096679B /* CrearUsusariosTestCase.swift in Sources */,
+				659C4A4E27120C670096679B /* CerrarExpedienteTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
