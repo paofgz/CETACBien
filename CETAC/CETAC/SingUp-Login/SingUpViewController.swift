@@ -40,7 +40,7 @@ class SingUpViewController: UIViewController, UITextFieldDelegate {
     
     func habilitarBoton(res: Bool){
         DispatchQueue.main.async {
-            if(res != true){
+            if(res == true){
                 self.signUpButton.isEnabled = false
                 self.signUpButton.backgroundColor = UIColor(red: 150/255, green: 152/255, blue: 154/255, alpha: 0.5)
                 self.warningLabel.alpha = 1

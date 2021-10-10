@@ -9,21 +9,9 @@ import XCTest
 @testable import CETAC
 class SingUpTestCase: XCTestCase {
      var singUpController = SingUpController()
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
     
     func testSignUpNotAdmin() throws {
-        let exp = self.expectation(description: "teste")
+        let exp = self.expectation(description: "testSignUpNotAdmin")
         singUpController.dbIsAdmin(email: "john@does.com"){
             (tmp)in
             XCTAssertFalse(tmp)
@@ -34,7 +22,7 @@ class SingUpTestCase: XCTestCase {
     }
     
     func testSignUpIsAdmin() throws {
-        let exp = self.expectation(description: "teste")
+        let exp = self.expectation(description: "testSignUpIsAdmin")
         
         singUpController.dbIsAdmin(email: "jimmy@jones.con"){
             (tmp)in

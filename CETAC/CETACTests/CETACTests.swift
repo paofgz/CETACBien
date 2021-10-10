@@ -9,7 +9,7 @@ import XCTest
 
 @testable import CETAC
 
-
+///// ESTE SOLO ERA UN EJEMPLO DE PRUEBA, LUEGO HAY QUE BORRARLO 
 
 class CETACTests: XCTestCase {
     var prueba = LoginController()

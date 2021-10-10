@@ -42,7 +42,7 @@ class SingUp2ViewController: UIViewController, UITextFieldDelegate {
     
     func habilitarBoton(res: Bool){
         DispatchQueue.main.async {
-            if(res != true){
+            if(res == true){
                 self.singUpButton.isEnabled = false
                 self.singUpButton.backgroundColor = UIColor(red: 150/255, green: 152/255, blue: 154/255, alpha: 0.5)
                 self.alertLabel.alpha = 1

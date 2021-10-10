@@ -11,21 +11,8 @@ import XCTest
 class PefilTestCase: XCTestCase {
     var perfilController = PerfilController()
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
     func testFetchAdmin() throws {
-        let exp = self.expectation(description: "teste")
+        let exp = self.expectation(description: "testFetchAdmin")
         perfilController.fetchPerfil(email: "juan@gmail.com", perfil: "Administradores"){
             (tmp)in
             XCTAssertTrue(tmp == "Juan Gutierrez")
@@ -36,7 +23,7 @@ class PefilTestCase: XCTestCase {
     }
     
     func testFetchTanatologo() throws {
-        let exp = self.expectation(description: "teste")
+        let exp = self.expectation(description: "testFetchTanatologo")
         perfilController.fetchPerfil(email: "pedro@hotmail.com", perfil: "Tanatologo"){
             (tmp)in
             XCTAssertTrue(tmp == "Pedro Zárate Ocaña")

@@ -351,25 +351,9 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qUT-a2-iM6">
                                 <rect key="frame" x="130" y="225" width="550" height="630"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido tanatólogo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fR1-qZ-ME7">
-                                        <rect key="frame" x="110" y="120" width="330" height="50"/>
-                                        <color key="backgroundColor" red="0.10444407040000001" green="0.84421763819999995" blue="0.78330162859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="Jw7-09-CKA"/>
-                                            <constraint firstAttribute="width" constant="330" id="hz8-ed-kvq"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="15"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AvY-Sp-LZS">
-                                        <rect key="frame" x="235" y="280" width="59" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <rect key="frame" x="235" y="280" width="70" height="25"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -379,7 +363,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                             <constraint firstAttribute="height" constant="60" id="pm5-YC-62k"/>
                                             <constraint firstAttribute="width" constant="140" id="uQm-e8-Mtu"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -389,7 +373,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                             <constraint firstAttribute="height" constant="60" id="0Vu-xE-KmZ"/>
                                             <constraint firstAttribute="width" constant="140" id="b0a-tx-GJ5"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -414,10 +398,25 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WlC-is-1Tv">
-                                        <rect key="frame" x="235" y="400" width="59" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <rect key="frame" x="235" y="395" width="70" height="25"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Bienvenido tanatólogo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fR1-qZ-ME7">
+                                        <rect key="frame" x="85" y="120" width="380" height="50"/>
+                                        <color key="backgroundColor" red="0.10444407040000001" green="0.84421763819999995" blue="0.78330162859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Jw7-09-CKA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </label>
                                 </subviews>
                                 <constraints>
@@ -493,8 +492,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                         <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo1" translatesAutoresizingMaskIntoConstraints="NO" id="EJt-jQ-3MM">
+                                <rect key="frame" x="0.0" y="518" width="810" height="704.5"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQw-ED-beR" userLabel="angeloterapia">
-                                <rect key="frame" x="438" y="567" width="330" height="110"/>
+                                <rect key="frame" x="438" y="557" width="330" height="110"/>
                                 <color key="backgroundColor" red="0.39335453510000001" green="0.69083899260000003" blue="0.9019952416" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="330" id="1AJ-gS-Ysq"/>
@@ -504,27 +506,37 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <state key="normal" title="ANGELOTERAPIA">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="39F-GF-7fA" kind="show" id="9EF-sw-np2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xp0-MX-HnC" userLabel="aromaterapia_musicoterapia">
-                                <rect key="frame" x="42" y="717" width="330" height="110"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Xp0-MX-HnC" userLabel="aromaterapia_musicoterapia">
+                                <rect key="frame" x="42" y="707" width="330" height="110"/>
                                 <color key="backgroundColor" red="0.39335453510000001" green="0.69083899260000003" blue="0.9019952416" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="330" id="Etn-cg-CrV"/>
                                     <constraint firstAttribute="height" constant="110" id="uPJ-rY-G8g"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="AROMATERAPIA Y  MUSICOTERAPIA">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="CbD-LH-MKt" kind="show" id="Pif-cI-w9v"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j1s-ua-cyw" userLabel="biomagnetismo">
-                                <rect key="frame" x="438" y="417" width="330" height="110"/>
+                                <rect key="frame" x="438" y="407" width="330" height="110"/>
                                 <color key="backgroundColor" red="0.39335453510000001" green="0.69083899260000003" blue="0.9019952416" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="110" id="NFh-oz-NQn"/>
@@ -534,12 +546,17 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <state key="normal" title="BIOMAGNETISMO">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="pE1-CZ-DbM" kind="show" id="t3q-i0-CxZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOa-Ls-r9L" userLabel="cristaloterapia">
-                                <rect key="frame" x="42" y="417" width="330" height="110"/>
+                                <rect key="frame" x="42" y="407" width="330" height="110"/>
                                 <color key="backgroundColor" red="0.39335453510000001" green="0.69083899260000003" blue="0.9019952416" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="110" id="Qqz-Km-0fo"/>
@@ -549,12 +566,17 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <state key="normal" title="CRISTALOTERAPIA">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="jNU-4x-UYg" kind="show" id="gWw-2C-KtC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7b-io-IJR" userLabel="reiki">
-                                <rect key="frame" x="42" y="567" width="330" height="110"/>
+                                <rect key="frame" x="42" y="557" width="330" height="110"/>
                                 <color key="backgroundColor" red="0.39335453510000001" green="0.69083899260000003" blue="0.9019952416" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="110" id="bJb-NX-tTT"/>
@@ -564,62 +586,76 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <state key="normal" title="REIKI">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="U08-CC-dpm" kind="show" id="Aud-Hu-Kuj"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bn3-U5-aVt" userLabel="cama_jade">
-                                <rect key="frame" x="438" y="717" width="330" height="110"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Bn3-U5-aVt" userLabel="cama_jade">
+                                <rect key="frame" x="438" y="707" width="330" height="110"/>
                                 <color key="backgroundColor" red="0.39335453510000001" green="0.69083899260000003" blue="0.9019952416" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="330" id="VD5-cC-18l"/>
                                     <constraint firstAttribute="height" constant="110" id="apm-bL-63i"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="CAMA TÉRMICA DE JADE">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="63l-Bh-i3l" kind="show" id="ieD-U8-tIS"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ServiciosHolisticos" translatesAutoresizingMaskIntoConstraints="NO" id="viS-ev-3dy">
-                                <rect key="frame" x="144.5" y="140" width="521" height="237"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Servicios Holísticos" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Bvd-Wb-tgB">
+                                <rect key="frame" x="483" y="143" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="521" id="XD9-Sj-8lH"/>
-                                    <constraint firstAttribute="height" constant="237" id="sSl-E3-bHC"/>
+                                    <constraint firstAttribute="width" constant="240" id="Hjf-6W-KKc"/>
+                                    <constraint firstAttribute="height" constant="128" id="cT6-bp-BlQ"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ServiciosHolisticos" translatesAutoresizingMaskIntoConstraints="NO" id="viS-ev-3dy">
+                                <rect key="frame" x="64" y="130" width="360" height="237"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="360" id="AhH-nM-jQi"/>
+                                    <constraint firstAttribute="height" constant="237" id="ava-vb-pGE"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Servicios Holísticos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kz6-WV-xJM">
-                                <rect key="frame" x="300" y="75" width="210" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="210" id="Kmw-37-1dd"/>
-                                    <constraint firstAttribute="height" constant="30" id="Yhg-Nu-qa0"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5yf-6C-AcC"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="5yf-6C-AcC" firstAttribute="trailing" secondItem="Bn3-U5-aVt" secondAttribute="trailing" constant="42" id="1qc-9x-sje"/>
+                            <constraint firstAttribute="bottom" secondItem="EJt-jQ-3MM" secondAttribute="bottom" constant="-142.5" id="2u0-Bu-pb4"/>
+                            <constraint firstItem="EJt-jQ-3MM" firstAttribute="leading" secondItem="5yf-6C-AcC" secondAttribute="leading" id="3De-85-qFo"/>
                             <constraint firstItem="kOa-Ls-r9L" firstAttribute="leading" secondItem="5yf-6C-AcC" secondAttribute="leading" constant="42" id="3oP-OK-i2a"/>
+                            <constraint firstItem="viS-ev-3dy" firstAttribute="leading" secondItem="5yf-6C-AcC" secondAttribute="leading" constant="64" id="73d-lB-fsl"/>
+                            <constraint firstItem="Bvd-Wb-tgB" firstAttribute="leading" secondItem="5yf-6C-AcC" secondAttribute="leading" constant="483" id="AvQ-Me-KRY"/>
                             <constraint firstItem="Xp0-MX-HnC" firstAttribute="top" secondItem="A7b-io-IJR" secondAttribute="bottom" constant="40" id="C4Z-7r-B1L"/>
                             <constraint firstItem="kOa-Ls-r9L" firstAttribute="top" secondItem="viS-ev-3dy" secondAttribute="bottom" constant="40" id="G4q-Qm-aBP"/>
-                            <constraint firstItem="Kz6-WV-xJM" firstAttribute="centerX" secondItem="Kvv-L8-2W5" secondAttribute="centerX" id="GPD-M9-dhn"/>
-                            <constraint firstItem="viS-ev-3dy" firstAttribute="centerX" secondItem="Kvv-L8-2W5" secondAttribute="centerX" id="Jop-mH-zkg"/>
                             <constraint firstItem="vQw-ED-beR" firstAttribute="top" secondItem="j1s-ua-cyw" secondAttribute="bottom" constant="40" id="Q7Z-ZT-yG1"/>
                             <constraint firstItem="5yf-6C-AcC" firstAttribute="trailing" secondItem="vQw-ED-beR" secondAttribute="trailing" constant="42" id="S9n-qC-XwE"/>
                             <constraint firstItem="Bn3-U5-aVt" firstAttribute="top" secondItem="vQw-ED-beR" secondAttribute="bottom" constant="40" id="To5-rv-CCk"/>
+                            <constraint firstItem="Bvd-Wb-tgB" firstAttribute="top" secondItem="5yf-6C-AcC" secondAttribute="top" constant="93" id="aaS-BE-G31"/>
                             <constraint firstItem="j1s-ua-cyw" firstAttribute="top" secondItem="viS-ev-3dy" secondAttribute="bottom" constant="40" id="dGm-Dg-eNY"/>
-                            <constraint firstItem="viS-ev-3dy" firstAttribute="top" secondItem="Kz6-WV-xJM" secondAttribute="bottom" constant="35" id="din-jb-aMn"/>
                             <constraint firstItem="A7b-io-IJR" firstAttribute="top" secondItem="kOa-Ls-r9L" secondAttribute="bottom" constant="40" id="e2l-7s-m8Y"/>
-                            <constraint firstItem="Kz6-WV-xJM" firstAttribute="top" secondItem="5yf-6C-AcC" secondAttribute="top" constant="25" id="nBB-cH-i3g"/>
+                            <constraint firstItem="viS-ev-3dy" firstAttribute="top" secondItem="5yf-6C-AcC" secondAttribute="top" constant="80" id="lzz-9t-MtE"/>
                             <constraint firstItem="Xp0-MX-HnC" firstAttribute="leading" secondItem="5yf-6C-AcC" secondAttribute="leading" constant="42" id="nfw-FY-KMl"/>
                             <constraint firstItem="5yf-6C-AcC" firstAttribute="trailing" secondItem="j1s-ua-cyw" secondAttribute="trailing" constant="42" id="o0n-2w-BXs"/>
                             <constraint firstItem="A7b-io-IJR" firstAttribute="leading" secondItem="5yf-6C-AcC" secondAttribute="leading" constant="42" id="rSz-cV-NFL"/>
+                            <constraint firstItem="EJt-jQ-3MM" firstAttribute="trailing" secondItem="5yf-6C-AcC" secondAttribute="trailing" id="weA-ec-VJf"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Holisticos" image="signpost.right.fill" catalog="system" id="Cq9-lM-C5I"/>
@@ -636,41 +672,6 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                         <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRx-Qv-JJn" userLabel="acompañamiento_grupo">
-                                <rect key="frame" x="101" y="656" width="266" height="115"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="94o-a8-jEH" kind="show" id="Dmi-wM-ZYg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eza-dq-H31" userLabel="acompañamiento_individual">
-                                <rect key="frame" x="457" y="499" width="276" height="113"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="adx-If-XSK" kind="show" id="tfT-n5-fiy"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0y-Wb-OcY" userLabel="logoterapia">
-                                <rect key="frame" x="457" y="656" width="276" height="119"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="UjI-Rm-iE6" kind="show" id="kJy-8a-Vay"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iq3-vg-1JR" userLabel="tanatologia">
-                                <rect key="frame" x="101" y="499" width="266" height="112"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="H9T-su-udm" kind="show" id="Aa2-X0-EYK"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykP-yC-34Z" userLabel="mindfulness">
-                                <rect key="frame" x="217" y="818" width="376" height="110"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="w3J-vm-pGR" kind="show" id="ehD-4g-PR4"/>
-                                </connections>
-                            </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Z2-dP-RNr">
                                 <rect key="frame" x="0.0" y="0.0" width="810" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -678,17 +679,160 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                     <navigationItem title="Acompañamiento" id="DcT-V6-xQv"/>
                                 </items>
                             </navigationBar>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Acompañamiento" translatesAutoresizingMaskIntoConstraints="NO" id="dfQ-PW-Q60">
-                                <rect key="frame" x="0.0" y="25" width="810" height="1030"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo1" translatesAutoresizingMaskIntoConstraints="NO" id="cl4-IQ-Hub">
+                                <rect key="frame" x="0.0" y="517" width="810" height="704.5"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Servicios de acompañamiento" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="m28-uJ-Cqo">
+                                <rect key="frame" x="71" y="154" width="272" height="117"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="117" id="IaA-w5-VFS"/>
+                                    <constraint firstAttribute="width" constant="272" id="L3f-n9-ssx"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1cD-Xp-3dg">
+                                <rect key="frame" x="58.5" y="382" width="693" height="474"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iq3-vg-1JR" userLabel="tanatologia">
+                                        <rect key="frame" x="30" y="33" width="266" height="112"/>
+                                        <color key="backgroundColor" red="0.1956579983" green="0.70616573100000002" blue="0.92834037540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="266" id="465-Ig-98W"/>
+                                            <constraint firstAttribute="height" constant="112" id="b8R-d9-RoU"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="TANATOLOGIA">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="H9T-su-udm" kind="show" id="Aa2-X0-EYK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="TRx-Qv-JJn" userLabel="acompañamiento_grupo">
+                                        <rect key="frame" x="30" y="192" width="266" height="115"/>
+                                        <color key="backgroundColor" red="0.1956579983" green="0.70616573100000002" blue="0.92834037540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="266" id="Um1-zj-2Gw"/>
+                                            <constraint firstAttribute="height" constant="115" id="r84-i8-Oo7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="ACOMPAÑAMIENTO DE GRUPO">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="94o-a8-jEH" kind="show" id="Dmi-wM-ZYg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z0y-Wb-OcY" userLabel="logoterapia">
+                                        <rect key="frame" x="409" y="190" width="276" height="119"/>
+                                        <color key="backgroundColor" red="0.1956579983" green="0.70616573100000002" blue="0.92834037540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="276" id="Es5-px-TBC"/>
+                                            <constraint firstAttribute="height" constant="119" id="O80-1m-nI8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="LOGOTERAPIA">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="UjI-Rm-iE6" kind="show" id="kJy-8a-Vay"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykP-yC-34Z" userLabel="mindfulness">
+                                        <rect key="frame" x="158" y="356" width="376" height="110"/>
+                                        <color key="backgroundColor" red="0.1956579983" green="0.70616573100000002" blue="0.92834037540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="376" id="KwL-52-s2X"/>
+                                            <constraint firstAttribute="height" constant="110" id="nV3-dL-RZ4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="MINDFULNESS">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="w3J-vm-pGR" kind="show" id="ehD-4g-PR4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="eza-dq-H31" userLabel="acompañamiento_individual">
+                                        <rect key="frame" x="409" y="33" width="276" height="113"/>
+                                        <color key="backgroundColor" red="0.1956579983" green="0.70616573100000002" blue="0.92834037540000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="113" id="96f-yp-Luu"/>
+                                            <constraint firstAttribute="width" constant="276" id="RSp-Kz-S0d"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <state key="normal" title="ACOMPAÑAMIENTO INDIVIDUAL">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="adx-If-XSK" kind="show" id="tfT-n5-fiy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="z0y-Wb-OcY" firstAttribute="leading" secondItem="TRx-Qv-JJn" secondAttribute="trailing" constant="113" id="707-1y-BaV"/>
+                                    <constraint firstAttribute="height" constant="474" id="8ve-NJ-d4w"/>
+                                    <constraint firstAttribute="width" constant="693" id="cXw-Mq-Bu5"/>
+                                    <constraint firstItem="z0y-Wb-OcY" firstAttribute="top" secondItem="eza-dq-H31" secondAttribute="bottom" constant="44" id="f4w-XH-P3M"/>
+                                    <constraint firstItem="Iq3-vg-1JR" firstAttribute="leading" secondItem="1cD-Xp-3dg" secondAttribute="leading" constant="30" id="fDi-rq-2Qe"/>
+                                    <constraint firstItem="Iq3-vg-1JR" firstAttribute="top" secondItem="1cD-Xp-3dg" secondAttribute="top" constant="33" id="fwf-GO-OhY"/>
+                                    <constraint firstItem="ykP-yC-34Z" firstAttribute="leading" secondItem="1cD-Xp-3dg" secondAttribute="leading" constant="158" id="mSt-5n-4yh"/>
+                                    <constraint firstItem="eza-dq-H31" firstAttribute="top" secondItem="1cD-Xp-3dg" secondAttribute="top" constant="33" id="mWu-ce-9fq"/>
+                                    <constraint firstItem="TRx-Qv-JJn" firstAttribute="top" secondItem="Iq3-vg-1JR" secondAttribute="bottom" constant="47" id="qqj-j6-LTc"/>
+                                    <constraint firstItem="eza-dq-H31" firstAttribute="leading" secondItem="Iq3-vg-1JR" secondAttribute="trailing" constant="113" id="vJT-mD-rZr"/>
+                                    <constraint firstItem="TRx-Qv-JJn" firstAttribute="leading" secondItem="1cD-Xp-3dg" secondAttribute="leading" constant="30" id="veF-mn-2YN"/>
+                                    <constraint firstItem="ykP-yC-34Z" firstAttribute="top" secondItem="z0y-Wb-OcY" secondAttribute="bottom" constant="47" id="xt1-Eb-cJm"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="acompanamiento-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ana-fO-6MH">
+                                <rect key="frame" x="402" y="121" width="350" height="239"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="239" id="eYQ-Zi-KbE"/>
+                                    <constraint firstAttribute="width" constant="350" id="nzU-p2-Bon"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="R4A-Em-OV2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="R4A-Em-OV2" firstAttribute="trailing" secondItem="dfQ-PW-Q60" secondAttribute="trailing" id="66v-7E-ftq"/>
-                            <constraint firstItem="dfQ-PW-Q60" firstAttribute="top" secondItem="R4A-Em-OV2" secondAttribute="top" id="dtA-7K-oC7"/>
-                            <constraint firstItem="dfQ-PW-Q60" firstAttribute="leading" secondItem="xsP-FN-BqR" secondAttribute="leading" id="hGX-KB-cZx"/>
-                            <constraint firstAttribute="bottom" secondItem="dfQ-PW-Q60" secondAttribute="bottom" id="pMZ-Mq-adF"/>
+                            <constraint firstItem="Ana-fO-6MH" firstAttribute="top" secondItem="R4A-Em-OV2" secondAttribute="top" constant="71" id="5yu-br-9Fc"/>
+                            <constraint firstItem="1cD-Xp-3dg" firstAttribute="centerX" secondItem="xsP-FN-BqR" secondAttribute="centerX" id="LVg-9Y-naL"/>
+                            <constraint firstItem="Ana-fO-6MH" firstAttribute="leading" secondItem="m28-uJ-Cqo" secondAttribute="trailing" constant="59" id="X42-hZ-ufP"/>
+                            <constraint firstItem="cl4-IQ-Hub" firstAttribute="top" secondItem="R4A-Em-OV2" secondAttribute="top" constant="467" id="c82-Rd-w14"/>
+                            <constraint firstAttribute="bottom" secondItem="cl4-IQ-Hub" secondAttribute="bottom" constant="-141.5" id="dtw-9F-B3t"/>
+                            <constraint firstItem="m28-uJ-Cqo" firstAttribute="leading" secondItem="R4A-Em-OV2" secondAttribute="leading" constant="71" id="e40-Mn-6uX"/>
+                            <constraint firstItem="m28-uJ-Cqo" firstAttribute="top" secondItem="R4A-Em-OV2" secondAttribute="top" constant="104" id="lKg-C8-H4G"/>
+                            <constraint firstItem="1cD-Xp-3dg" firstAttribute="top" secondItem="Ana-fO-6MH" secondAttribute="bottom" constant="22" id="lwG-OJ-bUV"/>
+                            <constraint firstItem="cl4-IQ-Hub" firstAttribute="leading" secondItem="R4A-Em-OV2" secondAttribute="leading" id="rd6-eC-m2Z"/>
+                            <constraint firstItem="cl4-IQ-Hub" firstAttribute="trailing" secondItem="R4A-Em-OV2" secondAttribute="trailing" id="wQc-5g-ZlM"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Acompañamiento" image="circles.hexagongrid" catalog="system" id="HZN-xC-Cmu"/>
@@ -1195,7 +1339,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                             <constraint firstAttribute="width" constant="350" id="dbs-ON-li4"/>
                                             <constraint firstAttribute="height" constant="50" id="p4r-FC-3dX"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                         <userDefinedRuntimeAttributes>
@@ -1204,13 +1348,13 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osE-dg-Uo1">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osE-dg-Uo1">
                                         <rect key="frame" x="40" y="260" width="140" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="7ub-XH-Qca"/>
                                             <constraint firstAttribute="width" constant="140" id="ryu-am-iTV"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1220,13 +1364,13 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                             <constraint firstAttribute="width" constant="140" id="6iv-IL-lWt"/>
                                             <constraint firstAttribute="height" constant="60" id="FyU-Qa-Z3t"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHm-7f-OQp">
-                                        <rect key="frame" x="235" y="400" width="59" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <rect key="frame" x="235" y="395" width="70" height="25"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1251,8 +1395,8 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plU-kJ-fyR">
-                                        <rect key="frame" x="235" y="280" width="59" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <rect key="frame" x="235" y="280" width="70" height="25"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1497,9 +1641,9 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                     <constraint firstItem="jkl-ZE-TYi" firstAttribute="top" secondItem="ySf-qO-TTk" secondAttribute="bottom" constant="40" id="qSP-A6-Hwp"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Creación administrador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jbn-OF-maM">
-                                <rect key="frame" x="279.5" y="91" width="251" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creación administrador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jbn-OF-maM">
+                                <rect key="frame" x="256.5" y="90" width="297" height="25"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1514,9 +1658,10 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="Egz-5j-Ix8" firstAttribute="centerX" secondItem="Jbn-OF-maM" secondAttribute="centerX" id="0ad-Gw-QTp"/>
                             <constraint firstItem="pOd-gO-OJO" firstAttribute="leading" secondItem="Sf2-Ut-DvR" secondAttribute="leading" id="1ZV-KU-VXS"/>
+                            <constraint firstItem="Jbn-OF-maM" firstAttribute="centerX" secondItem="Jfy-6Z-m3t" secondAttribute="centerX" id="8sV-5h-l6t"/>
                             <constraint firstItem="Egz-5j-Ix8" firstAttribute="top" secondItem="Sf2-Ut-DvR" secondAttribute="top" constant="190" id="IL0-4l-fSt"/>
+                            <constraint firstItem="Jbn-OF-maM" firstAttribute="top" secondItem="Sf2-Ut-DvR" secondAttribute="top" constant="90" id="Ojc-mZ-u5j"/>
                             <constraint firstItem="pOd-gO-OJO" firstAttribute="top" secondItem="Sf2-Ut-DvR" secondAttribute="top" constant="700" id="St7-JD-sRU"/>
                             <constraint firstItem="Egz-5j-Ix8" firstAttribute="centerY" secondItem="Jfy-6Z-m3t" secondAttribute="centerY" id="aff-d7-aQf"/>
                             <constraint firstItem="Sf2-Ut-DvR" firstAttribute="bottom" secondItem="gvZ-Ck-T59" secondAttribute="bottom" constant="50" id="cSQ-2o-yfW"/>
@@ -1629,7 +1774,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHg-IP-OYl">
                                 <rect key="frame" x="95" y="350" width="620" height="500"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sou-6Q-IBG" userLabel="intervencionServicio">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Sou-6Q-IBG" userLabel="intervencionServicio">
                                         <rect key="frame" x="30" y="295" width="220" height="155"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <constraints>
@@ -1649,7 +1794,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                             <segue destination="qwZ-mP-qLD" kind="show" id="SaE-BK-9Bg"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIZ-nS-AcC" userLabel="coutasRecuperacion">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="eIZ-nS-AcC" userLabel="coutasRecuperacion">
                                         <rect key="frame" x="370" y="295" width="220" height="155"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <constraints>
@@ -1723,10 +1868,9 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                     <constraint firstAttribute="trailing" secondItem="ALN-Hb-1tb" secondAttribute="trailing" constant="30" id="pAo-m5-8Li"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reporte indicadores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhd-XX-Rn7">
-                                <rect key="frame" x="276" y="69" width="258" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reporte indicadores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhd-XX-Rn7">
+                                <rect key="frame" x="253.5" y="69" width="303" height="30"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1734,6 +1878,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                         <viewLayoutGuide key="safeArea" id="nh7-Ma-4lG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="qhd-XX-Rn7" firstAttribute="centerX" secondItem="hAF-1E-muH" secondAttribute="centerX" id="2av-xI-4OG"/>
                             <constraint firstItem="eHg-IP-OYl" firstAttribute="top" secondItem="CS8-hb-4ov" secondAttribute="bottom" constant="60" id="3tV-eF-CxP"/>
                             <constraint firstItem="sYk-Cx-wp5" firstAttribute="top" secondItem="nh7-Ma-4lG" secondAttribute="top" constant="700" id="7vK-45-07k"/>
                             <constraint firstItem="sYk-Cx-wp5" firstAttribute="leading" secondItem="nh7-Ma-4lG" secondAttribute="leading" id="Mj5-EK-wzu"/>
@@ -1741,6 +1886,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                             <constraint firstItem="CS8-hb-4ov" firstAttribute="centerX" secondItem="hAF-1E-muH" secondAttribute="centerX" id="f2n-2C-CGp"/>
                             <constraint firstItem="sYk-Cx-wp5" firstAttribute="bottom" secondItem="nh7-Ma-4lG" secondAttribute="bottom" id="hi6-F8-5ml"/>
                             <constraint firstItem="sYk-Cx-wp5" firstAttribute="trailing" secondItem="nh7-Ma-4lG" secondAttribute="trailing" id="mxf-1P-AkW"/>
+                            <constraint firstItem="qhd-XX-Rn7" firstAttribute="top" secondItem="nh7-Ma-4lG" secondAttribute="top" constant="69" id="xID-6a-gfM"/>
                             <constraint firstItem="nh7-Ma-4lG" firstAttribute="bottom" secondItem="eHg-IP-OYl" secondAttribute="bottom" constant="180" id="xbg-mt-A0O"/>
                         </constraints>
                     </view>
@@ -1763,10 +1909,10 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <gestureRecognizers/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fVF-Sb-qWZ">
-                                <rect key="frame" x="130" y="190" width="550" height="700"/>
+                                <rect key="frame" x="130" y="152.5" width="550" height="775"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pD7-xR-aaV">
-                                        <rect key="frame" x="50" y="40" width="230" height="45"/>
+                                        <rect key="frame" x="50" y="20" width="230" height="45"/>
                                         <color key="backgroundColor" red="0.31764705879999999" green="0.82772797350000005" blue="0.79578685760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="0.31582835320000002" green="0.82772797350000005" blue="0.79578685760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -1782,7 +1928,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Apellido" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGn-NU-czD">
-                                        <rect key="frame" x="50" y="190" width="230" height="45"/>
+                                        <rect key="frame" x="50" y="155" width="230" height="45"/>
                                         <color key="backgroundColor" red="0.31764705879999999" green="0.82772797350000005" blue="0.79578685760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="0.31582835320000002" green="0.82772797350000005" blue="0.79578685760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -1799,7 +1945,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icl-Sy-IPc">
-                                        <rect key="frame" x="50" y="340" width="230" height="45"/>
+                                        <rect key="frame" x="50" y="290" width="230" height="45"/>
                                         <color key="backgroundColor" red="0.31764705879999999" green="0.82772797350000005" blue="0.79578685760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="0.31582835320000002" green="0.82772797350000005" blue="0.79578685760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -1816,7 +1962,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vb2-Z6-0OB">
-                                        <rect key="frame" x="50" y="110" width="400" height="40"/>
+                                        <rect key="frame" x="50" y="85" width="400" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Hgp-vC-CC3"/>
                                             <constraint firstAttribute="width" constant="400" id="VxQ-sM-WMH"/>
@@ -1825,7 +1971,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qMD-oA-FRr">
-                                        <rect key="frame" x="50" y="260" width="400" height="40"/>
+                                        <rect key="frame" x="50" y="220" width="400" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="5dQ-Sb-cMZ"/>
                                             <constraint firstAttribute="width" constant="400" id="p5N-B7-GdW"/>
@@ -1834,7 +1980,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="udS-hF-P1D">
-                                        <rect key="frame" x="50" y="410" width="400" height="40"/>
+                                        <rect key="frame" x="50" y="355" width="400" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Lcy-F9-357"/>
                                             <constraint firstAttribute="width" constant="400" id="e3Z-0r-mTJ"/>
@@ -1843,7 +1989,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="emailAddress"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EtL-fw-FL5">
-                                        <rect key="frame" x="50" y="560" width="400" height="40"/>
+                                        <rect key="frame" x="50" y="490" width="400" height="40"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="6lc-mi-TX4"/>
                                             <constraint firstAttribute="width" constant="400" id="FQT-vD-L37"/>
@@ -1852,12 +1998,29 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contraseña" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pd-JU-7v1">
-                                        <rect key="frame" x="50" y="490" width="300" height="45"/>
+                                        <rect key="frame" x="50" y="425" width="230" height="45"/>
                                         <color key="backgroundColor" red="0.31764705879999999" green="0.82772797350000005" blue="0.79578685760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="0.31582835320000002" green="0.82772797350000005" blue="0.79578685760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="300" id="2fQ-Oe-TXw"/>
                                             <constraint firstAttribute="height" constant="45" id="GuC-c3-58w"/>
+                                            <constraint firstAttribute="width" constant="230" id="Wcv-Wt-ptS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Experiencia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iz6-Vz-YoQ">
+                                        <rect key="frame" x="50" y="560" width="230" height="45"/>
+                                        <color key="backgroundColor" red="0.31764705879999999" green="0.82772797350000005" blue="0.79578685760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="tintColor" red="0.31582835320000002" green="0.82772797350000005" blue="0.79578685760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="2pH-W5-o8x"/>
+                                            <constraint firstAttribute="width" constant="230" id="3Ti-Tr-fMd"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <nil key="textColor"/>
@@ -1869,11 +2032,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JGk-vX-ZOi">
-                                        <rect key="frame" x="175" y="645" width="200" height="50"/>
+                                        <rect key="frame" x="175" y="724" width="200" height="50"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="aV1-tg-t8r"/>
-                                            <constraint firstAttribute="height" constant="50" id="oCL-8Z-STS"/>
+                                            <constraint firstAttribute="height" constant="50" id="dta-tb-Pye"/>
+                                            <constraint firstAttribute="width" constant="200" id="m13-gz-usa"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Crear cuenta">
@@ -1888,34 +2051,46 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                             <action selector="signUpTapped:" destination="gO1-HA-Jpw" eventType="touchUpInside" id="Aaz-AD-Tgm"/>
                                         </connections>
                                     </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4G4-kc-Y4d">
+                                        <rect key="frame" x="50" y="625" width="400" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="400" id="XUT-MR-5nj"/>
+                                            <constraint firstAttribute="height" constant="40" id="XbS-0w-hC9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                                    </textField>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="JGk-vX-ZOi" firstAttribute="centerX" secondItem="fVF-Sb-qWZ" secondAttribute="centerX" id="0FI-go-ev9"/>
-                                    <constraint firstItem="EtL-fw-FL5" firstAttribute="top" secondItem="4pd-JU-7v1" secondAttribute="bottom" constant="25" id="3He-eA-oUY"/>
-                                    <constraint firstItem="udS-hF-P1D" firstAttribute="top" secondItem="icl-Sy-IPc" secondAttribute="bottom" constant="25" id="3mz-7J-s9R"/>
-                                    <constraint firstAttribute="bottom" secondItem="JGk-vX-ZOi" secondAttribute="bottom" constant="5" id="3x9-ad-9zw"/>
-                                    <constraint firstAttribute="height" constant="700" id="4oj-2f-PlB"/>
+                                    <constraint firstItem="EtL-fw-FL5" firstAttribute="top" secondItem="4pd-JU-7v1" secondAttribute="bottom" constant="20" id="3He-eA-oUY"/>
+                                    <constraint firstItem="udS-hF-P1D" firstAttribute="top" secondItem="icl-Sy-IPc" secondAttribute="bottom" constant="20" id="3mz-7J-s9R"/>
                                     <constraint firstItem="vb2-Z6-0OB" firstAttribute="leading" secondItem="fVF-Sb-qWZ" secondAttribute="leading" constant="50" id="Bau-PH-vUE"/>
+                                    <constraint firstAttribute="bottom" secondItem="JGk-vX-ZOi" secondAttribute="bottom" constant="1" id="Eex-I3-rYc"/>
+                                    <constraint firstItem="Iz6-Vz-YoQ" firstAttribute="top" secondItem="EtL-fw-FL5" secondAttribute="bottom" constant="30" id="HD6-es-64j"/>
                                     <constraint firstItem="qMD-oA-FRr" firstAttribute="leading" secondItem="fVF-Sb-qWZ" secondAttribute="leading" constant="50" id="HUY-JT-GhP"/>
                                     <constraint firstItem="pD7-xR-aaV" firstAttribute="leading" secondItem="fVF-Sb-qWZ" secondAttribute="leading" constant="50" id="Hz0-Hw-aAE"/>
                                     <constraint firstItem="UGn-NU-czD" firstAttribute="leading" secondItem="fVF-Sb-qWZ" secondAttribute="leading" constant="50" id="Osy-jm-s9f"/>
-                                    <constraint firstItem="vb2-Z6-0OB" firstAttribute="top" secondItem="pD7-xR-aaV" secondAttribute="bottom" constant="25" id="OwY-ty-zTi"/>
+                                    <constraint firstItem="vb2-Z6-0OB" firstAttribute="top" secondItem="pD7-xR-aaV" secondAttribute="bottom" constant="20" id="OwY-ty-zTi"/>
+                                    <constraint firstItem="Iz6-Vz-YoQ" firstAttribute="leading" secondItem="fVF-Sb-qWZ" secondAttribute="leading" constant="50" id="TVx-wm-6zJ"/>
                                     <constraint firstItem="4pd-JU-7v1" firstAttribute="leading" secondItem="fVF-Sb-qWZ" secondAttribute="leading" constant="50" id="UZ6-qx-Qpr"/>
-                                    <constraint firstItem="pD7-xR-aaV" firstAttribute="top" secondItem="fVF-Sb-qWZ" secondAttribute="top" constant="40" id="Zdm-4d-ecH"/>
+                                    <constraint firstItem="pD7-xR-aaV" firstAttribute="top" secondItem="fVF-Sb-qWZ" secondAttribute="top" constant="20" id="Zdm-4d-ecH"/>
                                     <constraint firstItem="EtL-fw-FL5" firstAttribute="leading" secondItem="fVF-Sb-qWZ" secondAttribute="leading" constant="50" id="fSj-Vz-f6M"/>
                                     <constraint firstItem="icl-Sy-IPc" firstAttribute="leading" secondItem="fVF-Sb-qWZ" secondAttribute="leading" constant="50" id="iC9-Aw-7wy"/>
                                     <constraint firstAttribute="width" constant="550" id="lQ8-KQ-MZc"/>
                                     <constraint firstItem="udS-hF-P1D" firstAttribute="leading" secondItem="fVF-Sb-qWZ" secondAttribute="leading" constant="50" id="loQ-5X-fPb"/>
-                                    <constraint firstItem="icl-Sy-IPc" firstAttribute="top" secondItem="qMD-oA-FRr" secondAttribute="bottom" constant="40" id="nEc-My-K6h"/>
-                                    <constraint firstItem="UGn-NU-czD" firstAttribute="top" secondItem="vb2-Z6-0OB" secondAttribute="bottom" constant="40" id="nip-77-fMB"/>
-                                    <constraint firstItem="4pd-JU-7v1" firstAttribute="top" secondItem="udS-hF-P1D" secondAttribute="bottom" constant="40" id="qDf-L3-GDg"/>
-                                    <constraint firstItem="qMD-oA-FRr" firstAttribute="top" secondItem="UGn-NU-czD" secondAttribute="bottom" constant="25" id="sPe-O1-yG3"/>
+                                    <constraint firstItem="icl-Sy-IPc" firstAttribute="top" secondItem="qMD-oA-FRr" secondAttribute="bottom" constant="30" id="nEc-My-K6h"/>
+                                    <constraint firstItem="UGn-NU-czD" firstAttribute="top" secondItem="vb2-Z6-0OB" secondAttribute="bottom" constant="30" id="nip-77-fMB"/>
+                                    <constraint firstItem="4pd-JU-7v1" firstAttribute="top" secondItem="udS-hF-P1D" secondAttribute="bottom" constant="30" id="qDf-L3-GDg"/>
+                                    <constraint firstItem="4G4-kc-Y4d" firstAttribute="top" secondItem="Iz6-Vz-YoQ" secondAttribute="bottom" constant="20" id="qjl-fh-G9J"/>
+                                    <constraint firstItem="qMD-oA-FRr" firstAttribute="top" secondItem="UGn-NU-czD" secondAttribute="bottom" constant="20" id="sPe-O1-yG3"/>
+                                    <constraint firstItem="4G4-kc-Y4d" firstAttribute="leading" secondItem="fVF-Sb-qWZ" secondAttribute="leading" constant="50" id="syj-pX-0ap"/>
+                                    <constraint firstItem="JGk-vX-ZOi" firstAttribute="centerX" secondItem="fVF-Sb-qWZ" secondAttribute="centerX" id="waZ-Js-9pj"/>
+                                    <constraint firstAttribute="height" constant="775" id="ypX-6t-fwD"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Creación tanatólogo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRB-da-IQk">
-                                <rect key="frame" x="267" y="89" width="226" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creación tanatólogo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRB-da-IQk">
+                                <rect key="frame" x="279" y="90" width="252" height="25"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1934,6 +2109,8 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                             <constraint firstItem="q0G-q8-chQ" firstAttribute="bottom" secondItem="wER-Qj-NIA" secondAttribute="bottom" constant="50" id="Dv2-fo-FwB"/>
                             <constraint firstItem="fVF-Sb-qWZ" firstAttribute="centerX" secondItem="ipq-QC-fPE" secondAttribute="centerX" id="NXc-0g-cLd"/>
                             <constraint firstItem="fVF-Sb-qWZ" firstAttribute="centerY" secondItem="ipq-QC-fPE" secondAttribute="centerY" id="Oz6-OP-FoI"/>
+                            <constraint firstItem="bRB-da-IQk" firstAttribute="centerX" secondItem="ipq-QC-fPE" secondAttribute="centerX" id="Sar-ZU-LHE"/>
+                            <constraint firstItem="bRB-da-IQk" firstAttribute="top" secondItem="q0G-q8-chQ" secondAttribute="top" constant="90" id="ZgH-Yb-ERv"/>
                             <constraint firstItem="5s6-oT-bSo" firstAttribute="leading" secondItem="q0G-q8-chQ" secondAttribute="leading" id="aqQ-oA-Uqk"/>
                             <constraint firstItem="5s6-oT-bSo" firstAttribute="bottom" secondItem="q0G-q8-chQ" secondAttribute="bottom" id="hij-Ec-Rez"/>
                             <constraint firstItem="5s6-oT-bSo" firstAttribute="top" secondItem="q0G-q8-chQ" secondAttribute="top" constant="700" id="wxO-W4-o6C"/>
@@ -2024,65 +2201,210 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                         <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Contacto" translatesAutoresizingMaskIntoConstraints="NO" id="lpV-24-AsK">
-                                <rect key="frame" x="0.0" y="50" width="810" height="1030"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo1" translatesAutoresizingMaskIntoConstraints="NO" id="lpV-24-AsK">
+                                <rect key="frame" x="0.0" y="700" width="810" height="374"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoCETAC" translatesAutoresizingMaskIntoConstraints="NO" id="9VD-O9-3Af">
-                                <rect key="frame" x="132" y="110" width="546" height="236"/>
+                                <rect key="frame" x="132" y="58" width="546" height="236"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="236" id="Vkg-aa-yjx"/>
-                                    <constraint firstAttribute="width" constant="546" id="ald-BF-Jbi"/>
+                                    <constraint firstAttribute="width" constant="546" id="qhW-WP-iEP"/>
+                                    <constraint firstAttribute="height" constant="236" id="xRO-Ef-N31"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teléfonos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYc-KM-dnf">
-                                <rect key="frame" x="95" y="416" width="113" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correo electrónico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugT-bG-R0Y">
-                                <rect key="frame" x="473" y="416" width="216.5" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cE3-9M-m9Y">
-                                <rect key="frame" x="140" y="456" width="197" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="197" id="H9M-Pg-AcR"/>
-                                    <constraint firstAttribute="height" constant="128" id="P8G-aI-7E7"/>
-                                </constraints>
-                                <string key="text">55 8465 5928
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Ee-fr-O5h">
+                                <rect key="frame" x="70.5" y="322" width="669" height="267"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TdE-Ki-tfQ">
+                                        <rect key="frame" x="324" y="15" width="3" height="185"/>
+                                        <color key="backgroundColor" red="0.75875407459999999" green="0.87285679579999997" blue="0.37572741510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="185" id="gKL-mV-bz3"/>
+                                            <constraint firstAttribute="width" constant="3" id="mXJ-LS-hQ2"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MFn-HU-eqc">
+                                        <rect key="frame" x="23" y="238" width="625" height="3"/>
+                                        <color key="backgroundColor" red="0.75875407459999999" green="0.87285679579999997" blue="0.37572741510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="3" id="PLc-dh-xV1"/>
+                                            <constraint firstAttribute="width" constant="625" id="tyh-mt-VB5"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teléfonos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qYc-KM-dnf">
+                                        <rect key="frame" x="23" y="21" width="113" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" red="0.14799073339999999" green="0.60269510749999999" blue="0.79933303590000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone-call" translatesAutoresizingMaskIntoConstraints="NO" id="B9V-r1-rzC">
+                                        <rect key="frame" x="8" y="85" width="68" height="75"/>
+                                        <color key="tintColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="68" id="0SQ-7m-Cft"/>
+                                            <constraint firstAttribute="height" constant="75" id="uAZ-4a-HES"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correo electrónico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugT-bG-R0Y">
+                                        <rect key="frame" x="409" y="21" width="216.5" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="216.5" id="TlQ-SR-2AM"/>
+                                            <constraint firstAttribute="height" constant="30" id="U3c-W8-hnC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" red="0.14799073339999999" green="0.60269510749999999" blue="0.79933303590000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="email" translatesAutoresizingMaskIntoConstraints="NO" id="P3i-kx-F5j">
+                                        <rect key="frame" x="363" y="91" width="74" height="63"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="74" id="aQD-Sq-nIt"/>
+                                            <constraint firstAttribute="height" constant="63" id="sMP-5i-X2x"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="contacto@cetac.mx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjz-nR-O7V">
+                                        <rect key="frame" x="454" y="107" width="215" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="215" id="LYS-oh-bfK"/>
+                                            <constraint firstAttribute="height" constant="30" id="MuA-EY-YTY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cE3-9M-m9Y">
+                                        <rect key="frame" x="110" y="72" width="197" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="G0B-OZ-ij1"/>
+                                            <constraint firstAttribute="width" constant="197" id="IMZ-WJ-ku3"/>
+                                        </constraints>
+                                        <string key="text">55 8465 5928
 55 3551 1441
 55 6347 0779</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="contacto@cetac.mx" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wjz-nR-O7V">
-                                <rect key="frame" x="522" y="481" width="215" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="wjz-nR-O7V" firstAttribute="top" secondItem="ugT-bG-R0Y" secondAttribute="bottom" constant="56" id="3tz-PA-e8h"/>
+                                    <constraint firstItem="ugT-bG-R0Y" firstAttribute="top" secondItem="8Ee-fr-O5h" secondAttribute="top" constant="21" id="94e-Ww-3Je"/>
+                                    <constraint firstItem="B9V-r1-rzC" firstAttribute="top" secondItem="qYc-KM-dnf" secondAttribute="bottom" constant="34" id="EDh-Ow-pi9"/>
+                                    <constraint firstItem="ugT-bG-R0Y" firstAttribute="leading" secondItem="TdE-Ki-tfQ" secondAttribute="trailing" constant="82" id="EiV-DU-aZD"/>
+                                    <constraint firstItem="cE3-9M-m9Y" firstAttribute="top" secondItem="qYc-KM-dnf" secondAttribute="bottom" constant="21" id="ITO-Fh-zPN"/>
+                                    <constraint firstItem="P3i-kx-F5j" firstAttribute="top" secondItem="ugT-bG-R0Y" secondAttribute="bottom" constant="40" id="LIG-g0-3Vc"/>
+                                    <constraint firstItem="MFn-HU-eqc" firstAttribute="leading" secondItem="8Ee-fr-O5h" secondAttribute="leading" constant="23" id="TCH-ob-OkO"/>
+                                    <constraint firstItem="P3i-kx-F5j" firstAttribute="leading" secondItem="TdE-Ki-tfQ" secondAttribute="trailing" constant="36" id="a9H-VT-vKK"/>
+                                    <constraint firstItem="qYc-KM-dnf" firstAttribute="top" secondItem="8Ee-fr-O5h" secondAttribute="top" constant="21" id="a9O-Ad-baM"/>
+                                    <constraint firstItem="TdE-Ki-tfQ" firstAttribute="top" secondItem="8Ee-fr-O5h" secondAttribute="top" constant="15" id="cGH-se-Qpf"/>
+                                    <constraint firstItem="MFn-HU-eqc" firstAttribute="top" secondItem="cE3-9M-m9Y" secondAttribute="bottom" constant="38" id="dqe-oi-G4h"/>
+                                    <constraint firstItem="B9V-r1-rzC" firstAttribute="leading" secondItem="8Ee-fr-O5h" secondAttribute="leading" constant="8" id="ggg-Gc-H3v"/>
+                                    <constraint firstItem="wjz-nR-O7V" firstAttribute="leading" secondItem="P3i-kx-F5j" secondAttribute="trailing" constant="17" id="igA-J3-odW"/>
+                                    <constraint firstItem="TdE-Ki-tfQ" firstAttribute="leading" secondItem="cE3-9M-m9Y" secondAttribute="trailing" constant="17" id="kRj-oT-OGK"/>
+                                    <constraint firstItem="qYc-KM-dnf" firstAttribute="leading" secondItem="8Ee-fr-O5h" secondAttribute="leading" constant="23" id="o6l-ZU-Q1D"/>
+                                    <constraint firstAttribute="height" constant="267" id="ptG-WS-EOj"/>
+                                    <constraint firstItem="cE3-9M-m9Y" firstAttribute="leading" secondItem="B9V-r1-rzC" secondAttribute="trailing" constant="34" id="v33-1r-tqe"/>
+                                    <constraint firstAttribute="width" constant="669" id="yxF-S8-Ein"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i4Y-Dn-KGT">
+                                <rect key="frame" x="74" y="631" width="662" height="201"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visítanos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XXX-Ax-gsq">
+                                        <rect key="frame" x="25" y="8" width="109" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <color key="textColor" red="0.14799073339999999" green="0.60269510749999999" blue="0.79933303590000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="Igg-pM-HgC">
+                                        <rect key="frame" x="0.0" y="87" width="66" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="66" id="EaO-Lr-SJD"/>
+                                            <constraint firstAttribute="height" constant="64" id="MrL-rG-sn2"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CKA-4Q-V0U">
+                                        <rect key="frame" x="45" y="55" width="285" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="0Zy-TR-iew"/>
+                                            <constraint firstAttribute="width" constant="285" id="UJm-je-MrL"/>
+                                        </constraints>
+                                        <string key="text">
+Iztapalapa (Calle La Venta)
+Calz. Ermita Iztapalapa 1119 4A,
+Barrio San Lucas, C.P. 09000
+CDMX, Iztapalapa</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bsW-LW-Wc9">
+                                        <rect key="frame" x="409" y="55" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="ZVM-M5-HTL"/>
+                                            <constraint firstAttribute="width" constant="240" id="aIh-DG-n8u"/>
+                                        </constraints>
+                                        <string key="text">
+Viaducto Miguel Alemán
+ 892 int 102, Nápoles,
+Alcaldía Benito Juárez,
+C.P. 03810</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consultorio 2:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hei-b2-rkf">
+                                        <rect key="frame" x="467" y="55" width="124" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="ZVb-LM-RrS">
+                                        <rect key="frame" x="361" y="77" width="66" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="66" id="0qA-iU-f01"/>
+                                            <constraint firstAttribute="height" constant="64" id="Tze-80-Zba"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Consultorio 1:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gz-Pf-irj">
+                                        <rect key="frame" x="126" y="55" width="122" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="CKA-4Q-V0U" firstAttribute="leading" secondItem="i4Y-Dn-KGT" secondAttribute="leading" constant="45" id="6HJ-no-WH7"/>
+                                    <constraint firstItem="bsW-LW-Wc9" firstAttribute="leading" secondItem="CKA-4Q-V0U" secondAttribute="trailing" constant="79" id="H48-fY-jfp"/>
+                                    <constraint firstItem="XXX-Ax-gsq" firstAttribute="leading" secondItem="i4Y-Dn-KGT" secondAttribute="leading" constant="25" id="Hm7-so-YSa"/>
+                                    <constraint firstItem="9gz-Pf-irj" firstAttribute="leading" secondItem="i4Y-Dn-KGT" secondAttribute="leading" constant="126" id="Ipv-w4-3po"/>
+                                    <constraint firstAttribute="width" constant="662" id="LMb-Bq-5zJ"/>
+                                    <constraint firstItem="bsW-LW-Wc9" firstAttribute="top" secondItem="i4Y-Dn-KGT" secondAttribute="top" constant="55" id="M4B-FI-wUD"/>
+                                    <constraint firstItem="Igg-pM-HgC" firstAttribute="leading" secondItem="i4Y-Dn-KGT" secondAttribute="leading" id="RgW-Ct-i0C"/>
+                                    <constraint firstItem="9gz-Pf-irj" firstAttribute="top" secondItem="XXX-Ax-gsq" secondAttribute="bottom" constant="17" id="eoe-E7-q7W"/>
+                                    <constraint firstItem="ZVb-LM-RrS" firstAttribute="leading" secondItem="CKA-4Q-V0U" secondAttribute="trailing" constant="31" id="gER-e1-9fH"/>
+                                    <constraint firstItem="CKA-4Q-V0U" firstAttribute="top" secondItem="XXX-Ax-gsq" secondAttribute="bottom" constant="17" id="kld-09-Qe3"/>
+                                    <constraint firstItem="hei-b2-rkf" firstAttribute="leading" secondItem="CKA-4Q-V0U" secondAttribute="trailing" constant="137" id="nX5-Hu-Dyp"/>
+                                    <constraint firstItem="hei-b2-rkf" firstAttribute="top" secondItem="i4Y-Dn-KGT" secondAttribute="top" constant="55" id="oor-NA-b53"/>
+                                    <constraint firstAttribute="height" constant="201" id="rfZ-22-G8C"/>
+                                    <constraint firstItem="Igg-pM-HgC" firstAttribute="top" secondItem="XXX-Ax-gsq" secondAttribute="bottom" constant="49" id="toc-Hr-W7z"/>
+                                    <constraint firstItem="ZVb-LM-RrS" firstAttribute="top" secondItem="i4Y-Dn-KGT" secondAttribute="top" constant="77" id="vIC-PL-toA"/>
+                                    <constraint firstItem="XXX-Ax-gsq" firstAttribute="top" secondItem="i4Y-Dn-KGT" secondAttribute="top" constant="8" id="xMd-3a-7kg"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Cpn-yC-pwW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ugT-bG-R0Y" firstAttribute="leading" secondItem="qYc-KM-dnf" secondAttribute="trailing" constant="265" id="1tJ-N4-UU6"/>
-                            <constraint firstItem="9VD-O9-3Af" firstAttribute="centerX" secondItem="D3K-5h-IIh" secondAttribute="centerX" id="CPz-7a-iad"/>
-                            <constraint firstItem="cE3-9M-m9Y" firstAttribute="top" secondItem="qYc-KM-dnf" secondAttribute="bottom" constant="10" id="HS7-Zr-0Kg"/>
-                            <constraint firstItem="lpV-24-AsK" firstAttribute="top" secondItem="Cpn-yC-pwW" secondAttribute="top" id="MPX-ZI-lsk"/>
-                            <constraint firstItem="qYc-KM-dnf" firstAttribute="leading" secondItem="Cpn-yC-pwW" secondAttribute="leading" constant="95" id="TKi-H4-gEn"/>
-                            <constraint firstItem="Cpn-yC-pwW" firstAttribute="trailing" secondItem="lpV-24-AsK" secondAttribute="trailing" id="ZGc-PS-zZn"/>
-                            <constraint firstItem="wjz-nR-O7V" firstAttribute="leading" secondItem="cE3-9M-m9Y" secondAttribute="trailing" constant="185" id="ezQ-0Y-XfW"/>
-                            <constraint firstItem="wjz-nR-O7V" firstAttribute="top" secondItem="ugT-bG-R0Y" secondAttribute="bottom" constant="35" id="hW6-ug-Ohv"/>
-                            <constraint firstItem="9VD-O9-3Af" firstAttribute="top" secondItem="Cpn-yC-pwW" secondAttribute="top" constant="60" id="lTa-AW-s7H"/>
-                            <constraint firstItem="qYc-KM-dnf" firstAttribute="top" secondItem="9VD-O9-3Af" secondAttribute="bottom" constant="70" id="nqk-II-C1u"/>
-                            <constraint firstItem="cE3-9M-m9Y" firstAttribute="leading" secondItem="Cpn-yC-pwW" secondAttribute="leading" constant="140" id="tP6-Dn-c5D"/>
-                            <constraint firstItem="ugT-bG-R0Y" firstAttribute="top" secondItem="9VD-O9-3Af" secondAttribute="bottom" constant="70" id="tyi-xB-P8Z"/>
-                            <constraint firstItem="Cpn-yC-pwW" firstAttribute="bottom" secondItem="lpV-24-AsK" secondAttribute="bottom" id="wrG-R0-SZJ"/>
-                            <constraint firstItem="lpV-24-AsK" firstAttribute="leading" secondItem="Cpn-yC-pwW" secondAttribute="leading" id="yag-Hf-qtz"/>
+                            <constraint firstItem="lpV-24-AsK" firstAttribute="trailing" secondItem="Cpn-yC-pwW" secondAttribute="trailing" id="HXa-5S-bf7"/>
+                            <constraint firstItem="i4Y-Dn-KGT" firstAttribute="centerX" secondItem="D3K-5h-IIh" secondAttribute="centerX" id="IRu-3V-9Fz"/>
+                            <constraint firstItem="9VD-O9-3Af" firstAttribute="top" secondItem="Cpn-yC-pwW" secondAttribute="top" constant="8" id="NLq-kw-j3m"/>
+                            <constraint firstItem="8Ee-fr-O5h" firstAttribute="top" secondItem="9VD-O9-3Af" secondAttribute="bottom" constant="28" id="Oxi-PS-27G"/>
+                            <constraint firstItem="lpV-24-AsK" firstAttribute="leading" secondItem="Cpn-yC-pwW" secondAttribute="leading" id="QeH-el-B2L"/>
+                            <constraint firstItem="lpV-24-AsK" firstAttribute="top" secondItem="D3K-5h-IIh" secondAttribute="top" constant="700" id="cHQ-lS-TWL"/>
+                            <constraint firstItem="Cpn-yC-pwW" firstAttribute="bottom" secondItem="lpV-24-AsK" secondAttribute="bottom" constant="6" id="dRE-Xk-gDe"/>
+                            <constraint firstItem="8Ee-fr-O5h" firstAttribute="centerX" secondItem="D3K-5h-IIh" secondAttribute="centerX" id="lAb-en-y7C"/>
+                            <constraint firstItem="i4Y-Dn-KGT" firstAttribute="top" secondItem="8Ee-fr-O5h" secondAttribute="bottom" constant="42" id="n4N-W4-8gX"/>
+                            <constraint firstItem="9VD-O9-3Af" firstAttribute="leading" secondItem="Cpn-yC-pwW" secondAttribute="leading" constant="132" id="yub-Gv-Kp3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Contacto" id="KRy-QH-gw0"/>
@@ -2110,6 +2432,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Acompañamiento_grupal" translatesAutoresizingMaskIntoConstraints="NO" id="0C4-Ab-cWH">
                                 <rect key="frame" x="20" y="262" width="770" height="537"/>
@@ -2130,6 +2457,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XiW-S9-VWW"/>
@@ -2168,6 +2500,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AcompañamientoIndividual" translatesAutoresizingMaskIntoConstraints="NO" id="3Yl-qG-FeB">
                                 <rect key="frame" x="20" y="252" width="770" height="537"/>
@@ -2188,6 +2525,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TvG-rC-slj"/>
@@ -2226,6 +2568,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="f0D-GO-61G">
                                 <rect key="frame" x="181" y="252" width="448" height="173"/>
@@ -2238,6 +2585,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Angeloterapia-1" translatesAutoresizingMaskIntoConstraints="NO" id="Y9n-6u-2GT">
                                 <rect key="frame" x="60" y="475" width="690" height="491"/>
@@ -2284,6 +2636,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Musicoterapia" translatesAutoresizingMaskIntoConstraints="NO" id="4cE-y1-aUo">
                                 <rect key="frame" x="60.5" y="517" width="689" height="491"/>
@@ -2303,6 +2660,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="VN7-ex-wb5"/>
@@ -2341,6 +2703,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Pav-ob-a77">
                                 <rect key="frame" x="137" y="252" width="536" height="150"/>
@@ -2353,6 +2720,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Biomagnetismo-1" translatesAutoresizingMaskIntoConstraints="NO" id="9Ci-5y-QUM">
                                 <rect key="frame" x="20" y="452" width="770" height="539"/>
@@ -2398,6 +2770,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4s7-vc-6Em">
                                 <rect key="frame" x="181" y="252" width="448" height="173"/>
@@ -2410,6 +2787,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brisas_ambientales-1" translatesAutoresizingMaskIntoConstraints="NO" id="WIL-vb-VQc">
                                 <rect key="frame" x="38" y="510" width="734" height="495"/>
@@ -2455,6 +2837,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FloresDeBach" translatesAutoresizingMaskIntoConstraints="NO" id="fsD-Tk-OQ1">
                                 <rect key="frame" x="48" y="531" width="714" height="466"/>
@@ -2474,6 +2861,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="OeC-Ak-sfp"/>
@@ -2512,6 +2904,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tkC-xU-Qd4">
                                 <rect key="frame" x="137" y="268" width="536" height="180"/>
@@ -2524,6 +2921,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cama_jade" translatesAutoresizingMaskIntoConstraints="NO" id="zac-qo-7Fn">
                                 <rect key="frame" x="20" y="483" width="770" height="520"/>
@@ -2569,6 +2971,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YSc-Na-9gk">
                                 <rect key="frame" x="137" y="252" width="536" height="202"/>
@@ -2581,6 +2988,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cristaloterapia-1" translatesAutoresizingMaskIntoConstraints="NO" id="xT9-gy-9yh">
                                 <rect key="frame" x="20" y="504" width="770" height="548"/>
@@ -2626,6 +3038,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Uso-9A-aYI">
                                 <rect key="frame" x="135" y="818" width="541" height="189"/>
@@ -2636,6 +3053,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logoterapia-1" translatesAutoresizingMaskIntoConstraints="NO" id="LF5-iK-Bhu">
                                 <rect key="frame" x="50" y="272" width="710" height="461"/>
@@ -2679,6 +3101,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tanatologia" translatesAutoresizingMaskIntoConstraints="NO" id="Otk-1P-HRq">
                                 <rect key="frame" x="20" y="278" width="770" height="475"/>
@@ -2698,6 +3125,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="akW-zC-265"/>
@@ -2736,6 +3168,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mindfulness" translatesAutoresizingMaskIntoConstraints="NO" id="Xub-oU-XxY">
                                 <rect key="frame" x="20" y="258" width="770" height="500"/>
@@ -2755,6 +3192,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cnZ-lh-zoL"/>
@@ -2793,6 +3235,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yg0-YA-nhd">
                                 <rect key="frame" x="137" y="288" width="536" height="130"/>
@@ -2805,6 +3252,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Reiki" translatesAutoresizingMaskIntoConstraints="NO" id="q2p-rH-XfS">
                                 <rect key="frame" x="20" y="458" width="770" height="565"/>
@@ -2839,71 +3291,86 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                         <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo1" translatesAutoresizingMaskIntoConstraints="NO" id="4qD-dE-ZMd">
+                                <rect key="frame" x="0.0" y="521" width="810" height="704.5"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OpZ-6X-eZk" userLabel="brisas_ambientales">
-                                <rect key="frame" x="470" y="495" width="260" height="150"/>
+                                <rect key="frame" x="464" y="521" width="260" height="150"/>
                                 <color key="backgroundColor" red="0.39335453510000001" green="0.69083899260000003" blue="0.9019952416" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="260" id="HYy-8K-idq"/>
-                                    <constraint firstAttribute="height" constant="150" id="Hzr-fF-h7Y"/>
+                                    <constraint firstAttribute="width" constant="260" id="6yb-cF-4wF"/>
+                                    <constraint firstAttribute="height" constant="150" id="ubg-xx-O3V"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="BRISAS AMBIENTALES">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="ffF-Jl-BOz" kind="show" id="vV0-C8-esr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRt-sf-a2S" userLabel="flores_bach">
-                                <rect key="frame" x="85" y="495" width="260" height="150"/>
+                                <rect key="frame" x="87" y="521" width="260" height="150"/>
                                 <color key="backgroundColor" red="0.39335453510000001" green="0.69083899260000003" blue="0.9019952416" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="260" id="8QJ-kL-Bcs"/>
-                                    <constraint firstAttribute="height" constant="150" id="Up0-FW-1W9"/>
+                                    <constraint firstAttribute="height" constant="150" id="pEK-8K-8fp"/>
+                                    <constraint firstAttribute="width" constant="260" id="qAM-Py-7uC"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="FLORES DE BACH">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <segue destination="fju-nU-WDf" kind="show" id="Rrd-i0-gi7"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alternativo-1" translatesAutoresizingMaskIntoConstraints="NO" id="lqc-UR-rCi">
-                                <rect key="frame" x="20" y="130" width="367" height="240"/>
+                                <rect key="frame" x="221.5" y="182" width="367" height="274"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="a5H-fe-6Js"/>
-                                    <constraint firstAttribute="width" constant="367" id="m9c-eb-9BO"/>
+                                    <constraint firstAttribute="height" constant="274" id="2Tj-4R-d39"/>
+                                    <constraint firstAttribute="width" constant="367" id="bDx-5S-ncd"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Alternativo-2" translatesAutoresizingMaskIntoConstraints="NO" id="N3w-2o-6rE">
-                                <rect key="frame" x="204" y="730" width="402" height="211"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Xoo-mS-zTz">
-                                <rect key="frame" x="363" y="130" width="427" height="240"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Alternativo-2" translatesAutoresizingMaskIntoConstraints="NO" id="N3w-2o-6rE">
+                                <rect key="frame" x="174" y="708" width="500" height="250"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="Jjn-tA-dXE"/>
-                                    <constraint firstAttribute="width" constant="427" id="sKM-K5-HiT"/>
+                                    <constraint firstAttribute="width" constant="500" id="Jvj-Ac-cZh"/>
+                                    <constraint firstAttribute="height" constant="250" id="bG6-Pt-47f"/>
                                 </constraints>
-                                <string key="text">Es un vinculo de afecto y confianza en donde la persona se siente escuchada, comprendida, respetada, y aceptada acorde a su necesidad de resignificar su propia vida de alguna situación de alguna situación en crisis que está viviendo o ha vivido con el fin de ayudarlos a desarollar soluciones para lograr una mejor funcionalidad en su propio beneficio y vivir el aqui y el ahora</string>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Herramientas alternativas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTB-us-e55">
+                                <rect key="frame" x="212.5" y="111" width="385.5" height="30"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pUU-JC-J35"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="pUU-JC-J35" firstAttribute="trailing" secondItem="OpZ-6X-eZk" secondAttribute="trailing" constant="80" id="AAM-BL-Vbn"/>
-                            <constraint firstItem="pUU-JC-J35" firstAttribute="trailing" secondItem="Xoo-mS-zTz" secondAttribute="trailing" constant="20" id="Aec-xX-uxv"/>
-                            <constraint firstItem="lqc-UR-rCi" firstAttribute="top" secondItem="pUU-JC-J35" secondAttribute="top" constant="80" id="Lqy-JN-RNI"/>
-                            <constraint firstItem="Xoo-mS-zTz" firstAttribute="top" secondItem="pUU-JC-J35" secondAttribute="top" constant="80" id="Usf-Vf-QOl"/>
-                            <constraint firstItem="aRt-sf-a2S" firstAttribute="leading" secondItem="pUU-JC-J35" secondAttribute="leading" constant="85" id="bNO-hI-pc0"/>
-                            <constraint firstItem="aRt-sf-a2S" firstAttribute="top" secondItem="lqc-UR-rCi" secondAttribute="bottom" constant="125" id="dUE-7P-1mT"/>
-                            <constraint firstItem="OpZ-6X-eZk" firstAttribute="top" secondItem="Xoo-mS-zTz" secondAttribute="bottom" constant="125" id="qyU-y5-oph"/>
-                            <constraint firstItem="lqc-UR-rCi" firstAttribute="leading" secondItem="pUU-JC-J35" secondAttribute="leading" constant="20" id="tWq-Vx-di4"/>
+                            <constraint firstItem="aRt-sf-a2S" firstAttribute="top" secondItem="lqc-UR-rCi" secondAttribute="bottom" constant="65" id="7KR-lZ-OG6"/>
+                            <constraint firstItem="N3w-2o-6rE" firstAttribute="leading" secondItem="pUU-JC-J35" secondAttribute="leading" constant="174" id="BAY-w0-i1i"/>
+                            <constraint firstItem="N3w-2o-6rE" firstAttribute="top" secondItem="OpZ-6X-eZk" secondAttribute="bottom" constant="37" id="M4W-TQ-YZn"/>
+                            <constraint firstItem="OpZ-6X-eZk" firstAttribute="top" secondItem="lqc-UR-rCi" secondAttribute="bottom" constant="65" id="NOv-ue-C3r"/>
+                            <constraint firstItem="NTB-us-e55" firstAttribute="centerX" secondItem="Xc9-v5-HSd" secondAttribute="centerX" id="R49-Rx-QjL"/>
+                            <constraint firstItem="lqc-UR-rCi" firstAttribute="centerX" secondItem="Xc9-v5-HSd" secondAttribute="centerX" id="TBO-Zv-G9V"/>
+                            <constraint firstItem="aRt-sf-a2S" firstAttribute="leading" secondItem="pUU-JC-J35" secondAttribute="leading" constant="87" id="WYb-d8-Sdm"/>
+                            <constraint firstItem="OpZ-6X-eZk" firstAttribute="leading" secondItem="aRt-sf-a2S" secondAttribute="trailing" constant="117" id="bOp-9l-PZp"/>
+                            <constraint firstItem="4qD-dE-ZMd" firstAttribute="leading" secondItem="pUU-JC-J35" secondAttribute="leading" id="kcV-Rs-tuv"/>
+                            <constraint firstItem="4qD-dE-ZMd" firstAttribute="trailing" secondItem="pUU-JC-J35" secondAttribute="trailing" id="n7R-0d-nOy"/>
+                            <constraint firstAttribute="bottom" secondItem="4qD-dE-ZMd" secondAttribute="bottom" constant="-145.5" id="sFs-lN-1Ww"/>
+                            <constraint firstItem="NTB-us-e55" firstAttribute="top" secondItem="pUU-JC-J35" secondAttribute="top" constant="61" id="tg5-Su-sLH"/>
+                            <constraint firstItem="lqc-UR-rCi" firstAttribute="top" secondItem="NTB-us-e55" secondAttribute="bottom" constant="41" id="udF-E3-6EQ"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Alternativas" image="circle.grid.3x3" catalog="system" id="yO0-5H-YOY"/>
@@ -4430,7 +4897,6 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
         </scene>
     </scenes>
     <resources>
-        <image name="Acompañamiento" width="1028" height="1370"/>
         <image name="AcompañamientoIndividual" width="471" height="338"/>
         <image name="Acompañamiento_grupal" width="215" height="151"/>
         <image name="Alternativo-1" width="83" height="71"/>
@@ -4439,7 +4905,6 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
         <image name="Biomagnetismo-1" width="478" height="364"/>
         <image name="Brisas_ambientales-1" width="472" height="371"/>
         <image name="Cama_jade" width="229" height="158.5"/>
-        <image name="Contacto" width="514" height="701"/>
         <image name="Cristaloterapia-1" width="503" height="356"/>
         <image name="Cuota_recuperacion" width="514" height="685"/>
         <image name="DetalleSesionAdmin" width="513" height="683"/>
@@ -4459,17 +4924,21 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
         <image name="Usuarios_atendidos" width="513" height="685"/>
         <image name="Valores-1" width="652" height="394"/>
         <image name="Visión" width="638" height="283"/>
+        <image name="acompanamiento-1" width="608" height="470"/>
         <image name="circle.grid.3x3" catalog="system" width="128" height="110"/>
         <image name="circles.hexagongrid" catalog="system" width="128" height="112"/>
+        <image name="email" width="256" height="256"/>
         <image name="eye" catalog="system" width="128" height="81"/>
         <image name="eyeglasses" catalog="system" width="128" height="54"/>
         <image name="fondo1" width="1777" height="704.5"/>
         <image name="line.horizontal.star.fill.line.horizontal" catalog="system" width="128" height="92"/>
+        <image name="location" width="256" height="256"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="person.badge.plus" catalog="system" width="128" height="124"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="person.fill.badge.plus" catalog="system" width="128" height="124"/>
+        <image name="phone-call" width="256" height="256"/>
         <image name="signpost.right.fill" catalog="system" width="128" height="118"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <image name="text.book.closed" catalog="system" width="115" height="128"/>
