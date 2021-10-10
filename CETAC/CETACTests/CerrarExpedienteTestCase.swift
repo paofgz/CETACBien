@@ -39,7 +39,7 @@ class CerrarExpedienteTestCase: XCTestCase {
     }
     
     func testCerrarExpedienteWrong() throws {
-        let exp = self.expectation(description: "test to close the user record")
+        let exp = self.expectation(description: "test to close the user record wrong")
         usuarioControlador.updateStatus(usuarioId: "gx4v8HdbuG2Ugoc2nT", status: 0){ (result) in
             switch result{
             case .success(let res):

@@ -39,7 +39,7 @@ class UpdateProximaSesionTestCase: XCTestCase {
     }
     
     func testUpdateProximaSesionWrong() throws {
-        let exp = self.expectation(description: "test to update next sesion")
+        let exp = self.expectation(description: "test to update next sesion wrong")
         usuarioControlador.updateProxSes(usuarioId: "gx4v8HdbuG2Ugoc2nT", proxSes: "20-10-2021 18:30"){ (result) in
             switch result{
             case .success(let res):

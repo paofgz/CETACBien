@@ -39,7 +39,7 @@ class GetUsuariosTestCase: XCTestCase {
     }
     
     func testGetUsuariosWrong() throws {
-        let exp = self.expectation(description: "test to get all users")
+        let exp = self.expectation(description: "test to get all users wrong")
         usuarioControlador.fetchUsuarios(){ (result) in
             switch result{
             case .success(let res):

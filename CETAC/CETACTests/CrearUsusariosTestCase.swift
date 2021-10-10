@@ -41,7 +41,7 @@ class CrearUsusariosTestCase: XCTestCase {
     }
     
     func testCerrarExpedienteWrong() throws {
-        let exp = self.expectation(description: "test to create a user")
+        let exp = self.expectation(description: "test to create a user wrong")
         let newUser = Usuario(fecha: "09-10-2021 13:12", idTanatologo: "jess@miller.com", nombre: "", ocupacion: "Estudiante", religion: "Ateo", procedencia: "Latino", domicilio: "Ciudad de México", telefonoDeCasa: "5546378273", celular: "55342234", estadoCivil: "Solterx", edadPareja: 20 , sexoPareja: "Mujer", numeroDeHijos: 0, edadesHijos: "", sexoHijos: "", referido: "Juan", motivo: "Motivo", identificacionDeRespuesta: "Respuesta", EKR: "EKR", status: 1, proximaSesion: "20-10-2021 13:00")
         usuarioControlador.insertUsuario(nuevoUsuario: newUser){ (result) in
             switch result{
