@@ -25,7 +25,7 @@ class CrearSesionesTestCase: XCTestCase {
     }
 
     func testCrearSesion() throws {
-        let exp = self.expectation(description: "teste")
+        let exp = self.expectation(description: "test to CrearSesion")
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = DateFormatter.Style.long
         dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"

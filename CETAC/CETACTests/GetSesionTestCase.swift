@@ -25,7 +25,7 @@ class GetSesionTestCase: XCTestCase {
     }
 
     func testGetSesiones() throws {
-        let exp = self.expectation(description: "teste")
+        let exp = self.expectation(description: "testGetSesiones")
         sesionControlador.fetchSesiones("123") {
             (result)in
             switch result{
@@ -39,7 +39,7 @@ class GetSesionTestCase: XCTestCase {
     }
     
     func testGetSesionWrong() throws {
-        let exp = self.expectation(description: "teste")
+        let exp = self.expectation(description: "testGetSesionesWrong")
         sesionControlador.fetchSesiones("123"){ (result) in
             switch result{
             case .success(let res):
