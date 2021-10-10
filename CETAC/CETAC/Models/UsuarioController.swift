@@ -34,7 +34,7 @@ class UsuarioController{
 
     func insertUsuario(nuevoUsuario:Usuario, completion: @escaping (Result<String, Error>) -> Void){
         if nuevoUsuario.nombre == "" {
-            print("El ususario debe tener un nombre")
+            print("El usuario debe tener un nombre")
             completion(.success("El ususario debe tener un nombre"))
         }
         var ref: DocumentReference? = nil

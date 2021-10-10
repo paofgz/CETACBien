@@ -25,7 +25,7 @@ class GetUsuariosTestCase: XCTestCase {
     }
 
     func testGetUsuarios() throws {
-        let exp = self.expectation(description: "teste")
+        let exp = self.expectation(description: "test to get all users")
         usuarioControlador.fetchUsuarios() {
             (result)in
             switch result{
@@ -39,7 +39,7 @@ class GetUsuariosTestCase: XCTestCase {
     }
     
     func testGetUsuariosWrong() throws {
-        let exp = self.expectation(description: "teste")
+        let exp = self.expectation(description: "test to get all users")
         usuarioControlador.fetchUsuarios(){ (result) in
             switch result{
             case .success(let res):

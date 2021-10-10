@@ -26,7 +26,11 @@ class CrearSesionesTestCase: XCTestCase {
 
     func testCrearSesion() throws {
         let exp = self.expectation(description: "teste")
-        let newSesion = Sesion(fecha:"", herramienta: "Contención", tipoDeIntervencion: "Tanatología", evaluacionSesion:"Bien", servicio: "Servicio de acompañamiento", cuotaDeRecuperacion: 0.0, cerrarExpediente: true)
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = DateFormatter.Style.long
+        dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
+        let newDate = Date()
+        let newSesion = Sesion(fecha: newDate, herramienta: "Contención", tipoDeIntervencion: "Tanatología", evaluacionSesion:"Bien", servicio: "Servicio de acompañamiento", cuotaDeRecuperacion: 0.0, cerrarExpediente: true)
         SesionControlador.insertSesion(idUsuario: "123", nuevaSesion:newSesion){
             (result)in
             switch result{

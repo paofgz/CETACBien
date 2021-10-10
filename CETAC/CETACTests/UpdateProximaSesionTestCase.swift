@@ -24,8 +24,8 @@ class UpdateProximaSesionTestCase: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
-    func testCerrarExpediente() throws {
-        let exp = self.expectation(description: "teste")
+    func testUpdateProximaSesion() throws {
+        let exp = self.expectation(description: "test to update next sesion")
         usuarioControlador.updateProxSes(usuarioId: "gx4v8HdbuG2Ugoc2nThK", proxSes: "20-10-2021 18:30") {
             (result)in
             switch result{
@@ -38,8 +38,8 @@ class UpdateProximaSesionTestCase: XCTestCase {
         self.waitForExpectations(timeout: 5.0)
     }
     
-    func testCerrarExpedienteWrong() throws {
-        let exp = self.expectation(description: "teste")
+    func testUpdateProximaSesionWrong() throws {
+        let exp = self.expectation(description: "test to update next sesion")
         usuarioControlador.updateProxSes(usuarioId: "gx4v8HdbuG2Ugoc2nT", proxSes: "20-10-2021 18:30"){ (result) in
             switch result{
             case .success(let res):
