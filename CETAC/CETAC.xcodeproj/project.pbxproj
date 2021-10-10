@@ -10,6 +10,7 @@
 		153E16C81561D04153BF4EE3 /* Pods_CETAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85A41DF25D81D44DDF917DB /* Pods_CETAC.framework */; };
 		3E8C3680270E10520028F832 /* SeguimientoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C367F270E10520028F832 /* SeguimientoViewController.swift */; };
 		3E8C36822712872C0028F832 /* GetSesionTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C36812712872C0028F832 /* GetSesionTestCase.swift */; };
+		3E8C36882712C5AE0028F832 /* CrearSesionesTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C36872712C5AE0028F832 /* CrearSesionesTestCase.swift */; };
 		481EC14C27092A2500987AE1 /* SingUp2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481EC14B27092A2500987AE1 /* SingUp2ViewController.swift */; };
 		4823AA3A270FA62100DDDC25 /* CETACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823AA39270FA62100DDDC25 /* CETACTests.swift */; };
 		4823AA42270FAE6700DDDC25 /* PerfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823AA41270FAE6700DDDC25 /* PerfilController.swift */; };
@@ -73,6 +74,7 @@
 		3DEC5B153361C3CECCD32DD0 /* Pods_CETACTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CETACTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E8C367F270E10520028F832 /* SeguimientoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeguimientoViewController.swift; sourceTree = "<group>"; };
 		3E8C36812712872C0028F832 /* GetSesionTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSesionTestCase.swift; sourceTree = "<group>"; };
+		3E8C36872712C5AE0028F832 /* CrearSesionesTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearSesionesTestCase.swift; sourceTree = "<group>"; };
 		481EC14B27092A2500987AE1 /* SingUp2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUp2ViewController.swift; sourceTree = "<group>"; };
 		4823AA37270FA62000DDDC25 /* CETACTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CETACTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4823AA39270FA62100DDDC25 /* CETACTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CETACTests.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 				659C4A4F2712111D0096679B /* UpdateProximaSesionTestCase.swift */,
 				659C4A57271217810096679B /* GetUsuariosTestCase.swift */,
 				3E8C36812712872C0028F832 /* GetSesionTestCase.swift */,
+				3E8C36872712C5AE0028F832 /* CrearSesionesTestCase.swift */,
 			);
 			path = CETACTests;
 			sourceTree = "<group>";
@@ -481,6 +484,7 @@
 				48DAC8CD2710F105005B8598 /* PerfilTestCase.swift in Sources */,
 				3E8C36822712872C0028F832 /* GetSesionTestCase.swift in Sources */,
 				659C4A54271212EE0096679B /* CrearUsusariosTestCase.swift in Sources */,
+				3E8C36882712C5AE0028F832 /* CrearSesionesTestCase.swift in Sources */,
 				659C4A4E27120C670096679B /* CerrarExpedienteTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

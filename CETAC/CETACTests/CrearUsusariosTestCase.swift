@@ -46,7 +46,7 @@ class CrearUsusariosTestCase: XCTestCase {
         usuarioControlador.insertUsuario(nuevoUsuario: newUser){ (result) in
             switch result{
             case .success(let res):
-                XCTAssertEqual(res, "El ususario debe tener un nombre")
+                XCTAssertEqual(res, "El usuario debe tener un nombre")
             case .failure(let err): XCTAssertNil(err)
             }
             exp.fulfill()
