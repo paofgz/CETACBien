@@ -849,84 +849,56 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                         <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="fondo1" translatesAutoresizingMaskIntoConstraints="NO" id="kSW-Pk-SsZ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo1" translatesAutoresizingMaskIntoConstraints="NO" id="kSW-Pk-SsZ">
                                 <rect key="frame" x="0.0" y="750" width="810" height="330"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="5Nn-41-XaZ">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="5Nn-41-XaZ">
                                 <rect key="frame" x="5" y="170" width="645" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="645" id="gyV-Ka-Ts2"/>
-                                    <constraint firstAttribute="height" constant="190" id="zQj-Xy-672"/>
-                                </constraints>
                                 <string key="text">Acompañar, guiar y encauzar a personas, pacientes con alguna enfermedad y a sus familiares a través de la tanatología mejorando su estado emocional, físico, psicológico y espiritual logrando reencuentren un sentido a la vida; asimismo proporcionar un servicio de ambulancia para traslados, asumiendo nuestro compromiso y calidad humana con cada uno de ellos.</string>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Visión" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uja-VT-NRA">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Visión" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uja-VT-NRA">
                                 <rect key="frame" x="70" y="605" width="275" height="65"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="Lmd-Z0-Ni1"/>
-                                    <constraint firstAttribute="width" constant="275" id="jSu-tq-hZD"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                 <color key="textColor" red="0.39335453510000001" green="0.69083899260000003" blue="0.9019952416" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="j1L-n7-3FX">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="j1L-n7-3FX">
                                 <rect key="frame" x="5" y="678" width="604" height="135"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="135" id="DbW-qn-wX8"/>
-                                    <constraint firstAttribute="width" constant="604" id="dDh-hs-Fg9"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Ser la mejor opción en el servicio en tanatología y traslado en ambulancia en la Ciudad de México ampliando nuestros servicios en el interior de la República Mexicana asumiendo nuestro compromiso de ofrecer beneficios a las personas con calidez humana.</string>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Misión" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gzq-rp-37e">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Misión" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gzq-rp-37e">
                                 <rect key="frame" x="70" y="110" width="275" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="JSp-aU-8So"/>
-                                    <constraint firstAttribute="width" constant="275" id="i0J-dD-Nbe"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                 <color key="textColor" red="0.39335453510000001" green="0.69083899260000003" blue="0.9019952416" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Misión" translatesAutoresizingMaskIntoConstraints="NO" id="UfO-3u-RVb">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Misión" translatesAutoresizingMaskIntoConstraints="NO" id="UfO-3u-RVb">
                                 <rect key="frame" x="424" y="370" width="366" height="231"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="231" id="FfM-bH-MQS"/>
-                                    <constraint firstAttribute="width" constant="366" id="NwA-af-Zr2"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Visión" translatesAutoresizingMaskIntoConstraints="NO" id="4v9-IC-Ccy">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Visión" translatesAutoresizingMaskIntoConstraints="NO" id="4v9-IC-Ccy">
                                 <rect key="frame" x="422" y="813" width="368" height="204"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="368" id="RCw-FL-rge"/>
-                                    <constraint firstAttribute="height" constant="204" id="a0S-VW-4qu"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="b7k-ii-tg5"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="kSW-Pk-SsZ" firstAttribute="top" secondItem="b7k-ii-tg5" secondAttribute="top" constant="700" id="63t-2O-l3f"/>
-                            <constraint firstItem="j1L-n7-3FX" firstAttribute="top" secondItem="Uja-VT-NRA" secondAttribute="bottom" constant="8" id="6QR-wl-osb"/>
-                            <constraint firstItem="5Nn-41-XaZ" firstAttribute="leading" secondItem="b7k-ii-tg5" secondAttribute="leading" constant="5" id="6xE-Q3-9rx"/>
-                            <constraint firstAttribute="bottom" secondItem="kSW-Pk-SsZ" secondAttribute="bottom" id="E7M-4f-Pyd"/>
-                            <constraint firstItem="Uja-VT-NRA" firstAttribute="leading" secondItem="b7k-ii-tg5" secondAttribute="leading" constant="70" id="GTk-g7-7If"/>
-                            <constraint firstItem="5Nn-41-XaZ" firstAttribute="top" secondItem="Gzq-rp-37e" secondAttribute="bottom" constant="20" id="IDh-Uw-I2L"/>
-                            <constraint firstItem="j1L-n7-3FX" firstAttribute="leading" secondItem="b7k-ii-tg5" secondAttribute="leading" constant="5" id="Orh-cH-71k"/>
-                            <constraint firstItem="4v9-IC-Ccy" firstAttribute="top" secondItem="j1L-n7-3FX" secondAttribute="bottom" id="Ptv-vm-sz3"/>
-                            <constraint firstItem="Gzq-rp-37e" firstAttribute="top" secondItem="b7k-ii-tg5" secondAttribute="top" constant="60" id="Q6U-nk-4hn"/>
-                            <constraint firstItem="UfO-3u-RVb" firstAttribute="top" secondItem="5Nn-41-XaZ" secondAttribute="bottom" constant="10" id="R3H-mH-R3m"/>
-                            <constraint firstItem="b7k-ii-tg5" firstAttribute="trailing" secondItem="4v9-IC-Ccy" secondAttribute="trailing" constant="20" id="e49-Fk-CtF"/>
-                            <constraint firstItem="b7k-ii-tg5" firstAttribute="trailing" secondItem="UfO-3u-RVb" secondAttribute="trailing" constant="20" id="eKM-yw-aeN"/>
-                            <constraint firstItem="Gzq-rp-37e" firstAttribute="leading" secondItem="b7k-ii-tg5" secondAttribute="leading" constant="70" id="hpg-Me-iLy"/>
-                            <constraint firstItem="Uja-VT-NRA" firstAttribute="top" secondItem="5Nn-41-XaZ" secondAttribute="bottom" constant="245" id="lG9-OZ-Uqn"/>
+                            <constraint firstItem="kSW-Pk-SsZ" firstAttribute="leading" secondItem="b7k-ii-tg5" secondAttribute="leading" id="1Wi-i6-9ES"/>
+                            <constraint firstItem="kSW-Pk-SsZ" firstAttribute="trailing" secondItem="b7k-ii-tg5" secondAttribute="trailing" id="5l5-l0-0pJ"/>
+                            <constraint firstItem="kSW-Pk-SsZ" firstAttribute="top" secondItem="b7k-ii-tg5" secondAttribute="top" constant="700" id="urF-NM-9FX"/>
+                            <constraint firstAttribute="bottom" secondItem="kSW-Pk-SsZ" secondAttribute="bottom" id="xNS-kX-izZ"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Mision" image="magnifyingglass" catalog="system" id="QHd-Ce-S34"/>
@@ -2438,7 +2410,7 @@ C.P. 03810</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Acompañamiento_grupal" translatesAutoresizingMaskIntoConstraints="NO" id="0C4-Ab-cWH">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grupal1" translatesAutoresizingMaskIntoConstraints="NO" id="0C4-Ab-cWH">
                                 <rect key="frame" x="20" y="262" width="770" height="537"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="770" id="GXQ-Dh-bVv"/>
@@ -2506,7 +2478,7 @@ C.P. 03810</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AcompañamientoIndividual" translatesAutoresizingMaskIntoConstraints="NO" id="3Yl-qG-FeB">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="individual1" translatesAutoresizingMaskIntoConstraints="NO" id="3Yl-qG-FeB">
                                 <rect key="frame" x="20" y="252" width="770" height="537"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="770" id="tIe-Dt-cjb"/>
@@ -2591,7 +2563,7 @@ C.P. 03810</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Angeloterapia-1" translatesAutoresizingMaskIntoConstraints="NO" id="Y9n-6u-2GT">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="angeloterapia1" translatesAutoresizingMaskIntoConstraints="NO" id="Y9n-6u-2GT">
                                 <rect key="frame" x="60" y="475" width="690" height="491"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="491" id="B8X-ep-Vav"/>
@@ -2642,7 +2614,7 @@ C.P. 03810</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Musicoterapia" translatesAutoresizingMaskIntoConstraints="NO" id="4cE-y1-aUo">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aromaterapiaMusicoterapia1" translatesAutoresizingMaskIntoConstraints="NO" id="4cE-y1-aUo">
                                 <rect key="frame" x="60.5" y="517" width="689" height="491"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="689" id="N8s-z8-80A"/>
@@ -2726,7 +2698,7 @@ C.P. 03810</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Biomagnetismo-1" translatesAutoresizingMaskIntoConstraints="NO" id="9Ci-5y-QUM">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="biomagnetismo1" translatesAutoresizingMaskIntoConstraints="NO" id="9Ci-5y-QUM">
                                 <rect key="frame" x="20" y="452" width="770" height="539"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="539" id="Ubb-O9-Wvp"/>
@@ -2793,7 +2765,7 @@ C.P. 03810</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brisas_ambientales-1" translatesAutoresizingMaskIntoConstraints="NO" id="WIL-vb-VQc">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="brisas1" translatesAutoresizingMaskIntoConstraints="NO" id="WIL-vb-VQc">
                                 <rect key="frame" x="38" y="510" width="734" height="495"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="734" id="kM8-nl-Wrg"/>
@@ -2843,7 +2815,7 @@ C.P. 03810</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FloresDeBach" translatesAutoresizingMaskIntoConstraints="NO" id="fsD-Tk-OQ1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="floresBach1" translatesAutoresizingMaskIntoConstraints="NO" id="fsD-Tk-OQ1">
                                 <rect key="frame" x="48" y="531" width="714" height="466"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="466" id="VSF-FK-7ue"/>
@@ -2927,7 +2899,7 @@ C.P. 03810</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cama_jade" translatesAutoresizingMaskIntoConstraints="NO" id="zac-qo-7Fn">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="termica1" translatesAutoresizingMaskIntoConstraints="NO" id="zac-qo-7Fn">
                                 <rect key="frame" x="20" y="483" width="770" height="520"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="520" id="eTu-7w-SBV"/>
@@ -2994,7 +2966,7 @@ C.P. 03810</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cristaloterapia-1" translatesAutoresizingMaskIntoConstraints="NO" id="xT9-gy-9yh">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cristales1" translatesAutoresizingMaskIntoConstraints="NO" id="xT9-gy-9yh">
                                 <rect key="frame" x="20" y="504" width="770" height="548"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="548" id="Hzt-JR-mmG"/>
@@ -3059,7 +3031,7 @@ C.P. 03810</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logoterapia-1" translatesAutoresizingMaskIntoConstraints="NO" id="LF5-iK-Bhu">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoterapia1" translatesAutoresizingMaskIntoConstraints="NO" id="LF5-iK-Bhu">
                                 <rect key="frame" x="50" y="272" width="710" height="461"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="710" id="8JD-as-ger"/>
@@ -3107,7 +3079,7 @@ C.P. 03810</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tanatologia" translatesAutoresizingMaskIntoConstraints="NO" id="Otk-1P-HRq">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tanatologia1" translatesAutoresizingMaskIntoConstraints="NO" id="Otk-1P-HRq">
                                 <rect key="frame" x="20" y="278" width="770" height="475"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="475" id="8Zj-a5-UMV"/>
@@ -3174,7 +3146,7 @@ C.P. 03810</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mindfulness" translatesAutoresizingMaskIntoConstraints="NO" id="Xub-oU-XxY">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mindfulness1" translatesAutoresizingMaskIntoConstraints="NO" id="Xub-oU-XxY">
                                 <rect key="frame" x="20" y="258" width="770" height="500"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="770" id="RpI-nr-XVA"/>
@@ -3258,7 +3230,7 @@ C.P. 03810</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Reiki" translatesAutoresizingMaskIntoConstraints="NO" id="q2p-rH-XfS">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="reiki1" translatesAutoresizingMaskIntoConstraints="NO" id="q2p-rH-XfS">
                                 <rect key="frame" x="20" y="458" width="770" height="565"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="565" id="z8h-QQ-kfP"/>
@@ -4897,50 +4869,50 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
         </scene>
     </scenes>
     <resources>
-        <image name="AcompañamientoIndividual" width="942" height="676"/>
-        <image name="Acompañamiento_grupal" width="215" height="151"/>
         <image name="Alternativo-1" width="83" height="71"/>
         <image name="Alternativo-2" width="120.5" height="65.5"/>
-        <image name="Angeloterapia-1" width="548" height="427"/>
-        <image name="Biomagnetismo-1" width="478" height="364"/>
-        <image name="Brisas_ambientales-1" width="472" height="371"/>
-        <image name="Cama_jade" width="229" height="158.5"/>
-        <image name="Cristaloterapia-1" width="503" height="356"/>
         <image name="Cuota_recuperacion" width="514" height="685"/>
         <image name="DetalleSesionAdmin" width="513" height="683"/>
         <image name="DetalleSesionTana" width="512" height="683"/>
-        <image name="FloresDeBach" width="514" height="383"/>
         <image name="Intervencion_servicio.png" width="513" height="685"/>
         <image name="LogoCETAC" width="199.5" height="46"/>
-        <image name="Logoterapia-1" width="210.5" height="150"/>
-        <image name="Mindfulness" width="229.5" height="152"/>
         <image name="Misión" width="781" height="494"/>
         <image name="Motivo" width="514" height="686"/>
-        <image name="Musicoterapia" width="832" height="606"/>
         <image name="Objetivos-1" width="749" height="378"/>
-        <image name="Reiki" width="234.5" height="170"/>
         <image name="ServiciosHolisticos" width="596" height="462"/>
-        <image name="Tanatologia" width="209.5" height="155.5"/>
         <image name="Usuarios_atendidos" width="513" height="685"/>
         <image name="Valores-1" width="652" height="394"/>
         <image name="Visión" width="638" height="283"/>
         <image name="acompanamiento-1" width="608" height="470"/>
+        <image name="angeloterapia1" width="510" height="324"/>
+        <image name="aromaterapiaMusicoterapia1" width="510" height="304"/>
+        <image name="biomagnetismo1" width="510" height="326"/>
+        <image name="brisas1" width="511" height="364"/>
         <image name="circle.grid.3x3" catalog="system" width="128" height="110"/>
         <image name="circles.hexagongrid" catalog="system" width="128" height="112"/>
+        <image name="cristales1" width="512" height="320"/>
         <image name="email" width="256" height="256"/>
         <image name="eye" catalog="system" width="128" height="81"/>
         <image name="eyeglasses" catalog="system" width="128" height="54"/>
+        <image name="floresBach1" width="510" height="295"/>
         <image name="fondo1" width="1777" height="704.5"/>
+        <image name="grupal1" width="512" height="312"/>
+        <image name="individual1" width="511" height="312"/>
         <image name="line.horizontal.star.fill.line.horizontal" catalog="system" width="128" height="92"/>
         <image name="location" width="256" height="256"/>
+        <image name="logoterapia1" width="506" height="303"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="mindfulness1" width="507" height="301"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="person.badge.plus" catalog="system" width="128" height="124"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="person.fill.badge.plus" catalog="system" width="128" height="124"/>
         <image name="phone-call" width="256" height="256"/>
+        <image name="reiki1" width="509" height="327"/>
         <image name="signpost.right.fill" catalog="system" width="128" height="118"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
+        <image name="tanatologia1" width="509" height="319"/>
+        <image name="termica1" width="507" height="332"/>
         <image name="text.book.closed" catalog="system" width="115" height="128"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

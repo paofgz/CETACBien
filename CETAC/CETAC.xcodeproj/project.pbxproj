@@ -11,6 +11,10 @@
 		3E8C3680270E10520028F832 /* SeguimientoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C367F270E10520028F832 /* SeguimientoViewController.swift */; };
 		3E8C36822712872C0028F832 /* GetSesionTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C36812712872C0028F832 /* GetSesionTestCase.swift */; };
 		3E8C36882712C5AE0028F832 /* CrearSesionesTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C36872712C5AE0028F832 /* CrearSesionesTestCase.swift */; };
+		4803866F271655FD0096C52D /* mindfulness1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4803866B271655F70096C52D /* mindfulness1.png */; };
+		48038670271655FD0096C52D /* logoterapia1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4803866C271655F80096C52D /* logoterapia1.png */; };
+		48038671271655FD0096C52D /* tanatologia1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4803866D271655FA0096C52D /* tanatologia1.png */; };
+		48038672271655FD0096C52D /* reiki1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4803866E271655FB0096C52D /* reiki1.png */; };
 		481EC14C27092A2500987AE1 /* SingUp2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481EC14B27092A2500987AE1 /* SingUp2ViewController.swift */; };
 		4823AA3A270FA62100DDDC25 /* CETACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823AA39270FA62100DDDC25 /* CETACTests.swift */; };
 		4823AA42270FAE6700DDDC25 /* PerfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823AA41270FAE6700DDDC25 /* PerfilController.swift */; };
@@ -75,6 +79,19 @@
 		3E8C367F270E10520028F832 /* SeguimientoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeguimientoViewController.swift; sourceTree = "<group>"; };
 		3E8C36812712872C0028F832 /* GetSesionTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSesionTestCase.swift; sourceTree = "<group>"; };
 		3E8C36872712C5AE0028F832 /* CrearSesionesTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearSesionesTestCase.swift; sourceTree = "<group>"; };
+		48038660271650790096C52D /* biomagnetismo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = biomagnetismo1.png; sourceTree = "<group>"; };
+		48038661271650790096C52D /* angeloterapia1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = angeloterapia1.png; sourceTree = "<group>"; };
+		48038662271650790096C52D /* termica1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = termica1.png; sourceTree = "<group>"; };
+		48038663271650790096C52D /* cristales1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cristales1.png; sourceTree = "<group>"; };
+		48038664271650790096C52D /* grupal1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grupal1.png; sourceTree = "<group>"; };
+		48038665271650790096C52D /* brisas1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brisas1.png; sourceTree = "<group>"; };
+		48038666271650790096C52D /* individual1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = individual1.png; sourceTree = "<group>"; };
+		48038668271650790096C52D /* aromaterapiaMusicoterapia1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aromaterapiaMusicoterapia1.png; sourceTree = "<group>"; };
+		48038669271650790096C52D /* floresBach1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = floresBach1.png; sourceTree = "<group>"; };
+		4803866B271655F70096C52D /* mindfulness1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mindfulness1.png; sourceTree = "<group>"; };
+		4803866C271655F80096C52D /* logoterapia1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoterapia1.png; sourceTree = "<group>"; };
+		4803866D271655FA0096C52D /* tanatologia1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tanatologia1.png; sourceTree = "<group>"; };
+		4803866E271655FB0096C52D /* reiki1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reiki1.png; sourceTree = "<group>"; };
 		481EC14B27092A2500987AE1 /* SingUp2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUp2ViewController.swift; sourceTree = "<group>"; };
 		4823AA37270FA62000DDDC25 /* CETACTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CETACTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4823AA39270FA62100DDDC25 /* CETACTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CETACTests.swift; sourceTree = "<group>"; };
@@ -150,6 +167,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4803865D271650790096C52D /* servicios */ = {
+			isa = PBXGroup;
+			children = (
+				48038660271650790096C52D /* biomagnetismo1.png */,
+				4803866C271655F80096C52D /* logoterapia1.png */,
+				4803866B271655F70096C52D /* mindfulness1.png */,
+				4803866E271655FB0096C52D /* reiki1.png */,
+				4803866D271655FA0096C52D /* tanatologia1.png */,
+				48038661271650790096C52D /* angeloterapia1.png */,
+				48038662271650790096C52D /* termica1.png */,
+				48038663271650790096C52D /* cristales1.png */,
+				48038664271650790096C52D /* grupal1.png */,
+				48038665271650790096C52D /* brisas1.png */,
+				48038666271650790096C52D /* individual1.png */,
+				48038668271650790096C52D /* aromaterapiaMusicoterapia1.png */,
+				48038669271650790096C52D /* floresBach1.png */,
+			);
+			path = servicios;
+			sourceTree = "<group>";
+		};
 		4823AA38270FA62100DDDC25 /* CETACTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +276,7 @@
 				4881CC8A26DEA1A600258340 /* AppIcon.appiconset */,
 				488332B826D9B853002F0FCC /* PantallasCETAC */,
 				48D29C3B26D5B9B3007FF79B /* Assets.xcassets */,
+				4803865D271650790096C52D /* servicios */,
 				48D29C3D26D5B9B3007FF79B /* LaunchScreen.storyboard */,
 				48D29C4026D5B9B3007FF79B /* Info.plist */,
 			);
@@ -378,9 +416,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				48D29C3F26D5B9B3007FF79B /* LaunchScreen.storyboard in Resources */,
+				48038672271655FD0096C52D /* reiki1.png in Resources */,
+				48038671271655FD0096C52D /* tanatologia1.png in Resources */,
+				48038670271655FD0096C52D /* logoterapia1.png in Resources */,
 				48D29C3C26D5B9B3007FF79B /* Assets.xcassets in Resources */,
 				488332B926D9B853002F0FCC /* PantallasCETAC in Resources */,
 				48F81A0326F59FAB000197FB /* iconos in Resources */,
+				4803866F271655FD0096C52D /* mindfulness1.png in Resources */,
 				4881CC8B26DEA1A600258340 /* AppIcon.appiconset in Resources */,
 				48D29C3A26D5B9AD007FF79B /* Main.storyboard in Resources */,
 				48C66E542700E13000EA57B9 /* GoogleService-Info.plist in Resources */,
