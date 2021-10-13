@@ -35,36 +35,46 @@ class MotivoChartViewController: UIViewController {
         }
         
         
-        actualiza()
+        //actualiza()
         // Do any additional setup after loading the view.
     }
-    
+    var motivos = [String: Int]()
     func nueva(with usuarios:Usuarios){
-        print(usuarios)
+        
         DispatchQueue.main.async {
-            print("a")
-            //self.datos = usuarios
+            
+            //print(usuarios)
+            for use in usuarios{
+                self.motivos[String(use.motivo)] = (self.motivos[String(use.motivo)] ?? 0) + 1
+                //print(use.motivo)
+                
+            }
+            print(self.motivos)
+            //let groupedDictionary = Dictionary(grouping: usuarios, by: {String($0.motivo.prefix(1))})
+            //let keys = groupedDictionary.keys.sorted()
+           // print(groupedDictionary)            //self.datos = usuarios
             //self.tableView.reloadData()
+            self.actualiza()
+
         }
     }
     func actualiza(){
-        
-        //let groupedDictionary = Dictionary(grouping: usuarios, by: {String($0.nombre.prefix(1))})
-
-        let punto1 = BarChartDataEntry(x: 1, y: 5)
-        let punto2 = BarChartDataEntry(x: 2, y: 8)
-        let punto3 = BarChartDataEntry(x: 3, y: 1)
-        let punto4 = BarChartDataEntry(x: 4, y: 10)
         var sesionesArreglo = [BarChartDataEntry]()
-        sesionesArreglo.append(punto1)
-        sesionesArreglo.append(punto2)
-        sesionesArreglo.append(punto3)
-        sesionesArreglo.append(punto4)
+        var i = 1.0
+        var usuarios = [""]
+        //let groupedDictionary = Dictionary(grouping: usuarios, by: {String($0.nombre.prefix(1))})
+        for (key, value) in motivos{
+            sesionesArreglo.append(BarChartDataEntry(x: i, y: Double(value)))
+            i += 1
+            usuarios.append(key)
+        }
+        
+       
         let sesionesDataSet = BarChartDataSet(entries: sesionesArreglo, label: "Motivo")
         let data = BarChartData(dataSet: sesionesDataSet)
         horizontalBarChart.data = data
         horizontalBarChart.chartDescription?.text = "Motivo"
-        let usuarios = ["", "Karen", "Luis", "Jonatan", "Hector"]
+        
         horizontalBarChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: usuarios)
         //horizontalBarChart.backgroundColor = ChartColorTemplates.vordiplom()
 
