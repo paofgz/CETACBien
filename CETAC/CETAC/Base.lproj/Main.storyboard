@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Sy-gC-5Rp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fDO-Uz-3zg">
     <device id="ipad10_2" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -1192,7 +1192,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
             <objects>
                 <viewController id="5Zb-rA-dNv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oYe-MR-B0p">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cuota_recuperacion" translatesAutoresizingMaskIntoConstraints="NO" id="a50-JW-SH9">
@@ -1246,7 +1246,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
             <objects>
                 <viewController id="GGo-ff-3ga" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ems-VX-jKE">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Usuarios_atendidos" translatesAutoresizingMaskIntoConstraints="NO" id="ejv-Rx-BB7">
@@ -2116,7 +2116,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
             <objects>
                 <viewController id="qwZ-mP-qLD" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mMp-FB-mzn">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intervencion_servicio.png" translatesAutoresizingMaskIntoConstraints="NO" id="aUQ-Tg-e5d">
@@ -2141,14 +2141,19 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
         <!--Motivo-->
         <scene sceneID="uAi-uz-w7F">
             <objects>
-                <viewController id="DRT-cs-BNt" sceneMemberID="viewController">
+                <viewController id="DRT-cs-BNt" customClass="MotivoChartViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SDq-5R-ipM">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Motivo" translatesAutoresizingMaskIntoConstraints="NO" id="OEK-gf-KZX">
                                 <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                             </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qO9-xp-6A8">
+                                <rect key="frame" x="111" y="243" width="508" height="595"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RoG-ND-FZG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -2160,10 +2165,13 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Motivo" id="EcH-ej-YZQ"/>
+                    <connections>
+                        <outlet property="vistaBarras" destination="qO9-xp-6A8" id="8LT-C6-vpf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7mT-gD-NLo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4764" y="4232"/>
+            <point key="canvasLocation" x="4763.7037037037035" y="4231.666666666667"/>
         </scene>
         <!--Contacto-->
         <scene sceneID="Ifk-NE-LDP">
@@ -3500,7 +3508,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
             <objects>
                 <viewController id="TMO-d9-HKG" customClass="DetalleUsuarioViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TMA-AF-o5j">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z3m-Cy-pIU">
@@ -3869,7 +3877,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
             <objects>
                 <viewController id="1wN-aq-pGM" customClass="DetalleUsuarioViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oxl-Rp-Gvx">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5j7-6l-kRY">

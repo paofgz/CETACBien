@@ -333,6 +333,7 @@ PODS:
   - nanopb/decode (1.30906.0)
   - nanopb/encode (1.30906.0)
   - PromisesObjC (1.2.12)
+  - TinyConstraints (4.0.2)
 
 DEPENDENCIES:
   - Charts
@@ -340,6 +341,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Firestore
   - FirebaseFirestoreSwift
+  - TinyConstraints
 
 SPEC REPOS:
   trunk:
@@ -363,6 +365,7 @@ SPEC REPOS:
     - leveldb-library
     - nanopb
     - PromisesObjC
+    - TinyConstraints
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
@@ -385,7 +388,8 @@ SPEC CHECKSUMS:
   leveldb-library: 50c7b45cbd7bf543c81a468fe557a16ae3db8729
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   PromisesObjC: 3113f7f76903778cf4a0586bd1ab89329a0b7b97
+  TinyConstraints: 7b7ccc0c485bb3bb47082138ff28bc33cd49897f
 
-PODFILE CHECKSUM: aae8930bef3d6721dbae6ff00792657fe4b3ff93
+PODFILE CHECKSUM: 91090e72994f9540a27cfd540a472f6dd1e28c4c
 
 COCOAPODS: 1.11.2
