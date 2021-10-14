@@ -1192,7 +1192,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
             <objects>
                 <viewController id="5Zb-rA-dNv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oYe-MR-B0p">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cuota_recuperacion" translatesAutoresizingMaskIntoConstraints="NO" id="a50-JW-SH9">
@@ -1246,7 +1246,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
             <objects>
                 <viewController id="GGo-ff-3ga" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ems-VX-jKE">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Usuarios_atendidos" translatesAutoresizingMaskIntoConstraints="NO" id="ejv-Rx-BB7">
@@ -1538,8 +1538,8 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                         <rect key="frame" x="175" y="648" width="200" height="50"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="I3b-R7-8IJ"/>
-                                            <constraint firstAttribute="width" constant="200" id="pr7-QC-Hyu"/>
+                                            <constraint firstAttribute="width" constant="200" id="anX-Ki-tfZ"/>
+                                            <constraint firstAttribute="height" constant="50" id="xS0-C3-rJO"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="Crear cuenta">
@@ -1589,7 +1589,6 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="YkJ-oj-bQl" firstAttribute="centerX" secondItem="Egz-5j-Ix8" secondAttribute="centerX" id="4XA-0b-Unf"/>
                                     <constraint firstItem="jkl-ZE-TYi" firstAttribute="leading" secondItem="Egz-5j-Ix8" secondAttribute="leading" constant="50" id="752-RY-pUd"/>
                                     <constraint firstItem="iSa-12-h5C" firstAttribute="leading" secondItem="Egz-5j-Ix8" secondAttribute="leading" constant="50" id="820-7n-c1s"/>
                                     <constraint firstItem="iSa-12-h5C" firstAttribute="top" secondItem="Egz-5j-Ix8" secondAttribute="top" constant="20" id="8EL-3g-tfg"/>
@@ -1598,16 +1597,17 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                     <constraint firstAttribute="height" constant="700" id="GRp-Uh-tLK"/>
                                     <constraint firstItem="oMZ-ZH-3F3" firstAttribute="leading" secondItem="Egz-5j-Ix8" secondAttribute="leading" constant="50" id="H2c-50-iv7"/>
                                     <constraint firstItem="0ll-W6-X0N" firstAttribute="leading" secondItem="Egz-5j-Ix8" secondAttribute="leading" constant="50" id="KV2-Pv-g6e"/>
+                                    <constraint firstItem="YkJ-oj-bQl" firstAttribute="top" secondItem="tdv-dF-evE" secondAttribute="bottom" constant="33" id="Mj1-aG-Q6Q"/>
                                     <constraint firstItem="0ll-W6-X0N" firstAttribute="top" secondItem="up6-lf-w3F" secondAttribute="bottom" constant="20" id="OKw-TY-LS1"/>
                                     <constraint firstItem="9yF-jB-2k5" firstAttribute="leading" secondItem="Egz-5j-Ix8" secondAttribute="leading" constant="50" id="PUd-ad-vlT"/>
                                     <constraint firstItem="d7K-KH-Sog" firstAttribute="top" secondItem="jkl-ZE-TYi" secondAttribute="bottom" constant="20" id="X0F-2e-9ML"/>
                                     <constraint firstItem="tdv-dF-evE" firstAttribute="top" secondItem="oMZ-ZH-3F3" secondAttribute="bottom" constant="25" id="coV-qX-xNf"/>
+                                    <constraint firstItem="YkJ-oj-bQl" firstAttribute="centerX" secondItem="Egz-5j-Ix8" secondAttribute="centerX" id="dxn-27-Zd2"/>
                                     <constraint firstItem="ySf-qO-TTk" firstAttribute="top" secondItem="iSa-12-h5C" secondAttribute="bottom" constant="20" id="eMw-IX-C2g"/>
                                     <constraint firstItem="oMZ-ZH-3F3" firstAttribute="top" secondItem="9yF-jB-2k5" secondAttribute="bottom" constant="20" id="euD-O7-OPr"/>
                                     <constraint firstItem="tdv-dF-evE" firstAttribute="centerX" secondItem="Egz-5j-Ix8" secondAttribute="centerX" id="kCO-x8-ZIy"/>
                                     <constraint firstItem="ySf-qO-TTk" firstAttribute="leading" secondItem="Egz-5j-Ix8" secondAttribute="leading" constant="50" id="lya-Bp-Jfg"/>
                                     <constraint firstAttribute="width" constant="550" id="mkn-RJ-iBo"/>
-                                    <constraint firstAttribute="bottom" secondItem="YkJ-oj-bQl" secondAttribute="bottom" constant="2" id="msR-6k-aqB"/>
                                     <constraint firstItem="d7K-KH-Sog" firstAttribute="leading" secondItem="Egz-5j-Ix8" secondAttribute="leading" constant="50" id="pRf-Uf-dh4"/>
                                     <constraint firstItem="9yF-jB-2k5" firstAttribute="top" secondItem="0ll-W6-X0N" secondAttribute="bottom" constant="35" id="qMd-O7-q0m"/>
                                     <constraint firstItem="jkl-ZE-TYi" firstAttribute="top" secondItem="ySf-qO-TTk" secondAttribute="bottom" constant="40" id="qSP-A6-Hwp"/>
@@ -1674,8 +1674,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                         <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo1" translatesAutoresizingMaskIntoConstraints="NO" id="sYk-Cx-wp5">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo1" translatesAutoresizingMaskIntoConstraints="NO" id="sYk-Cx-wp5">
                                 <rect key="frame" x="0.0" y="700" width="810" height="330"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="330" id="N03-OJ-ycM"/>
+                                </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CS8-hb-4ov">
                                 <rect key="frame" x="105" y="160" width="600" height="130"/>
@@ -1850,14 +1853,13 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                         <viewLayoutGuide key="safeArea" id="nh7-Ma-4lG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="sYk-Cx-wp5" firstAttribute="leading" secondItem="nh7-Ma-4lG" secondAttribute="leading" id="2Iz-uG-L5H"/>
                             <constraint firstItem="qhd-XX-Rn7" firstAttribute="centerX" secondItem="hAF-1E-muH" secondAttribute="centerX" id="2av-xI-4OG"/>
                             <constraint firstItem="eHg-IP-OYl" firstAttribute="top" secondItem="CS8-hb-4ov" secondAttribute="bottom" constant="60" id="3tV-eF-CxP"/>
-                            <constraint firstItem="sYk-Cx-wp5" firstAttribute="top" secondItem="nh7-Ma-4lG" secondAttribute="top" constant="700" id="7vK-45-07k"/>
-                            <constraint firstItem="sYk-Cx-wp5" firstAttribute="leading" secondItem="nh7-Ma-4lG" secondAttribute="leading" id="Mj5-EK-wzu"/>
+                            <constraint firstItem="sYk-Cx-wp5" firstAttribute="bottom" secondItem="nh7-Ma-4lG" secondAttribute="bottom" id="8FV-aj-icl"/>
                             <constraint firstItem="eHg-IP-OYl" firstAttribute="centerX" secondItem="hAF-1E-muH" secondAttribute="centerX" id="RC0-kx-HFB"/>
                             <constraint firstItem="CS8-hb-4ov" firstAttribute="centerX" secondItem="hAF-1E-muH" secondAttribute="centerX" id="f2n-2C-CGp"/>
-                            <constraint firstItem="sYk-Cx-wp5" firstAttribute="bottom" secondItem="nh7-Ma-4lG" secondAttribute="bottom" id="hi6-F8-5ml"/>
-                            <constraint firstItem="sYk-Cx-wp5" firstAttribute="trailing" secondItem="nh7-Ma-4lG" secondAttribute="trailing" id="mxf-1P-AkW"/>
+                            <constraint firstItem="sYk-Cx-wp5" firstAttribute="trailing" secondItem="nh7-Ma-4lG" secondAttribute="trailing" id="gD2-hf-Bg2"/>
                             <constraint firstItem="qhd-XX-Rn7" firstAttribute="top" secondItem="nh7-Ma-4lG" secondAttribute="top" constant="69" id="xID-6a-gfM"/>
                             <constraint firstItem="nh7-Ma-4lG" firstAttribute="bottom" secondItem="eHg-IP-OYl" secondAttribute="bottom" constant="180" id="xbg-mt-A0O"/>
                         </constraints>
@@ -2116,7 +2118,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
             <objects>
                 <viewController id="qwZ-mP-qLD" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mMp-FB-mzn">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intervencion_servicio.png" translatesAutoresizingMaskIntoConstraints="NO" id="aUQ-Tg-e5d">
@@ -2143,25 +2145,49 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
             <objects>
                 <viewController id="DRT-cs-BNt" customClass="MotivoChartViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SDq-5R-ipM">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Motivo" translatesAutoresizingMaskIntoConstraints="NO" id="OEK-gf-KZX">
-                                <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qO9-xp-6A8">
-                                <rect key="frame" x="111" y="243" width="508" height="595"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qO9-xp-6A8">
+                                <rect key="frame" x="80" y="160" width="544" height="643"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="544" id="tL9-Ds-ssf"/>
+                                    <constraint firstAttribute="height" constant="643" id="zY5-UL-MNu"/>
+                                </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Motivo de Intervención" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0s-UV-xKL">
+                                <rect key="frame" x="152" y="50" width="400" height="60"/>
+                                <color key="backgroundColor" red="0.75875407459999999" green="0.87285679579999997" blue="0.37572741510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="LdQ-xg-lZ0"/>
+                                    <constraint firstAttribute="width" constant="400" id="jBQ-6F-hxF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DecoMotivo" translatesAutoresizingMaskIntoConstraints="NO" id="zQ0-BT-Joc">
+                                <rect key="frame" x="125" y="828" width="454" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="52e-Se-aDt"/>
+                                    <constraint firstAttribute="width" constant="454" id="gpZ-4X-nU7"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RoG-ND-FZG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="RoG-ND-FZG" firstAttribute="trailing" secondItem="OEK-gf-KZX" secondAttribute="trailing" id="SBj-tf-xTo"/>
-                            <constraint firstItem="OEK-gf-KZX" firstAttribute="leading" secondItem="RoG-ND-FZG" secondAttribute="leading" id="ico-Ba-JmC"/>
-                            <constraint firstItem="RoG-ND-FZG" firstAttribute="bottom" secondItem="OEK-gf-KZX" secondAttribute="bottom" id="jMA-aM-41z"/>
-                            <constraint firstItem="OEK-gf-KZX" firstAttribute="top" secondItem="RoG-ND-FZG" secondAttribute="top" id="pcy-Dt-HMI"/>
+                            <constraint firstItem="zQ0-BT-Joc" firstAttribute="top" secondItem="qO9-xp-6A8" secondAttribute="bottom" constant="25" id="4jI-cL-5OS"/>
+                            <constraint firstItem="c0s-UV-xKL" firstAttribute="centerX" secondItem="SDq-5R-ipM" secondAttribute="centerX" id="6WB-ba-TSj"/>
+                            <constraint firstItem="qO9-xp-6A8" firstAttribute="top" secondItem="c0s-UV-xKL" secondAttribute="bottom" constant="50" id="7jq-St-i5R"/>
+                            <constraint firstItem="c0s-UV-xKL" firstAttribute="top" secondItem="SDq-5R-ipM" secondAttribute="topMargin" constant="50" id="HPu-h5-Nwb"/>
+                            <constraint firstItem="zQ0-BT-Joc" firstAttribute="centerX" secondItem="SDq-5R-ipM" secondAttribute="centerX" id="bFi-um-eAG"/>
+                            <constraint firstItem="qO9-xp-6A8" firstAttribute="centerX" secondItem="SDq-5R-ipM" secondAttribute="centerX" id="hFO-7u-VkP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Motivo" id="EcH-ej-YZQ"/>
@@ -3508,7 +3534,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
             <objects>
                 <viewController id="TMO-d9-HKG" customClass="DetalleUsuarioViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TMA-AF-o5j">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z3m-Cy-pIU">
@@ -3877,7 +3903,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
             <objects>
                 <viewController id="1wN-aq-pGM" customClass="DetalleUsuarioViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oxl-Rp-Gvx">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5j7-6l-kRY">
@@ -4880,12 +4906,12 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
         <image name="Alternativo-1" width="83" height="71"/>
         <image name="Alternativo-2" width="120.5" height="65.5"/>
         <image name="Cuota_recuperacion" width="514" height="685"/>
+        <image name="DecoMotivo" width="1328" height="176"/>
         <image name="DetalleSesionAdmin" width="513" height="683"/>
         <image name="DetalleSesionTana" width="512" height="683"/>
         <image name="Intervencion_servicio.png" width="513" height="685"/>
         <image name="LogoCETAC" width="199.5" height="46"/>
         <image name="Misión" width="781" height="494"/>
-        <image name="Motivo" width="514" height="686"/>
         <image name="Objetivos-1" width="749" height="378"/>
         <image name="ServiciosHolisticos" width="596" height="462"/>
         <image name="Usuarios_atendidos" width="513" height="685"/>
