@@ -1614,7 +1614,10 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creación administrador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jbn-OF-maM">
-                                <rect key="frame" x="256.5" y="90" width="297" height="25"/>
+                                <rect key="frame" x="256.5" y="90" width="297" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="IC4-Cc-6Ef"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -2063,7 +2066,10 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Creación tanatólogo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bRB-da-IQk">
-                                <rect key="frame" x="279" y="90" width="252" height="25"/>
+                                <rect key="frame" x="279" y="90" width="252" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6P4-HH-OVD"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -2098,6 +2104,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                     <connections>
                         <outlet property="apellidoText" destination="qMD-oA-FRr" id="NdH-ug-wRc"/>
                         <outlet property="correoText" destination="udS-hF-P1D" id="Jpx-8e-ojE"/>
+                        <outlet property="experienciaText" destination="4G4-kc-Y4d" id="i69-CM-nOC"/>
                         <outlet property="nombreText" destination="vb2-Z6-0OB" id="Uvv-6m-Gib"/>
                         <outlet property="passwordText" destination="EtL-fw-FL5" id="9eL-Zl-ORH"/>
                         <outlet property="signUpButton" destination="JGk-vX-ZOi" id="AQx-60-TuD"/>

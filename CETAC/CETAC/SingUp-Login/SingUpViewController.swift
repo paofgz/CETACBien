@@ -18,6 +18,8 @@ class SingUpViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var correoText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
+    
+    @IBOutlet weak var experienciaText: UITextField!
     @IBOutlet weak var warningLabel: UILabel!
 
     @IBAction func ocultarTeclado(_ sender: UITapGestureRecognizer) {
@@ -57,7 +59,7 @@ class SingUpViewController: UIViewController, UITextFieldDelegate {
     
   
     @IBAction func signUpTapped(_ sender: Any) {
-        let error = validators.validateFields(nombreText:nombreText.text!, apellidoText:apellidoText.text!, correoText:correoText.text!, passwordText:passwordText.text!)
+        let error = validators.validateFields(nombreText:nombreText.text!, apellidoText:apellidoText.text!, correoText:correoText.text!, passwordText:passwordText.text!, experienciaText:experienciaText.text!)
 
         if error != nil {
             showError(error!)
@@ -66,6 +68,7 @@ class SingUpViewController: UIViewController, UITextFieldDelegate {
             let apellidoClean = apellidoText.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let correoClean = correoText.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let passwordClean = passwordText.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let experienciaClean = experienciaText.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
             Auth.auth().createUser(withEmail: correoClean, password: passwordClean) { result, err in
                 if err != nil {
@@ -73,7 +76,7 @@ class SingUpViewController: UIViewController, UITextFieldDelegate {
                 }else{
                     let db = Firestore.firestore()
                    
-                    db.collection("Tanatologo").document(correoClean).setData(["apellido": apellidoClean, "correo": correoClean, "nombre": nombreClean, "uid":result!.user.uid ]) { (error) in
+                    db.collection("Tanatologo").document(correoClean).setData(["apellido": apellidoClean, "correo": correoClean, "nombre": nombreClean, "uid":result!.user.uid , "experiencia": experienciaClean]) { (error) in
                         if let error = error {
                             self.showError("Fail ")
                         }
@@ -104,6 +107,7 @@ class SingUpViewController: UIViewController, UITextFieldDelegate {
         apellidoText.text = nil
         correoText.text = nil
         passwordText.text = nil
+        experienciaText.text = nil
         showError("")
         
     }

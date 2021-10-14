@@ -58,8 +58,22 @@ class Validators{
         
         return nil
     }
+    func validateFields(nombreText:String! , apellidoText:String!, correoText:String!,passwordText:String!, experienciaText:String!) -> String? {
+        if nombreText.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            apellidoText.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            correoText.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            passwordText.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            experienciaText.trimmingCharacters(in: .whitespacesAndNewlines) == ""{
+            return "Llene todos los campos"
+        }
+        let ret = validateFields(nombreText: nombreText, apellidoText: apellidoText, correoText: correoText, passwordText:passwordText)
+        return ret
+
+    }
+    
     
     func validateFields(nombreText:String! , apellidoText:String!, correoText:String!,passwordText:String!) -> String? {
+        
         if nombreText.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             apellidoText.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             correoText.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
