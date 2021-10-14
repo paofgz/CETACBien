@@ -39,6 +39,8 @@
 		48DAC8CD2710F105005B8598 /* PerfilTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DAC8CC2710F105005B8598 /* PerfilTestCase.swift */; };
 		48DAC8CF2710F129005B8598 /* SingUpTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DAC8CE2710F129005B8598 /* SingUpTestCase.swift */; };
 		48DAC8D12710F14A005B8598 /* LoginTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DAC8D02710F14A005B8598 /* LoginTestCase.swift */; };
+		48E0E6FB271742DB0002FD97 /* MotivoChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E0E6FA271742DB0002FD97 /* MotivoChartViewController.swift */; };
+		48E0E6FF27174DE60002FD97 /* MotivoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E0E6FE27174DE60002FD97 /* MotivoController.swift */; };
 		48F81A0326F59FAB000197FB /* iconos in Resources */ = {isa = PBXBuildFile; fileRef = 48F81A0226F59FAB000197FB /* iconos */; };
 		652B6A2E270DDF49007E4FD7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A2D270DDF49007E4FD7 /* Colors.swift */; };
 		652B6A30270DDF69007E4FD7 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A2F270DDF69007E4FD7 /* Usuario.swift */; };
@@ -120,6 +122,8 @@
 		48DAC8CC2710F105005B8598 /* PerfilTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilTestCase.swift; sourceTree = "<group>"; };
 		48DAC8CE2710F129005B8598 /* SingUpTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingUpTestCase.swift; sourceTree = "<group>"; };
 		48DAC8D02710F14A005B8598 /* LoginTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTestCase.swift; sourceTree = "<group>"; };
+		48E0E6FA271742DB0002FD97 /* MotivoChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivoChartViewController.swift; sourceTree = "<group>"; };
+		48E0E6FE27174DE60002FD97 /* MotivoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivoController.swift; sourceTree = "<group>"; };
 		48F81A0226F59FAB000197FB /* iconos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iconos; sourceTree = "<group>"; };
 		5B5B7F7EDB61D7FA45856C70 /* Pods-CETACTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CETACTests.debug.xcconfig"; path = "Target Support Files/Pods-CETACTests/Pods-CETACTests.debug.xcconfig"; sourceTree = "<group>"; };
 		652B6A2D270DDF49007E4FD7 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -223,6 +227,7 @@
 				652B6A47270DE434007E4FD7 /* estadoCivilPickerView.swift */,
 				3E8C367F270E10520028F832 /* SeguimientoViewController.swift */,
 				4823AA41270FAE6700DDDC25 /* PerfilController.swift */,
+				48E0E6FE27174DE60002FD97 /* MotivoController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 				48C66E532700E13000EA57B9 /* GoogleService-Info.plist */,
 				482FC93326D9C9530008D31F /* Controllers */,
 				48D29C3226D5B9AD007FF79B /* AppDelegate.swift */,
+				48E0E6FA271742DB0002FD97 /* MotivoChartViewController.swift */,
 				4823AA43270FAE9E00DDDC25 /* Validators.swift */,
 				48F81A0226F59FAB000197FB /* iconos */,
 				48D29C3426D5B9AD007FF79B /* SceneDelegate.swift */,
@@ -554,6 +560,7 @@
 				652B6A40270DE3C4007E4FD7 /* motivosPickerView.swift in Sources */,
 				48D29C3326D5B9AD007FF79B /* AppDelegate.swift in Sources */,
 				652B6A34270DDF9D007E4FD7 /* Sesion.swift in Sources */,
+				48E0E6FF27174DE60002FD97 /* MotivoController.swift in Sources */,
 				4823AA42270FAE6700DDDC25 /* PerfilController.swift in Sources */,
 				652B6A46270DE417007E4FD7 /* servicioPickerView.swift in Sources */,
 				48C9E0C3270A2931002B72A9 /* TanatologoPerfilViewController.swift in Sources */,
@@ -563,6 +570,7 @@
 				652B6A3E270DE36A007E4FD7 /* EncuadreViewController.swift in Sources */,
 				48D29C3526D5B9AD007FF79B /* SceneDelegate.swift in Sources */,
 				481EC14C27092A2500987AE1 /* SingUp2ViewController.swift in Sources */,
+				48E0E6FB271742DB0002FD97 /* MotivoChartViewController.swift in Sources */,
 				652B6A53270E1503007E4FD7 /* TanatologoController.swift in Sources */,
 				3E8C3680270E10520028F832 /* SeguimientoViewController.swift in Sources */,
 			);

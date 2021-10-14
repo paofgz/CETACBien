@@ -12,6 +12,7 @@ pod 'Firebase/Firestore'
 pod 'FirebaseFirestoreSwift'
 pod 'Firebase/Auth'
 pod 'Firebase/Core'
+pod 'TinyConstraints'
 
 pod 'Charts'
 target 'CETACTests' do
@@ -21,6 +22,7 @@ target 'CETACTests' do
         pod 'Firebase/Auth'
         pod 'Firebase/Core'
         pod 'Charts'
+	pod 'TinyConstraints'
     end
 
 end
