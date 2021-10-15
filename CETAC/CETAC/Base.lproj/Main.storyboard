@@ -1871,7 +1871,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FZl-3G-UEx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3661" y="3326"/>
+            <point key="canvasLocation" x="3660.7407407407404" y="3325.5555555555557"/>
         </scene>
         <!--Tanatólgo-->
         <scene sceneID="OAU-Jt-gby">
@@ -2123,25 +2123,40 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
         <!--Intervención y servicio-->
         <scene sceneID="AZ8-xf-zwI">
             <objects>
-                <viewController id="qwZ-mP-qLD" sceneMemberID="viewController">
+                <viewController id="qwZ-mP-qLD" customClass="ServicioIntervencionChartViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mMp-FB-mzn">
                         <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intervencion_servicio.png" translatesAutoresizingMaskIntoConstraints="NO" id="aUQ-Tg-e5d">
-                                <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kUa-Ui-2Lz">
+                                <rect key="frame" x="80" y="142" width="544" height="643"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Intervención y servicio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpP-sO-Aed">
+                                <rect key="frame" x="152" y="48" width="400" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.75875407459999999" green="0.87285679579999997" blue="0.37572741510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DecoMotivo" translatesAutoresizingMaskIntoConstraints="NO" id="7AL-y3-7wj">
+                                <rect key="frame" x="125" y="827" width="454" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fa3-Bh-y1Z"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="fa3-Bh-y1Z" firstAttribute="trailing" secondItem="aUQ-Tg-e5d" secondAttribute="trailing" id="Npn-p4-6GE"/>
-                            <constraint firstItem="aUQ-Tg-e5d" firstAttribute="leading" secondItem="fa3-Bh-y1Z" secondAttribute="leading" id="gFi-uB-QOD"/>
-                            <constraint firstItem="aUQ-Tg-e5d" firstAttribute="top" secondItem="fa3-Bh-y1Z" secondAttribute="top" id="qcH-7P-YOp"/>
-                            <constraint firstItem="fa3-Bh-y1Z" firstAttribute="bottom" secondItem="aUQ-Tg-e5d" secondAttribute="bottom" id="toM-TX-aa9"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Intervención y servicio" id="MuI-Ce-6eE"/>
+                    <connections>
+                        <outlet property="vistaInt" destination="kUa-Ui-2Lz" id="Eue-JS-bXB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EVq-jD-SvW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -4916,7 +4931,6 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
         <image name="DecoMotivo" width="664" height="88"/>
         <image name="DetalleSesionAdmin" width="513" height="683"/>
         <image name="DetalleSesionTana" width="512" height="683"/>
-        <image name="Intervencion_servicio.png" width="513" height="685"/>
         <image name="LogoCETAC" width="199.5" height="46"/>
         <image name="Misión" width="781" height="494"/>
         <image name="Objetivos-1" width="749" height="378"/>

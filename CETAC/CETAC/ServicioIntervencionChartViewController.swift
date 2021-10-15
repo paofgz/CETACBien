@@ -1,35 +1,37 @@
 //
-//  MotivoChartViewController.swift
+//  ServicioIntervencionChartViewController.swift
 //  CETAC
 //
-//  Created by Yus Molina on 13/10/21.
+//  Created by Annya Verduzco on 15/10/21.
 //
 
 import UIKit
 import Charts
 import TinyConstraints
 
-class MotivoChartViewController: UIViewController {
-    
-    let motivoController = MotivoController()
+class ServicioIntervencionChartViewController: UIViewController {
 
-    @IBOutlet weak var vistaBarras: UIView!
-    lazy var horizontalBarChart: HorizontalBarChartView = {
+    let ControladorIntervencion = intervencionController()
+
+    @IBOutlet weak var vistaInt: UIView!
+    
+    lazy var BarChartHorizaontal: HorizontalBarChartView = {
         let horizontalBarChartView = HorizontalBarChartView()
         return horizontalBarChartView
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        vistaBarras.addSubview(horizontalBarChart)
-        horizontalBarChart.center(in: vistaBarras)
-        horizontalBarChart.width(to: vistaBarras)
-        horizontalBarChart.heightToWidth(of: vistaBarras)
+        vistaInt.addSubview(BarChartHorizaontal)
+        BarChartHorizaontal.center(in: vistaInt)
+        BarChartHorizaontal.width(to: vistaInt)
+        BarChartHorizaontal.heightToWidth(of: vistaInt)
         
-        motivoController.fetchUsuarios{ (result) in
+        
+        ControladorIntervencion.fetchSesiones("j5i61tqFd53Is97D5RI1"){ (result) in
             switch result{
-            case .success(let usuarios):self.nueva(with: usuarios)
-            case .failure(_):print("No se pudo acceder a los usuarios")
+            case .success(let sesion):self.nueva(with: sesion)
+            case .failure(_):print("No se pudo acceder a sesiones")
             }
             
         }
@@ -38,18 +40,18 @@ class MotivoChartViewController: UIViewController {
         //actualiza()
         // Do any additional setup after loading the view.
     }
-    var motivos = [String: Int]()
-    func nueva(with usuarios:Usuarios){
+    var tipoDeIntervencion = [String: Int]()
+    func nueva(with sesiones:Sesiones){
         
         DispatchQueue.main.async {
             
-            //print(usuarios)
-            for use in usuarios{
-                self.motivos[String(use.motivo)] = (self.motivos[String(use.motivo)] ?? 0) + 1
+            
+            for use in sesiones{
+                self.tipoDeIntervencion[String(use.tipoDeIntervencion)] = (self.tipoDeIntervencion[String(use.tipoDeIntervencion)] ?? 0) + 1
                 //print(use.motivo)
                 
             }
-            print(self.motivos)
+            print(self.tipoDeIntervencion)
             //let groupedDictionary = Dictionary(grouping: usuarios, by: {String($0.motivo.prefix(1))})
             //let keys = groupedDictionary.keys.sorted()
            // print(groupedDictionary)            //self.datos = usuarios
@@ -61,24 +63,24 @@ class MotivoChartViewController: UIViewController {
     func actualiza(){
         var sesionesArreglo = [BarChartDataEntry]()
         var i = 1.0
-        var usuarios = [""]
+        var sesiones = [""]
         //let groupedDictionary = Dictionary(grouping: usuarios, by: {String($0.nombre.prefix(1))})
-        for (key, value) in motivos{
+        for (key, value) in tipoDeIntervencion{
             sesionesArreglo.append(BarChartDataEntry(x: i, y: Double(value)))
             i += 1
-            usuarios.append(key)
+            sesiones.append(key)
         }
         
        
-        let sesionesDataSet = BarChartDataSet(entries: sesionesArreglo, label: "Motivo")
+        let sesionesDataSet = BarChartDataSet(entries: sesionesArreglo, label: "Intervencion")
         let data = BarChartData(dataSet: sesionesDataSet)
-        horizontalBarChart.data = data
-        horizontalBarChart.chartDescription?.text = "Motivo"
+        BarChartHorizaontal.data = data
+        BarChartHorizaontal.chartDescription?.text = "Sesiones"
         
-        horizontalBarChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: usuarios)
+        BarChartHorizaontal.xAxis.valueFormatter = IndexAxisValueFormatter(values: sesiones)
         //horizontalBarChart.backgroundColor = ChartColorTemplates.vordiplom()
 
-        horizontalBarChart.notifyDataSetChanged()
+        BarChartHorizaontal.notifyDataSetChanged()
     }
     /*
     // MARK: - Navigation
