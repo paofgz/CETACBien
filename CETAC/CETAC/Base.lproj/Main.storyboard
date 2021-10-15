@@ -1244,7 +1244,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
         <!--Usuarios atendidos-->
         <scene sceneID="VV3-dn-uBP">
             <objects>
-                <viewController id="GGo-ff-3ga" sceneMemberID="viewController">
+                <viewController id="GGo-ff-3ga" customClass="UsuariosChartViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ems-VX-jKE">
                         <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1252,21 +1252,45 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Usuarios_atendidos" translatesAutoresizingMaskIntoConstraints="NO" id="ejv-Rx-BB7">
                                 <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dfi-sS-4e7">
+                                <rect key="frame" x="167" y="627" width="404" height="247"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="247" id="9kb-eC-uEA"/>
+                                    <constraint firstAttribute="width" constant="404" id="VFm-gF-Clr"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BYA-km-SWw">
+                                <rect key="frame" x="125" y="215" width="372" height="241"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="372" id="UQU-aB-A0I"/>
+                                    <constraint firstAttribute="height" constant="241" id="zBr-4f-un9"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vBc-Tu-WdB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Dfi-sS-4e7" firstAttribute="top" secondItem="BYA-km-SWw" secondAttribute="bottom" constant="171" id="F0u-AY-TLC"/>
                             <constraint firstItem="ejv-Rx-BB7" firstAttribute="top" secondItem="vBc-Tu-WdB" secondAttribute="top" id="Kp2-Dg-4ge"/>
+                            <constraint firstItem="BYA-km-SWw" firstAttribute="top" secondItem="vBc-Tu-WdB" secondAttribute="top" constant="215" id="LiQ-GZ-uaC"/>
                             <constraint firstItem="ejv-Rx-BB7" firstAttribute="leading" secondItem="vBc-Tu-WdB" secondAttribute="leading" id="PPl-vW-PEt"/>
                             <constraint firstItem="vBc-Tu-WdB" firstAttribute="bottom" secondItem="ejv-Rx-BB7" secondAttribute="bottom" id="SS1-oJ-5kk"/>
+                            <constraint firstItem="Dfi-sS-4e7" firstAttribute="leading" secondItem="vBc-Tu-WdB" secondAttribute="leading" constant="167" id="bkw-CF-S0N"/>
+                            <constraint firstItem="BYA-km-SWw" firstAttribute="leading" secondItem="vBc-Tu-WdB" secondAttribute="leading" constant="125" id="e3c-De-tHo"/>
                             <constraint firstItem="vBc-Tu-WdB" firstAttribute="trailing" secondItem="ejv-Rx-BB7" secondAttribute="trailing" id="nhW-Jl-VKe"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Usuarios atendidos" id="EWg-YC-y5N"/>
+                    <connections>
+                        <outlet property="barras" destination="Dfi-sS-4e7" id="Haw-ny-qwO"/>
+                        <outlet property="pastel" destination="BYA-km-SWw" id="eer-SY-YZx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P87-C9-gwR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2937" y="4247"/>
+            <point key="canvasLocation" x="2936.2962962962961" y="4246.666666666667"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="sVt-mb-RYz">

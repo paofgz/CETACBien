@@ -26,7 +26,7 @@ class MotivoChartViewController: UIViewController {
         horizontalBarChart.width(to: vistaBarras)
         horizontalBarChart.heightToWidth(of: vistaBarras)
         
-        motivoController.fetchUsuarios{ (result) in
+        motivoController.fetchUsuarios(campo: "motivo"){ (result) in
             switch result{
             case .success(let usuarios):self.nueva(with: usuarios)
             case .failure(let error):print("No se pudo acceder a los usuarios")

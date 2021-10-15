@@ -59,7 +59,8 @@ class UsuarioController{
             "identificacionDeRespuesta": nuevoUsuario.identificacionDeRespuesta,
             "EKR": nuevoUsuario.EKR,
             "proximaSesion": nuevoUsuario.proximaSesion,
-            "status": nuevoUsuario.status
+            "status": nuevoUsuario.status,
+            "sexo": nuevoUsuario.sexo
         ]) { err in
             if let err = err {
                 print("Error adding document: \(err)")

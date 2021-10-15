@@ -11,9 +11,9 @@ var sesionControlador = SesionesController()
 
 struct Usuario: Codable {
     
-    let id, EKR, celular, domicilio, edadesHijos, estadoCivil, idTanatologo, identificacionDeRespuesta, motivo, nombre, ocupacion, procedencia, referido, religion, sexoHijos, sexoPareja, telefonoDeCasa, fecha, proximaSesion: String
+    let id, EKR, celular, domicilio, edadesHijos, estadoCivil, idTanatologo, identificacionDeRespuesta, motivo, nombre, ocupacion, procedencia, referido, religion, sexoHijos, sexoPareja, telefonoDeCasa, fecha, proximaSesion, sexo: String
     let numeroDeHijos, edadPareja, status: Int
-    init(id:String, fecha:String, idTanatologo:String, nombre:String, ocupacion:String, religion: String, procedencia:String, domicilio:String, telefonoDeCasa:String, celular:String, estadoCivil:String, edadPareja:Int, sexoPareja:String, numeroDeHijos:Int, edadesHijos:String, sexoHijos:String, referido:String, motivo:String, identificacionDeRespuesta:String, EKR:String, status:Int, proximaSesion:String){
+    init(id:String, fecha:String, idTanatologo:String, nombre:String, ocupacion:String, religion: String, procedencia:String, domicilio:String, telefonoDeCasa:String, celular:String, estadoCivil:String, edadPareja:Int, sexoPareja:String, numeroDeHijos:Int, edadesHijos:String, sexoHijos:String, referido:String, motivo:String, identificacionDeRespuesta:String, EKR:String, status:Int, proximaSesion:String, sexo:String){
             self.id = id
             self.fecha = fecha
             self.idTanatologo = idTanatologo
@@ -36,9 +36,10 @@ struct Usuario: Codable {
             self.EKR = EKR
             self.proximaSesion = proximaSesion
             self.status = status
+        self.sexo = sexo
     }
 
-    init(fecha:String, idTanatologo:String, nombre:String, ocupacion:String, religion: String, procedencia:String, domicilio:String, telefonoDeCasa:String, celular:String, estadoCivil:String, edadPareja:Int, sexoPareja:String, numeroDeHijos:Int, edadesHijos:String, sexoHijos:String, referido:String, motivo:String, identificacionDeRespuesta:String, EKR:String, status:Int, proximaSesion:String){
+    init(fecha:String, idTanatologo:String, nombre:String, ocupacion:String, religion: String, procedencia:String, domicilio:String, telefonoDeCasa:String, celular:String, estadoCivil:String, edadPareja:Int, sexoPareja:String, numeroDeHijos:Int, edadesHijos:String, sexoHijos:String, referido:String, motivo:String, identificacionDeRespuesta:String, EKR:String, status:Int, proximaSesion:String, sexo:String){
             self.id = ""
             self.fecha = fecha
             self.idTanatologo = idTanatologo
@@ -61,6 +62,7 @@ struct Usuario: Codable {
             self.EKR = EKR
             self.proximaSesion = proximaSesion
             self.status = status
+        self.sexo = sexo
     }
 
     init(aDoc: DocumentSnapshot){
@@ -86,6 +88,8 @@ struct Usuario: Codable {
         self.EKR = aDoc.get("EKR") as? String ?? ""
         self.proximaSesion = aDoc.get("proximaSesion") as? String ?? ""
         self.status = aDoc.get("status") as? Int ?? 0
+        self.sexo = aDoc.get("sexo") as? String ?? ""
+
     }
 }
 

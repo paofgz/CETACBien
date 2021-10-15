@@ -20,6 +20,7 @@
 		4823AA42270FAE6700DDDC25 /* PerfilController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823AA41270FAE6700DDDC25 /* PerfilController.swift */; };
 		4823AA44270FAE9E00DDDC25 /* Validators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823AA43270FAE9E00DDDC25 /* Validators.swift */; };
 		4823AA46270FB21400DDDC25 /* ValidatorsTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4823AA45270FB21400DDDC25 /* ValidatorsTestCase.swift */; };
+		482B289D271A25F3003B5D57 /* UsuariosChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482B289C271A25F3003B5D57 /* UsuariosChartViewController.swift */; };
 		482FC93526D9C98E0008D31F /* ContactoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482FC93426D9C98E0008D31F /* ContactoViewController.swift */; };
 		4881CC8B26DEA1A600258340 /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = 4881CC8A26DEA1A600258340 /* AppIcon.appiconset */; };
 		488332B926D9B853002F0FCC /* PantallasCETAC in Resources */ = {isa = PBXBuildFile; fileRef = 488332B826D9B853002F0FCC /* PantallasCETAC */; };
@@ -101,6 +102,7 @@
 		4823AA41270FAE6700DDDC25 /* PerfilController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilController.swift; sourceTree = "<group>"; };
 		4823AA43270FAE9E00DDDC25 /* Validators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validators.swift; sourceTree = "<group>"; };
 		4823AA45270FB21400DDDC25 /* ValidatorsTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorsTestCase.swift; sourceTree = "<group>"; };
+		482B289C271A25F3003B5D57 /* UsuariosChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuariosChartViewController.swift; sourceTree = "<group>"; };
 		482FC93426D9C98E0008D31F /* ContactoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactoViewController.swift; sourceTree = "<group>"; };
 		4881CC8A26DEA1A600258340 /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
 		488332B826D9B853002F0FCC /* PantallasCETAC */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PantallasCETAC; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 				482FC93326D9C9530008D31F /* Controllers */,
 				48D29C3226D5B9AD007FF79B /* AppDelegate.swift */,
 				48E0E6FA271742DB0002FD97 /* MotivoChartViewController.swift */,
+				482B289C271A25F3003B5D57 /* UsuariosChartViewController.swift */,
 				4823AA43270FAE9E00DDDC25 /* Validators.swift */,
 				48F81A0226F59FAB000197FB /* iconos */,
 				48D29C3426D5B9AD007FF79B /* SceneDelegate.swift */,
@@ -567,6 +570,7 @@
 				48DA50552705119E00745442 /* SingUpViewController.swift in Sources */,
 				48CB2027270CCE5400E2DB22 /* SingUpController.swift in Sources */,
 				652B6A3A270DE1D0007E4FD7 /* UsuariosTableViewController.swift in Sources */,
+				482B289D271A25F3003B5D57 /* UsuariosChartViewController.swift in Sources */,
 				652B6A3E270DE36A007E4FD7 /* EncuadreViewController.swift in Sources */,
 				48D29C3526D5B9AD007FF79B /* SceneDelegate.swift in Sources */,
 				481EC14C27092A2500987AE1 /* SingUp2ViewController.swift in Sources */,
