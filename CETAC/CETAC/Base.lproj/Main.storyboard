@@ -1002,33 +1002,6 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
             </objects>
             <point key="canvasLocation" x="2866.1538461538462" y="320.61611374407579"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="FXK-jP-GVv">
-            <objects>
-                <viewController id="oKw-cn-yNe" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Rsm-zi-tFn">
-                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DetalleSesionTana" translatesAutoresizingMaskIntoConstraints="NO" id="KPS-gu-eEN">
-                                <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="iph-Oh-wvy"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="KPS-gu-eEN" firstAttribute="top" secondItem="iph-Oh-wvy" secondAttribute="top" id="F7h-SG-PMs"/>
-                            <constraint firstItem="KPS-gu-eEN" firstAttribute="leading" secondItem="iph-Oh-wvy" secondAttribute="leading" id="TYz-Dj-tiv"/>
-                            <constraint firstItem="iph-Oh-wvy" firstAttribute="bottom" secondItem="KPS-gu-eEN" secondAttribute="bottom" id="a1A-WG-jWd"/>
-                            <constraint firstItem="iph-Oh-wvy" firstAttribute="trailing" secondItem="KPS-gu-eEN" secondAttribute="trailing" id="qHm-J9-4Wp"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="EFc-3n-0RE"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="egf-H1-p2T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1267" y="4766"/>
-        </scene>
         <!--Hoja de seguimiento-->
         <scene sceneID="iU3-cO-ggv">
             <objects>
@@ -1213,33 +1186,6 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wZ7-da-ULR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3562" y="4233"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="z1s-1J-DRR">
-            <objects>
-                <viewController id="ro8-yL-f8Z" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bmj-GG-EJ9">
-                        <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DetalleSesionAdmin" translatesAutoresizingMaskIntoConstraints="NO" id="aDY-9p-MWd">
-                                <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="ovR-XC-NiY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="aDY-9p-MWd" firstAttribute="top" secondItem="ovR-XC-NiY" secondAttribute="top" id="5e5-CV-4zH"/>
-                            <constraint firstItem="aDY-9p-MWd" firstAttribute="leading" secondItem="ovR-XC-NiY" secondAttribute="leading" id="5ih-Tl-6ML"/>
-                            <constraint firstItem="ovR-XC-NiY" firstAttribute="trailing" secondItem="aDY-9p-MWd" secondAttribute="trailing" id="Q5r-bo-qO8"/>
-                            <constraint firstItem="ovR-XC-NiY" firstAttribute="bottom" secondItem="aDY-9p-MWd" secondAttribute="bottom" id="chn-It-R8L"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="b59-m6-kmr"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="DFg-W1-kri" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2130" y="4838"/>
         </scene>
         <!--Usuarios atendidos-->
         <scene sceneID="VV3-dn-uBP">
@@ -2152,7 +2098,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
             <objects>
                 <viewController id="DRT-cs-BNt" customClass="MotivoChartViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SDq-5R-ipM">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qO9-xp-6A8">
@@ -3484,7 +3430,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
         <scene sceneID="wr9-ye-fjw">
             <objects>
                 <tableViewController id="sOg-42-XUI" customClass="UsuariosTableViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gCd-Ii-Om5" customClass="UsuarioTableViewController" customModule="CETAC" customModuleProvider="target">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gCd-Ii-Om5">
                         <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -3535,6 +3481,236 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Ag-Sc-Olp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1267" y="3153"/>
+        </scene>
+        <!--Sesion Detalle View Controller-->
+        <scene sceneID="ciq-BU-R07">
+            <objects>
+                <viewController id="5hg-zc-p0l" customClass="SesionDetalleViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aZ1-pA-2j4">
+                        <rect key="frame" x="0.0" y="0.0" width="604" height="205.5"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NombrePas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACj-73-mWW">
+                                <rect key="frame" x="226" y="40" width="152.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="zW8-Nm-MpW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sesion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jX6-dI-Ee8">
+                                <rect key="frame" x="269.5" y="85" width="65" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="t9c-df-HTV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <color key="textColor" red="0.36511951679999999" green="0.72968059780000005" blue="0.73988378050000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número de expediente:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sN1-he-kPR">
+                                <rect key="frame" x="20" y="157" width="237" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="079-o6-gYj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <color key="textColor" red="0.17254901959999999" green="0.6705882353" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="numExp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HmD-Ar-j9h">
+                                <rect key="frame" x="282" y="157" width="83" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="loH-aR-jPP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tanatólogo: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IK3-Dc-Jq7">
+                                <rect key="frame" x="20" y="207" width="123" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="DfM-eW-jH0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <color key="textColor" red="0.17254901959999999" green="0.6705882353" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uRZ-9h-kfx">
+                                <rect key="frame" x="168" y="207" width="31" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="JTN-7D-Has"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Motivo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkN-sS-TpG">
+                                <rect key="frame" x="20" y="257" width="75" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="HEU-FJ-Ktd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <color key="textColor" red="0.17254901959999999" green="0.6705882353" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="motiv" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Piw-so-m1Z">
+                                <rect key="frame" x="120" y="257" width="56" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="iBu-OC-c8W"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Servicio:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJb-KH-aq1">
+                                <rect key="frame" x="20" y="307" width="88" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Jju-y1-NqZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <color key="textColor" red="0.17254901959999999" green="0.6705882353" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="serv" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SvA-iU-iZB">
+                                <rect key="frame" x="133" y="307" width="44.5" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="lQb-wY-606"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intervención:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJC-gk-jOp">
+                                <rect key="frame" x="20" y="357" width="134" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="hV4-oQ-Knc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <color key="textColor" red="0.17254901959999999" green="0.6705882353" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="int" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ar-Xa-Lu8">
+                                <rect key="frame" x="179" y="357" width="25.5" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="U2f-k3-JBB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Herramienta:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4d4-JB-x4K">
+                                <rect key="frame" x="20" y="407" width="132" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="ewb-Yx-sbz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <color key="textColor" red="0.17254901959999999" green="0.6705882353" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="herr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otY-gZ-qNX">
+                                <rect key="frame" x="177" y="407" width="44" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="ULZ-ng-gUH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evaluación de la sesión" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5Z-Cw-Q3Y">
+                                <rect key="frame" x="20" y="457" width="234" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="e8H-MR-ghc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <color key="textColor" red="0.17254901959999999" green="0.6705882353" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="eval" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ec1-0e-uNr">
+                                <rect key="frame" x="279" y="457" width="42.5" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="C2L-2p-dSs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuota de recuperación:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cV-kH-IEd">
+                                <rect key="frame" x="20" y="507" width="236" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="AEQ-yG-kXj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <color key="textColor" red="0.17254901959999999" green="0.6705882353" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cqr-6J-vO7">
+                                <rect key="frame" x="281" y="507" width="32" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="0sC-K0-GxT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3Eg-xA-d0v"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ec1-0e-uNr" firstAttribute="leading" secondItem="w5Z-Cw-Q3Y" secondAttribute="trailing" constant="25" id="1Th-H8-OAg"/>
+                            <constraint firstItem="uRZ-9h-kfx" firstAttribute="leading" secondItem="IK3-Dc-Jq7" secondAttribute="trailing" constant="25" id="1vJ-bV-Zs0"/>
+                            <constraint firstItem="IK3-Dc-Jq7" firstAttribute="leading" secondItem="3Eg-xA-d0v" secondAttribute="leading" constant="20" id="2Fv-5r-1bO"/>
+                            <constraint firstItem="w5Z-Cw-Q3Y" firstAttribute="leading" secondItem="3Eg-xA-d0v" secondAttribute="leading" constant="20" id="6EF-yV-JDH"/>
+                            <constraint firstItem="sJC-gk-jOp" firstAttribute="leading" secondItem="3Eg-xA-d0v" secondAttribute="leading" constant="20" id="8DK-Kf-fOg"/>
+                            <constraint firstItem="Cqr-6J-vO7" firstAttribute="leading" secondItem="5cV-kH-IEd" secondAttribute="trailing" constant="25" id="AF7-No-vAd"/>
+                            <constraint firstItem="Piw-so-m1Z" firstAttribute="top" secondItem="IK3-Dc-Jq7" secondAttribute="bottom" constant="25" id="BZ8-r0-51g"/>
+                            <constraint firstItem="jX6-dI-Ee8" firstAttribute="top" secondItem="ACj-73-mWW" secondAttribute="bottom" constant="15" id="DFT-pb-DjN"/>
+                            <constraint firstItem="w5Z-Cw-Q3Y" firstAttribute="top" secondItem="4d4-JB-x4K" secondAttribute="bottom" constant="25" id="DGB-4n-try"/>
+                            <constraint firstItem="IK3-Dc-Jq7" firstAttribute="top" secondItem="sN1-he-kPR" secondAttribute="bottom" constant="25" id="E7X-UB-F6y"/>
+                            <constraint firstItem="jX6-dI-Ee8" firstAttribute="centerX" secondItem="aZ1-pA-2j4" secondAttribute="centerX" id="EUn-BO-YV7"/>
+                            <constraint firstItem="sJC-gk-jOp" firstAttribute="top" secondItem="hJb-KH-aq1" secondAttribute="bottom" constant="25" id="JOF-5a-0Yi"/>
+                            <constraint firstItem="SvA-iU-iZB" firstAttribute="leading" secondItem="hJb-KH-aq1" secondAttribute="trailing" constant="25" id="K8M-wf-PH7"/>
+                            <constraint firstItem="HmD-Ar-j9h" firstAttribute="top" secondItem="jX6-dI-Ee8" secondAttribute="bottom" constant="50" id="MqK-kf-tHc"/>
+                            <constraint firstItem="otY-gZ-qNX" firstAttribute="top" secondItem="3ar-Xa-Lu8" secondAttribute="bottom" constant="25" id="Mxf-Q4-8Fw"/>
+                            <constraint firstItem="HmD-Ar-j9h" firstAttribute="leading" secondItem="sN1-he-kPR" secondAttribute="trailing" constant="25" id="N54-mQ-9ck"/>
+                            <constraint firstItem="ACj-73-mWW" firstAttribute="top" secondItem="3Eg-xA-d0v" secondAttribute="top" constant="40" id="N9O-sP-K43"/>
+                            <constraint firstItem="4d4-JB-x4K" firstAttribute="leading" secondItem="3Eg-xA-d0v" secondAttribute="leading" constant="20" id="VYQ-Lo-Cde"/>
+                            <constraint firstItem="sN1-he-kPR" firstAttribute="leading" secondItem="3Eg-xA-d0v" secondAttribute="leading" constant="20" id="Yve-9g-dgO"/>
+                            <constraint firstItem="5cV-kH-IEd" firstAttribute="top" secondItem="Ec1-0e-uNr" secondAttribute="bottom" constant="25" id="bmO-tY-3XY"/>
+                            <constraint firstItem="5cV-kH-IEd" firstAttribute="leading" secondItem="3Eg-xA-d0v" secondAttribute="leading" constant="20" id="cKs-Vp-3k0"/>
+                            <constraint firstItem="Cqr-6J-vO7" firstAttribute="top" secondItem="Ec1-0e-uNr" secondAttribute="bottom" constant="25" id="cTe-cG-3aQ"/>
+                            <constraint firstItem="ACj-73-mWW" firstAttribute="centerX" secondItem="aZ1-pA-2j4" secondAttribute="centerX" id="e1r-dH-ix0"/>
+                            <constraint firstItem="Piw-so-m1Z" firstAttribute="leading" secondItem="fkN-sS-TpG" secondAttribute="trailing" constant="25" id="eb2-dJ-enp"/>
+                            <constraint firstItem="3ar-Xa-Lu8" firstAttribute="top" secondItem="SvA-iU-iZB" secondAttribute="bottom" constant="25" id="exD-C9-Apk"/>
+                            <constraint firstItem="hJb-KH-aq1" firstAttribute="top" secondItem="fkN-sS-TpG" secondAttribute="bottom" constant="25" id="fku-0B-N9g"/>
+                            <constraint firstItem="otY-gZ-qNX" firstAttribute="leading" secondItem="4d4-JB-x4K" secondAttribute="trailing" constant="25" id="hNv-b3-rgl"/>
+                            <constraint firstItem="fkN-sS-TpG" firstAttribute="leading" secondItem="3Eg-xA-d0v" secondAttribute="leading" constant="20" id="izI-JH-FIi"/>
+                            <constraint firstItem="SvA-iU-iZB" firstAttribute="top" secondItem="Piw-so-m1Z" secondAttribute="bottom" constant="25" id="k44-Mh-gX6"/>
+                            <constraint firstItem="4d4-JB-x4K" firstAttribute="top" secondItem="sJC-gk-jOp" secondAttribute="bottom" constant="25" id="lS9-kF-GP8"/>
+                            <constraint firstItem="uRZ-9h-kfx" firstAttribute="top" secondItem="sN1-he-kPR" secondAttribute="bottom" constant="25" id="meh-Ut-i9T"/>
+                            <constraint firstItem="sN1-he-kPR" firstAttribute="top" secondItem="jX6-dI-Ee8" secondAttribute="bottom" constant="50" id="ruj-Gm-cFz"/>
+                            <constraint firstItem="fkN-sS-TpG" firstAttribute="top" secondItem="IK3-Dc-Jq7" secondAttribute="bottom" constant="25" id="sYT-fh-Uc2"/>
+                            <constraint firstItem="3ar-Xa-Lu8" firstAttribute="leading" secondItem="sJC-gk-jOp" secondAttribute="trailing" constant="25" id="ulE-RP-52z"/>
+                            <constraint firstItem="Ec1-0e-uNr" firstAttribute="top" secondItem="otY-gZ-qNX" secondAttribute="bottom" constant="25" id="wH6-4e-RG9"/>
+                            <constraint firstItem="hJb-KH-aq1" firstAttribute="leading" secondItem="3Eg-xA-d0v" secondAttribute="leading" constant="20" id="wIv-g5-bcO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="u6B-qf-aQB"/>
+                    <connections>
+                        <outlet property="eval" destination="Ec1-0e-uNr" id="r95-pX-vMO"/>
+                        <outlet property="herr" destination="otY-gZ-qNX" id="cGs-W2-gyC"/>
+                        <outlet property="int" destination="3ar-Xa-Lu8" id="woz-Nh-6bN"/>
+                        <outlet property="motiv" destination="Piw-so-m1Z" id="euw-Xk-bHG"/>
+                        <outlet property="nomPas" destination="ACj-73-mWW" id="KUd-Qc-0MA"/>
+                        <outlet property="numExp" destination="HmD-Ar-j9h" id="5Ap-B8-PLq"/>
+                        <outlet property="rec" destination="Cqr-6J-vO7" id="JXv-zI-ipE"/>
+                        <outlet property="serv" destination="SvA-iU-iZB" id="5r7-1I-aMP"/>
+                        <outlet property="sesion" destination="jX6-dI-Ee8" id="GVE-DL-ncK"/>
+                        <outlet property="tan" destination="uRZ-9h-kfx" id="vrN-i9-yCN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ceG-Y1-72F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305.92592592592592" y="4410.5555555555557"/>
         </scene>
         <!--Detalle Usuario View Controller-->
         <scene sceneID="JUd-e8-Ila">
@@ -3763,12 +3939,19 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                     <action selector="editarProxSesion:" destination="TMO-d9-HKG" eventType="touchUpInside" id="Mqa-55-cp4"/>
                                 </connections>
                             </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rlf-h2-PgX">
+                                <rect key="frame" x="50" y="750" width="604" height="225"/>
+                                <connections>
+                                    <segue destination="WLV-P0-gju" kind="embed" identifier="sesion" id="8xO-Ej-Qvd"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5y1-Pd-04y"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="KEf-eL-fOX" firstAttribute="top" secondItem="iw3-Bg-i0b" secondAttribute="bottom" constant="45" id="08P-sN-0mb"/>
                             <constraint firstItem="KEf-eL-fOX" firstAttribute="top" secondItem="5y1-Pd-04y" secondAttribute="top" constant="310" id="0Et-o2-60V"/>
+                            <constraint firstItem="5y1-Pd-04y" firstAttribute="trailing" secondItem="rlf-h2-PgX" secondAttribute="trailing" constant="50" id="1hU-J8-3Uf"/>
                             <constraint firstItem="KEf-eL-fOX" firstAttribute="leading" secondItem="5y1-Pd-04y" secondAttribute="leading" constant="50" id="2Mh-63-ypr"/>
                             <constraint firstItem="sYT-QZ-rbw" firstAttribute="top" secondItem="KEf-eL-fOX" secondAttribute="bottom" constant="20" id="2wV-Ll-U0L"/>
                             <constraint firstItem="A7H-aL-Buv" firstAttribute="top" secondItem="iw3-Bg-i0b" secondAttribute="bottom" constant="45" id="4sH-jb-lug"/>
@@ -3783,6 +3966,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                             <constraint firstItem="UXw-jm-ecg" firstAttribute="top" secondItem="gLI-YE-3va" secondAttribute="bottom" constant="20" id="GRd-rY-GEX"/>
                             <constraint firstItem="A7H-aL-Buv" firstAttribute="leading" secondItem="KEf-eL-fOX" secondAttribute="trailing" constant="30" id="IGx-lc-bad"/>
                             <constraint firstItem="Iik-tu-ba6" firstAttribute="leading" secondItem="uq3-hc-o6B" secondAttribute="trailing" constant="30" id="JzJ-IK-4Iw"/>
+                            <constraint firstItem="5y1-Pd-04y" firstAttribute="bottom" secondItem="rlf-h2-PgX" secondAttribute="bottom" constant="20" id="M2V-1a-5RW"/>
                             <constraint firstItem="img-zQ-Da7" firstAttribute="leading" secondItem="UXw-jm-ecg" secondAttribute="trailing" constant="30" id="MCf-lq-ruS"/>
                             <constraint firstItem="5y1-Pd-04y" firstAttribute="bottom" secondItem="8pM-Qw-MdA" secondAttribute="bottom" constant="300.5" id="Nj6-ll-nEq"/>
                             <constraint firstItem="gLI-YE-3va" firstAttribute="top" secondItem="m3E-cU-gvO" secondAttribute="bottom" constant="20" id="NkX-4M-ZwQ"/>
@@ -3798,6 +3982,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                             <constraint firstItem="22u-Os-HJr" firstAttribute="leading" secondItem="sYT-QZ-rbw" secondAttribute="trailing" constant="30" id="b3X-th-ssE"/>
                             <constraint firstItem="Ew1-1V-yXF" firstAttribute="leading" secondItem="jWs-tH-rgG" secondAttribute="trailing" constant="30" id="bbV-Rk-PPT"/>
                             <constraint firstItem="cO3-aM-W7C" firstAttribute="top" secondItem="UXw-jm-ecg" secondAttribute="bottom" constant="20" id="cN7-Vn-10L"/>
+                            <constraint firstItem="rlf-h2-PgX" firstAttribute="top" secondItem="hYA-Ef-8ui" secondAttribute="bottom" constant="10" id="chc-PD-QLr"/>
                             <constraint firstItem="jWs-tH-rgG" firstAttribute="top" secondItem="cO3-aM-W7C" secondAttribute="bottom" constant="20" id="crK-Tm-EUq"/>
                             <constraint firstItem="m3E-cU-gvO" firstAttribute="top" secondItem="uq3-hc-o6B" secondAttribute="bottom" constant="20" id="cwf-6E-Pzd"/>
                             <constraint firstItem="KEf-eL-fOX" firstAttribute="leading" secondItem="5y1-Pd-04y" secondAttribute="leading" constant="50" id="dAr-NV-ihL"/>
@@ -3820,6 +4005,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                             <constraint firstItem="jWs-tH-rgG" firstAttribute="leading" secondItem="5y1-Pd-04y" secondAttribute="leading" constant="50" id="ys5-8o-MZ5"/>
                             <constraint firstItem="16t-h7-5DI" firstAttribute="top" secondItem="5y1-Pd-04y" secondAttribute="top" constant="45" id="zFV-kl-1qX"/>
                             <constraint firstItem="iw3-Bg-i0b" firstAttribute="top" secondItem="Z3m-Cy-pIU" secondAttribute="bottom" constant="40" id="zMG-WJ-1uC"/>
+                            <constraint firstItem="rlf-h2-PgX" firstAttribute="leading" secondItem="5y1-Pd-04y" secondAttribute="leading" constant="50" id="zTV-hW-wCc"/>
                             <constraint firstItem="Yqu-3f-17e" firstAttribute="leading" secondItem="gLI-YE-3va" secondAttribute="trailing" constant="30" id="zwf-cs-R9g"/>
                         </constraints>
                     </view>
@@ -3840,6 +4026,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                         <outlet property="proxSes" destination="IRp-kT-zg9" id="eFc-JY-qUi"/>
                         <outlet property="saveButton" destination="B7Y-aE-uLk" id="sEa-C8-81y"/>
                         <outlet property="serv" destination="Iik-tu-ba6" id="4NQ-mo-EYe"/>
+                        <outlet property="sesionesPas" destination="rlf-h2-PgX" id="s3M-6h-ts4"/>
                         <outlet property="status" destination="Z3m-Cy-pIU" id="AWx-x8-jFo"/>
                         <outlet property="tan" destination="vFo-v6-m3I" id="M1f-dw-63Z"/>
                         <outlet property="ultSes" destination="Vwx-sH-VDo" id="WcI-jg-9GY"/>
@@ -4906,14 +5093,71 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
             </objects>
             <point key="canvasLocation" x="609.62962962962956" y="3165.5555555555557"/>
         </scene>
+        <!--Sesiones Table View Controller-->
+        <scene sceneID="RZ9-Lw-p4Q">
+            <objects>
+                <tableViewController id="WLV-P0-gju" customClass="SesionesTableViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cBr-qv-jZJ">
+                        <rect key="frame" x="0.0" y="0.0" width="604" height="225"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="IVF-9O-laN" userLabel="cell" customClass="SesionTableViewCell" customModule="CETAC" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="24.5" width="604" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IVF-9O-laN" id="M3z-Nu-AQQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="604" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZVh-Bg-MoJ">
+                                            <rect key="frame" x="20" y="15" width="64" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="Do1-pn-E3L"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Djq-Km-N3w">
+                                            <rect key="frame" x="25" y="38" width="44" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="bTe-t3-J0A"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Djq-Km-N3w" firstAttribute="top" secondItem="ZVh-Bg-MoJ" secondAttribute="bottom" constant="3" id="7Kz-ku-hBZ"/>
+                                        <constraint firstItem="ZVh-Bg-MoJ" firstAttribute="top" secondItem="M3z-Nu-AQQ" secondAttribute="top" constant="15" id="JLY-0B-cH7"/>
+                                        <constraint firstItem="ZVh-Bg-MoJ" firstAttribute="leading" secondItem="M3z-Nu-AQQ" secondAttribute="leading" constant="20" id="YyN-9q-aqd"/>
+                                        <constraint firstItem="Djq-Km-N3w" firstAttribute="leading" secondItem="M3z-Nu-AQQ" secondAttribute="leading" constant="25" id="ikM-Eq-8UA"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="date" destination="Djq-Km-N3w" id="aBI-Wu-yod"/>
+                                    <outlet property="nomSes" destination="ZVh-Bg-MoJ" id="NJb-AD-idI"/>
+                                    <segue destination="5hg-zc-p0l" kind="show" identifier="detalleSes" id="ASg-sf-xdQ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="WLV-P0-gju" id="wUj-7Y-XWc"/>
+                            <outlet property="delegate" destination="WLV-P0-gju" id="x9c-6J-7eR"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g9Y-du-wYC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1267" y="4569"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Alternativo-1" width="83" height="71"/>
         <image name="Alternativo-2" width="120.5" height="65.5"/>
         <image name="Cuota_recuperacion" width="514" height="685"/>
         <image name="DecoMotivo" width="664" height="88"/>
-        <image name="DetalleSesionAdmin" width="513" height="683"/>
-        <image name="DetalleSesionTana" width="512" height="683"/>
         <image name="Intervencion_servicio.png" width="513" height="685"/>
         <image name="LogoCETAC" width="199.5" height="46"/>
         <image name="Misión" width="781" height="494"/>

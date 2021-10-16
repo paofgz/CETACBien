@@ -16,6 +16,7 @@ class DetalleUsuarioViewController: UIViewController {
     
     let dateFormatter = DateFormatter()
     
+    
     @IBOutlet weak var nombre: UILabel!
     @IBOutlet weak var status: UIImageView!
     var elUsuario: Usuario?
@@ -38,11 +39,14 @@ class DetalleUsuarioViewController: UIViewController {
     @IBOutlet weak var editButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var sesionesPas: UIView!
+    weak var embedvc:SesionesTableViewController?
     
     var sesiones:[Sesion] = []
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        
         sesionControlador.fetchSesiones(self.elUsuario!.id){ (result) in
                     switch result{
                     case .success(let sesiones):
@@ -60,6 +64,7 @@ class DetalleUsuarioViewController: UIViewController {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.embedvc?.idUsuario = elUsuario?.id ?? ""
         editar = false
         botones(estado: editar)
         if (elUsuario != nil) {
@@ -204,6 +209,14 @@ class DetalleUsuarioViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        if segue.identifier == "sesion"{
+            let siguiente = segue.destination as! SesionesTableViewController
+            self.embedvc = siguiente;
+        }
+    }
     
     func displayError(_ error: Error, title: String) {
             DispatchQueue.main.async {
