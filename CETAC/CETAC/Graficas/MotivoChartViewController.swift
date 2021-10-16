@@ -12,6 +12,7 @@ import TinyConstraints
 class MotivoChartViewController: UIViewController {
     
     let motivoController = MotivoController()
+    var motivos = [String: Int]()
 
     @IBOutlet weak var vistaBarras: UIView!
     lazy var horizontalBarChart: HorizontalBarChartView = {
@@ -26,68 +27,45 @@ class MotivoChartViewController: UIViewController {
         horizontalBarChart.width(to: vistaBarras)
         horizontalBarChart.heightToWidth(of: vistaBarras)
         
-        motivoController.fetchUsuarios{ (result) in
+        motivoController.fetchUsuarios(campo: "motivo"){ (result) in
             switch result{
-            case .success(let usuarios):self.nueva(with: usuarios)
-            case .failure(let error):print("No se pudo acceder a los usuarios")
+            case .success(let usuarios):self.countMotivo(with: usuarios)
+            case .failure(_):self.showError("No se pudo acceder a los usuarios")
             }
-            
         }
-        
-        
-        //actualiza()
-        // Do any additional setup after loading the view.
     }
-    var motivos = [String: Int]()
-    func nueva(with usuarios:Usuarios){
-        
+   
+    func countMotivo(with usuarios:Usuarios){
         DispatchQueue.main.async {
-            
-            //print(usuarios)
             for use in usuarios{
                 self.motivos[String(use.motivo)] = (self.motivos[String(use.motivo)] ?? 0) + 1
-                //print(use.motivo)
-                
             }
             print(self.motivos)
-            //let groupedDictionary = Dictionary(grouping: usuarios, by: {String($0.motivo.prefix(1))})
-            //let keys = groupedDictionary.keys.sorted()
-           // print(groupedDictionary)            //self.datos = usuarios
-            //self.tableView.reloadData()
             self.actualiza()
-
         }
     }
+    
     func actualiza(){
         var sesionesArreglo = [BarChartDataEntry]()
         var i = 1.0
         var usuarios = [""]
-        //let groupedDictionary = Dictionary(grouping: usuarios, by: {String($0.nombre.prefix(1))})
         for (key, value) in motivos{
             sesionesArreglo.append(BarChartDataEntry(x: i, y: Double(value)))
             i += 1
             usuarios.append(key)
         }
-        
-       
         let sesionesDataSet = BarChartDataSet(entries: sesionesArreglo, label: "Motivo")
         let data = BarChartData(dataSet: sesionesDataSet)
         horizontalBarChart.data = data
         horizontalBarChart.chartDescription?.text = "Motivo"
-        
         horizontalBarChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: usuarios)
-        //horizontalBarChart.backgroundColor = ChartColorTemplates.vordiplom()
-
         horizontalBarChart.notifyDataSetChanged()
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    func showError(_ message:String){
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true)
     }
-    */
-
+    
 }

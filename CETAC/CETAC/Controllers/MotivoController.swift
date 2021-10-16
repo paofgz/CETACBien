@@ -9,29 +9,17 @@ import Foundation
 import Firebase
 
 class MotivoController{
+    
     let db = Firestore.firestore()
-/*
-    func fetchData() {
-            db.collection("Usuarios").addSnapshotListener { (querySnapshot, error) in
-                guard let documents = querySnapshot?.documents else {
-                    print("No documents")
-                    return
-                }
-                print(documents)
-            }
-        }*/
     
-    
-    func fetchUsuarios(completion: @escaping (Result<[Usuario], Error>) -> Void){
-        
+    func fetchUsuarios(campo: String, completion: @escaping (Result<[Usuario], Error>) -> Void){
         var usuarios = [Usuario]()
-        db.collection("Usuarios").order(by: "motivo").getDocuments() { (querySnapshot, err) in
+        
+        db.collection("Usuarios").order(by: campo).getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
                 completion(.failure(err))
             } else {
-                print(querySnapshot!.documents)
-              
                 for document in querySnapshot!.documents {
                     let u = Usuario(aDoc: document)
                     usuarios.append(u)
@@ -39,6 +27,6 @@ class MotivoController{
                 completion(.success(usuarios))
             }
         }
-       
     }
+  
 }

@@ -155,63 +155,53 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo1" translatesAutoresizingMaskIntoConstraints="NO" id="P2R-cu-erE">
                                 <rect key="frame" x="0.0" y="750" width="810" height="280"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B6e-Fu-uLC">
-                                <rect key="frame" x="5" y="353" width="800" height="680"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="680" id="Qiw-7R-OTg"/>
-                                    <constraint firstAttribute="width" constant="800" id="qfc-mk-WMQ"/>
-                                </constraints>
-                                <string key="text">Apoyar a personas de escasos recursos con algún tipo de discapacidad para satisfacer sus necesidades humanas de acuerdo a la pirámide de Maslow: fisiológicas, de seguridad, de pertenencia, reconocimiento y autorrealización, a través de la disciplina de tanatología y servicios de traslado en ambulancia.
-
-​
-
-Brindar cuidado, capacitación y orientación tanto emocional, psicológica y espiritualmente a los adultos mayores, personas con enfermedades, personas con enfermedades crónico-degenerativas y en fase terminal, como también a sus familiares. Asimismo, proporcionando contención a cualquier tipo de pérdida significativa y por muerte logrando reencuentren un nuevo sentido a la vida.
-
- 
-
-Atención médica en traslados de ambulancia de hospital a domicilio y domicilio a hospital, el cual, se ofrecerá de carácter profesional debiendo ser oportuna, eficaz y eficiente.
-
- 
-
-Dar acompañamiento y consejería a personas y pacientes que enfrentan situaciones en crisis, estrés postraumático, abusos, maltratos, así como situaciones que provocan pérdidas de distinta índole: pérdida de un familiar, de una extremidad del cuerpo, de autoestima, de identidad, laboral, bienes materiales; infertilidad, anorexia, bulimia, intentos de suicidio, viudez, divorcio, violencia intrafamiliar, infidelidad, portadores de VIH-SIDA o personas con enfermedades en fase terminal, entre otras. También se da acompañamiento a los familiares que son afectados por la situación y el entorno.
-
- 
-
-La prestación de servicios de apoyo de traslados en ambulancia a población especialmente de escasos recursos en la Ciudad de México y en el interior de la República.
-
- 
-
-La gestión y coordinación con el personal hospitalario para la ayuda de servicio tanatológico en beneficio de la población especialmente que no cuente con recursos económicos y padezcan enfermedades crónico degenerativas o en fase terminal.</string>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="15"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Objetivos-1" translatesAutoresizingMaskIntoConstraints="NO" id="kzC-jc-pxC">
-                                <rect key="frame" x="206" y="135" width="398" height="188"/>
+                                <rect key="frame" x="206" y="138" width="398" height="188"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="188" id="gCa-o8-SNX"/>
                                     <constraint firstAttribute="width" constant="398" id="ldD-Pf-SiY"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Objetivos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hUe-4D-Jg8">
-                                <rect key="frame" x="342.5" y="90" width="125" height="25"/>
+                                <rect key="frame" x="342.5" y="90" width="125" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="9ga-5c-Grn"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="25"/>
                                 <color key="textColor" red="0.39335453510000001" green="0.69083899260000003" blue="0.9019952416" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="highlightedColor" red="0.39335453510000001" green="0.69083899260000003" blue="0.9019952416" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B6e-Fu-uLC">
+                                <rect key="frame" x="143" y="371" width="539" height="617"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <mutableString key="text">Apoyar a personas de escasos recursos con algún tipo de discapacidad para satisfacer sus necesidades humanas de acuerdo a la pirámide de Maslow: fisiológicas, de seguridad, de pertenencia, reconocimiento y autorrealización, a través de la disciplina de tanatología y servicios de traslado en ambulancia.
+
+​
+
+Brindar cuidado, capacitación y orientación tanto emocional, psicológica y espiritualmente a los adultos mayores, personas con enfermedades, personas con enfermedades crónico-degenerativas y en fase terminal, como también a sus familiares. Asimismo, proporcionando contención a cualquier tipo de pérdida significativa y por muerte logrando reencuentren un nuevo sentido a la vida.
+
+
+
+Dar acompañamiento y consejería a personas y pacientes que enfrentan situaciones en crisis, estrés postraumático, abusos, maltratos, así como situaciones que provocan pérdidas de distinta índole: pérdida de un familiar, de una extremidad del cuerpo, de autoestima, de identidad, laboral, bienes materiales; infertilidad, anorexia, bulimia, intentos de suicidio, viudez, divorcio, violencia intrafamiliar, infidelidad, portadores de VIH-SIDA o personas con enfermedades en fase terminal, entre otras. También se da acompañamiento a los familiares que son afectados por la situación y el entorno.
+</mutableString>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dyi-iD-X7d"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="kzC-jc-pxC" firstAttribute="top" secondItem="hUe-4D-Jg8" secondAttribute="bottom" constant="20" id="9B2-E9-LfY"/>
+                            <constraint firstItem="B6e-Fu-uLC" firstAttribute="top" secondItem="kzC-jc-pxC" secondAttribute="bottom" constant="45" id="9lP-4E-iqB"/>
                             <constraint firstItem="hUe-4D-Jg8" firstAttribute="top" secondItem="dyi-iD-X7d" secondAttribute="top" constant="40" id="AZE-wQ-hUj"/>
                             <constraint firstItem="P2R-cu-erE" firstAttribute="top" secondItem="dyi-iD-X7d" secondAttribute="top" constant="700" id="Mw2-v4-jeZ"/>
                             <constraint firstItem="P2R-cu-erE" firstAttribute="trailing" secondItem="dyi-iD-X7d" secondAttribute="trailing" id="NzX-DC-8jO"/>
-                            <constraint firstItem="B6e-Fu-uLC" firstAttribute="centerX" secondItem="VNX-93-eOl" secondAttribute="centerX" id="VJB-pm-dbG"/>
+                            <constraint firstItem="dyi-iD-X7d" firstAttribute="trailing" secondItem="B6e-Fu-uLC" secondAttribute="trailing" constant="128" id="Ugr-Ke-i6A"/>
                             <constraint firstItem="kzC-jc-pxC" firstAttribute="centerX" secondItem="VNX-93-eOl" secondAttribute="centerX" id="hfT-1i-0Mm"/>
-                            <constraint firstItem="B6e-Fu-uLC" firstAttribute="top" secondItem="kzC-jc-pxC" secondAttribute="bottom" constant="30" id="iCh-qN-SHT"/>
+                            <constraint firstItem="dyi-iD-X7d" firstAttribute="bottom" secondItem="B6e-Fu-uLC" secondAttribute="bottom" constant="42" id="lbJ-uC-ZAI"/>
                             <constraint firstItem="P2R-cu-erE" firstAttribute="leading" secondItem="dyi-iD-X7d" secondAttribute="leading" id="mVC-A4-P4f"/>
+                            <constraint firstItem="B6e-Fu-uLC" firstAttribute="leading" secondItem="dyi-iD-X7d" secondAttribute="leading" constant="143" id="v5E-XX-z1H"/>
                             <constraint firstItem="hUe-4D-Jg8" firstAttribute="centerX" secondItem="VNX-93-eOl" secondAttribute="centerX" id="xYL-Tg-VXd"/>
                             <constraint firstItem="P2R-cu-erE" firstAttribute="bottom" secondItem="dyi-iD-X7d" secondAttribute="bottom" id="zhd-E8-0IV"/>
                         </constraints>
@@ -352,7 +342,10 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <rect key="frame" x="130" y="225" width="550" height="630"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AvY-Sp-LZS">
-                                        <rect key="frame" x="235" y="280" width="70" height="25"/>
+                                        <rect key="frame" x="235" y="280" width="70" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="lZp-kT-peP"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -398,7 +391,10 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WlC-is-1Tv">
-                                        <rect key="frame" x="235" y="395" width="70" height="25"/>
+                                        <rect key="frame" x="235" y="398" width="70" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="0rv-ek-zxV"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -916,8 +912,9 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Filosofía" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ArC-ih-dkQ">
-                                <rect key="frame" x="337" y="376" width="136" height="24"/>
+                                <rect key="frame" x="337" y="376" width="136" height="27"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="AE3-ja-N7m"/>
                                     <constraint firstAttribute="width" constant="136" id="MYW-hx-Ln2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="24"/>
@@ -925,7 +922,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Reconocer, comprender y apreciar las emociones y sentimientos de los demás" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1yY-UT-xhw">
-                                <rect key="frame" x="63.5" y="450" width="683" height="24.5"/>
+                                <rect key="frame" x="63.5" y="453" width="683" height="24.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -1165,7 +1162,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
             <objects>
                 <viewController id="5Zb-rA-dNv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oYe-MR-B0p">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cuota_recuperacion" translatesAutoresizingMaskIntoConstraints="NO" id="a50-JW-SH9">
@@ -1190,29 +1187,77 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
         <!--Usuarios atendidos-->
         <scene sceneID="VV3-dn-uBP">
             <objects>
-                <viewController id="GGo-ff-3ga" sceneMemberID="viewController">
+                <viewController id="GGo-ff-3ga" customClass="UsuariosChartViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ems-VX-jKE">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Usuarios_atendidos" translatesAutoresizingMaskIntoConstraints="NO" id="ejv-Rx-BB7">
-                                <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="52F-iG-Xo0" customClass="UsuariosChartViewController.swift">
+                                <rect key="frame" x="131" y="181" width="343" height="267"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HO5-op-x6S">
+                                <rect key="frame" x="155" y="676" width="338" height="219.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuarios atendidos por género" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="425-GV-4hi">
+                                <rect key="frame" x="59" y="60" width="415" height="66"/>
+                                <color key="backgroundColor" red="0.75875407459999999" green="0.87285679579999997" blue="0.37572741510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="415" id="VMd-Db-P7Y"/>
+                                    <constraint firstAttribute="height" constant="66" id="coh-Jm-Daf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuarios atendidos por tanatólogo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUt-vi-71D">
+                                <rect key="frame" x="202" y="525" width="469" height="61"/>
+                                <color key="backgroundColor" red="0.75875407459999999" green="0.87285679579999997" blue="0.37572741510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="469" id="gOD-D5-LEK"/>
+                                    <constraint firstAttribute="height" constant="61" id="vp2-3A-HBh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="decoUsuarios" translatesAutoresizingMaskIntoConstraints="NO" id="Dpz-MT-zO2">
+                                <rect key="frame" x="534" y="162" width="137" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="137" id="8xE-0O-Cvc"/>
+                                    <constraint firstAttribute="height" constant="114" id="ipn-xI-mhP"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vBc-Tu-WdB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ejv-Rx-BB7" firstAttribute="top" secondItem="vBc-Tu-WdB" secondAttribute="top" id="Kp2-Dg-4ge"/>
-                            <constraint firstItem="ejv-Rx-BB7" firstAttribute="leading" secondItem="vBc-Tu-WdB" secondAttribute="leading" id="PPl-vW-PEt"/>
-                            <constraint firstItem="vBc-Tu-WdB" firstAttribute="bottom" secondItem="ejv-Rx-BB7" secondAttribute="bottom" id="SS1-oJ-5kk"/>
-                            <constraint firstItem="vBc-Tu-WdB" firstAttribute="trailing" secondItem="ejv-Rx-BB7" secondAttribute="trailing" id="nhW-Jl-VKe"/>
+                            <constraint firstItem="425-GV-4hi" firstAttribute="leading" secondItem="vBc-Tu-WdB" secondAttribute="leading" constant="59" id="2K7-AT-RaT"/>
+                            <constraint firstItem="vBc-Tu-WdB" firstAttribute="trailing" secondItem="HO5-op-x6S" secondAttribute="trailing" constant="211" id="9Va-dD-y3E"/>
+                            <constraint firstItem="vBc-Tu-WdB" firstAttribute="bottom" secondItem="HO5-op-x6S" secondAttribute="bottom" constant="100" id="A9S-pO-g3p"/>
+                            <constraint firstItem="mUt-vi-71D" firstAttribute="top" secondItem="52F-iG-Xo0" secondAttribute="bottom" constant="77" id="FXm-tq-jZG"/>
+                            <constraint firstAttribute="bottom" secondItem="52F-iG-Xo0" secondAttribute="bottom" constant="547.5" id="KMJ-NR-3rt"/>
+                            <constraint firstItem="vBc-Tu-WdB" firstAttribute="trailing" secondItem="mUt-vi-71D" secondAttribute="trailing" constant="33" id="Q3J-BF-bGz"/>
+                            <constraint firstItem="52F-iG-Xo0" firstAttribute="trailing" secondItem="425-GV-4hi" secondAttribute="trailing" id="TZT-Xy-njR"/>
+                            <constraint firstItem="HO5-op-x6S" firstAttribute="top" secondItem="mUt-vi-71D" secondAttribute="bottom" constant="90" id="WMI-Mg-x99"/>
+                            <constraint firstItem="HO5-op-x6S" firstAttribute="leading" secondItem="vBc-Tu-WdB" secondAttribute="leading" constant="155" id="gue-QI-SPM"/>
+                            <constraint firstItem="vBc-Tu-WdB" firstAttribute="trailing" secondItem="Dpz-MT-zO2" secondAttribute="trailing" constant="33" id="h1g-n1-E7e"/>
+                            <constraint firstItem="Dpz-MT-zO2" firstAttribute="top" secondItem="vBc-Tu-WdB" secondAttribute="top" constant="162" id="oyr-Kv-npS"/>
+                            <constraint firstItem="52F-iG-Xo0" firstAttribute="top" secondItem="425-GV-4hi" secondAttribute="bottom" constant="55" id="svz-5t-pMa"/>
+                            <constraint firstItem="52F-iG-Xo0" firstAttribute="leading" secondItem="vBc-Tu-WdB" secondAttribute="leading" constant="131" id="tgC-o7-N3W"/>
+                            <constraint firstItem="425-GV-4hi" firstAttribute="top" secondItem="vBc-Tu-WdB" secondAttribute="top" constant="60" id="xKj-tN-zy9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Usuarios atendidos" id="EWg-YC-y5N"/>
+                    <connections>
+                        <outlet property="barras" destination="HO5-op-x6S" id="yLp-7b-Dqg"/>
+                        <outlet property="pastel" destination="52F-iG-Xo0" id="R58-0U-F0v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P87-C9-gwR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2937" y="4247"/>
+            <point key="canvasLocation" x="2936.2962962962961" y="4246.666666666667"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="sVt-mb-RYz">
@@ -1287,7 +1332,10 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NHm-7f-OQp">
-                                        <rect key="frame" x="235" y="395" width="70" height="25"/>
+                                        <rect key="frame" x="235" y="398" width="70" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="bLU-W3-GWj"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1313,7 +1361,10 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="plU-kJ-fyR">
-                                        <rect key="frame" x="235" y="280" width="70" height="25"/>
+                                        <rect key="frame" x="235" y="280" width="70" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="28" id="gTS-hj-Mqh"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1793,7 +1844,10 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reporte indicadores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhd-XX-Rn7">
-                                <rect key="frame" x="253.5" y="69" width="303" height="30"/>
+                                <rect key="frame" x="253.5" y="69" width="303" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="CxN-ln-B8M"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -2071,7 +2125,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
             <objects>
                 <viewController id="qwZ-mP-qLD" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mMp-FB-mzn">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intervencion_servicio.png" translatesAutoresizingMaskIntoConstraints="NO" id="aUQ-Tg-e5d">
@@ -3487,7 +3541,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
             <objects>
                 <viewController id="5hg-zc-p0l" customClass="SesionDetalleViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aZ1-pA-2j4">
-                        <rect key="frame" x="0.0" y="0.0" width="604" height="205.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="604" height="205"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NombrePas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACj-73-mWW">
@@ -3717,7 +3771,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
             <objects>
                 <viewController id="TMO-d9-HKG" customClass="DetalleUsuarioViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TMA-AF-o5j">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z3m-Cy-pIU">
@@ -3940,7 +3994,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rlf-h2-PgX">
-                                <rect key="frame" x="50" y="750" width="604" height="225"/>
+                                <rect key="frame" x="50" y="750" width="604" height="225.5"/>
                                 <connections>
                                     <segue destination="WLV-P0-gju" kind="embed" identifier="sesion" id="8xO-Ej-Qvd"/>
                                 </connections>
@@ -4097,7 +4151,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
             <objects>
                 <viewController id="1wN-aq-pGM" customClass="DetalleUsuarioViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oxl-Rp-Gvx">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5j7-6l-kRY">
@@ -5163,7 +5217,6 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
         <image name="Misión" width="781" height="494"/>
         <image name="Objetivos-1" width="749" height="378"/>
         <image name="ServiciosHolisticos" width="596" height="462"/>
-        <image name="Usuarios_atendidos" width="513" height="685"/>
         <image name="Valores-1" width="652" height="394"/>
         <image name="Visión" width="638" height="283"/>
         <image name="acompanamiento-1" width="608" height="470"/>
@@ -5174,6 +5227,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
         <image name="circle.grid.3x3" catalog="system" width="128" height="110"/>
         <image name="circles.hexagongrid" catalog="system" width="128" height="112"/>
         <image name="cristales1" width="512" height="320"/>
+        <image name="decoUsuarios" width="125.5" height="135.5"/>
         <image name="email" width="256" height="256"/>
         <image name="eye" catalog="system" width="128" height="81"/>
         <image name="eyeglasses" catalog="system" width="128" height="54"/>

@@ -42,6 +42,8 @@
 		48E0E6FB271742DB0002FD97 /* MotivoChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E0E6FA271742DB0002FD97 /* MotivoChartViewController.swift */; };
 		48E0E6FF27174DE60002FD97 /* MotivoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E0E6FE27174DE60002FD97 /* MotivoController.swift */; };
 		48F81A0326F59FAB000197FB /* iconos in Resources */ = {isa = PBXBuildFile; fileRef = 48F81A0226F59FAB000197FB /* iconos */; };
+		48FBB20B271B441300CB69DA /* UsuariosChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FBB20A271B441300CB69DA /* UsuariosChartViewController.swift */; };
+		48FBB20D271B44D700CB69DA /* TanatologoChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FBB20C271B44D700CB69DA /* TanatologoChartController.swift */; };
 		650A7331271A5CEE00E29861 /* generoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650A7330271A5CEE00E29861 /* generoPickerView.swift */; };
 		650A7333271A692900E29861 /* SesionesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650A7332271A692900E29861 /* SesionesTableViewController.swift */; };
 		650A7337271A6B1E00E29861 /* SesionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650A7336271A6B1E00E29861 /* SesionTableViewCell.swift */; };
@@ -129,6 +131,8 @@
 		48E0E6FA271742DB0002FD97 /* MotivoChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivoChartViewController.swift; sourceTree = "<group>"; };
 		48E0E6FE27174DE60002FD97 /* MotivoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivoController.swift; sourceTree = "<group>"; };
 		48F81A0226F59FAB000197FB /* iconos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iconos; sourceTree = "<group>"; };
+		48FBB20A271B441300CB69DA /* UsuariosChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuariosChartViewController.swift; sourceTree = "<group>"; };
+		48FBB20C271B44D700CB69DA /* TanatologoChartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanatologoChartController.swift; sourceTree = "<group>"; };
 		5B5B7F7EDB61D7FA45856C70 /* Pods-CETACTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CETACTests.debug.xcconfig"; path = "Target Support Files/Pods-CETACTests/Pods-CETACTests.debug.xcconfig"; sourceTree = "<group>"; };
 		650A7330271A5CEE00E29861 /* generoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generoPickerView.swift; sourceTree = "<group>"; };
 		650A7332271A692900E29861 /* SesionesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SesionesTableViewController.swift; sourceTree = "<group>"; };
@@ -235,11 +239,12 @@
 				652B6A47270DE434007E4FD7 /* estadoCivilPickerView.swift */,
 				3E8C367F270E10520028F832 /* SeguimientoViewController.swift */,
 				4823AA41270FAE6700DDDC25 /* PerfilController.swift */,
-				48E0E6FE27174DE60002FD97 /* MotivoController.swift */,
 				650A7330271A5CEE00E29861 /* generoPickerView.swift */,
 				650A7332271A692900E29861 /* SesionesTableViewController.swift */,
 				650A7336271A6B1E00E29861 /* SesionTableViewCell.swift */,
 				650A7338271A9CEB00E29861 /* SesionDetalleViewController.swift */,
+				48E0E6FE27174DE60002FD97 /* MotivoController.swift */,
+				48FBB20C271B44D700CB69DA /* TanatologoChartController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -282,10 +287,9 @@
 				652B6A2C270DDF20007E4FD7 /* Helpers */,
 				652B6A2B270DDF0C007E4FD7 /* Models */,
 				4887CEC2270D227600160313 /* SingUp-Login */,
-				48C66E532700E13000EA57B9 /* GoogleService-Info.plist */,
 				482FC93326D9C9530008D31F /* Controllers */,
 				48D29C3226D5B9AD007FF79B /* AppDelegate.swift */,
-				48E0E6FA271742DB0002FD97 /* MotivoChartViewController.swift */,
+				48FBB20E271B526200CB69DA /* Graficas */,
 				4823AA43270FAE9E00DDDC25 /* Validators.swift */,
 				48F81A0226F59FAB000197FB /* iconos */,
 				48D29C3426D5B9AD007FF79B /* SceneDelegate.swift */,
@@ -296,9 +300,19 @@
 				48D29C3B26D5B9B3007FF79B /* Assets.xcassets */,
 				4803865D271650790096C52D /* servicios */,
 				48D29C3D26D5B9B3007FF79B /* LaunchScreen.storyboard */,
+				48C66E532700E13000EA57B9 /* GoogleService-Info.plist */,
 				48D29C4026D5B9B3007FF79B /* Info.plist */,
 			);
 			path = CETAC;
+			sourceTree = "<group>";
+		};
+		48FBB20E271B526200CB69DA /* Graficas */ = {
+			isa = PBXGroup;
+			children = (
+				48FBB20A271B441300CB69DA /* UsuariosChartViewController.swift */,
+				48E0E6FA271742DB0002FD97 /* MotivoChartViewController.swift */,
+			);
+			path = Graficas;
 			sourceTree = "<group>";
 		};
 		52CECFF3E052A9F3BDA28E87 /* Pods */ = {
@@ -570,6 +584,7 @@
 				652B6A32270DDF87007E4FD7 /* UsuarioController.swift in Sources */,
 				652B6A36270DDFB5007E4FD7 /* SesionController.swift in Sources */,
 				482FC93526D9C98E0008D31F /* ContactoViewController.swift in Sources */,
+				48FBB20B271B441300CB69DA /* UsuariosChartViewController.swift in Sources */,
 				48C9E0C5270A44D8002B72A9 /* AdminPerfilViewController.swift in Sources */,
 				652B6A40270DE3C4007E4FD7 /* motivosPickerView.swift in Sources */,
 				48D29C3326D5B9AD007FF79B /* AppDelegate.swift in Sources */,
@@ -586,6 +601,7 @@
 				650A7337271A6B1E00E29861 /* SesionTableViewCell.swift in Sources */,
 				48D29C3526D5B9AD007FF79B /* SceneDelegate.swift in Sources */,
 				481EC14C27092A2500987AE1 /* SingUp2ViewController.swift in Sources */,
+				48FBB20D271B44D700CB69DA /* TanatologoChartController.swift in Sources */,
 				48E0E6FB271742DB0002FD97 /* MotivoChartViewController.swift in Sources */,
 				652B6A53270E1503007E4FD7 /* TanatologoController.swift in Sources */,
 				3E8C3680270E10520028F832 /* SeguimientoViewController.swift in Sources */,
