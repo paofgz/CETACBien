@@ -31,6 +31,25 @@ class UsuarioController{
         }
        
     }
+    
+    func fetchUsuariosByTan(idTan:String, completion: @escaping (Result<Usuarios, Error>) -> Void){
+        
+        var usuarios = [Usuario]()
+        db.collection("Usuarios").whereField("idTanatologo", isEqualTo: idTan).getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+                completion(.failure(err))
+            } else {
+              
+                for document in querySnapshot!.documents {
+                    let u = Usuario(aDoc: document)
+                    usuarios.append(u)
+                }
+                completion(.success(usuarios))
+            }
+        }
+       
+    }
 
     func insertUsuario(nuevoUsuario:Usuario, completion: @escaping (Result<String, Error>) -> Void){
         if nuevoUsuario.nombre == "" {

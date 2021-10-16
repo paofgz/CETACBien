@@ -62,6 +62,8 @@
 		652B6A48270DE434007E4FD7 /* estadoCivilPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A47270DE434007E4FD7 /* estadoCivilPickerView.swift */; };
 		652B6A51270E14E4007E4FD7 /* Tanatologo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A50270E14E4007E4FD7 /* Tanatologo.swift */; };
 		652B6A53270E1503007E4FD7 /* TanatologoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A52270E1503007E4FD7 /* TanatologoController.swift */; };
+		6550C35F271B50C1009DDD9C /* CuotasChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6550C35E271B50C1009DDD9C /* CuotasChartViewController.swift */; };
+		6550C361271B5113009DDD9C /* CuotasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6550C360271B5113009DDD9C /* CuotasController.swift */; };
 		659C4A4E27120C670096679B /* CerrarExpedienteTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659C4A4D27120C670096679B /* CerrarExpedienteTestCase.swift */; };
 		659C4A502712111D0096679B /* UpdateProximaSesionTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659C4A4F2712111D0096679B /* UpdateProximaSesionTestCase.swift */; };
 		659C4A54271212EE0096679B /* CrearUsusariosTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659C4A53271212EE0096679B /* CrearUsusariosTestCase.swift */; };
@@ -150,6 +152,8 @@
 		652B6A47270DE434007E4FD7 /* estadoCivilPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = estadoCivilPickerView.swift; sourceTree = "<group>"; };
 		652B6A50270E14E4007E4FD7 /* Tanatologo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tanatologo.swift; sourceTree = "<group>"; };
 		652B6A52270E1503007E4FD7 /* TanatologoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanatologoController.swift; sourceTree = "<group>"; };
+		6550C35E271B50C1009DDD9C /* CuotasChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuotasChartViewController.swift; sourceTree = "<group>"; };
+		6550C360271B5113009DDD9C /* CuotasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuotasController.swift; sourceTree = "<group>"; };
 		659C4A4D27120C670096679B /* CerrarExpedienteTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CerrarExpedienteTestCase.swift; sourceTree = "<group>"; };
 		659C4A4F2712111D0096679B /* UpdateProximaSesionTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProximaSesionTestCase.swift; sourceTree = "<group>"; };
 		659C4A53271212EE0096679B /* CrearUsusariosTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearUsusariosTestCase.swift; sourceTree = "<group>"; };
@@ -238,6 +242,7 @@
 				48E0E6FE27174DE60002FD97 /* MotivoController.swift */,
 				650A7330271A5CEE00E29861 /* generoPickerView.swift */,
 				650A7332271A692900E29861 /* SesionesTableViewController.swift */,
+				6550C360271B5113009DDD9C /* CuotasController.swift */,
 				650A7336271A6B1E00E29861 /* SesionTableViewCell.swift */,
 				650A7338271A9CEB00E29861 /* SesionDetalleViewController.swift */,
 			);
@@ -285,6 +290,7 @@
 				48C66E532700E13000EA57B9 /* GoogleService-Info.plist */,
 				482FC93326D9C9530008D31F /* Controllers */,
 				48D29C3226D5B9AD007FF79B /* AppDelegate.swift */,
+				6550C35E271B50C1009DDD9C /* CuotasChartViewController.swift */,
 				48E0E6FA271742DB0002FD97 /* MotivoChartViewController.swift */,
 				4823AA43270FAE9E00DDDC25 /* Validators.swift */,
 				48F81A0226F59FAB000197FB /* iconos */,
@@ -573,6 +579,7 @@
 				48C9E0C5270A44D8002B72A9 /* AdminPerfilViewController.swift in Sources */,
 				652B6A40270DE3C4007E4FD7 /* motivosPickerView.swift in Sources */,
 				48D29C3326D5B9AD007FF79B /* AppDelegate.swift in Sources */,
+				6550C361271B5113009DDD9C /* CuotasController.swift in Sources */,
 				652B6A34270DDF9D007E4FD7 /* Sesion.swift in Sources */,
 				48E0E6FF27174DE60002FD97 /* MotivoController.swift in Sources */,
 				4823AA42270FAE6700DDDC25 /* PerfilController.swift in Sources */,
@@ -584,6 +591,7 @@
 				652B6A3E270DE36A007E4FD7 /* EncuadreViewController.swift in Sources */,
 				650A7331271A5CEE00E29861 /* generoPickerView.swift in Sources */,
 				650A7337271A6B1E00E29861 /* SesionTableViewCell.swift in Sources */,
+				6550C35F271B50C1009DDD9C /* CuotasChartViewController.swift in Sources */,
 				48D29C3526D5B9AD007FF79B /* SceneDelegate.swift in Sources */,
 				481EC14C27092A2500987AE1 /* SingUp2ViewController.swift in Sources */,
 				48E0E6FB271742DB0002FD97 /* MotivoChartViewController.swift in Sources */,

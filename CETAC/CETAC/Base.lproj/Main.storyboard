@@ -1163,29 +1163,103 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
         <!--Cuota de recuperación -->
         <scene sceneID="iTk-zb-Z8A">
             <objects>
-                <viewController id="5Zb-rA-dNv" sceneMemberID="viewController">
+                <viewController id="5Zb-rA-dNv" customClass="CuotasChartViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oYe-MR-B0p">
                         <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cuota_recuperacion" translatesAutoresizingMaskIntoConstraints="NO" id="a50-JW-SH9">
-                                <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuota Recuperación Global" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECp-3s-o3s">
+                                <rect key="frame" x="50" y="50" width="400" height="60"/>
+                                <color key="backgroundColor" red="0.75875407459999999" green="0.87285679579999997" blue="0.37572741510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="JZ8-eQ-cuo"/>
+                                    <constraint firstAttribute="width" constant="400" id="sLj-1C-2q5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ry0-RT-JeW">
+                                <rect key="frame" x="150" y="203" width="149" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="XyX-vT-mMI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DecoRec1" translatesAutoresizingMaskIntoConstraints="NO" id="XYW-T4-41i">
+                                <rect key="frame" x="469" y="50" width="215" height="208"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="215" id="WMA-Vk-cwt"/>
+                                    <constraint firstAttribute="height" constant="208" id="rUv-u6-Cph"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuota Recuperación Por Tanatólogo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKI-iJ-zlv">
+                                <rect key="frame" x="154" y="348" width="500" height="60"/>
+                                <color key="backgroundColor" red="0.75875407459999999" green="0.87285679579999997" blue="0.37572741510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="C72-FN-8SR"/>
+                                    <constraint firstAttribute="height" constant="60" id="Jnl-wG-FUC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DecoRec2" translatesAutoresizingMaskIntoConstraints="NO" id="QWE-co-eBj">
+                                <rect key="frame" x="0.0" y="265" width="146" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="154" id="DqK-Lw-2J9"/>
+                                    <constraint firstAttribute="width" constant="146" id="GmT-bs-tcp"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ip-01-4Es">
+                                <rect key="frame" x="65" y="499" width="574" height="421.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="421.5" id="Cr2-jA-tqY"/>
+                                    <constraint firstAttribute="width" constant="574" id="UbI-Vo-jlZ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="V6L-KW-Wfv"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="V6L-KW-Wfv" firstAttribute="trailing" secondItem="a50-JW-SH9" secondAttribute="trailing" id="K6z-aR-7qG"/>
-                            <constraint firstItem="V6L-KW-Wfv" firstAttribute="bottom" secondItem="a50-JW-SH9" secondAttribute="bottom" id="M1d-H0-yVf"/>
-                            <constraint firstItem="a50-JW-SH9" firstAttribute="top" secondItem="V6L-KW-Wfv" secondAttribute="top" id="T1t-hi-nSx"/>
-                            <constraint firstItem="a50-JW-SH9" firstAttribute="leading" secondItem="V6L-KW-Wfv" secondAttribute="leading" id="xmr-HH-NT6"/>
+                            <constraint firstItem="V6L-KW-Wfv" firstAttribute="trailing" secondItem="XYW-T4-41i" secondAttribute="trailing" constant="20" id="1Js-lj-pEJ"/>
+                            <constraint firstItem="XYW-T4-41i" firstAttribute="top" secondItem="V6L-KW-Wfv" secondAttribute="top" constant="50" id="C7D-fb-v8d"/>
+                            <constraint firstItem="V6L-KW-Wfv" firstAttribute="trailing" secondItem="ZKI-iJ-zlv" secondAttribute="trailing" constant="50" id="KHu-bm-KXV"/>
+                            <constraint firstItem="ZKI-iJ-zlv" firstAttribute="top" secondItem="Ry0-RT-JeW" secondAttribute="bottom" constant="75" id="MPp-pQ-MNB"/>
+                            <constraint firstItem="Ry0-RT-JeW" firstAttribute="leading" secondItem="V6L-KW-Wfv" secondAttribute="leading" constant="150" id="NcH-86-afj"/>
+                            <constraint firstItem="ECp-3s-o3s" firstAttribute="leading" secondItem="V6L-KW-Wfv" secondAttribute="leading" constant="50" id="NsV-qC-Iyk"/>
+                            <constraint firstItem="Ry0-RT-JeW" firstAttribute="top" secondItem="ECp-3s-o3s" secondAttribute="bottom" constant="93" id="Pkp-LZ-BUE"/>
+                            <constraint firstItem="1ip-01-4Es" firstAttribute="leading" secondItem="V6L-KW-Wfv" secondAttribute="leading" constant="65" id="VRy-vZ-APV"/>
+                            <constraint firstItem="QWE-co-eBj" firstAttribute="top" secondItem="ECp-3s-o3s" secondAttribute="bottom" constant="155" id="YCV-Ft-qnu"/>
+                            <constraint firstItem="V6L-KW-Wfv" firstAttribute="trailing" secondItem="1ip-01-4Es" secondAttribute="trailing" constant="65" id="alr-rd-7Vi"/>
+                            <constraint firstItem="QWE-co-eBj" firstAttribute="leading" secondItem="V6L-KW-Wfv" secondAttribute="leading" id="gjw-UC-tOk"/>
+                            <constraint firstItem="1ip-01-4Es" firstAttribute="top" secondItem="QWE-co-eBj" secondAttribute="bottom" constant="80" id="mDz-6t-hbS"/>
+                            <constraint firstItem="ECp-3s-o3s" firstAttribute="top" secondItem="V6L-KW-Wfv" secondAttribute="top" constant="50" id="qmW-EM-yxx"/>
+                            <constraint firstItem="V6L-KW-Wfv" firstAttribute="bottom" secondItem="1ip-01-4Es" secondAttribute="bottom" constant="75" id="yhG-4j-ctC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Cuota de recuperación " id="HRq-JG-bdd"/>
+                    <connections>
+                        <outlet property="cuotaGlobal" destination="Ry0-RT-JeW" id="y9T-Xv-WSb"/>
+                        <outlet property="grafica" destination="1ip-01-4Es" id="hXV-0A-FrI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wZ7-da-ULR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3562" y="4233"/>
+            <point key="canvasLocation" x="3561.4814814814813" y="4231.666666666667"/>
         </scene>
         <!--Usuarios atendidos-->
         <scene sceneID="VV3-dn-uBP">
@@ -2098,7 +2172,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
             <objects>
                 <viewController id="DRT-cs-BNt" customClass="MotivoChartViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SDq-5R-ipM">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qO9-xp-6A8">
@@ -3940,7 +4014,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                 </connections>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rlf-h2-PgX">
-                                <rect key="frame" x="50" y="750" width="604" height="225"/>
+                                <rect key="frame" x="50" y="750" width="604" height="225.5"/>
                                 <connections>
                                     <segue destination="WLV-P0-gju" kind="embed" identifier="sesion" id="8xO-Ej-Qvd"/>
                                 </connections>
@@ -5098,7 +5172,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
             <objects>
                 <tableViewController id="WLV-P0-gju" customClass="SesionesTableViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cBr-qv-jZJ">
-                        <rect key="frame" x="0.0" y="0.0" width="604" height="225"/>
+                        <rect key="frame" x="0.0" y="0.0" width="604" height="225.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -5156,8 +5230,9 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
     <resources>
         <image name="Alternativo-1" width="83" height="71"/>
         <image name="Alternativo-2" width="120.5" height="65.5"/>
-        <image name="Cuota_recuperacion" width="514" height="685"/>
         <image name="DecoMotivo" width="664" height="88"/>
+        <image name="DecoRec1" width="119" height="119"/>
+        <image name="DecoRec2" width="138.5" height="108"/>
         <image name="Intervencion_servicio.png" width="513" height="685"/>
         <image name="LogoCETAC" width="199.5" height="46"/>
         <image name="Misión" width="781" height="494"/>
