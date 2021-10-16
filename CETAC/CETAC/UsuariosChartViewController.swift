@@ -11,6 +11,8 @@ import TinyConstraints
 
 class UsuariosChartViewController: UIViewController {
     var motivoController = MotivoController()
+    var tanatologoChartController = TanatologoChartController()
+    var perfilController = PerfilController()
     @IBOutlet weak var pastel: UIView!
     
     @IBOutlet weak var barras: UIView!
@@ -36,7 +38,7 @@ class UsuariosChartViewController: UIViewController {
         barChart.width(to: barras)
         barChart.heightToWidth(of: barras)
         
-        motivoController.fetchUsuarios2(campo: "sexo"){ (result) in
+        motivoController.fetchUsuarios(campo: "sexo"){ (result) in
             switch result{
             //case .success(let usuarios):print( usuarios)
 
@@ -45,7 +47,8 @@ class UsuariosChartViewController: UIViewController {
             }
             
         }
-        motivoController.fetchUsuarios2(campo: "idTanatologo"){ (result) in
+        
+        motivoController.fetchUsuarios(campo: "idTanatologo"){ (result) in
             switch result{
             //case .success(let usuarios):print( usuarios)
 
@@ -126,55 +129,46 @@ class UsuariosChartViewController: UIViewController {
         pieChart.legend.textColor = UIColor.blue
         pieChart.notifyDataSetChanged()
     }
-        
+       
+    var tanatologosNombres = [" "]
+    
     func barChartUpdate () {
         var sesionesArreglo = [BarChartDataEntry]()
         var i = 1.0
-        var usuarios = [""]
-        //let groupedDictionary = Dictionary(grouping: usuarios, by: {String($0.nombre.prefix(1))})
+        var tana = [String]()
+       
         for (key, value) in tanatologos{
             sesionesArreglo.append(BarChartDataEntry(x: i, y: Double(value)))
             i += 1
-            usuarios.append(key)
+            tana.append(key)
         }
-        let sesionesDataSet = BarChartDataSet(entries: sesionesArreglo, label: "tanatologo")
-
+        let sesionesDataSet = BarChartDataSet(entries: sesionesArreglo, label: "Tanatologo")
         let data = BarChartData(dataSet: sesionesDataSet)
- 
-        //let dataSet = BarChartDataSet(entries: [entry1, entry2, entry3], label: "Usuarios por motivo")
-        //let data = BarChartData(dataSet: dataSet)
         barChart.data = data
         barChart.chartDescription?.text = "Usuarios por tanatólogo"
-        
-       // let generos = ["Inicio", "Addición", "Conflicto", "Stress", "Pérdida"]
-        barChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: usuarios)
-//        barChart.xAxis.granularity = 0
-
+        for tanatolo in tana{
+            //TanatologoChartController
+            tanatologoChartController.fetchPerfil(email: tanatolo, perfil: "Tanatologo") {
+                (st)in
+                self.cargar(st: st)
+            }
+        }
+    
+        barChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: tana)
         barChart.notifyDataSetChanged()
     }
-    /*
-     func actualiza(){
-         var sesionesArreglo = [BarChartDataEntry]()
-         var i = 1.0
-         var usuarios = [""]
-         //let groupedDictionary = Dictionary(grouping: usuarios, by: {String($0.nombre.prefix(1))})
-         for (key, value) in motivos{
-             sesionesArreglo.append(BarChartDataEntry(x: i, y: Double(value)))
-             i += 1
-             usuarios.append(key)
-         }
-         
-        
-         let sesionesDataSet = BarChartDataSet(entries: sesionesArreglo, label: "Motivo")
-         let data = BarChartData(dataSet: sesionesDataSet)
-         horizontalBarChart.data = data
-         horizontalBarChart.chartDescription?.text = "Motivo"
-         
-         horizontalBarChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: usuarios)
-         //horizontalBarChart.backgroundColor = ChartColorTemplates.vordiplom()
+    
+    
+    func cargar(st: String){
+        DispatchQueue.main.async {
+            
+            self.tanatologosNombres.append(st)
+            //print("")
+            self.barChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: self.tanatologosNombres)
+            self.barChart.notifyDataSetChanged()
 
-         horizontalBarChart.notifyDataSetChanged()
-     }
-     */
+        }
+    }
+    
 
 }

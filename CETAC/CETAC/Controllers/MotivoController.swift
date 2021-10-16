@@ -43,25 +43,5 @@ class MotivoController{
         }
        
     }
-    func fetchUsuarios2(campo: String, completion: @escaping (Result<[Usuario], Error>) -> Void){
-        
-        var usuarios = [Usuario]()
-        print("campo 2")
-        print(campo)
-        db.collection("Usuarios").order(by: campo).getDocuments() { (querySnapshot, err) in
-            if let err = err {
-                print("Error getting documents: \(err)")
-                completion(.failure(err))
-            } else {
-                //print(querySnapshot!.documents)
-              
-                for document in querySnapshot!.documents {
-                    let u = Usuario(aDoc: document)
-                    usuarios.append(u)
-                }
-                completion(.success(usuarios))
-            }
-        }
-       
-    }
+  
 }
