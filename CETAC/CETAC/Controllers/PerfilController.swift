@@ -8,6 +8,7 @@
 import Foundation
 import Firebase
 import FirebaseAuth
+
 class PerfilController{
     func authActua( completion: @escaping (String) -> Void){
         let user = Auth.auth().currentUser

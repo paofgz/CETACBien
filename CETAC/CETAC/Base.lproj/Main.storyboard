@@ -1268,6 +1268,13 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                     <constraint firstAttribute="height" constant="241" id="zBr-4f-un9"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Usuarios atendidos por género" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dnl-UL-z1m">
+                                <rect key="frame" x="85" y="151" width="235" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vBc-Tu-WdB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
