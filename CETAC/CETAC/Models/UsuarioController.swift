@@ -51,15 +51,15 @@ class UsuarioController{
             "estadoCivil": nuevoUsuario.estadoCivil,
             "edadPareja": nuevoUsuario.edadPareja,
             "sexoPareja": nuevoUsuario.sexoPareja,
-            "numeroDeHijos": nuevoUsuario.numeroDeHijos,
-            "edadesHijos": nuevoUsuario.edadesHijos,
-            "sexoHijos": nuevoUsuario.sexoHijos,
+            "hijos": nuevoUsuario.hijos,
             "referido": nuevoUsuario.referido,
             "motivo": nuevoUsuario.motivo,
             "identificacionDeRespuesta": nuevoUsuario.identificacionDeRespuesta,
             "EKR": nuevoUsuario.EKR,
             "proximaSesion": nuevoUsuario.proximaSesion,
-            "status": nuevoUsuario.status
+            "status": nuevoUsuario.status,
+            "edad": nuevoUsuario.edad,
+            "sexo": nuevoUsuario.sexo
         ]) { err in
             if let err = err {
                 print("Error adding document: \(err)")

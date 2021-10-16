@@ -42,6 +42,7 @@
 		48E0E6FB271742DB0002FD97 /* MotivoChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E0E6FA271742DB0002FD97 /* MotivoChartViewController.swift */; };
 		48E0E6FF27174DE60002FD97 /* MotivoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E0E6FE27174DE60002FD97 /* MotivoController.swift */; };
 		48F81A0326F59FAB000197FB /* iconos in Resources */ = {isa = PBXBuildFile; fileRef = 48F81A0226F59FAB000197FB /* iconos */; };
+		650A7331271A5CEE00E29861 /* generoPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 650A7330271A5CEE00E29861 /* generoPickerView.swift */; };
 		652B6A2E270DDF49007E4FD7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A2D270DDF49007E4FD7 /* Colors.swift */; };
 		652B6A30270DDF69007E4FD7 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A2F270DDF69007E4FD7 /* Usuario.swift */; };
 		652B6A32270DDF87007E4FD7 /* UsuarioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A31270DDF87007E4FD7 /* UsuarioController.swift */; };
@@ -126,6 +127,7 @@
 		48E0E6FE27174DE60002FD97 /* MotivoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotivoController.swift; sourceTree = "<group>"; };
 		48F81A0226F59FAB000197FB /* iconos */ = {isa = PBXFileReference; lastKnownFileType = folder; path = iconos; sourceTree = "<group>"; };
 		5B5B7F7EDB61D7FA45856C70 /* Pods-CETACTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CETACTests.debug.xcconfig"; path = "Target Support Files/Pods-CETACTests/Pods-CETACTests.debug.xcconfig"; sourceTree = "<group>"; };
+		650A7330271A5CEE00E29861 /* generoPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generoPickerView.swift; sourceTree = "<group>"; };
 		652B6A2D270DDF49007E4FD7 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		652B6A2F270DDF69007E4FD7 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		652B6A31270DDF87007E4FD7 /* UsuarioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuarioController.swift; sourceTree = "<group>"; };
@@ -228,6 +230,7 @@
 				3E8C367F270E10520028F832 /* SeguimientoViewController.swift */,
 				4823AA41270FAE6700DDDC25 /* PerfilController.swift */,
 				48E0E6FE27174DE60002FD97 /* MotivoController.swift */,
+				650A7330271A5CEE00E29861 /* generoPickerView.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -568,6 +571,7 @@
 				48CB2027270CCE5400E2DB22 /* SingUpController.swift in Sources */,
 				652B6A3A270DE1D0007E4FD7 /* UsuariosTableViewController.swift in Sources */,
 				652B6A3E270DE36A007E4FD7 /* EncuadreViewController.swift in Sources */,
+				650A7331271A5CEE00E29861 /* generoPickerView.swift in Sources */,
 				48D29C3526D5B9AD007FF79B /* SceneDelegate.swift in Sources */,
 				481EC14C27092A2500987AE1 /* SingUp2ViewController.swift in Sources */,
 				48E0E6FB271742DB0002FD97 /* MotivoChartViewController.swift in Sources */,

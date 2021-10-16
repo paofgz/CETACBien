@@ -11,9 +11,9 @@ var sesionControlador = SesionesController()
 
 struct Usuario: Codable {
     
-    let id, EKR, celular, domicilio, edadesHijos, estadoCivil, idTanatologo, identificacionDeRespuesta, motivo, nombre, ocupacion, procedencia, referido, religion, sexoHijos, sexoPareja, telefonoDeCasa, fecha, proximaSesion: String
-    let numeroDeHijos, edadPareja, status: Int
-    init(id:String, fecha:String, idTanatologo:String, nombre:String, ocupacion:String, religion: String, procedencia:String, domicilio:String, telefonoDeCasa:String, celular:String, estadoCivil:String, edadPareja:Int, sexoPareja:String, numeroDeHijos:Int, edadesHijos:String, sexoHijos:String, referido:String, motivo:String, identificacionDeRespuesta:String, EKR:String, status:Int, proximaSesion:String){
+    let id, EKR, celular, domicilio, estadoCivil, idTanatologo, identificacionDeRespuesta, motivo, nombre, ocupacion, procedencia, referido, religion, sexoPareja, telefonoDeCasa, fecha, proximaSesion, sexo, hijos: String
+    let edadPareja, status, edad: Int
+    init(id:String, fecha:String, idTanatologo:String, nombre:String, ocupacion:String, religion: String, procedencia:String, domicilio:String, telefonoDeCasa:String, celular:String, estadoCivil:String, edadPareja:Int, sexoPareja:String, hijos:String, referido:String, motivo:String, identificacionDeRespuesta:String, EKR:String, status:Int, proximaSesion:String, sexo:String, edad:Int){
             self.id = id
             self.fecha = fecha
             self.idTanatologo = idTanatologo
@@ -27,18 +27,18 @@ struct Usuario: Codable {
             self.estadoCivil = estadoCivil
             self.edadPareja = edadPareja
             self.sexoPareja = sexoPareja
-            self.numeroDeHijos = numeroDeHijos
-            self.edadesHijos = edadesHijos
-            self.sexoHijos = sexoHijos
+            self.hijos = hijos
             self.referido = referido
             self.motivo = motivo
             self.identificacionDeRespuesta = identificacionDeRespuesta
             self.EKR = EKR
             self.proximaSesion = proximaSesion
             self.status = status
+            self.sexo = sexo
+            self.edad = edad
     }
 
-    init(fecha:String, idTanatologo:String, nombre:String, ocupacion:String, religion: String, procedencia:String, domicilio:String, telefonoDeCasa:String, celular:String, estadoCivil:String, edadPareja:Int, sexoPareja:String, numeroDeHijos:Int, edadesHijos:String, sexoHijos:String, referido:String, motivo:String, identificacionDeRespuesta:String, EKR:String, status:Int, proximaSesion:String){
+    init(fecha:String, idTanatologo:String, nombre:String, ocupacion:String, religion: String, procedencia:String, domicilio:String, telefonoDeCasa:String, celular:String, estadoCivil:String, edadPareja:Int, sexoPareja:String, hijos:String, referido:String, motivo:String, identificacionDeRespuesta:String, EKR:String, status:Int, proximaSesion:String, sexo:String, edad:Int){
             self.id = ""
             self.fecha = fecha
             self.idTanatologo = idTanatologo
@@ -52,15 +52,15 @@ struct Usuario: Codable {
             self.estadoCivil = estadoCivil
             self.edadPareja = edadPareja
             self.sexoPareja = sexoPareja
-            self.numeroDeHijos = numeroDeHijos
-            self.edadesHijos = edadesHijos
-            self.sexoHijos = sexoHijos
+            self.hijos = hijos
             self.referido = referido
             self.motivo = motivo
             self.identificacionDeRespuesta = identificacionDeRespuesta
             self.EKR = EKR
             self.proximaSesion = proximaSesion
             self.status = status
+            self.sexo = sexo
+            self.edad = edad
     }
 
     init(aDoc: DocumentSnapshot){
@@ -77,15 +77,15 @@ struct Usuario: Codable {
         self.estadoCivil = aDoc.get("estadoCivil") as? String ?? ""
         self.edadPareja = aDoc.get("edadPareja") as? Int ?? 0
         self.sexoPareja = aDoc.get("sexoPareja") as? String ?? ""
-        self.numeroDeHijos = aDoc.get("numeroDeHijos") as? Int ?? 0
-        self.edadesHijos = aDoc.get("edadesHijos") as? String ?? ""
-        self.sexoHijos = aDoc.get("sexoHijos") as? String ?? ""
+        self.hijos = aDoc.get("hijos") as? String ?? ""
         self.referido = aDoc.get("referido") as? String ?? ""
         self.motivo = aDoc.get("motivo") as? String ?? ""
         self.identificacionDeRespuesta = aDoc.get("identificacionDeRespuesta") as? String ?? ""
         self.EKR = aDoc.get("EKR") as? String ?? ""
         self.proximaSesion = aDoc.get("proximaSesion") as? String ?? ""
         self.status = aDoc.get("status") as? Int ?? 0
+        self.sexo = aDoc.get("sexo") as? String ?? ""
+        self.edad = aDoc.get("edad") as? Int ?? 0
     }
 }
 

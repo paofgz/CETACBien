@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fDO-Uz-3zg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Sy-gC-5Rp">
     <device id="ipad10_2" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -4230,7 +4230,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                 <rect key="frame" x="0.0" y="0.0" width="810" height="1030"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nyq-pX-XN3" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="810" height="2841"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="810" height="2953"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pyd-Jh-c7b">
                                                 <rect key="frame" x="20" y="40" width="80" height="60"/>
@@ -4281,20 +4281,20 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ocupación o profesión" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRp-FZ-Ft5">
-                                                <rect key="frame" x="20" y="394" width="250" height="60"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGT-Y7-6hh">
+                                                <rect key="frame" x="20" y="394" width="120" height="60"/>
                                                 <color key="backgroundColor" red="0.57823307040000005" green="0.76939731840000003" blue="0.25511732580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" red="0.63305141649999996" green="0.80888641989999999" blue="0.30948849859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="60" id="5IS-bX-fn5"/>
-                                                    <constraint firstAttribute="width" constant="250" id="UDt-TZ-nSO"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="Tuo-hK-qcb"/>
+                                                    <constraint firstAttribute="height" constant="60" id="bbL-5u-dMp"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Religión" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RcD-6Q-O4f">
-                                                <rect key="frame" x="20" y="523" width="125" height="60"/>
+                                                <rect key="frame" x="20" y="764" width="125" height="60"/>
                                                 <color key="backgroundColor" red="0.57823307040000005" green="0.76939731840000003" blue="0.25511732580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" red="0.63305141649999996" green="0.80888641989999999" blue="0.30948849859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -4306,7 +4306,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Procedencia" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMu-x7-kLi">
-                                                <rect key="frame" x="20" y="652" width="150" height="60"/>
+                                                <rect key="frame" x="20" y="893" width="150" height="60"/>
                                                 <color key="backgroundColor" red="0.57823307040000005" green="0.76939731840000003" blue="0.25511732580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" red="0.63305141649999996" green="0.80888641989999999" blue="0.30948849859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -4318,7 +4318,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Domicilio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vuG-uM-Ygx">
-                                                <rect key="frame" x="20" y="781" width="150" height="60"/>
+                                                <rect key="frame" x="20" y="1022" width="150" height="60"/>
                                                 <color key="backgroundColor" red="0.57823307040000005" green="0.76939731840000003" blue="0.25511732580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" red="0.63305141649999996" green="0.80888641989999999" blue="0.30948849859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -4330,7 +4330,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teléfono Casa" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sDJ-ey-HHu">
-                                                <rect key="frame" x="20" y="910" width="175" height="60"/>
+                                                <rect key="frame" x="20" y="1151" width="175" height="60"/>
                                                 <color key="backgroundColor" red="0.57823307040000005" green="0.76939731840000003" blue="0.25511732580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" red="0.63305141649999996" green="0.80888641989999999" blue="0.30948849859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -4342,7 +4342,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Celular" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIH-pl-Tod">
-                                                <rect key="frame" x="20" y="1039" width="175" height="60"/>
+                                                <rect key="frame" x="20" y="1280" width="175" height="60"/>
                                                 <color key="backgroundColor" red="0.57823307040000005" green="0.76939731840000003" blue="0.25511732580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" red="0.63305141649999996" green="0.80888641989999999" blue="0.30948849859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -4370,7 +4370,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Itl-eK-VMP" userLabel="ocupacion">
-                                                <rect key="frame" x="20" y="464" width="748" height="34"/>
+                                                <rect key="frame" x="20" y="705" width="748" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="748" id="5Ja-ft-bui"/>
                                                     <constraint firstAttribute="height" constant="34" id="K88-DS-Oau"/>
@@ -4379,7 +4379,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hq5-zw-8zL" userLabel="relig">
-                                                <rect key="frame" x="20" y="593" width="748" height="34"/>
+                                                <rect key="frame" x="20" y="834" width="748" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="748" id="3CP-9U-BR9"/>
                                                     <constraint firstAttribute="height" constant="34" id="cSb-Cy-0pa"/>
@@ -4388,7 +4388,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lvi-eB-pyS" userLabel="proced">
-                                                <rect key="frame" x="20" y="722" width="748" height="34"/>
+                                                <rect key="frame" x="20" y="963" width="748" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="748" id="CZ3-sa-bQW"/>
                                                     <constraint firstAttribute="height" constant="34" id="hqU-HR-QrP"/>
@@ -4397,7 +4397,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cqh-Tm-owR" userLabel="domic">
-                                                <rect key="frame" x="20" y="851" width="748" height="34"/>
+                                                <rect key="frame" x="20" y="1092" width="748" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="748" id="8MR-9T-kin"/>
                                                     <constraint firstAttribute="height" constant="34" id="ZQK-00-mSJ"/>
@@ -4406,7 +4406,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hH3-3d-vC2" userLabel="idenRespAct">
-                                                <rect key="frame" x="20" y="1939" width="748" height="34"/>
+                                                <rect key="frame" x="20" y="2051" width="748" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="748" id="3ev-BP-83k"/>
                                                     <constraint firstAttribute="height" constant="34" id="x7h-u5-8ae"/>
@@ -4415,7 +4415,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w21-Oq-3nX" userLabel="ekr">
-                                                <rect key="frame" x="20" y="2068" width="748" height="34"/>
+                                                <rect key="frame" x="20" y="2180" width="748" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="748" id="0ZC-Oh-3ks"/>
                                                     <constraint firstAttribute="height" constant="34" id="awX-4d-3WA"/>
@@ -4424,7 +4424,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MOU-bc-aOg" userLabel="evalSes">
-                                                <rect key="frame" x="20" y="2397" width="748" height="34"/>
+                                                <rect key="frame" x="20" y="2509" width="748" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="748" id="hgV-a9-zcz"/>
                                                     <constraint firstAttribute="height" constant="34" id="ukF-CX-DiX"/>
@@ -4433,7 +4433,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6cZ-Qq-Yl9" userLabel="telCasa">
-                                                <rect key="frame" x="20" y="980" width="374" height="34"/>
+                                                <rect key="frame" x="20" y="1221" width="374" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="OyW-bG-eYk"/>
                                                     <constraint firstAttribute="width" constant="374" id="uXP-AV-q0J"/>
@@ -4442,7 +4442,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <textInputTraits key="textInputTraits" textContentType="tel"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cdx-VL-bKZ" userLabel="cel">
-                                                <rect key="frame" x="20" y="1109" width="374" height="34"/>
+                                                <rect key="frame" x="20" y="1350" width="374" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="374" id="1t2-iQ-EIe"/>
                                                     <constraint firstAttribute="height" constant="34" id="sZW-iZ-b35"/>
@@ -4451,7 +4451,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <textInputTraits key="textInputTraits" textContentType="tel"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JGH-Sp-wCs" userLabel="edadPareja">
-                                                <rect key="frame" x="20" y="1333" width="340" height="34"/>
+                                                <rect key="frame" x="20" y="1574" width="340" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="340" id="1br-Ov-zK7"/>
                                                     <constraint firstAttribute="height" constant="34" id="nFc-KT-f2j"/>
@@ -4459,17 +4459,8 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y6i-7N-EeH" userLabel="edadesHijos">
-                                                <rect key="frame" x="20" y="1591" width="340" height="34"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="34" id="RJc-fR-q4C"/>
-                                                    <constraint firstAttribute="width" constant="340" id="geP-bA-Ppi"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x8M-xK-0TV" userLabel="sexPareja">
-                                                <rect key="frame" x="385" y="1332" width="340" height="34"/>
+                                                <rect key="frame" x="385" y="1573" width="340" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="0U8-Ca-iz6"/>
                                                     <constraint firstAttribute="width" constant="340" id="TW5-Rg-1XF"/>
@@ -4478,7 +4469,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estado Civil" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXh-nV-5eD">
-                                                <rect key="frame" x="20" y="1168" width="175" height="60"/>
+                                                <rect key="frame" x="20" y="1409" width="175" height="60"/>
                                                 <color key="backgroundColor" red="0.57823307040000005" green="0.76939731840000003" blue="0.25511732580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" red="0.63305141649999996" green="0.80888641989999999" blue="0.30948849859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -4490,7 +4481,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edad Pareja" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2D-19-Wp4">
-                                                <rect key="frame" x="20" y="1263" width="175" height="60"/>
+                                                <rect key="frame" x="20" y="1504" width="175" height="60"/>
                                                 <color key="backgroundColor" red="0.57823307040000005" green="0.76939731840000003" blue="0.25511732580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" red="0.63305141649999996" green="0.80888641989999999" blue="0.30948849859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -4501,32 +4492,8 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edades Hijos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BsT-qb-Hx4">
-                                                <rect key="frame" x="20" y="1521" width="175" height="60"/>
-                                                <color key="backgroundColor" red="0.57823307040000005" green="0.76939731840000003" blue="0.25511732580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <color key="tintColor" red="0.63305141649999996" green="0.80888641989999999" blue="0.30948849859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="175" id="8ZK-dv-Ngs"/>
-                                                    <constraint firstAttribute="height" constant="60" id="yw4-zC-Osb"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sexo Hijos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNv-0P-pcJ">
-                                                <rect key="frame" x="385" y="1521" width="175" height="60"/>
-                                                <color key="backgroundColor" red="0.57823307040000005" green="0.76939731840000003" blue="0.25511732580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <color key="tintColor" red="0.63305141649999996" green="0.80888641989999999" blue="0.30948849859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="175" id="2mu-EI-fmK"/>
-                                                    <constraint firstAttribute="height" constant="60" id="Dz9-NH-Ucl"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sexo Pareja" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZkQ-B2-8v8">
-                                                <rect key="frame" x="385" y="1262" width="175" height="60"/>
+                                                <rect key="frame" x="385" y="1503" width="175" height="60"/>
                                                 <color key="backgroundColor" red="0.57823307040000005" green="0.76939731840000003" blue="0.25511732580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" red="0.63305141649999996" green="0.80888641989999999" blue="0.30948849859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -4538,35 +4505,35 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pe2-Ve-T4o" userLabel="edoCivil" customClass="estadoCivilPickerView" customModule="CETAC" customModuleProvider="target">
-                                                <rect key="frame" x="225" y="1153" width="391" height="95"/>
+                                                <rect key="frame" x="225" y="1394" width="391" height="95"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="95" id="c9O-P8-UTR"/>
                                                     <constraint firstAttribute="width" constant="391" id="mT0-7Q-KDp"/>
                                                 </constraints>
                                             </pickerView>
                                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VUs-aW-1jb" userLabel="motiv" customClass="motivosPickerView" customModule="CETAC" customModuleProvider="target">
-                                                <rect key="frame" x="190" y="1764" width="391" height="95"/>
+                                                <rect key="frame" x="190" y="1876" width="391" height="95"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="95" id="t49-zE-fPC"/>
                                                     <constraint firstAttribute="width" constant="391" id="vem-VL-sh9"/>
                                                 </constraints>
                                             </pickerView>
                                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="47i-if-dVl" userLabel="serv" customClass="servicioPickerView" customModule="CETAC" customModuleProvider="target">
-                                                <rect key="frame" x="210" y="2112" width="391" height="95"/>
+                                                <rect key="frame" x="210" y="2224" width="391" height="95"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="95" id="CFv-wk-4wU"/>
                                                     <constraint firstAttribute="width" constant="391" id="IdD-66-6Sp"/>
                                                 </constraints>
                                             </pickerView>
                                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mMP-d5-naJ" userLabel="int" customClass="intervencionPickerView" customModule="CETAC" customModuleProvider="target">
-                                                <rect key="frame" x="285" y="2217" width="391" height="95"/>
+                                                <rect key="frame" x="285" y="2329" width="391" height="95"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="391" id="K1O-6z-hMl"/>
                                                     <constraint firstAttribute="height" constant="95" id="zSC-KF-4DR"/>
                                                 </constraints>
                                             </pickerView>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hijos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmk-MA-QF5">
-                                                <rect key="frame" x="20" y="1392" width="110" height="60"/>
+                                                <rect key="frame" x="20" y="1633" width="110" height="60"/>
                                                 <color key="backgroundColor" red="0.57823307040000005" green="0.76939731840000003" blue="0.25511732580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" red="0.63305141649999996" green="0.80888641989999999" blue="0.30948849859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -4577,17 +4544,17 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U78-pp-kfl" userLabel="numHijos">
-                                                <rect key="frame" x="20" y="1462" width="374" height="34"/>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U78-pp-kfl" userLabel="hijos">
+                                                <rect key="frame" x="20" y="1703" width="748" height="34"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="374" id="KJb-oL-jby"/>
+                                                    <constraint firstAttribute="width" constant="748" id="KJb-oL-jby"/>
                                                     <constraint firstAttribute="height" constant="34" id="lfz-72-y4m"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nEk-dh-rYV" userLabel="refer">
-                                                <rect key="frame" x="20" y="1720" width="374" height="34"/>
+                                                <rect key="frame" x="20" y="1832" width="374" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="YB0-KJ-fkP"/>
                                                     <constraint firstAttribute="width" constant="374" id="t8z-Gz-ADd"/>
@@ -4595,17 +4562,8 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rfu-bd-Jbc" userLabel="sexHijos">
-                                                <rect key="frame" x="385" y="1591" width="340" height="34"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="340" id="3Kp-rC-rUT"/>
-                                                    <constraint firstAttribute="height" constant="34" id="PoG-9v-PMU"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Por Quién Fue Referido" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ji9-qD-SRw">
-                                                <rect key="frame" x="20" y="1650" width="250" height="60"/>
+                                                <rect key="frame" x="20" y="1762" width="250" height="60"/>
                                                 <color key="backgroundColor" red="0.57823307040000005" green="0.76939731840000003" blue="0.25511732580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" red="0.63305141649999996" green="0.80888641989999999" blue="0.30948849859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -4617,7 +4575,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Identificación de la respuesta actitudinal según etapas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1x-oG-VIg">
-                                                <rect key="frame" x="20" y="1869" width="600" height="60"/>
+                                                <rect key="frame" x="20" y="1981" width="600" height="60"/>
                                                 <color key="backgroundColor" red="0.57823307040000005" green="0.76939731840000003" blue="0.25511732580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" red="0.63305141649999996" green="0.80888641989999999" blue="0.30948849859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -4629,7 +4587,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Motivo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8q-OU-YBR">
-                                                <rect key="frame" x="20" y="1779" width="130" height="60"/>
+                                                <rect key="frame" x="20" y="1891" width="130" height="60"/>
                                                 <color key="backgroundColor" red="0.57823307040000005" green="0.76939731840000003" blue="0.25511732580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" red="0.63305141649999996" green="0.80888641989999999" blue="0.30948849859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -4641,7 +4599,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Servicio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZBl-jZ-fzo">
-                                                <rect key="frame" x="20" y="2127" width="150" height="60"/>
+                                                <rect key="frame" x="20" y="2239" width="150" height="60"/>
                                                 <color key="backgroundColor" red="0.57823307040000005" green="0.76939731840000003" blue="0.25511732580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" red="0.63305141649999996" green="0.80888641989999999" blue="0.30948849859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -4653,7 +4611,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo de intervención" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkn-4i-gk2">
-                                                <rect key="frame" x="20" y="2237" width="225" height="60"/>
+                                                <rect key="frame" x="20" y="2349" width="225" height="60"/>
                                                 <color key="backgroundColor" red="0.57823307040000005" green="0.76939731840000003" blue="0.25511732580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" red="0.63305141649999996" green="0.80888641989999999" blue="0.30948849859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -4665,7 +4623,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Evaluación de sesión" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rM3-1X-AUG">
-                                                <rect key="frame" x="20" y="2327" width="250" height="60"/>
+                                                <rect key="frame" x="20" y="2439" width="250" height="60"/>
                                                 <color key="backgroundColor" red="0.57823307040000005" green="0.76939731840000003" blue="0.25511732580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" red="0.63305141649999996" green="0.80888641989999999" blue="0.30948849859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -4677,7 +4635,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuota de Recuperación" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dz-FI-Pqf">
-                                                <rect key="frame" x="20" y="2456" width="275" height="60"/>
+                                                <rect key="frame" x="20" y="2568" width="275" height="60"/>
                                                 <color key="backgroundColor" red="0.57823307040000005" green="0.76939731840000003" blue="0.25511732580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" red="0.63305141649999996" green="0.80888641989999999" blue="0.30948849859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -4689,7 +4647,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E.K.R" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xId-FS-gYg">
-                                                <rect key="frame" x="20" y="1998" width="100" height="60"/>
+                                                <rect key="frame" x="20" y="2110" width="100" height="60"/>
                                                 <color key="backgroundColor" red="0.57823307040000005" green="0.76939731840000003" blue="0.25511732580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" red="0.63305141649999996" green="0.80888641989999999" blue="0.30948849859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -4701,7 +4659,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="$" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2jr-8J-947" userLabel="cuotRec">
-                                                <rect key="frame" x="20" y="2526" width="374" height="34"/>
+                                                <rect key="frame" x="20" y="2638" width="374" height="34"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="34" id="CJo-b1-SI6"/>
                                                     <constraint firstAttribute="width" constant="374" id="Ksc-dZ-Usq"/>
@@ -4710,7 +4668,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UgO-tS-LkY">
-                                                <rect key="frame" x="355" y="2736" width="100" height="55"/>
+                                                <rect key="frame" x="355" y="2848" width="100" height="55"/>
                                                 <color key="backgroundColor" name="AccentColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="55" id="6XW-vw-iyf"/>
@@ -4725,7 +4683,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Próxima Sesión" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMb-KW-big">
-                                                <rect key="frame" x="20" y="2585" width="200" height="60"/>
+                                                <rect key="frame" x="20" y="2697" width="200" height="60"/>
                                                 <color key="backgroundColor" red="0.57823307040000005" green="0.76939731840000003" blue="0.25511732580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <color key="tintColor" red="0.63305141649999996" green="0.80888641989999999" blue="0.30948849859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -4737,7 +4695,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="NJx-oO-J7T" userLabel="proxSes">
-                                                <rect key="frame" x="240" y="2570" width="544" height="116"/>
+                                                <rect key="frame" x="240" y="2682" width="544" height="116"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="544" id="1c9-3i-ra2"/>
                                                     <constraint firstAttribute="height" constant="116" id="wA7-oT-AbQ"/>
@@ -4750,6 +4708,46 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                     <constraint firstAttribute="width" constant="400" id="V4q-pK-hgs"/>
                                                 </constraints>
                                             </pickerView>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xdT-eB-M4t" userLabel="edad">
+                                                <rect key="frame" x="20" y="464" width="250" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="L47-tZ-wAX"/>
+                                                    <constraint firstAttribute="width" constant="250" id="hLa-oO-asw"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Género" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aha-LX-htO">
+                                                <rect key="frame" x="20" y="523" width="120" height="60"/>
+                                                <color key="backgroundColor" red="0.57823307040000005" green="0.76939731840000003" blue="0.25511732580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.63305141649999996" green="0.80888641989999999" blue="0.30948849859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="IOZ-ll-puG"/>
+                                                    <constraint firstAttribute="height" constant="60" id="sfF-9M-iCv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cr3-nz-Wjl" userLabel="sexo" customClass="generoPickerView" customModule="CETAC" customModuleProvider="target">
+                                                <rect key="frame" x="190" y="506" width="400" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="400" id="gag-VT-xcV"/>
+                                                    <constraint firstAttribute="height" constant="100" id="wG5-GU-SuG"/>
+                                                </constraints>
+                                            </pickerView>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.64999997615814209" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ocupación o profesión" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRp-FZ-Ft5">
+                                                <rect key="frame" x="20" y="635" width="250" height="60"/>
+                                                <color key="backgroundColor" red="0.57823307040000005" green="0.76939731840000003" blue="0.25511732580000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" red="0.63305141649999996" green="0.80888641989999999" blue="0.30948849859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="5IS-bX-fn5"/>
+                                                    <constraint firstAttribute="width" constant="250" id="UDt-TZ-nSO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -4763,18 +4761,22 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                             <constraint firstItem="hmk-MA-QF5" firstAttribute="top" secondItem="JGH-Sp-wCs" secondAttribute="bottom" constant="25" id="4QU-cj-xP7"/>
                                             <constraint firstItem="6cZ-Qq-Yl9" firstAttribute="top" secondItem="sDJ-ey-HHu" secondAttribute="bottom" constant="10" id="4e6-mv-uRT"/>
                                             <constraint firstAttribute="bottom" secondItem="UgO-tS-LkY" secondAttribute="bottom" constant="50" id="4fD-Bj-ihx"/>
+                                            <constraint firstItem="RGT-Y7-6hh" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="4ny-p6-EbY"/>
                                             <constraint firstItem="ET6-vP-yNh" firstAttribute="top" secondItem="lF5-9p-WP3" secondAttribute="bottom" constant="10" id="4o6-sf-2Ym"/>
                                             <constraint firstItem="hH3-3d-vC2" firstAttribute="top" secondItem="d1x-oG-VIg" secondAttribute="bottom" constant="10" id="5F0-nh-qTy"/>
                                             <constraint firstItem="RcD-6Q-O4f" firstAttribute="top" secondItem="Itl-eK-VMP" secondAttribute="bottom" constant="25" id="5dZ-Ae-rWm"/>
                                             <constraint firstItem="Lvi-eB-pyS" firstAttribute="top" secondItem="IMu-x7-kLi" secondAttribute="bottom" constant="10" id="6aD-Dl-aIG"/>
                                             <constraint firstItem="rAg-Hg-Zhz" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="6jd-Dm-zAI"/>
                                             <constraint firstItem="hq5-zw-8zL" firstAttribute="top" secondItem="RcD-6Q-O4f" secondAttribute="bottom" constant="10" id="89p-pa-knQ"/>
+                                            <constraint firstItem="Cr3-nz-Wjl" firstAttribute="leading" secondItem="Aha-LX-htO" secondAttribute="trailing" constant="50" id="8tB-ze-zrW"/>
                                             <constraint firstItem="JXh-nV-5eD" firstAttribute="top" secondItem="Cdx-VL-bKZ" secondAttribute="bottom" constant="25" id="BSj-0Q-pQu"/>
                                             <constraint firstItem="g8q-OU-YBR" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="C9e-cQ-bRh"/>
                                             <constraint firstItem="2jr-8J-947" firstAttribute="top" secondItem="2dz-FI-Pqf" secondAttribute="bottom" constant="10" id="FaD-xe-E5B"/>
+                                            <constraint firstItem="RGT-Y7-6hh" firstAttribute="top" secondItem="ET6-vP-yNh" secondAttribute="bottom" constant="25" id="FdF-y4-mR8"/>
                                             <constraint firstItem="Cdx-VL-bKZ" firstAttribute="top" secondItem="wIH-pl-Tod" secondAttribute="bottom" constant="10" id="FrO-6n-rJB"/>
-                                            <constraint firstItem="sRp-FZ-Ft5" firstAttribute="top" secondItem="ET6-vP-yNh" secondAttribute="bottom" constant="25" id="H8J-XY-ulh"/>
+                                            <constraint firstItem="sRp-FZ-Ft5" firstAttribute="top" secondItem="Aha-LX-htO" secondAttribute="bottom" constant="52" id="H8J-XY-ulh"/>
                                             <constraint firstItem="g8q-OU-YBR" firstAttribute="top" secondItem="nEk-dh-rYV" secondAttribute="bottom" constant="25" id="IWv-Zg-Ppw"/>
+                                            <constraint firstItem="Cr3-nz-Wjl" firstAttribute="top" secondItem="xdT-eB-M4t" secondAttribute="bottom" constant="8" id="JJD-PN-wVF"/>
                                             <constraint firstItem="rM3-1X-AUG" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="Jce-bX-WfB"/>
                                             <constraint firstItem="IMu-x7-kLi" firstAttribute="top" secondItem="hq5-zw-8zL" secondAttribute="bottom" constant="25" id="KSK-Aq-Qa4"/>
                                             <constraint firstItem="JGH-Sp-wCs" firstAttribute="top" secondItem="H2D-19-Wp4" secondAttribute="bottom" constant="10" id="Kb6-RV-CWU"/>
@@ -4793,11 +4795,11 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                             <constraint firstItem="JXh-nV-5eD" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="RSg-Uv-cxU"/>
                                             <constraint firstItem="ZBl-jZ-fzo" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="SP5-fc-uNm"/>
                                             <constraint firstItem="NJx-oO-J7T" firstAttribute="top" secondItem="2jr-8J-947" secondAttribute="bottom" constant="10" id="Sr1-ke-oSz"/>
-                                            <constraint firstItem="Y6i-7N-EeH" firstAttribute="top" secondItem="BsT-qb-Hx4" secondAttribute="bottom" constant="10" id="TIh-WR-uTO"/>
                                             <constraint firstItem="2dz-FI-Pqf" firstAttribute="top" secondItem="MOU-bc-aOg" secondAttribute="bottom" constant="25" id="TjV-fn-Xvl"/>
                                             <constraint firstItem="LMb-KW-big" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="VIa-lB-dcx"/>
                                             <constraint firstItem="2dz-FI-Pqf" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="VX3-bv-3lp"/>
                                             <constraint firstItem="d1x-oG-VIg" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="VmP-gh-hzq"/>
+                                            <constraint firstItem="Aha-LX-htO" firstAttribute="top" secondItem="xdT-eB-M4t" secondAttribute="bottom" constant="25" id="WBo-QX-QlV"/>
                                             <constraint firstItem="Lvi-eB-pyS" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="XYG-BF-uyQ"/>
                                             <constraint firstItem="pe2-Ve-T4o" firstAttribute="leading" secondItem="JXh-nV-5eD" secondAttribute="trailing" constant="30" id="YGD-k7-aFr"/>
                                             <constraint firstItem="JGH-Sp-wCs" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="Z6X-p3-b37"/>
@@ -4809,26 +4811,24 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                             <constraint firstItem="LMb-KW-big" firstAttribute="top" secondItem="2jr-8J-947" secondAttribute="bottom" constant="25" id="aNa-aa-hUN"/>
                                             <constraint firstItem="mMP-d5-naJ" firstAttribute="top" secondItem="47i-if-dVl" secondAttribute="bottom" constant="10" id="aSb-Hh-ZZh"/>
                                             <constraint firstItem="wIH-pl-Tod" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="abD-r4-UhM"/>
-                                            <constraint firstItem="rfu-bd-Jbc" firstAttribute="leading" secondItem="Y6i-7N-EeH" secondAttribute="trailing" constant="25" id="auG-lV-yaf"/>
                                             <constraint firstItem="Vfu-Y2-23G" firstAttribute="leading" secondItem="rAg-Hg-Zhz" secondAttribute="trailing" constant="75" id="cFJ-Rj-Fdv"/>
                                             <constraint firstItem="w21-Oq-3nX" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="cGe-d0-fsI"/>
                                             <constraint firstItem="NJx-oO-J7T" firstAttribute="leading" secondItem="LMb-KW-big" secondAttribute="trailing" constant="20" id="cJ2-4t-CCp"/>
                                             <constraint firstItem="hH3-3d-vC2" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="d6J-fr-acO"/>
-                                            <constraint firstItem="BsT-qb-Hx4" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="d9i-Xi-mic"/>
                                             <constraint firstItem="sRp-FZ-Ft5" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="dYU-Zj-Db6"/>
+                                            <constraint firstItem="Aha-LX-htO" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="daq-H8-pOU"/>
                                             <constraint firstItem="d1x-oG-VIg" firstAttribute="top" secondItem="g8q-OU-YBR" secondAttribute="bottom" constant="30" id="dxM-LR-eHN"/>
                                             <constraint firstItem="Cqh-Tm-owR" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="eF0-O2-wAQ"/>
                                             <constraint firstItem="Itl-eK-VMP" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="f9S-5q-cfB"/>
                                             <constraint firstItem="47i-if-dVl" firstAttribute="top" secondItem="w21-Oq-3nX" secondAttribute="bottom" constant="10" id="i9D-Yr-MLa"/>
+                                            <constraint firstItem="xdT-eB-M4t" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="iSo-ts-jgz"/>
                                             <constraint firstItem="nEk-dh-rYV" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="j4b-k2-m5w"/>
                                             <constraint firstItem="Vfu-Y2-23G" firstAttribute="top" secondItem="RUp-lg-94c" secondAttribute="bottom" constant="10" id="jFn-bQ-Sy7"/>
                                             <constraint firstItem="Cdx-VL-bKZ" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="jOO-LX-8hQ"/>
                                             <constraint firstItem="VUs-aW-1jb" firstAttribute="top" secondItem="nEk-dh-rYV" secondAttribute="bottom" constant="10" id="jfO-P9-AFH"/>
                                             <constraint firstItem="sDJ-ey-HHu" firstAttribute="top" secondItem="Cqh-Tm-owR" secondAttribute="bottom" constant="25" id="kZx-Fv-lj4"/>
                                             <constraint firstItem="MOU-bc-aOg" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="l6Y-3s-MNZ"/>
-                                            <constraint firstItem="Y6i-7N-EeH" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="l8r-rO-CXU"/>
-                                            <constraint firstItem="rfu-bd-Jbc" firstAttribute="top" secondItem="dNv-0P-pcJ" secondAttribute="bottom" constant="10" id="lVw-WA-gd5"/>
-                                            <constraint firstItem="dNv-0P-pcJ" firstAttribute="top" secondItem="U78-pp-kfl" secondAttribute="bottom" constant="25" id="mGD-QS-TpW"/>
+                                            <constraint firstItem="xdT-eB-M4t" firstAttribute="top" secondItem="RGT-Y7-6hh" secondAttribute="bottom" constant="10" id="oMo-vq-4PT"/>
                                             <constraint firstItem="nEk-dh-rYV" firstAttribute="top" secondItem="Ji9-qD-SRw" secondAttribute="bottom" constant="10" id="okX-3G-dVE"/>
                                             <constraint firstItem="IMu-x7-kLi" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="qMC-mv-BN0"/>
                                             <constraint firstItem="47i-if-dVl" firstAttribute="leading" secondItem="ZBl-jZ-fzo" secondAttribute="trailing" constant="40" id="qpe-2W-VFS"/>
@@ -4838,7 +4838,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                             <constraint firstItem="lF5-9p-WP3" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="r2S-dN-EAI"/>
                                             <constraint firstItem="RUp-lg-94c" firstAttribute="leading" secondItem="pyd-Jh-c7b" secondAttribute="trailing" constant="34" id="rlB-1B-1Xu"/>
                                             <constraint firstItem="Ji9-qD-SRw" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="s7J-Yc-qh3"/>
-                                            <constraint firstItem="BsT-qb-Hx4" firstAttribute="top" secondItem="U78-pp-kfl" secondAttribute="bottom" constant="25" id="szv-z4-fjY"/>
+                                            <constraint firstItem="Ji9-qD-SRw" firstAttribute="top" secondItem="U78-pp-kfl" secondAttribute="bottom" constant="25" id="sgO-ta-fto"/>
                                             <constraint firstItem="H2D-19-Wp4" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="tDN-28-Zk5"/>
                                             <constraint firstItem="mMP-d5-naJ" firstAttribute="leading" secondItem="xkn-4i-gk2" secondAttribute="trailing" constant="40" id="u6R-Gu-08M"/>
                                             <constraint firstItem="RcD-6Q-O4f" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="uGX-6y-YJW"/>
@@ -4846,12 +4846,10 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                             <constraint firstItem="sDJ-ey-HHu" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="ubK-tN-BiG"/>
                                             <constraint firstItem="rAg-Hg-Zhz" firstAttribute="top" secondItem="pyd-Jh-c7b" secondAttribute="bottom" constant="55" id="uhd-vJ-lTH"/>
                                             <constraint firstItem="w21-Oq-3nX" firstAttribute="top" secondItem="xId-FS-gYg" secondAttribute="bottom" constant="10" id="unZ-9b-2hG"/>
-                                            <constraint firstItem="dNv-0P-pcJ" firstAttribute="leading" secondItem="BsT-qb-Hx4" secondAttribute="trailing" constant="190" id="vh3-tl-2ex"/>
                                             <constraint firstItem="xkn-4i-gk2" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="wI3-Am-r62"/>
                                             <constraint firstItem="xId-FS-gYg" firstAttribute="top" secondItem="hH3-3d-vC2" secondAttribute="bottom" constant="25" id="wko-Df-QSz"/>
                                             <constraint firstItem="xId-FS-gYg" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="y3I-t5-3fP"/>
                                             <constraint firstItem="U78-pp-kfl" firstAttribute="leading" secondItem="nyq-pX-XN3" secondAttribute="leading" constant="20" id="yiV-Yk-cqV"/>
-                                            <constraint firstItem="Ji9-qD-SRw" firstAttribute="top" secondItem="Y6i-7N-EeH" secondAttribute="bottom" constant="25" id="ztT-Vq-97E"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -4880,17 +4878,17 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                         <outlet property="celular" destination="Cdx-VL-bKZ" id="Y6N-B6-hVo"/>
                         <outlet property="cuotaRec" destination="2jr-8J-947" id="fud-Ti-NdG"/>
                         <outlet property="domicilio" destination="Cqh-Tm-owR" id="Xdh-t6-X3D"/>
+                        <outlet property="edad" destination="xdT-eB-M4t" id="BHC-wH-RBk"/>
                         <outlet property="edadPareja" destination="JGH-Sp-wCs" id="wPu-mh-pEd"/>
-                        <outlet property="edadesHijos" destination="Y6i-7N-EeH" id="oCg-Hi-03y"/>
                         <outlet property="ekr" destination="w21-Oq-3nX" id="glV-MA-6UG"/>
                         <outlet property="estadoCivil" destination="pe2-Ve-T4o" id="G1f-jg-DgW"/>
                         <outlet property="evaluacion" destination="MOU-bc-aOg" id="oag-Ng-NF6"/>
                         <outlet property="fecha" destination="RUp-lg-94c" id="bqM-sG-j9k"/>
+                        <outlet property="hijos" destination="U78-pp-kfl" id="OZz-W7-4nz"/>
                         <outlet property="idRespuesta" destination="hH3-3d-vC2" id="rGI-lE-t4z"/>
                         <outlet property="intervencion" destination="mMP-d5-naJ" id="4sd-uV-Zvc"/>
                         <outlet property="motivo" destination="VUs-aW-1jb" id="Jzi-nQ-USN"/>
                         <outlet property="nombre" destination="ET6-vP-yNh" id="ohT-5L-dA7"/>
-                        <outlet property="numHijos" destination="U78-pp-kfl" id="ibT-1c-ulb"/>
                         <outlet property="ocupacion" destination="Itl-eK-VMP" id="idt-cw-0cU"/>
                         <outlet property="procedencia" destination="Lvi-eB-pyS" id="Jqp-iA-wtL"/>
                         <outlet property="proxSes" destination="NJx-oO-J7T" id="VWy-1L-8Mi"/>
@@ -4898,7 +4896,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                         <outlet property="religion" destination="hq5-zw-8zL" id="bXo-X7-qvU"/>
                         <outlet property="save" destination="UgO-tS-LkY" id="HKg-Xy-EiH"/>
                         <outlet property="serv" destination="47i-if-dVl" id="Sym-NX-D8Z"/>
-                        <outlet property="sexoHijos" destination="rfu-bd-Jbc" id="y7X-q5-U8B"/>
+                        <outlet property="sexo" destination="Cr3-nz-Wjl" id="5wA-2s-sHz"/>
                         <outlet property="sexoPareja" destination="x8M-xK-0TV" id="Rwz-XT-rbe"/>
                         <outlet property="tanat" destination="Vfu-Y2-23G" id="VFY-vK-5IA"/>
                         <outlet property="telCasa" destination="6cZ-Qq-Yl9" id="ybl-Eu-xcj"/>

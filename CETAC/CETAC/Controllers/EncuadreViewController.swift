@@ -28,9 +28,7 @@ class EncuadreViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var estadoCivil: estadoCivilPickerView!
     @IBOutlet weak var edadPareja: UITextField!
     @IBOutlet weak var sexoPareja: UITextField!
-    @IBOutlet weak var numHijos: UITextField!
-    @IBOutlet weak var edadesHijos: UITextField!
-    @IBOutlet weak var sexoHijos: UITextField!
+    @IBOutlet weak var hijos: UITextField!
     @IBOutlet weak var referido: UITextField!
     @IBOutlet weak var motivo: motivosPickerView!
     @IBOutlet weak var idRespuesta: UITextField!
@@ -41,6 +39,8 @@ class EncuadreViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var cuotaRec: UITextField!
     @IBOutlet weak var save: UIButton!
     @IBOutlet weak var proxSes: UIDatePicker!
+    @IBOutlet weak var edad: UITextField!
+    @IBOutlet weak var sexo: generoPickerView!
     var tanatologos = [Tanatologo]()
     
     func viewWillappear() {
@@ -57,14 +57,13 @@ class EncuadreViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         self.celular.text = ""
         self.edadPareja.text = ""
         self.sexoPareja.text = ""
-        self.numHijos.text = ""
-        self.edadesHijos.text = ""
-        self.sexoHijos.text = ""
+        self.hijos.text = ""
         self.referido.text = ""
         self.idRespuesta.text = ""
         self.ekr.text = ""
         self.evaluacion.text = ""
         self.cuotaRec.text = ""
+        self.edad.text = ""
                 
         self.estadoCivil.delegate = estadoCivil
         self.estadoCivil.dataSource = estadoCivil
@@ -77,6 +76,9 @@ class EncuadreViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
 
         self.intervencion.delegate = intervencion
         self.intervencion.dataSource = intervencion
+        
+        self.sexo.delegate = sexo
+        self.sexo.dataSource = sexo
         
         tanatologoControlador.fetchTanatologo{ (result) in
                     switch result{
@@ -94,7 +96,7 @@ class EncuadreViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
                     switch result{
                     case .success(let tanatologos):
                         self.setTanatologosViewer(with: tanatologos)
-                    case .failure(let error):print("No se pudo acceder a los usuarios, Error: \(error)")
+                    case .failure(let error):print("No se pudo acceder a los tanatologos, Error: \(error)")
                     }
                 }
         
@@ -111,10 +113,13 @@ class EncuadreViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
 
         self.intervencion.delegate = intervencion
         self.intervencion.dataSource = intervencion
+        
+        self.sexo.delegate = sexo
+        self.sexo.dataSource = sexo
     }
     
     @IBAction func save(_ sender: UIButton) {
-        if (self.nombre.text == "" || (self.celular.text == "" && self.telCasa.text == "")) {
+        if (self.nombre.text == "" || self.celular.text == "" || self.telCasa.text == "" || self.ocupacion.text == "" || self.religion.text == "" || self.procedencia.text == "" || self.domicilio.text == "" || (self.edadPareja.text != "" && self.sexoPareja.text == "" ) || (self.edadPareja.text == "" && self.sexoPareja.text != "" ) || self.referido.text == "" || self.idRespuesta.text == "" || self.ekr.text == "" || self.evaluacion.text == "" || self.cuotaRec.text == "" || self.edad.text == "") {
                     displayExito(title: "Información incompleta", detalle: "Se debe ingresar el nombre y al menos una forma de contacto")
                 } else {
                     self.dateFormatter.dateStyle = DateFormatter.Style.long
@@ -125,13 +130,14 @@ class EncuadreViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
                     let proximaSes = self.dateFormatter.string(from: proximaSesion)
                     let edoCivil = self.estadoCivil.getSelected(estadoCivil, selectedRow: self.estadoCivil.selectedRow(inComponent: 0)) ?? ""
                     let motivo = self.motivo.getSelected(motivo, selectedRow: self.motivo.selectedRow(inComponent: 0)) ?? ""
+                    let sexo = self.sexo.getSelected(sexo, selectedRow: self.sexo.selectedRow(inComponent: 0)) ?? ""
                     let inter = self.intervencion.getSelected(intervencion, selectedRow: self.intervencion.selectedRow(inComponent: 0)) ?? ""
                     let servicio = self.serv.getSelected(serv, selectedRow: self.serv.selectedRow(inComponent: 0)) ?? ""
                     let edadP = Int(self.edadPareja.text ?? "0")
-                    let numH = Int(self.numHijos.text ?? "0")
+                    let ed = Int(self.edad.text ?? "0")
                     let cuota = Float(self.cuotaRec.text ?? "0")
                     let tanatId = self.getSelected(tanat, selectedRow: self.tanat.selectedRow(inComponent: 0)) ?? ""
-                    let newUser = Usuario(fecha: convertedDate, idTanatologo: tanatId, nombre: self.nombre.text!, ocupacion: self.ocupacion.text ?? "", religion: self.religion.text ?? "", procedencia: self.procedencia.text ?? "", domicilio: self.domicilio.text ?? "", telefonoDeCasa: self.telCasa.text ?? "", celular: self.celular.text ?? "", estadoCivil: edoCivil, edadPareja: edadP ?? 0 , sexoPareja: self.sexoPareja.text ?? "", numeroDeHijos: numH ?? 0, edadesHijos: self.edadesHijos.text ?? "", sexoHijos: self.sexoHijos.text ?? "", referido: self.referido.text ?? "", motivo: motivo, identificacionDeRespuesta: self.idRespuesta.text ?? "", EKR: self.ekr.text ?? "", status: 1, proximaSesion: proximaSes)
+                    let newUser = Usuario(fecha: convertedDate, idTanatologo: tanatId, nombre: self.nombre.text!, ocupacion: self.ocupacion.text ?? "", religion: self.religion.text ?? "", procedencia: self.procedencia.text ?? "", domicilio: self.domicilio.text ?? "", telefonoDeCasa: self.telCasa.text ?? "", celular: self.celular.text ?? "", estadoCivil: edoCivil, edadPareja: edadP ?? 0 , sexoPareja: self.sexoPareja.text ?? "", hijos: self.hijos.text ?? "", referido: self.referido.text ?? "", motivo: motivo, identificacionDeRespuesta: self.idRespuesta.text ?? "", EKR: self.ekr.text ?? "", status: 1, proximaSesion: proximaSes, sexo: sexo, edad: ed ?? 0)
                     let alert = UIAlertController(title: "¿Guardar encuadre?", message: "Se guardarán los datos del paciente", preferredStyle: .alert)
 
                     alert.addAction(UIAlertAction(title: "Si", style: .cancel, handler: { action in self.usuarioControlador.insertUsuario(nuevoUsuario: newUser, completion: { (result) in
