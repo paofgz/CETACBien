@@ -1246,7 +1246,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
             <objects>
                 <viewController id="GGo-ff-3ga" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ems-VX-jKE">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Usuarios_atendidos" translatesAutoresizingMaskIntoConstraints="NO" id="ejv-Rx-BB7">
@@ -2129,7 +2129,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kUa-Ui-2Lz">
-                                <rect key="frame" x="85" y="147" width="560" height="271"/>
+                                <rect key="frame" x="40" y="526" width="309" height="271"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Intervención y servicio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpP-sO-Aed">
@@ -2150,7 +2150,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gPW-cS-PVm">
-                                <rect key="frame" x="72" y="533" width="560" height="271"/>
+                                <rect key="frame" x="368" y="147" width="316" height="271"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </view>
                         </subviews>
@@ -2165,7 +2165,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EVq-jD-SvW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4155.5555555555557" y="4232.2222222222217"/>
+            <point key="canvasLocation" x="4155.5555555555557" y="4231.666666666667"/>
         </scene>
         <!--Motivo-->
         <scene sceneID="uAi-uz-w7F">

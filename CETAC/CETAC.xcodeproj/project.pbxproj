@@ -10,6 +10,7 @@
 		153E16C81561D04153BF4EE3 /* Pods_CETAC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B85A41DF25D81D44DDF917DB /* Pods_CETAC.framework */; };
 		3E594F8F271A2CAB00A7F5A9 /* ServicioIntervencionChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E594F8E271A2CAB00A7F5A9 /* ServicioIntervencionChartViewController.swift */; };
 		3E594F91271A30ED00A7F5A9 /* intervencionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E594F90271A30ED00A7F5A9 /* intervencionController.swift */; };
+		3E594F95271BDE2700A7F5A9 /* servicioController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E594F94271BDE2700A7F5A9 /* servicioController.swift */; };
 		3E8C3680270E10520028F832 /* SeguimientoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C367F270E10520028F832 /* SeguimientoViewController.swift */; };
 		3E8C36822712872C0028F832 /* GetSesionTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C36812712872C0028F832 /* GetSesionTestCase.swift */; };
 		3E8C36882712C5AE0028F832 /* CrearSesionesTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8C36872712C5AE0028F832 /* CrearSesionesTestCase.swift */; };
@@ -82,6 +83,7 @@
 		3DEC5B153361C3CECCD32DD0 /* Pods_CETACTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CETACTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E594F8E271A2CAB00A7F5A9 /* ServicioIntervencionChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicioIntervencionChartViewController.swift; sourceTree = "<group>"; };
 		3E594F90271A30ED00A7F5A9 /* intervencionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intervencionController.swift; sourceTree = "<group>"; };
+		3E594F94271BDE2700A7F5A9 /* servicioController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = servicioController.swift; sourceTree = "<group>"; };
 		3E8C367F270E10520028F832 /* SeguimientoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeguimientoViewController.swift; sourceTree = "<group>"; };
 		3E8C36812712872C0028F832 /* GetSesionTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSesionTestCase.swift; sourceTree = "<group>"; };
 		3E8C36872712C5AE0028F832 /* CrearSesionesTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearSesionesTestCase.swift; sourceTree = "<group>"; };
@@ -233,6 +235,7 @@
 				4823AA41270FAE6700DDDC25 /* PerfilController.swift */,
 				48E0E6FE27174DE60002FD97 /* MotivoController.swift */,
 				3E594F90271A30ED00A7F5A9 /* intervencionController.swift */,
+				3E594F94271BDE2700A7F5A9 /* servicioController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -558,6 +561,7 @@
 				652B6A38270DE1A7007E4FD7 /* UsuarioTableViewCell.swift in Sources */,
 				4823AA44270FAE9E00DDDC25 /* Validators.swift in Sources */,
 				48D29C3726D5B9AD007FF79B /* ViewController.swift in Sources */,
+				3E594F95271BDE2700A7F5A9 /* servicioController.swift in Sources */,
 				48C9E0C9270A6001002B72A9 /* LoginController.swift in Sources */,
 				652B6A48270DE434007E4FD7 /* estadoCivilPickerView.swift in Sources */,
 				652B6A32270DDF87007E4FD7 /* UsuarioController.swift in Sources */,
