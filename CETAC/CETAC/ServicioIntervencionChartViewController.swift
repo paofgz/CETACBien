@@ -29,6 +29,10 @@ class ServicioIntervencionChartViewController: UIViewController {
         BarChartHorizaontal.center(in: vistaInt)
         BarChartHorizaontal.width(to: vistaInt)
         BarChartHorizaontal.heightToWidth(of: vistaInt)
+        vistaServicio.addSubview(BarChartHorizaontal)
+        BarChartHorizaontal.center(in: vistaServicio)
+        BarChartHorizaontal.width(to: vistaServicio)
+        BarChartHorizaontal.heightToWidth(of: vistaServicio)
         
         
         ControladorIntervencion.fetchSesiones("j5i61tqFd53Is97D5RI1"){ (result) in
@@ -85,6 +89,8 @@ class ServicioIntervencionChartViewController: UIViewController {
 
         BarChartHorizaontal.notifyDataSetChanged()
     }
+    
+    
     /*
     // MARK: - Navigation
 

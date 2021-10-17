@@ -2125,11 +2125,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
             <objects>
                 <viewController id="qwZ-mP-qLD" customClass="ServicioIntervencionChartViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mMp-FB-mzn">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kUa-Ui-2Lz">
-                                <rect key="frame" x="80" y="142" width="544" height="643"/>
+                                <rect key="frame" x="85" y="147" width="560" height="271"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Intervención y servicio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpP-sO-Aed">
@@ -2149,18 +2149,23 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <rect key="frame" x="125" y="827" width="454" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gPW-cS-PVm">
+                                <rect key="frame" x="72" y="533" width="560" height="271"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fa3-Bh-y1Z"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Intervención y servicio" id="MuI-Ce-6eE"/>
                     <connections>
-                        <outlet property="vistaInt" destination="kUa-Ui-2Lz" id="Eue-JS-bXB"/>
+                        <outlet property="vistaInt" destination="kUa-Ui-2Lz" id="1dR-cY-e3e"/>
+                        <outlet property="vistaServicio" destination="gPW-cS-PVm" id="N2L-Ti-i7B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EVq-jD-SvW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4156" y="4233"/>
+            <point key="canvasLocation" x="4155.5555555555557" y="4232.2222222222217"/>
         </scene>
         <!--Motivo-->
         <scene sceneID="uAi-uz-w7F">
