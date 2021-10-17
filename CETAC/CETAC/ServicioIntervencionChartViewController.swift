@@ -12,8 +12,11 @@ import TinyConstraints
 class ServicioIntervencionChartViewController: UIViewController {
 
     let ControladorIntervencion = intervencionController()
+    let ControladorServicio = MotivoController()
 
     @IBOutlet weak var vistaInt: UIView!
+    
+    @IBOutlet weak var vistaServicio: UIView!
     
     lazy var BarChartHorizaontal: HorizontalBarChartView = {
         let horizontalBarChartView = HorizontalBarChartView()
