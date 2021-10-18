@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Sy-gC-5Rp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fDO-Uz-3zg">
     <device id="ipad10_2" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -5230,7 +5230,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
         <image name="decoUsuarios" width="125.5" height="135.5"/>
         <image name="email" width="256" height="256"/>
         <image name="eye" catalog="system" width="128" height="81"/>
-        <image name="eyeglasses" catalog="system" width="128" height="54"/>
+        <image name="eyeglasses" catalog="system" width="32" height="32"/>
         <image name="floresBach1" width="510" height="295"/>
         <image name="fondo1" width="1777" height="704.5"/>
         <image name="grupal1" width="512" height="312"/>

@@ -14,8 +14,8 @@ class MotivoController{
     
     func fetchUsuarios(campo: String, completion: @escaping (Result<[Usuario], Error>) -> Void){
         var usuarios = [Usuario]()
-        
-        db.collection("Usuarios").order(by: campo).getDocuments() { (querySnapshot, err) in
+        //                                                          fecha grande - fecha peque
+        db.collection("Usuarios").whereField("fecha", isLessThan: "10-10-2021 23:12").whereField("fecha", isGreaterThan: "09-10-2021 00:12").getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
                 completion(.failure(err))
