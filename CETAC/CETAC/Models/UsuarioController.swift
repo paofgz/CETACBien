@@ -89,7 +89,8 @@ class UsuarioController{
     }
     
     func getUsuario(id:String, completion: @escaping (Result<Usuario, Error>) -> Void){
-        var usuario:Usuario = Usuario(fecha: "", idTanatologo: "", nombre: "", ocupacion: "", religion: "", procedencia: "", domicilio: "", telefonoDeCasa: "", celular: "", estadoCivil: "", edadPareja: 0, sexoPareja: "", hijos: "", referido: "", motivo: "", identificacionDeRespuesta: "", EKR: "", status: 0, proximaSesion: "", sexo: "", edad: 0)
+        let now = Date()
+        var usuario:Usuario = Usuario(fecha: now, idTanatologo: "", nombre: "", ocupacion: "", religion: "", procedencia: "", domicilio: "", telefonoDeCasa: "", celular: "", estadoCivil: "", edadPareja: 0, sexoPareja: "", hijos: "", referido: "", motivo: "", identificacionDeRespuesta: "", EKR: "", status: 0, proximaSesion: "", sexo: "", edad: 0)
         db.collection("Usuarios").document(id).getDocument() { (querySnapshot, err) in
             if let err = err {
                 completion(.failure(err))

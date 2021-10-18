@@ -126,7 +126,6 @@ class EncuadreViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
                     self.dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
                     let fecha = self.fecha.date
                     let proximaSesion = self.proxSes.date
-                    let convertedDate = self.dateFormatter.string(from: fecha)
                     let proximaSes = self.dateFormatter.string(from: proximaSesion)
                     let edoCivil = self.estadoCivil.getSelected(estadoCivil, selectedRow: self.estadoCivil.selectedRow(inComponent: 0)) ?? ""
                     let motivo = self.motivo.getSelected(motivo, selectedRow: self.motivo.selectedRow(inComponent: 0)) ?? ""
@@ -137,7 +136,7 @@ class EncuadreViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
                     let ed = Int(self.edad.text ?? "0")
                     let cuota = Float(self.cuotaRec.text ?? "0")
                     let tanatId = self.getSelected(tanat, selectedRow: self.tanat.selectedRow(inComponent: 0)) ?? ""
-                    let newUser = Usuario(fecha: convertedDate, idTanatologo: tanatId, nombre: self.nombre.text!, ocupacion: self.ocupacion.text ?? "", religion: self.religion.text ?? "", procedencia: self.procedencia.text ?? "", domicilio: self.domicilio.text ?? "", telefonoDeCasa: self.telCasa.text ?? "", celular: self.celular.text ?? "", estadoCivil: edoCivil, edadPareja: edadP ?? 0 , sexoPareja: self.sexoPareja.text ?? "", hijos: self.hijos.text ?? "", referido: self.referido.text ?? "", motivo: motivo, identificacionDeRespuesta: self.idRespuesta.text ?? "", EKR: self.ekr.text ?? "", status: 1, proximaSesion: proximaSes, sexo: sexo, edad: ed ?? 0)
+                    let newUser = Usuario(fecha: fecha, idTanatologo: tanatId, nombre: self.nombre.text!, ocupacion: self.ocupacion.text ?? "", religion: self.religion.text ?? "", procedencia: self.procedencia.text ?? "", domicilio: self.domicilio.text ?? "", telefonoDeCasa: self.telCasa.text ?? "", celular: self.celular.text ?? "", estadoCivil: edoCivil, edadPareja: edadP ?? 0 , sexoPareja: self.sexoPareja.text ?? "", hijos: self.hijos.text ?? "", referido: self.referido.text ?? "", motivo: motivo, identificacionDeRespuesta: self.idRespuesta.text ?? "", EKR: self.ekr.text ?? "", status: 1, proximaSesion: proximaSes, sexo: sexo, edad: ed ?? 0)
                     let alert = UIAlertController(title: "¿Guardar encuadre?", message: "Se guardarán los datos del paciente", preferredStyle: .alert)
 
                     alert.addAction(UIAlertAction(title: "Si", style: .cancel, handler: { action in self.usuarioControlador.insertUsuario(nuevoUsuario: newUser, completion: { (result) in

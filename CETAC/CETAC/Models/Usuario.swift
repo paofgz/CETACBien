@@ -11,9 +11,10 @@ var sesionControlador = SesionesController()
 
 struct Usuario: Codable {
     
-    let id, EKR, celular, domicilio, estadoCivil, idTanatologo, identificacionDeRespuesta, motivo, nombre, ocupacion, procedencia, referido, religion, sexoPareja, telefonoDeCasa, fecha, proximaSesion, sexo, hijos: String
+    let id, EKR, celular, domicilio, estadoCivil, idTanatologo, identificacionDeRespuesta, motivo, nombre, ocupacion, procedencia, referido, religion, sexoPareja, telefonoDeCasa, proximaSesion, sexo, hijos: String
     let edadPareja, status, edad: Int
-    init(id:String, fecha:String, idTanatologo:String, nombre:String, ocupacion:String, religion: String, procedencia:String, domicilio:String, telefonoDeCasa:String, celular:String, estadoCivil:String, edadPareja:Int, sexoPareja:String, hijos:String, referido:String, motivo:String, identificacionDeRespuesta:String, EKR:String, status:Int, proximaSesion:String, sexo:String, edad:Int){
+    let fecha: Date
+    init(id:String, fecha:Date, idTanatologo:String, nombre:String, ocupacion:String, religion: String, procedencia:String, domicilio:String, telefonoDeCasa:String, celular:String, estadoCivil:String, edadPareja:Int, sexoPareja:String, hijos:String, referido:String, motivo:String, identificacionDeRespuesta:String, EKR:String, status:Int, proximaSesion:String, sexo:String, edad:Int){
             self.id = id
             self.fecha = fecha
             self.idTanatologo = idTanatologo
@@ -38,7 +39,7 @@ struct Usuario: Codable {
             self.edad = edad
     }
 
-    init(fecha:String, idTanatologo:String, nombre:String, ocupacion:String, religion: String, procedencia:String, domicilio:String, telefonoDeCasa:String, celular:String, estadoCivil:String, edadPareja:Int, sexoPareja:String, hijos:String, referido:String, motivo:String, identificacionDeRespuesta:String, EKR:String, status:Int, proximaSesion:String, sexo:String, edad:Int){
+    init(fecha:Date, idTanatologo:String, nombre:String, ocupacion:String, religion: String, procedencia:String, domicilio:String, telefonoDeCasa:String, celular:String, estadoCivil:String, edadPareja:Int, sexoPareja:String, hijos:String, referido:String, motivo:String, identificacionDeRespuesta:String, EKR:String, status:Int, proximaSesion:String, sexo:String, edad:Int){
             self.id = ""
             self.fecha = fecha
             self.idTanatologo = idTanatologo
@@ -64,8 +65,9 @@ struct Usuario: Codable {
     }
 
     init(aDoc: DocumentSnapshot){
+        let now = Date()
         self.id = aDoc.documentID
-        self.fecha = aDoc.get("fecha") as? String ?? ""
+        self.fecha = aDoc.get("fecha") as? Date ?? now
         self.idTanatologo = aDoc.get("idTanatologo") as? String ?? ""
         self.nombre = aDoc.get("nombre") as? String ?? ""
         self.ocupacion = aDoc.get("ocupacion") as? String ?? ""
