@@ -4,7 +4,6 @@
 //
 //  Created by Paola Fernández on 28/09/21.
 //
-
 import Foundation
 import Firebase
 
@@ -17,6 +16,25 @@ class UsuarioController{
         
         var usuarios = [Usuario]()
         db.collection("Usuarios").order(by: "nombre").getDocuments() { (querySnapshot, err) in
+            if let err = err {
+                print("Error getting documents: \(err)")
+                completion(.failure(err))
+            } else {
+              
+                for document in querySnapshot!.documents {
+                    let u = Usuario(aDoc: document)
+                    usuarios.append(u)
+                }
+                completion(.success(usuarios))
+            }
+        }
+       
+    }
+    
+    func fetchUsuariosByTan(idTan:String, completion: @escaping (Result<Usuarios, Error>) -> Void){
+        
+        var usuarios = [Usuario]()
+        db.collection("Usuarios").whereField("idTanatologo", isEqualTo: idTan).getDocuments() { (querySnapshot, err) in
             if let err = err {
                 print("Error getting documents: \(err)")
                 completion(.failure(err))
@@ -110,5 +128,3 @@ class UsuarioController{
         }
     }
 }
-
-
