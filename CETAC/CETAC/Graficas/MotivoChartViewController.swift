@@ -10,6 +10,8 @@ import Charts
 import TinyConstraints
 
 class MotivoChartViewController: UIViewController {
+    var fechaInicial:String = ""
+    var fechaFinal:String = ""
     
     let motivoController = MotivoController()
     var motivos = [String: Int]()
@@ -26,6 +28,8 @@ class MotivoChartViewController: UIViewController {
         horizontalBarChart.center(in: vistaBarras)
         horizontalBarChart.width(to: vistaBarras)
         horizontalBarChart.heightToWidth(of: vistaBarras)
+        print(fechaInicial)
+        print(fechaFinal)
         
         motivoController.fetchUsuarios(campo: "motivo"){ (result) in
             switch result{

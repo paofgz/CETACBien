@@ -1162,7 +1162,7 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
             <objects>
                 <viewController id="5Zb-rA-dNv" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oYe-MR-B0p">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cuota_recuperacion" translatesAutoresizingMaskIntoConstraints="NO" id="a50-JW-SH9">
@@ -1189,7 +1189,7 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
             <objects>
                 <viewController id="GGo-ff-3ga" customClass="UsuariosChartViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ems-VX-jKE">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="52F-iG-Xo0" customClass="UsuariosChartViewController.swift">
@@ -1669,7 +1669,7 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
         <!--Indicadores-->
         <scene sceneID="6qQ-uG-zDJ">
             <objects>
-                <viewController id="G6n-mD-FUm" sceneMemberID="viewController">
+                <viewController id="G6n-mD-FUm" customClass="IndicadoresViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hAF-1E-muH">
                         <rect key="frame" x="0.0" y="0.0" width="810" height="1080"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1680,10 +1680,11 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                                     <constraint firstAttribute="height" constant="330" id="N03-OJ-ycM"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CS8-hb-4ov">
-                                <rect key="frame" x="105" y="160" width="600" height="130"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CS8-hb-4ov">
+                                <rect key="frame" x="95" y="886" width="600" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLp-pp-nEx">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLp-pp-nEx">
                                         <rect key="frame" x="40" y="37.5" width="130" height="55"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <constraints>
@@ -1700,7 +1701,7 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnL-Dw-f13">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnL-Dw-f13">
                                         <rect key="frame" x="430" y="37.5" width="130" height="55"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <constraints>
@@ -1717,7 +1718,7 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fo6-qe-TjK">
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fo6-qe-TjK">
                                         <rect key="frame" x="235" y="37.5" width="130" height="55"/>
                                         <color key="backgroundColor" name="AccentColor"/>
                                         <constraints>
@@ -1737,13 +1738,7 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="fo6-qe-TjK" firstAttribute="leading" secondItem="RLp-pp-nEx" secondAttribute="trailing" constant="65" id="1tk-ce-8Xp"/>
-                                    <constraint firstItem="fo6-qe-TjK" firstAttribute="centerY" secondItem="CS8-hb-4ov" secondAttribute="centerY" id="8Kx-3Z-wnD"/>
-                                    <constraint firstItem="RLp-pp-nEx" firstAttribute="centerY" secondItem="CS8-hb-4ov" secondAttribute="centerY" id="BeD-NN-WUi"/>
                                     <constraint firstItem="RnL-Dw-f13" firstAttribute="leading" secondItem="fo6-qe-TjK" secondAttribute="trailing" constant="65" id="YL7-pC-KTA"/>
-                                    <constraint firstAttribute="width" constant="600" id="jQh-F0-byJ"/>
-                                    <constraint firstAttribute="height" constant="130" id="s42-mA-O5x"/>
-                                    <constraint firstItem="fo6-qe-TjK" firstAttribute="centerX" secondItem="CS8-hb-4ov" secondAttribute="centerX" id="ui3-uY-wFB"/>
-                                    <constraint firstItem="RnL-Dw-f13" firstAttribute="centerY" secondItem="CS8-hb-4ov" secondAttribute="centerY" id="w1q-56-D6S"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHg-IP-OYl">
@@ -1826,7 +1821,7 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="DRT-cs-BNt" kind="show" id="ZTf-Bm-PMy"/>
+                                            <segue destination="DRT-cs-BNt" kind="show" identifier="toMotivos" id="ZTf-Bm-PMy"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1852,26 +1847,39 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="4uK-z1-2et">
+                                <rect key="frame" x="451" y="112" width="324" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="7HV-jT-1kL">
+                                <rect key="frame" x="64" y="140" width="340" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="cambioInicio:" destination="G6n-mD-FUm" eventType="valueChanged" id="foK-UT-jCh"/>
+                                </connections>
+                            </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nh7-Ma-4lG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="sYk-Cx-wp5" firstAttribute="leading" secondItem="nh7-Ma-4lG" secondAttribute="leading" id="2Iz-uG-L5H"/>
                             <constraint firstItem="qhd-XX-Rn7" firstAttribute="centerX" secondItem="hAF-1E-muH" secondAttribute="centerX" id="2av-xI-4OG"/>
-                            <constraint firstItem="eHg-IP-OYl" firstAttribute="top" secondItem="CS8-hb-4ov" secondAttribute="bottom" constant="60" id="3tV-eF-CxP"/>
                             <constraint firstItem="sYk-Cx-wp5" firstAttribute="bottom" secondItem="nh7-Ma-4lG" secondAttribute="bottom" id="8FV-aj-icl"/>
                             <constraint firstItem="eHg-IP-OYl" firstAttribute="centerX" secondItem="hAF-1E-muH" secondAttribute="centerX" id="RC0-kx-HFB"/>
-                            <constraint firstItem="CS8-hb-4ov" firstAttribute="centerX" secondItem="hAF-1E-muH" secondAttribute="centerX" id="f2n-2C-CGp"/>
                             <constraint firstItem="sYk-Cx-wp5" firstAttribute="trailing" secondItem="nh7-Ma-4lG" secondAttribute="trailing" id="gD2-hf-Bg2"/>
                             <constraint firstItem="qhd-XX-Rn7" firstAttribute="top" secondItem="nh7-Ma-4lG" secondAttribute="top" constant="69" id="xID-6a-gfM"/>
                             <constraint firstItem="nh7-Ma-4lG" firstAttribute="bottom" secondItem="eHg-IP-OYl" secondAttribute="bottom" constant="180" id="xbg-mt-A0O"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Indicadores" image="line.horizontal.star.fill.line.horizontal" catalog="system" id="WxS-gW-p2y"/>
+                    <connections>
+                        <outlet property="fechaFin" destination="4uK-z1-2et" id="P8m-Bn-eal"/>
+                        <outlet property="fechaInicio" destination="7HV-jT-1kL" id="ugi-pM-YOK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FZl-3G-UEx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3661" y="3326"/>
+            <point key="canvasLocation" x="3660.7407407407404" y="3325.5555555555557"/>
         </scene>
         <!--Tanatólgo-->
         <scene sceneID="OAU-Jt-gby">
@@ -2125,7 +2133,7 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
             <objects>
                 <viewController id="qwZ-mP-qLD" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mMp-FB-mzn">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intervencion_servicio.png" translatesAutoresizingMaskIntoConstraints="NO" id="aUQ-Tg-e5d">
@@ -2152,7 +2160,7 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
             <objects>
                 <viewController id="DRT-cs-BNt" customClass="MotivoChartViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SDq-5R-ipM">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qO9-xp-6A8">
@@ -3541,7 +3549,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
             <objects>
                 <viewController id="5hg-zc-p0l" customClass="SesionDetalleViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aZ1-pA-2j4">
-                        <rect key="frame" x="0.0" y="0.0" width="604" height="205.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="604" height="205"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NombrePas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACj-73-mWW">
@@ -3771,7 +3779,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
             <objects>
                 <viewController id="TMO-d9-HKG" customClass="DetalleUsuarioViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TMA-AF-o5j">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z3m-Cy-pIU">
@@ -4151,7 +4159,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
             <objects>
                 <viewController id="1wN-aq-pGM" customClass="DetalleUsuarioViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oxl-Rp-Gvx">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5j7-6l-kRY">
@@ -5152,7 +5160,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
             <objects>
                 <tableViewController id="WLV-P0-gju" customClass="SesionesTableViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cBr-qv-jZJ">
-                        <rect key="frame" x="0.0" y="0.0" width="604" height="225.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="604" height="225"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>

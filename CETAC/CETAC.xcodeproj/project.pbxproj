@@ -23,6 +23,7 @@
 		482FC93526D9C98E0008D31F /* ContactoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482FC93426D9C98E0008D31F /* ContactoViewController.swift */; };
 		4881CC8B26DEA1A600258340 /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = 4881CC8A26DEA1A600258340 /* AppIcon.appiconset */; };
 		488332B926D9B853002F0FCC /* PantallasCETAC in Resources */ = {isa = PBXBuildFile; fileRef = 488332B826D9B853002F0FCC /* PantallasCETAC */; };
+		48B5B56D271DE79C004A9A06 /* IndicadoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B5B56C271DE79C004A9A06 /* IndicadoresViewController.swift */; };
 		48C66E542700E13000EA57B9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48C66E532700E13000EA57B9 /* GoogleService-Info.plist */; };
 		48C9E0C3270A2931002B72A9 /* TanatologoPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C9E0C2270A2931002B72A9 /* TanatologoPerfilViewController.swift */; };
 		48C9E0C5270A44D8002B72A9 /* AdminPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C9E0C4270A44D8002B72A9 /* AdminPerfilViewController.swift */; };
@@ -110,6 +111,7 @@
 		482FC93426D9C98E0008D31F /* ContactoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactoViewController.swift; sourceTree = "<group>"; };
 		4881CC8A26DEA1A600258340 /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
 		488332B826D9B853002F0FCC /* PantallasCETAC */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PantallasCETAC; sourceTree = "<group>"; };
+		48B5B56C271DE79C004A9A06 /* IndicadoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicadoresViewController.swift; sourceTree = "<group>"; };
 		48C66E532700E13000EA57B9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		48C9E0C2270A2931002B72A9 /* TanatologoPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanatologoPerfilViewController.swift; sourceTree = "<group>"; };
 		48C9E0C4270A44D8002B72A9 /* AdminPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPerfilViewController.swift; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 				650A7338271A9CEB00E29861 /* SesionDetalleViewController.swift */,
 				48E0E6FE27174DE60002FD97 /* MotivoController.swift */,
 				48FBB20C271B44D700CB69DA /* TanatologoChartController.swift */,
+				48B5B56C271DE79C004A9A06 /* IndicadoresViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -571,6 +574,7 @@
 				650A7339271A9CEB00E29861 /* SesionDetalleViewController.swift in Sources */,
 				652B6A30270DDF69007E4FD7 /* Usuario.swift in Sources */,
 				652B6A51270E14E4007E4FD7 /* Tanatologo.swift in Sources */,
+				48B5B56D271DE79C004A9A06 /* IndicadoresViewController.swift in Sources */,
 				652B6A3C270DE216007E4FD7 /* DetalleUsuarioViewController.swift in Sources */,
 				652B6A42270DE3DE007E4FD7 /* herramientasPickerView.swift in Sources */,
 				652B6A44270DE3FB007E4FD7 /* intervencionPickerView.swift in Sources */,
