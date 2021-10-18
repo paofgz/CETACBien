@@ -37,6 +37,13 @@ class IndicadoresInicialViewController: UIViewController {
             siguienteVista.fechaFin = fechaFinal.date
             siguienteVista.fechaInicio = fechaInicial.date
         }
+        if segue.identifier == "toCuotas"{
+            let siguienteVista = segue.destination as! CuotasChartViewController
+            siguienteVista.fechaFin = fechaFinal.date
+            siguienteVista.fechaInicio = fechaInicial.date
+        }
+       
+        
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }

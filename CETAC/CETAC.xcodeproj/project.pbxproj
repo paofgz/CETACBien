@@ -251,7 +251,6 @@
 				650A7338271A9CEB00E29861 /* SesionDetalleViewController.swift */,
 				48E0E6FE27174DE60002FD97 /* MotivoController.swift */,
 				48FBB20C271B44D700CB69DA /* TanatologoChartController.swift */,
-				6550C362271DFE53009DDD9C /* CuotasChartViewController.swift */,
 				6550C364271DFF2C009DDD9C /* CuotasController.swift */,
 				48B5B570271E2080004A9A06 /* IndicadoresInicialViewController.swift */,
 			);
@@ -318,6 +317,7 @@
 		48FBB20E271B526200CB69DA /* Graficas */ = {
 			isa = PBXGroup;
 			children = (
+				6550C362271DFE53009DDD9C /* CuotasChartViewController.swift */,
 				48FBB20A271B441300CB69DA /* UsuariosChartViewController.swift */,
 				48E0E6FA271742DB0002FD97 /* MotivoChartViewController.swift */,
 			);

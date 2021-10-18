@@ -1263,7 +1263,7 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
             <objects>
                 <viewController id="GGo-ff-3ga" customClass="UsuariosChartViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ems-VX-jKE">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="52F-iG-Xo0" customClass="UsuariosChartViewController.swift">
@@ -1303,6 +1303,20 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                                     <constraint firstAttribute="height" constant="114" id="ipn-xI-mhP"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No hay información en el periodo seleccionado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAC-mA-VU1">
+                                <rect key="frame" x="44" y="134" width="516" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No hay información en el periodo seleccionado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LhK-qm-0lN">
+                                <rect key="frame" x="131" y="594" width="516" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vBc-Tu-WdB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1326,6 +1340,8 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                     <navigationItem key="navigationItem" title="Usuarios atendidos" id="EWg-YC-y5N"/>
                     <connections>
                         <outlet property="barras" destination="HO5-op-x6S" id="yLp-7b-Dqg"/>
+                        <outlet property="errorLabel1" destination="wAC-mA-VU1" id="Sar-E9-RSQ"/>
+                        <outlet property="errorLabel12" destination="LhK-qm-0lN" id="x2C-1q-cj6"/>
                         <outlet property="pastel" destination="52F-iG-Xo0" id="R58-0U-F0v"/>
                     </connections>
                 </viewController>
@@ -1835,7 +1851,7 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="qwZ-mP-qLD" kind="show" id="SaE-BK-9Bg"/>
+                                            <segue destination="qwZ-mP-qLD" kind="show" identifier="" id="SaE-BK-9Bg"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="eIZ-nS-AcC" userLabel="coutasRecuperacion">
@@ -1855,7 +1871,7 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="5Zb-rA-dNv" kind="show" id="jy7-w3-rLO"/>
+                                            <segue destination="5Zb-rA-dNv" kind="show" identifier="toCuotas" id="jy7-w3-rLO"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IxK-l3-dUY" userLabel="usuariosAtendidos">
@@ -2235,10 +2251,10 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qO9-xp-6A8">
-                                <rect key="frame" x="80" y="160" width="544" height="643"/>
+                                <rect key="frame" x="80" y="160" width="544" height="700"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="544" id="tL9-Ds-ssf"/>
-                                    <constraint firstAttribute="height" constant="643" id="zY5-UL-MNu"/>
+                                    <constraint firstAttribute="height" constant="700" id="zY5-UL-MNu"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Motivo de Intervención" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0s-UV-xKL">
@@ -2258,12 +2274,19 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DecoMotivo" translatesAutoresizingMaskIntoConstraints="NO" id="zQ0-BT-Joc">
-                                <rect key="frame" x="125" y="828" width="454" height="63"/>
+                                <rect key="frame" x="125" y="885" width="454" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="52e-Se-aDt"/>
                                     <constraint firstAttribute="width" constant="454" id="gpZ-4X-nU7"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No hay información en el periodo seleccionado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vcc-1x-DJe">
+                                <rect key="frame" x="108" y="118" width="516" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RoG-ND-FZG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -2278,6 +2301,7 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                     </view>
                     <navigationItem key="navigationItem" title="Motivo" id="EcH-ej-YZQ"/>
                     <connections>
+                        <outlet property="errorLabel" destination="Vcc-1x-DJe" id="wzY-Yi-u94"/>
                         <outlet property="vistaBarras" destination="qO9-xp-6A8" id="8LT-C6-vpf"/>
                     </connections>
                 </viewController>

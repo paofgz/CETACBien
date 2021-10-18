@@ -18,6 +18,8 @@ class UsuariosChartViewController: UIViewController {
     var generos = [String: Int]()
     var tanatologosNombres = [" "]
     
+    @IBOutlet weak var errorLabel1: UILabel!
+    @IBOutlet weak var errorLabel12: UILabel!
     @IBOutlet weak var pastel: UIView!
     @IBOutlet weak var barras: UIView!
     
@@ -41,8 +43,8 @@ class UsuariosChartViewController: UIViewController {
         barChart.center(in: barras)
         barChart.width(to: barras)
         barChart.heightToWidth(of: barras)
-        print(fechaInicio)
-        print(fechaFin)
+        barChart.xAxis.granularity = 1
+        
         
         motivoController.fetchUsuarios(fechaInicio: fechaInicio, fechaFinal: fechaFin){ (result) in
             switch result{
@@ -61,21 +63,31 @@ class UsuariosChartViewController: UIViewController {
   
     func countSexo(with usuarios:Usuarios){
         DispatchQueue.main.async {
+            if usuarios.count > 0 {
             for use in usuarios{
                 self.generos[String(use.sexo)] = (self.generos[String(use.sexo)] ?? 0) + 1
             }
-            print(self.generos)
+            //print(self.generos)
             self.pieChartUpdate()
+            }else{
+               // self.errorLabel1.alpha = 1
+                print("no hay datos")
+            }
         }
     }
     
     func countTanatologo(with usuarios:Usuarios){
         DispatchQueue.main.async {
+            if usuarios.count > 0 {
             for use in usuarios{
                 self.tanatologos[String(use.idTanatologo)] = (self.tanatologos[String(use.idTanatologo)] ?? 0) + 1
             }
-            print(self.tanatologos)
+            //print(self.tanatologos)
             self.barChartUpdate()
+            }else{
+               // self.errorLabel12.alpha = 1
+                print("no hay datos")
+            }
         }
     }
     
@@ -95,6 +107,8 @@ class UsuariosChartViewController: UIViewController {
         dataSet.colors = ChartColorTemplates.material()
         pieChart.holeColor = UIColor.clear
         pieChart.holeColor = UIColor.clear
+        //pieChart.xAxis.granularity = 1
+        
         pieChart.chartDescription?.textColor = UIColor.blue
         pieChart.legend.textColor = UIColor.blue
         pieChart.notifyDataSetChanged()
@@ -112,6 +126,7 @@ class UsuariosChartViewController: UIViewController {
         let sesionesDataSet = BarChartDataSet(entries: sesionesArreglo, label: "Tanatologo")
         let data = BarChartData(dataSet: sesionesDataSet)
         barChart.data = data
+        barChart.xAxis.granularity = 1
         barChart.chartDescription?.text = "Usuarios por tanatólogo"
         for tanatolo in tana{
             tanatologoChartController.fetchPerfil(email: tanatolo, perfil: "Tanatologo") {

@@ -10,7 +10,10 @@ import Charts
 import TinyConstraints
 
 class CuotasChartViewController: UIViewController {
-    
+    /////
+    var fechaInicio:Date = Date()
+    var fechaFin:Date = Date()
+    ////
     let cuotasControlador = CuotasController()
     @IBOutlet weak var cuotaGlobal: UILabel!
     @IBOutlet weak var grafica: UIView!
@@ -26,6 +29,11 @@ class CuotasChartViewController: UIViewController {
         barChart.center(in: grafica)
         barChart.width(to: grafica)
         barChart.heightToWidth(of: grafica)
+        /////
+        print("la nueva")
+        print(fechaInicio)
+        print(fechaFin)
+        /////
         
         cuotasControlador.fetchCuotasGlobales(){
             (result) in

@@ -15,6 +15,7 @@ class MotivoChartViewController: UIViewController {
     let motivoController = MotivoController()
     var motivos = [String: Int]()
 
+    @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var vistaBarras: UIView!
     lazy var horizontalBarChart: HorizontalBarChartView = {
         let horizontalBarChartView = HorizontalBarChartView()
@@ -27,8 +28,8 @@ class MotivoChartViewController: UIViewController {
         horizontalBarChart.center(in: vistaBarras)
         horizontalBarChart.width(to: vistaBarras)
         horizontalBarChart.heightToWidth(of: vistaBarras)
-        print(fechaInicio)
-        print(fechaFin)
+        //print(fechaInicio)
+        //print(fechaFin)
         motivoController.fetchUsuarios(fechaInicio: fechaInicio, fechaFinal: fechaFin){ (result) in
             switch result{
             case .success(let usuarios):self.countMotivo(with: usuarios)
@@ -39,11 +40,16 @@ class MotivoChartViewController: UIViewController {
    
     func countMotivo(with usuarios:Usuarios){
         DispatchQueue.main.async {
-            for use in usuarios{
-                self.motivos[String(use.motivo)] = (self.motivos[String(use.motivo)] ?? 0) + 1
+            if usuarios.count > 0 {
+                for use in usuarios{
+                    self.motivos[String(use.motivo)] = (self.motivos[String(use.motivo)] ?? 0) + 1
+                }
+                //print(self.motivos)
+                self.actualiza()
+            }else{
+                //self.errorLabel.alpha = 1
+                print("no hay datos")
             }
-            print(self.motivos)
-            self.actualiza()
         }
     }
     
@@ -59,6 +65,8 @@ class MotivoChartViewController: UIViewController {
         let sesionesDataSet = BarChartDataSet(entries: sesionesArreglo, label: "Motivo")
         let data = BarChartData(dataSet: sesionesDataSet)
         horizontalBarChart.data = data
+        horizontalBarChart.xAxis.granularity = 1
+
         horizontalBarChart.chartDescription?.text = "Motivo"
         horizontalBarChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: usuarios)
         horizontalBarChart.notifyDataSetChanged()
