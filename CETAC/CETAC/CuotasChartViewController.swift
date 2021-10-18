@@ -47,6 +47,10 @@ class CuotasChartViewController: UIViewController {
     }
     
     func nueva(with cuotas:[String:Double]){
+        barChart.noDataTextColor = UIColor.white
+        barChart.noDataText = "No hay datos disponibles"
+        barChart.backgroundColor = UIColor.white
+        
         var arreglo = [BarChartDataEntry]()
         var i = 1.0
         var tanatologos = [""]
@@ -60,9 +64,17 @@ class CuotasChartViewController: UIViewController {
         let dataSet = BarChartDataSet(entries: arreglo, label: "Cuota")
         let data = BarChartData(dataSet: dataSet)
         barChart.data = data
-        barChart.chartDescription?.text = "Cuota de recuperacion"
+        dataSet.colors = [color1]
+        barChart.chartDescription?.enabled = false
+        
         
         barChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: tanatologos)
+        barChart.xAxis.granularity = 1
+        barChart.xAxis.labelPosition = .bottom
+        barChart.xAxis.drawGridLinesEnabled = false
+        barChart.legend.enabled = true
+        barChart.rightAxis.enabled = false
+        barChart.leftAxis.drawLabelsEnabled = true
         //horizontalBarChart.backgroundColor = ChartColorTemplates.vordiplom()
 
         barChart.notifyDataSetChanged()
