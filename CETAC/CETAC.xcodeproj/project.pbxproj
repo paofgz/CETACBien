@@ -23,6 +23,7 @@
 		482FC93526D9C98E0008D31F /* ContactoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482FC93426D9C98E0008D31F /* ContactoViewController.swift */; };
 		4881CC8B26DEA1A600258340 /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = 4881CC8A26DEA1A600258340 /* AppIcon.appiconset */; };
 		488332B926D9B853002F0FCC /* PantallasCETAC in Resources */ = {isa = PBXBuildFile; fileRef = 488332B826D9B853002F0FCC /* PantallasCETAC */; };
+		48B5B571271E2080004A9A06 /* IndicadoresInicialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B5B570271E2080004A9A06 /* IndicadoresInicialViewController.swift */; };
 		48C66E542700E13000EA57B9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 48C66E532700E13000EA57B9 /* GoogleService-Info.plist */; };
 		48C9E0C3270A2931002B72A9 /* TanatologoPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C9E0C2270A2931002B72A9 /* TanatologoPerfilViewController.swift */; };
 		48C9E0C5270A44D8002B72A9 /* AdminPerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C9E0C4270A44D8002B72A9 /* AdminPerfilViewController.swift */; };
@@ -112,6 +113,7 @@
 		482FC93426D9C98E0008D31F /* ContactoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactoViewController.swift; sourceTree = "<group>"; };
 		4881CC8A26DEA1A600258340 /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; path = AppIcon.appiconset; sourceTree = "<group>"; };
 		488332B826D9B853002F0FCC /* PantallasCETAC */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PantallasCETAC; sourceTree = "<group>"; };
+		48B5B570271E2080004A9A06 /* IndicadoresInicialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicadoresInicialViewController.swift; sourceTree = "<group>"; };
 		48C66E532700E13000EA57B9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		48C9E0C2270A2931002B72A9 /* TanatologoPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanatologoPerfilViewController.swift; sourceTree = "<group>"; };
 		48C9E0C4270A44D8002B72A9 /* AdminPerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminPerfilViewController.swift; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 				48FBB20C271B44D700CB69DA /* TanatologoChartController.swift */,
 				6550C362271DFE53009DDD9C /* CuotasChartViewController.swift */,
 				6550C364271DFF2C009DDD9C /* CuotasController.swift */,
+				48B5B570271E2080004A9A06 /* IndicadoresInicialViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -588,6 +591,7 @@
 				48D29C3726D5B9AD007FF79B /* ViewController.swift in Sources */,
 				48C9E0C9270A6001002B72A9 /* LoginController.swift in Sources */,
 				652B6A48270DE434007E4FD7 /* estadoCivilPickerView.swift in Sources */,
+				48B5B571271E2080004A9A06 /* IndicadoresInicialViewController.swift in Sources */,
 				652B6A32270DDF87007E4FD7 /* UsuarioController.swift in Sources */,
 				652B6A36270DDFB5007E4FD7 /* SesionController.swift in Sources */,
 				482FC93526D9C98E0008D31F /* ContactoViewController.swift in Sources */,

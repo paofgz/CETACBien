@@ -10,7 +10,8 @@ import Charts
 import TinyConstraints
 
 class MotivoChartViewController: UIViewController {
-    
+    var fechaInicio:Date = Date()
+    var fechaFin:Date = Date()
     let motivoController = MotivoController()
     var motivos = [String: Int]()
 
@@ -26,8 +27,9 @@ class MotivoChartViewController: UIViewController {
         horizontalBarChart.center(in: vistaBarras)
         horizontalBarChart.width(to: vistaBarras)
         horizontalBarChart.heightToWidth(of: vistaBarras)
-        
-        motivoController.fetchUsuarios(campo: "motivo"){ (result) in
+        print(fechaInicio)
+        print(fechaFin)
+        motivoController.fetchUsuarios(fechaInicio: fechaInicio, fechaFinal: fechaFin){ (result) in
             switch result{
             case .success(let usuarios):self.countMotivo(with: usuarios)
             case .failure(_):self.showError("No se pudo acceder a los usuarios")

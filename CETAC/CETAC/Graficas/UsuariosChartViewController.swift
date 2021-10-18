@@ -10,7 +10,8 @@ import Charts
 import TinyConstraints
 
 class UsuariosChartViewController: UIViewController {
-    
+    var fechaInicio:Date = Date()
+    var fechaFin:Date = Date()
     var motivoController = MotivoController()
     var tanatologoChartController = TanatologoChartController()
     var tanatologos = [String: Int]()
@@ -40,15 +41,17 @@ class UsuariosChartViewController: UIViewController {
         barChart.center(in: barras)
         barChart.width(to: barras)
         barChart.heightToWidth(of: barras)
+        print(fechaInicio)
+        print(fechaFin)
         
-        motivoController.fetchUsuarios(campo: "sexo"){ (result) in
+        motivoController.fetchUsuarios(fechaInicio: fechaInicio, fechaFinal: fechaFin){ (result) in
             switch result{
             case .success(let usuarios):self.countSexo(with: usuarios)
             case .failure(_):self.showError("No se pudo acceder a los usuarios")
             }
         }
         
-        motivoController.fetchUsuarios(campo: "idTanatologo"){ (result) in
+        motivoController.fetchUsuarios(fechaInicio: fechaInicio, fechaFinal: fechaFin){ (result) in
             switch result{
             case .success(let usuarios):self.countTanatologo(with: usuarios)
             case .failure(_):self.showError("No se pudo acceder a los usuarios")
@@ -134,3 +137,4 @@ class UsuariosChartViewController: UIViewController {
     }
     
 }
+
