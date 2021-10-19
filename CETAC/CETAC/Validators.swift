@@ -41,6 +41,40 @@ class Validators{
         return emailPred.evaluate(with: name)
     }
     
+    //https://stackoverflow.com/questions/16699007/regular-expression-to-match-standard-10-digit-phone-number
+    func isValidPhoneNumber(_ number: String) -> Bool {
+        let phoneRegEx = #"^\(?\d{3}\)?[ -]?\d{3}[ -]?\d{4}$"#
+        let phonePred = NSPredicate(format:"SELF MATCHES %@", phoneRegEx)
+        return phonePred.evaluate(with: number)
+    }
+    
+    //https://stackoverflow.com/questions/54208204/regular-expressions-age-validation-17-120
+    func isValidAge(_ age: String) -> Bool {
+        let ageRegEx = #"100|[1-9]?\d"#
+        let agePred = NSPredicate(format:"SELF MATCHES %@", ageRegEx)
+        return agePred.evaluate(with: age)
+    }
+    
+    func isValidSex(_ sex:String) -> Bool {
+        if (sex != "Hombre" && sex != "Mujer" && sex != "No binario" && sex != "Prefiero no decir"){
+            return false
+        }
+        return true
+    }
+    
+    //https://stackoverflow.com/questions/54800691/how-to-create-regex-for-int-and-float-value-using-swift-4-2
+    func isValidCuota(_ cuota:String) -> Bool {
+        let cuotaRegEx = "^[0-9]+(?:[.,][0-9]+)*$"
+        let cuotaPred = NSPredicate(format:"SELF MATCHES %@", cuotaRegEx)
+        return cuotaPred.evaluate(with: cuota)
+    }
+    
+    func isValidChildren(_ child:String) -> Bool {
+        let childRegEx = "[A-Za-zÁÉÍÓÚáéíóúñÑ]+[MH]+(100|[1-9])"
+        let childPred = NSPredicate(format:"SELF MATCHES %@", childRegEx)
+        return childPred.evaluate(with: child)
+    }
+    
     func validateFields(correoText : String!, passwordText : String!) -> String? {
         
         if correoText.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
@@ -101,6 +135,43 @@ class Validators{
         }
         
         return ret
+    }
+    
+    func validateEncuadre(nombre:String, celular:String, telefono:String, edadPareja:String, sexoPareja:String, referido:String, cuotaRec:String, edad:String, hijos:String) -> String? {
+        if !isValidName(nombre){
+            return "Ponga un nombre válido"
+        }
+        if !isValidName(referido){
+            return "Ponga un nombre de referido válido"
+        }
+        if !isValidPhoneNumber(celular){
+            return "El número de teléfono y el celular debe contener 10 números"
+        }
+        if !isValidPhoneNumber(telefono){
+            return "El número de teléfono y el celular debe contener 10 números"
+        }
+        if edadPareja != "" {
+            if !isValidAge(edadPareja){
+                return "La edad de pareja ingresada no es válida"
+            }
+        }
+        if !isValidAge(edad){
+            return "La edad ingresada no es válida"
+        }
+        if !isValidSex(sexoPareja){
+            return "El sexo ingresado no es válido"
+        }
+        if cuotaRec != "" {
+            if !isValidCuota(cuotaRec){
+                return "La cuota de recuperación ingresada no es válida"
+            }
+        }
+        /*if hijos != "" {
+            if !isValidChildren(hijos){
+                return "Los hijos se deben ingresar como nombre, sexo (H/M), edad y ';' ej: SantiagoH12;MariaM9"
+            }
+        }*/
+        return nil
     }
     
 }

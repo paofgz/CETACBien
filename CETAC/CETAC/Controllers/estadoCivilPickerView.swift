@@ -9,7 +9,7 @@ import UIKit
 
 class estadoCivilPickerView: UIPickerView, UIPickerViewDelegate, UIPickerViewDataSource {
 
-    let estadoCivil = ["Solterx", "Casadx", "Viudx"]
+    let estadoCivil = ["Solterx", "Casadx", "Divorciadx", "Viudx"]
 
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
