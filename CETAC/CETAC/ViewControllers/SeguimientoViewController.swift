@@ -33,7 +33,7 @@ class SeguimientoViewController: UIViewController,UIPickerViewDelegate, UIPicker
         
         super.viewDidLoad()
         
-        usuarioControlador.fetchUsuarios{ (result) in
+        usuarioControlador.fetchUsuariosByTan(idTan: correo){ (result) in
             switch result{
             case .success(let usuarios):self.setUsuarioViewer(with: usuarios)
             case .failure(let error):print("No se pudo acceder a los usuarios, Error: \(error)")
@@ -57,7 +57,7 @@ class SeguimientoViewController: UIViewController,UIPickerViewDelegate, UIPicker
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    usuarioControlador.fetchUsuarios{ (result) in
+        usuarioControlador.fetchUsuariosByTan(idTan: correo){ (result) in
         switch result{
         case .success(let usuarios):self.setUsuarioViewer(with: usuarios)
         case .failure(let error):print("No se pudo acceder a los usuarios, Error: \(error)")
