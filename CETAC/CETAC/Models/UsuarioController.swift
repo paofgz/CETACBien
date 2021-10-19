@@ -103,6 +103,23 @@ class UsuarioController{
             }
         }
     
+    func updateUsuario(usuarioId:String, proxSes:String, edad:String, sexo:String, completion: @escaping (Result<String, Error>) -> Void){
+        let ed = Int(edad)
+        db.collection("Usuarios").document(usuarioId).updateData([
+            "edad": ed ?? 0,
+            "sexo": sexo,
+            "proximaSesion": proxSes
+        ]) { err in
+            if let err = err {
+                print("Error updating document: \(err)")
+                completion(.failure(err))
+            } else {
+                print("Document successfully updated")
+                completion(.success("Document successfully updated"))
+            }
+        }
+    }
+    
     func updateProxSes(usuarioId:String, proxSes:String, completion: @escaping (Result<String, Error>) -> Void){
         db.collection("Usuarios").document(usuarioId).updateData([
             "proximaSesion": proxSes
@@ -116,6 +133,7 @@ class UsuarioController{
             }
         }
     }
+    
     func updateStatus(usuarioId:String, status:Int, completion: @escaping (Result<String, Error>) -> Void){
         db.collection("Usuarios").document(usuarioId).updateData([
             "status": status

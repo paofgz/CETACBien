@@ -13,6 +13,7 @@ class DetalleUsuarioViewController: UIViewController {
     var usuarioControlador = UsuarioController()
     var sesionControlador = SesionesController()
     var tanatologoControlador = TanatologoController()
+    var validator = Validators()
     
     let dateFormatter = DateFormatter()
     
@@ -22,6 +23,8 @@ class DetalleUsuarioViewController: UIViewController {
     var elUsuario: Usuario?
     var editar = false
 
+    @IBOutlet weak var sexo: UITextField!
+    @IBOutlet weak var edad: UITextField!
     @IBOutlet weak var numExp: UILabel!
     @IBOutlet weak var numSes: UILabel!
     @IBOutlet weak var motiv: UILabel!
@@ -95,6 +98,9 @@ class DetalleUsuarioViewController: UIViewController {
             let length = sesiones.count
             let lastSes = sesiones[length-1]
             self.nombre.text = self.elUsuario?.nombre
+            let edad = self.elUsuario?.edad ?? 0
+            self.edad.text = String(edad)
+            self.sexo.text = self.elUsuario?.sexo
             self.numExp.text = self.elUsuario?.id
             self.numSes.text = String(length)
             self.motiv.text = self.elUsuario?.motivo
@@ -126,6 +132,8 @@ class DetalleUsuarioViewController: UIViewController {
             proxSes.isHidden = true
             pickProxSes.isHidden = false
             eliminarCita.isHidden = false
+            edad.isUserInteractionEnabled = true
+            sexo.isUserInteractionEnabled = true
         }
         else{
             editButton.isHidden = false
@@ -134,6 +142,8 @@ class DetalleUsuarioViewController: UIViewController {
             proxSes.isHidden = false
             pickProxSes.isHidden = true
             eliminarCita.isHidden = true
+            edad.isUserInteractionEnabled = false
+            sexo.isUserInteractionEnabled = false
         }
         
     }
@@ -155,20 +165,25 @@ class DetalleUsuarioViewController: UIViewController {
         self.dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
         let proxSesion = self.pickProxSes.date
         let convertedDate = self.dateFormatter.string(from: proxSesion)
-        self.usuarioControlador.updateProxSes(usuarioId: self.elUsuario?.id ?? "", proxSes: convertedDate){ (result) in
-            switch result{
-            case .success(let retorno):
-                self.displayExito(title: retorno, detalle: "Se actualizó el registro")
-                self.proxSes.text = convertedDate
-                let now = Date()
-                if (proxSesion < now && self.elUsuario?.status == 1) {
-                    self.status.image = UIImage(named: "amarillo")
-                } else if (self.elUsuario?.status == 0) {
-                    self.status.image = UIImage(named: "rojo")
-                } else {
-                    self.status.image = UIImage(named: "verde")
+        let error = validator.validateUpdateUser(edad: self.edad.text ?? "0", sexo: self.sexo.text ?? "")
+        if error != nil {
+            displayExito(title: error ?? "", detalle: "Hay datos incorrectos")
+        } else {
+            self.usuarioControlador.updateUsuario(usuarioId: self.elUsuario?.id ?? "", proxSes: convertedDate, edad: self.edad.text ?? "0", sexo: self.sexo.text ?? ""){ (result) in
+                switch result{
+                case .success(let retorno):
+                    self.displayExito(title: retorno, detalle: "Se actualizó el registro")
+                    self.proxSes.text = convertedDate
+                    let now = Date()
+                    if (proxSesion < now && self.elUsuario?.status == 1) {
+                        self.status.image = UIImage(named: "amarillo")
+                    } else if (self.elUsuario?.status == 0) {
+                        self.status.image = UIImage(named: "rojo")
+                    } else {
+                        self.status.image = UIImage(named: "verde")
+                    }
+                case .failure(let error):self.displayError(error, title: "No se pudo modificar el registro")
                 }
-            case .failure(let error):self.displayError(error, title: "No se pudo modificar el registro")
             }
         }
     }

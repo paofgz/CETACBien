@@ -160,7 +160,7 @@ class Validators{
         }
         if sexoPareja != "" {
             if !isValidSex(sexoPareja){
-                return "El sexo ingresado no es válido"
+                return "El sexo ingresado no es válido, favor de ingresar Hombre, Mujer, No binario o Prefiero no decir"
             }
         }
         if cuotaRec != "0" {
@@ -168,11 +168,11 @@ class Validators{
                 return "La cuota de recuperación ingresada no es válida"
             }
         }
-        /*if hijos != "" {
+        if hijos != "" {
             if !isValidChildren(hijos){
                 return "Los hijos se deben ingresar como nombre, sexo (H/M), edad y ';' ej: SantiagoH12;MariaM9"
             }
-        }*/
+        }
         return nil
     }
     
@@ -181,6 +181,16 @@ class Validators{
             if !isValidCuota(cuotaRec){
                 return "La cuota de recuperación ingresada no es válida"
             }
+        }
+        return nil
+    }
+    
+    func validateUpdateUser(edad:String, sexo:String) -> String? {
+        if !isValidAge(edad) {
+            return "Introduzca una edad válida"
+        }
+        if !isValidSex(sexo) {
+            return "El sexo ingresado no es válido, favor de ingresar Hombre, Mujer, No binario o Prefiero no decir"
         }
         return nil
     }
