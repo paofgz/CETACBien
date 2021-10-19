@@ -158,10 +158,12 @@ class Validators{
         if !isValidAge(edad){
             return "La edad ingresada no es válida"
         }
-        if !isValidSex(sexoPareja){
-            return "El sexo ingresado no es válido"
+        if sexoPareja != "" {
+            if !isValidSex(sexoPareja){
+                return "El sexo ingresado no es válido"
+            }
         }
-        if cuotaRec != "" {
+        if cuotaRec != "0" {
             if !isValidCuota(cuotaRec){
                 return "La cuota de recuperación ingresada no es válida"
             }
@@ -174,4 +176,12 @@ class Validators{
         return nil
     }
     
+    func validateSesion(cuotaRec:String) -> String? {
+        if cuotaRec != "0" {
+            if !isValidCuota(cuotaRec){
+                return "La cuota de recuperación ingresada no es válida"
+            }
+        }
+        return nil
+    }
 }

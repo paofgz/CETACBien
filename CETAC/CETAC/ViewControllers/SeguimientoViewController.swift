@@ -11,6 +11,7 @@ class SeguimientoViewController: UIViewController,UIPickerViewDelegate, UIPicker
     
     var usuarioControlador = UsuarioController()
     var sesionControlador = SesionesController()
+    var validators = Validators()
     
     let dateFormatter = DateFormatter()
     
@@ -33,14 +34,12 @@ class SeguimientoViewController: UIViewController,UIPickerViewDelegate, UIPicker
         super.viewDidLoad()
         
         usuarioControlador.fetchUsuarios{ (result) in
-                    switch result{
-                    case .success(let usuarios):self.setUsuarioViewer(with: usuarios)
-                    case .failure(let error):print("No se pudo acceder a los usuarios, Error: \(error)")
-                    }
+            switch result{
+            case .success(let usuarios):self.setUsuarioViewer(with: usuarios)
+            case .failure(let error):print("No se pudo acceder a los usuarios, Error: \(error)")
+            }
         }
     self.setupToHideKeyboardOnTapOnView()
-    
-   
    
     self.evaluacionSes.text = ""
     self.cuotaRe.text = ""
@@ -59,10 +58,10 @@ class SeguimientoViewController: UIViewController,UIPickerViewDelegate, UIPicker
     override func viewDidLoad() {
         super.viewDidLoad()
     usuarioControlador.fetchUsuarios{ (result) in
-                    switch result{
-                    case .success(let usuarios):self.setUsuarioViewer(with: usuarios)
-                    case .failure(let error):print("No se pudo acceder a los usuarios, Error: \(error)")
-                    }
+        switch result{
+        case .success(let usuarios):self.setUsuarioViewer(with: usuarios)
+        case .failure(let error):print("No se pudo acceder a los usuarios, Error: \(error)")
+        }
     }
     
         
@@ -80,45 +79,54 @@ class SeguimientoViewController: UIViewController,UIPickerViewDelegate, UIPicker
 
     
     @IBAction func guardar(_ sender: UIButton) {
-            self.dateFormatter.dateStyle = DateFormatter.Style.long
-            self.dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
-            let fecha = self.FechaSelect.date
-            let cuota = Float(self.cuotaRe.text ?? "0")
-            let inter = self.IntervencionSeg.getSelected(IntervencionSeg, selectedRow: self.IntervencionSeg.selectedRow(inComponent: 0)) ?? ""
-            let herramienta = self.HerramientaSeg.getSelected(HerramientaSeg, selectedRow: self.HerramientaSeg.selectedRow(inComponent: 0)) ?? ""
-            let servicio = self.servicioSeg.getSelected(servicioSeg, selectedRow: self.servicioSeg.selectedRow(inComponent: 0)) ?? ""
-            let switchCase = action.isOn
-            let usuarioId = self.getSelected(usuariosPV, selectedRow: self.usuariosPV.selectedRow(inComponent: 0)) ?? ""
-            let newSesion = Sesion(fecha: fecha, herramienta: herramienta, tipoDeIntervencion: inter, evaluacionSesion: self.evaluacionSes.text ?? "", servicio: servicio, cuotaDeRecuperacion: cuota ?? 0.0, cerrarExpediente: switchCase)
-                                  
-               
-            let alert = UIAlertController(title: "¿Guardar hoja de seguimiento?", message: "Se guardarán los datos del seguimiento", preferredStyle: .alert)
-            
-        alert.addAction(UIAlertAction(title: "Si", style: .cancel, handler: { action in self.sesionControlador.insertSesion(idUsuario: usuarioId , nuevaSesion: newSesion, completion:{ (result) in
-            switch result {
-            case .success(let retorno):
-                var status = 1
-                if switchCase == true {
-                    status = 0
-                } else {
-                    status = 1
-                }
-                    self.usuarioControlador.updateStatus(usuarioId: usuarioId, status: status, completion: { (result) in
-                        switch result {
-                        case .success(_):
-                            print("Se actualizó el status del usuario")
-                        case .failure(let error): self.displayError(error, title:"No se pudo guardar la sesión")
+        if (self.evaluacionSes.text == "") {
+            displayExito(title: "Información incompleta", detalle: "Se debe ingresar la evaluación de la sesión")
+        } else {
+            let error = validators.validateSesion(cuotaRec: self.cuotaRe.text ?? "0")
+            if error != nil {
+                displayExito(title: error ?? "", detalle: "Hay datos incorrectos")
+            } else {
+                self.dateFormatter.dateStyle = DateFormatter.Style.long
+                self.dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"
+                let fecha = self.FechaSelect.date
+                let cuota = Float(self.cuotaRe.text ?? "0")
+                let inter = self.IntervencionSeg.getSelected(IntervencionSeg, selectedRow: self.IntervencionSeg.selectedRow(inComponent: 0)) ?? ""
+                let herramienta = self.HerramientaSeg.getSelected(HerramientaSeg, selectedRow: self.HerramientaSeg.selectedRow(inComponent: 0)) ?? ""
+                let servicio = self.servicioSeg.getSelected(servicioSeg, selectedRow: self.servicioSeg.selectedRow(inComponent: 0)) ?? ""
+                let switchCase = action.isOn
+                let usuarioId = self.getSelected(usuariosPV, selectedRow: self.usuariosPV.selectedRow(inComponent: 0)) ?? ""
+                let newSesion = Sesion(fecha: fecha, herramienta: herramienta, tipoDeIntervencion: inter, evaluacionSesion: self.evaluacionSes.text ?? "", servicio: servicio, cuotaDeRecuperacion: cuota ?? 0.0, cerrarExpediente: switchCase)
+                                      
+                   
+                let alert = UIAlertController(title: "¿Guardar hoja de seguimiento?", message: "Se guardarán los datos del seguimiento", preferredStyle: .alert)
+                
+                alert.addAction(UIAlertAction(title: "Si", style: .cancel, handler: { action in self.sesionControlador.insertSesion(idUsuario: usuarioId , nuevaSesion: newSesion, completion:{ (result) in
+                    switch result {
+                    case .success(let retorno):
+                        var status = 1
+                        if switchCase == true {
+                            status = 0
+                        } else {
+                            status = 1
                         }
-                })
-                    self.displayExito(title: "Se guardó la sesión con id: \(retorno)", detalle: "Se guardó la sesión")
-                    self.viewWillappear()
-            case .failure(let error):self.displayError(error, title: "No se pudo guardar la sesión")
-                }
-            })
-        }))
-        alert.addAction(UIAlertAction(title: "No", style: .default, handler: nil))
+                            self.usuarioControlador.updateStatus(usuarioId: usuarioId, status: status, completion: { (result) in
+                                switch result {
+                                case .success(_):
+                                    print("Se actualizó el status del usuario")
+                                case .failure(let error): self.displayError(error, title:"No se pudo guardar la sesión")
+                                }
+                        })
+                            self.displayExito(title: "Se guardó la sesión con id: \(retorno)", detalle: "Se guardó la sesión")
+                            self.viewWillappear()
+                    case .failure(let error):self.displayError(error, title: "No se pudo guardar la sesión")
+                        }
+                    })
+                }))
+                alert.addAction(UIAlertAction(title: "No", style: .default, handler: nil))
 
-        self.present(alert, animated: true)
+                self.present(alert, animated: true)
+            }
+        }
     }
 
     func numberOfComponents(in pickerView: UIPickerView) -> Int {

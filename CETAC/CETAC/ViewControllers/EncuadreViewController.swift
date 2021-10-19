@@ -104,11 +104,11 @@ class EncuadreViewController: UIViewController {
     
     @IBAction func save(_ sender: UIButton) {
         if (self.nombre.text == "" || self.celular.text == "" || self.telCasa.text == "" || self.ocupacion.text == "" || self.religion.text == "" || self.procedencia.text == "" || self.domicilio.text == "" || (self.edadPareja.text != "" && self.sexoPareja.text == "" ) || (self.edadPareja.text == "" && self.sexoPareja.text != "" ) || self.referido.text == "" || self.idRespuesta.text == "" || self.ekr.text == "" || self.evaluacion.text == "" || self.cuotaRec.text == "" || self.edad.text == "") {
-                    displayExito(title: "Información incompleta", detalle: "Se debe ingresar el nombre y al menos una forma de contacto")
+                    displayExito(title: "Información incompleta", detalle: "Se debe ingresar toda la información")
                 } else {
-                    let error = validators.validateEncuadre(nombre: self.nombre.text ?? "", celular: self.celular.text ?? "", telefono:self.telCasa.text ?? "", edadPareja:self.edadPareja.text ?? "", sexoPareja:self.sexoPareja.text ?? "", referido:self.referido.text ?? "", cuotaRec:self.cuotaRec.text ?? "0", edad:self.edad.text ?? "0", hijos:self.hijos.text ?? "")
+                    let error = validators.validateEncuadre(nombre: self.nombre.text ?? "", celular: self.celular.text ?? "", telefono:self.telCasa.text ?? "", edadPareja:self.edadPareja.text ?? "", sexoPareja:self.sexoPareja.text ?? "", referido:self.referido.text ?? "", cuotaRec:self.cuotaRec.text ?? "0", edad:self.edad.text ?? "", hijos:self.hijos.text ?? "")
                     if error != nil {
-                        displayError(error as! Error, title: "Hay datos incorrectos")
+                        displayExito(title: error ?? "", detalle: "Hay datos incorrectos")
                     } else {
                         self.dateFormatter.dateStyle = DateFormatter.Style.long
                         self.dateFormatter.dateFormat = "dd-MM-yyyy HH:mm"

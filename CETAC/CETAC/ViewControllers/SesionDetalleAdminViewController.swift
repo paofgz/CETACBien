@@ -15,6 +15,7 @@ class SesionDetalleAdminViewController: UIViewController {
     var usuarioControlador = UsuarioController()
     var sesionControlador = SesionesController()
     var tanatologoControlador = TanatologoController()
+    var validators = Validators()
     
     let dateFormatter = DateFormatter()
     var idUsuario: String?
@@ -171,17 +172,22 @@ class SesionDetalleAdminViewController: UIViewController {
     }
     
     @IBAction func guardarEdicion(_ sender: UIButton) {
-        editar = !editar
-        botones(estado: editar)
-        let servicio = self.servPicker.getSelected(servPicker, selectedRow: self.servPicker.selectedRow(inComponent: 0)) ?? ""
-        let intervencion = self.intPicker.getSelected(intPicker, selectedRow: self.intPicker.selectedRow(inComponent: 0)) ?? ""
-        let herramienta = self.herrPicker.getSelected(herrPicker, selectedRow: self.herrPicker.selectedRow(inComponent: 0)) ?? ""
-        let cuota = Float(self.rec.text ?? "0")
-        self.sesionControlador.updateSesion(usuarioId: self.elUsuario!.id, sesionId: self.laSesion!.id, serv: servicio, int: intervencion, herr: herramienta, eval: self.eval.text ?? "", rec: cuota ?? 0.0){ (result) in
-            switch result{
-            case .success(let retorno):
-                self.displayExito(title: retorno, detalle: "Se actualizó la sesion")
-            case .failure(let error):self.displayError(error, title: "No se pudo modificar el registro")
+        let error = validators.validateSesion(cuotaRec: self.rec.text ?? "0")
+        if error != nil {
+            displayExito(title: error ?? "", detalle: "Hay datos incorrectos")
+        } else {
+            editar = !editar
+            botones(estado: editar)
+            let servicio = self.servPicker.getSelected(servPicker, selectedRow: self.servPicker.selectedRow(inComponent: 0)) ?? ""
+            let intervencion = self.intPicker.getSelected(intPicker, selectedRow: self.intPicker.selectedRow(inComponent: 0)) ?? ""
+            let herramienta = self.herrPicker.getSelected(herrPicker, selectedRow: self.herrPicker.selectedRow(inComponent: 0)) ?? ""
+            let cuota = Float(self.rec.text ?? "0")
+            self.sesionControlador.updateSesion(usuarioId: self.elUsuario!.id, sesionId: self.laSesion!.id, serv: servicio, int: intervencion, herr: herramienta, eval: self.eval.text ?? "", rec: cuota ?? 0.0){ (result) in
+                switch result{
+                case .success(let retorno):
+                    self.displayExito(title: retorno, detalle: "Se actualizó la sesion")
+                case .failure(let error):self.displayError(error, title: "No se pudo modificar el registro")
+                }
             }
         }
     }
