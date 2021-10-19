@@ -25,14 +25,4 @@ class TanatologoChartController{
         }
     }
 }
-/*
-extension String {
-    func capitalizingFirstLetter2() -> String {
-        return prefix(1).capitalized + dropFirst()
-    }
 
-    mutating func capitalizeFirstLetter2() {
-        self = self.capitalizingFirstLetter()
-    }
-}
-*/

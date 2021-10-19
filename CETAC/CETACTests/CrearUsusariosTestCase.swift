@@ -29,14 +29,14 @@ class CrearUsusariosTestCase: XCTestCase {
         self.waitForExpectations(timeout: 10.0)
     }
     
-    func testCerrarExpedienteWrong() throws {
-        let exp = self.expectation(description: "testCerrarExpedienteWrong")
+    func testCerrarUsuarioWrong() throws {
+        let exp = self.expectation(description: "testCerrarUsuarioWrong")
         let now = Date()
         let newUser = Usuario(fecha: now, idTanatologo: "jess@miller.com", nombre: "", ocupacion: "Estudiante", religion: "Ateo", procedencia: "Latino", domicilio: "Ciudad de México", telefonoDeCasa: "5546378273", celular: "55342234", estadoCivil: "Solterx", edadPareja: 20 , sexoPareja: "Mujer", hijos: "0", referido: "Juan", motivo: "Motivo", identificacionDeRespuesta: "Respuesta", EKR: "EKR", status: 1, proximaSesion: "20-10-2021 13:00", sexo: "Hombre", edad: 56)
         usuarioControlador.insertUsuario(nuevoUsuario: newUser){ (result) in
             switch result{
             case .success(let res):
-                XCTAssertEqual(res, "El ususario debe tener un nombre")
+                XCTAssertEqual(res, "El usuario debe tener un nombre")
             case .failure(let err): XCTAssertNil(err)
             }
             exp.fulfill()

@@ -53,37 +53,38 @@ class UsuarioController{
     func insertUsuario(nuevoUsuario:Usuario, completion: @escaping (Result<String, Error>) -> Void){
         if nuevoUsuario.nombre == "" {
             print("El usuario debe tener un nombre")
-            completion(.success("El ususario debe tener un nombre"))
-        }
-        var ref: DocumentReference? = nil
-        ref = db.collection("Usuarios").addDocument(data: [
-            "fecha": nuevoUsuario.fecha,
-            "idTanatologo": nuevoUsuario.idTanatologo,
-            "nombre": nuevoUsuario.nombre,
-            "ocupacion": nuevoUsuario.ocupacion,
-            "religion": nuevoUsuario.religion,
-            "procedencia": nuevoUsuario.procedencia,
-            "domicilio": nuevoUsuario.domicilio,
-            "telefonoDeCasa": nuevoUsuario.telefonoDeCasa,
-            "celular": nuevoUsuario.celular,
-            "estadoCivil": nuevoUsuario.estadoCivil,
-            "edadPareja": nuevoUsuario.edadPareja,
-            "sexoPareja": nuevoUsuario.sexoPareja,
-            "hijos": nuevoUsuario.hijos,
-            "referido": nuevoUsuario.referido,
-            "motivo": nuevoUsuario.motivo,
-            "identificacionDeRespuesta": nuevoUsuario.identificacionDeRespuesta,
-            "EKR": nuevoUsuario.EKR,
-            "proximaSesion": nuevoUsuario.proximaSesion,
-            "status": nuevoUsuario.status,
-            "edad": nuevoUsuario.edad,
-            "sexo": nuevoUsuario.sexo
-        ]) { err in
-            if let err = err {
-                print("Error adding document: \(err)")
-                completion(.failure(err))
-            } else {
-                completion(.success(ref!.documentID))
+            completion(.success("El usuario debe tener un nombre"))
+        }else{
+            var ref: DocumentReference? = nil
+            ref = db.collection("Usuarios").addDocument(data: [
+                "fecha": nuevoUsuario.fecha,
+                "idTanatologo": nuevoUsuario.idTanatologo,
+                "nombre": nuevoUsuario.nombre,
+                "ocupacion": nuevoUsuario.ocupacion,
+                "religion": nuevoUsuario.religion,
+                "procedencia": nuevoUsuario.procedencia,
+                "domicilio": nuevoUsuario.domicilio,
+                "telefonoDeCasa": nuevoUsuario.telefonoDeCasa,
+                "celular": nuevoUsuario.celular,
+                "estadoCivil": nuevoUsuario.estadoCivil,
+                "edadPareja": nuevoUsuario.edadPareja,
+                "sexoPareja": nuevoUsuario.sexoPareja,
+                "hijos": nuevoUsuario.hijos,
+                "referido": nuevoUsuario.referido,
+                "motivo": nuevoUsuario.motivo,
+                "identificacionDeRespuesta": nuevoUsuario.identificacionDeRespuesta,
+                "EKR": nuevoUsuario.EKR,
+                "proximaSesion": nuevoUsuario.proximaSesion,
+                "status": nuevoUsuario.status,
+                "edad": nuevoUsuario.edad,
+                "sexo": nuevoUsuario.sexo
+            ]) { err in
+                if let err = err {
+                    print("Error adding document: \(err)")
+                    completion(.failure(err))
+                } else {
+                    completion(.success(ref!.documentID))
+                }
             }
         }
     }
