@@ -10,26 +10,41 @@ import Firebase
 
 class servicioController{
     let db = Firestore.firestore()
-
+    var usuarioControlador = UsuarioController()
+    var sesionControlador = SesionesController()
     
-    func fetchSesiones(_ idUsuario:String, completion: @escaping (Result<Sesiones, Error>) -> Void){
-        var sesiones = [Sesion]()
-        print(idUsuario)
-        db.collection("Usuarios").document(idUsuario).collection("Sesion").order(by: "servicio").getDocuments() { (querySnapshot, err) in
-            if let err = err {
-                print("Error getting documents: \(err)")
-                completion(.failure(err))
-            } else {
-                for document in querySnapshot!.documents {
-                    let s = Sesion(aDoc: document)
-                    print(s)
-                    sesiones.append(s)
+    func fetchSesiones(completion: @escaping (Result<[Sesion], Error>) -> Void) {
+        var sesiones:[Sesion] = []
+        let group = DispatchGroup()
+        
+        self.usuarioControlador.fetchUsuarios(){(result) in
+            switch result {
+            case .success(let usuarios):
+                for usuario in usuarios {
+                    group.enter()
+                    self.sesionControlador.fetchSesiones(usuario.id) { (res) in
+                        switch res {
+                        case .success(let S):
+                            for sesion in S {
+                                sesiones.append(sesion)
+                            }
+                        case.failure(let err): print("No se pudo acceder a las sesiones: \(err)")
+                        }
+                        group.leave()
+                    }
                 }
-                completion(.success(sesiones))
+                group.notify(queue: .main){
+                    completion(.success(sesiones))
+                }
+            case .failure(let error):
+                print("No se pudo acceder a los usuarios: \(error)")
+                completion(.failure(error))
             }
+            
         }
-       
     }
+    
+    
 }
 
 

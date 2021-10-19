@@ -1246,7 +1246,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
             <objects>
                 <viewController id="GGo-ff-3ga" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ems-VX-jKE">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Usuarios_atendidos" translatesAutoresizingMaskIntoConstraints="NO" id="ejv-Rx-BB7">
@@ -2125,13 +2125,9 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
             <objects>
                 <viewController id="qwZ-mP-qLD" customClass="ServicioIntervencionChartViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mMp-FB-mzn">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kUa-Ui-2Lz">
-                                <rect key="frame" x="40" y="526" width="309" height="271"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Intervención y servicio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpP-sO-Aed">
                                 <rect key="frame" x="152" y="48" width="400" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2150,7 +2146,11 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gPW-cS-PVm">
-                                <rect key="frame" x="368" y="147" width="316" height="271"/>
+                                <rect key="frame" x="320" y="196" width="384" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kUa-Ui-2Lz">
+                                <rect key="frame" x="20" y="551" width="374" height="243"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </view>
                         </subviews>
@@ -2160,7 +2160,7 @@ La gestión y coordinación con el personal hospitalario para la ayuda de servic
                     <navigationItem key="navigationItem" title="Intervención y servicio" id="MuI-Ce-6eE"/>
                     <connections>
                         <outlet property="vistaInt" destination="kUa-Ui-2Lz" id="1dR-cY-e3e"/>
-                        <outlet property="vistaServicio" destination="gPW-cS-PVm" id="N2L-Ti-i7B"/>
+                        <outlet property="vistaServicio" destination="gPW-cS-PVm" id="raj-bW-n11"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EVq-jD-SvW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
