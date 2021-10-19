@@ -34,15 +34,16 @@ class CuotasChartViewController: UIViewController {
         print(fechaInicio)
         print(fechaFin)
         /////
-        
-        cuotasControlador.fetchCuotasGlobales(){
+        ///cambio 
+        cuotasControlador.fetchCuotasGlobales(fechaInicio: fechaInicio, fechaFin: fechaFin){
             (result) in
             switch result {
             case .success(let cuota): self.cuotaGlobal.text = "$" + String(format: "%.2f", cuota)
             case .failure(_):print("No se pudo acceder a las cuotas globales")
             }
         }
-        cuotasControlador.fetchCuotasByTan(){
+        //cambio
+        cuotasControlador.fetchCuotasByTan(fechaInicio: fechaInicio, fechaFin: fechaFin){
             (result) in
             switch result {
             case .success(let cuotas):

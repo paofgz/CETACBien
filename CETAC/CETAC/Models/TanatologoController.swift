@@ -29,6 +29,7 @@ class TanatologoController{
         }
        
     }
+    
     func getTanatologo(id:String, completion: @escaping (Result<Tanatologo, Error>) -> Void){
         var tanatologo:Tanatologo = Tanatologo(apellido: "", correo: "", nombre: "")
         db.collection("Tanatologo").document(id).getDocument() { (querySnapshot, err) in

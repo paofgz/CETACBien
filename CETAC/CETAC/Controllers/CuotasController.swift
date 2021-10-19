@@ -13,13 +13,16 @@ class CuotasController {
     var usuarioControlador = UsuarioController()
     var sesionControlador = SesionesController()
     var tanatologoControlador = TanatologoController()
+    ///
+    var motivoController = MotivoController()
+    ///
     
-    func fetchCuotasGlobales(completion: @escaping (Result<Double, Error>) -> Void){
+    func fetchCuotasGlobales(fechaInicio: Date, fechaFin: Date, completion: @escaping (Result<Double, Error>) -> Void){
         
         var cuota = 0.0
         let group = DispatchGroup()
-        
-        self.usuarioControlador.fetchUsuarios{ (result) in
+        ////cambio
+        self.motivoController.fetchUsuarios(fechaInicio: fechaInicio, fechaFinal: fechaFin){ (result) in
             switch result{
             case .success(let usuarios):
                 for usuario in usuarios {
@@ -47,7 +50,7 @@ class CuotasController {
         }
     }
     
-    func fetchCuotasByTan(completion: @escaping (Result<[String: Double], Error>) -> Void) {
+    func fetchCuotasByTan(fechaInicio: Date, fechaFin: Date, completion: @escaping (Result<[String: Double], Error>) -> Void) {
         print("In")
         let group1 = DispatchGroup()
         var cuotasTan = [String: Double]()
@@ -60,7 +63,7 @@ class CuotasController {
                 }
                 for tanatologo in tanatologos{
                     group1.enter()
-                    self.usuarioControlador.fetchUsuariosByTan(idTan: tanatologo.correo){
+                    self.motivoController.fetchUsuariosByTan(idTan: tanatologo.correo, fechaInicio: fechaInicio, fechaFinal: fechaFin){
                         (res) in
                         switch res{
                         case .success(let usuarios):
