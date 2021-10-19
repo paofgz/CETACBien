@@ -10,10 +10,9 @@ import Charts
 import TinyConstraints
 
 class CuotasChartViewController: UIViewController {
-    /////
     var fechaInicio:Date = Date()
     var fechaFin:Date = Date()
-    ////
+    
     let cuotasControlador = CuotasController()
     @IBOutlet weak var cuotaGlobal: UILabel!
     @IBOutlet weak var grafica: UIView!
@@ -29,12 +28,8 @@ class CuotasChartViewController: UIViewController {
         barChart.center(in: grafica)
         barChart.width(to: grafica)
         barChart.heightToWidth(of: grafica)
-        /////
-        print("la nueva")
-        print(fechaInicio)
-        print(fechaFin)
-        /////
-        ///cambio 
+      
+
         cuotasControlador.fetchCuotasGlobales(fechaInicio: fechaInicio, fechaFin: fechaFin){
             (result) in
             switch result {
@@ -42,7 +37,7 @@ class CuotasChartViewController: UIViewController {
             case .failure(_):print("No se pudo acceder a las cuotas globales")
             }
         }
-        //cambio
+
         cuotasControlador.fetchCuotasByTan(fechaInicio: fechaInicio, fechaFin: fechaFin){
             (result) in
             switch result {
@@ -52,7 +47,6 @@ class CuotasChartViewController: UIViewController {
             case .failure(_):print("No se pudo acceder a las cuotas globales")
             }
         }
-        // Do any additional setup after loading the view.
     }
     
     func nueva(with cuotas:[String:Double]){
@@ -75,7 +69,6 @@ class CuotasChartViewController: UIViewController {
         barChart.data = data
         dataSet.colors = [color1]
         barChart.chartDescription?.enabled = false
-        
         
         barChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: tanatologos)
         barChart.xAxis.granularity = 1

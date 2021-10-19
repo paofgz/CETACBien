@@ -28,8 +28,7 @@ class MotivoChartViewController: UIViewController {
         horizontalBarChart.center(in: vistaBarras)
         horizontalBarChart.width(to: vistaBarras)
         horizontalBarChart.heightToWidth(of: vistaBarras)
-        //print(fechaInicio)
-        //print(fechaFin)
+        
         motivoController.fetchUsuarios(fechaInicio: fechaInicio, fechaFinal: fechaFin){ (result) in
             switch result{
             case .success(let usuarios):self.countMotivo(with: usuarios)
@@ -44,10 +43,8 @@ class MotivoChartViewController: UIViewController {
                 for use in usuarios{
                     self.motivos[String(use.motivo)] = (self.motivos[String(use.motivo)] ?? 0) + 1
                 }
-                //print(self.motivos)
                 self.actualiza()
             }else{
-                //self.errorLabel.alpha = 1
                 print("no hay datos")
             }
         }

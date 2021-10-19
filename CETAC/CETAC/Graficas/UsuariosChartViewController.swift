@@ -67,10 +67,8 @@ class UsuariosChartViewController: UIViewController {
             for use in usuarios{
                 self.generos[String(use.sexo)] = (self.generos[String(use.sexo)] ?? 0) + 1
             }
-            //print(self.generos)
             self.pieChartUpdate()
             }else{
-               // self.errorLabel1.alpha = 1
                 print("no hay datos")
             }
         }
@@ -82,10 +80,8 @@ class UsuariosChartViewController: UIViewController {
             for use in usuarios{
                 self.tanatologos[String(use.idTanatologo)] = (self.tanatologos[String(use.idTanatologo)] ?? 0) + 1
             }
-            //print(self.tanatologos)
             self.barChartUpdate()
             }else{
-               // self.errorLabel12.alpha = 1
                 print("no hay datos")
             }
         }
@@ -106,9 +102,7 @@ class UsuariosChartViewController: UIViewController {
         pieChart.chartDescription?.text = "Usuarios atendidos por sexo"
         dataSet.colors = ChartColorTemplates.material()
         pieChart.holeColor = UIColor.clear
-        pieChart.holeColor = UIColor.clear
-        //pieChart.xAxis.granularity = 1
-        
+        pieChart.holeColor = UIColor.clear        
         pieChart.chartDescription?.textColor = UIColor.blue
         pieChart.legend.textColor = UIColor.blue
         pieChart.notifyDataSetChanged()

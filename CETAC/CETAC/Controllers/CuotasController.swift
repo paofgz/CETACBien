@@ -10,18 +10,15 @@ import UIKit
 
 class CuotasController {
     let db = Firestore.firestore()
-    var usuarioControlador = UsuarioController()
     var sesionControlador = SesionesController()
     var tanatologoControlador = TanatologoController()
-    ///
     var motivoController = MotivoController()
-    ///
+   
     
     func fetchCuotasGlobales(fechaInicio: Date, fechaFin: Date, completion: @escaping (Result<Double, Error>) -> Void){
         
         var cuota = 0.0
         let group = DispatchGroup()
-        ////cambio
         self.motivoController.fetchUsuarios(fechaInicio: fechaInicio, fechaFinal: fechaFin){ (result) in
             switch result{
             case .success(let usuarios):

@@ -12,12 +12,13 @@ class servicioController{
     let db = Firestore.firestore()
     var usuarioControlador = UsuarioController()
     var sesionControlador = SesionesController()
+    var motivoController = MotivoController()
     
-    func fetchSesiones(completion: @escaping (Result<[Sesion], Error>) -> Void) {
+    func fetchSesiones(fechaInicio: Date, fechaFin: Date, completion: @escaping (Result<[Sesion], Error>) -> Void) {
         var sesiones:[Sesion] = []
         let group = DispatchGroup()
         
-        self.usuarioControlador.fetchUsuarios(){(result) in
+        self.motivoController.fetchUsuarios(fechaInicio: fechaInicio, fechaFinal: fechaFin){(result) in
             switch result {
             case .success(let usuarios):
                 for usuario in usuarios {

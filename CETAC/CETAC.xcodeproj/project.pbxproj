@@ -261,8 +261,8 @@
 				6579BE1C271E56A60074F28B /* SesionDetalleAdminViewController.swift */,
 				48E0E6FE27174DE60002FD97 /* MotivoController.swift */,
 				48FBB20C271B44D700CB69DA /* TanatologoChartController.swift */,
-				3E0C4BCB271E7644009AC8ED /* servicioController.swift */,
 				6550C364271DFF2C009DDD9C /* CuotasController.swift */,
+				3E0C4BCB271E7644009AC8ED /* servicioController.swift */,
 				48B5B570271E2080004A9A06 /* IndicadoresInicialViewController.swift */,
 			);
 			path = Controllers;
