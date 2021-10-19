@@ -99,7 +99,7 @@ class DetalleUsuarioViewController: UIViewController {
             self.numSes.text = String(length)
             self.motiv.text = self.elUsuario?.motivo
             self.serv.text = lastSes.servicio
-            self.tan.text = tanatologo.nombre
+            self.tan.text = tanatologo.nombre + " " + tanatologo.apellido
             self.int.text = lastSes.tipoDeIntervencion
             self.herr.text = lastSes.herramienta
             self.proxSes.text = self.elUsuario?.proximaSesion
@@ -212,7 +212,7 @@ class DetalleUsuarioViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
-        if segue.identifier == "sesion"{
+        if (segue.identifier == "sesion" || segue.identifier == "sesion2") {
             let siguiente = segue.destination as! SesionesTableViewController
             self.embedvc = siguiente;
         }

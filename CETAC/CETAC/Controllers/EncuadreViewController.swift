@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class EncuadreViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+class EncuadreViewController: UIViewController {
 
     var usuarioControlador = UsuarioController()
     var sesionControlador = SesionesController()
@@ -17,7 +17,6 @@ class EncuadreViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     let dateFormatter = DateFormatter()
     
     @IBOutlet weak var fecha: UIDatePicker!
-    @IBOutlet weak var tanat: UIPickerView!
     @IBOutlet weak var nombre: UITextField!
     @IBOutlet weak var ocupacion: UITextField!
     @IBOutlet weak var religion: UITextField!
@@ -41,7 +40,6 @@ class EncuadreViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
     @IBOutlet weak var proxSes: UIDatePicker!
     @IBOutlet weak var edad: UITextField!
     @IBOutlet weak var sexo: generoPickerView!
-    var tanatologos = [Tanatologo]()
     
     func viewWillappear() {
         super.viewDidLoad()
@@ -80,25 +78,10 @@ class EncuadreViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
         self.sexo.delegate = sexo
         self.sexo.dataSource = sexo
         
-        tanatologoControlador.fetchTanatologo{ (result) in
-                    switch result{
-                    case .success(let tanatologos):
-                        self.setTanatologosViewer(with: tanatologos)
-                    case .failure(let error):print("No se pudo acceder a los usuarios, Error: \(error)")
-                    }
-                }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tanatologoControlador.fetchTanatologo{ (result) in
-                    switch result{
-                    case .success(let tanatologos):
-                        self.setTanatologosViewer(with: tanatologos)
-                    case .failure(let error):print("No se pudo acceder a los tanatologos, Error: \(error)")
-                    }
-                }
         
         self.setupToHideKeyboardOnTapOnView()
                 
@@ -135,7 +118,7 @@ class EncuadreViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
                     let edadP = Int(self.edadPareja.text ?? "0")
                     let ed = Int(self.edad.text ?? "0")
                     let cuota = Float(self.cuotaRec.text ?? "0")
-                    let tanatId = self.getSelected(tanat, selectedRow: self.tanat.selectedRow(inComponent: 0)) ?? ""
+                    let tanatId = correo
                     let newUser = Usuario(fecha: fecha, idTanatologo: tanatId, nombre: self.nombre.text!, ocupacion: self.ocupacion.text ?? "", religion: self.religion.text ?? "", procedencia: self.procedencia.text ?? "", domicilio: self.domicilio.text ?? "", telefonoDeCasa: self.telCasa.text ?? "", celular: self.celular.text ?? "", estadoCivil: edoCivil, edadPareja: edadP ?? 0 , sexoPareja: self.sexoPareja.text ?? "", hijos: self.hijos.text ?? "", referido: self.referido.text ?? "", motivo: motivo, identificacionDeRespuesta: self.idRespuesta.text ?? "", EKR: self.ekr.text ?? "", status: 1, proximaSesion: proximaSes, sexo: sexo, edad: ed ?? 0)
                     let alert = UIAlertController(title: "¿Guardar encuadre?", message: "Se guardarán los datos del paciente", preferredStyle: .alert)
 
@@ -186,27 +169,6 @@ class EncuadreViewController: UIViewController, UIPickerViewDelegate, UIPickerVi
                 alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: nil))
                 self.present(alert, animated: true, completion: nil)
             }
-        }
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-            return 1
-        }
-        
-        func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-            return tanatologos.count
-        }
-        
-        func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-            return tanatologos[row].nombre
-        }
-        
-        func setTanatologosViewer(with: [Tanatologo]) {
-            self.tanatologos = with
-            self.tanat.delegate = self
-            self.tanat.dataSource = self
-        }
-        
-        func getSelected(_ pickerView: UIPickerView, selectedRow row: Int) -> String? {
-            return tanatologos[row].correo
         }
 }
 

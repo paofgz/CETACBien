@@ -67,6 +67,8 @@
 		652B6A53270E1503007E4FD7 /* TanatologoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652B6A52270E1503007E4FD7 /* TanatologoController.swift */; };
 		6550C363271DFE53009DDD9C /* CuotasChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6550C362271DFE53009DDD9C /* CuotasChartViewController.swift */; };
 		6550C365271DFF2C009DDD9C /* CuotasController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6550C364271DFF2C009DDD9C /* CuotasController.swift */; };
+		6579BE1B271E51770074F28B /* UsuariosTanTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6579BE1A271E51770074F28B /* UsuariosTanTableViewController.swift */; };
+		6579BE1D271E56A60074F28B /* SesionDetalleAdminViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6579BE1C271E56A60074F28B /* SesionDetalleAdminViewController.swift */; };
 		659C4A4E27120C670096679B /* CerrarExpedienteTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659C4A4D27120C670096679B /* CerrarExpedienteTestCase.swift */; };
 		659C4A502712111D0096679B /* UpdateProximaSesionTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659C4A4F2712111D0096679B /* UpdateProximaSesionTestCase.swift */; };
 		659C4A54271212EE0096679B /* CrearUsusariosTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659C4A53271212EE0096679B /* CrearUsusariosTestCase.swift */; };
@@ -160,6 +162,8 @@
 		652B6A52270E1503007E4FD7 /* TanatologoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanatologoController.swift; sourceTree = "<group>"; };
 		6550C362271DFE53009DDD9C /* CuotasChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuotasChartViewController.swift; sourceTree = "<group>"; };
 		6550C364271DFF2C009DDD9C /* CuotasController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuotasController.swift; sourceTree = "<group>"; };
+		6579BE1A271E51770074F28B /* UsuariosTanTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsuariosTanTableViewController.swift; sourceTree = "<group>"; };
+		6579BE1C271E56A60074F28B /* SesionDetalleAdminViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SesionDetalleAdminViewController.swift; sourceTree = "<group>"; };
 		659C4A4D27120C670096679B /* CerrarExpedienteTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CerrarExpedienteTestCase.swift; sourceTree = "<group>"; };
 		659C4A4F2712111D0096679B /* UpdateProximaSesionTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProximaSesionTestCase.swift; sourceTree = "<group>"; };
 		659C4A53271212EE0096679B /* CrearUsusariosTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearUsusariosTestCase.swift; sourceTree = "<group>"; };
@@ -236,6 +240,7 @@
 				48CB2026270CCE5400E2DB22 /* SingUpController.swift */,
 				652B6A37270DE1A7007E4FD7 /* UsuarioTableViewCell.swift */,
 				652B6A39270DE1D0007E4FD7 /* UsuariosTableViewController.swift */,
+				6579BE1A271E51770074F28B /* UsuariosTanTableViewController.swift */,
 				652B6A3B270DE216007E4FD7 /* DetalleUsuarioViewController.swift */,
 				652B6A3D270DE36A007E4FD7 /* EncuadreViewController.swift */,
 				652B6A3F270DE3C4007E4FD7 /* motivosPickerView.swift */,
@@ -249,6 +254,7 @@
 				650A7332271A692900E29861 /* SesionesTableViewController.swift */,
 				650A7336271A6B1E00E29861 /* SesionTableViewCell.swift */,
 				650A7338271A9CEB00E29861 /* SesionDetalleViewController.swift */,
+				6579BE1C271E56A60074F28B /* SesionDetalleAdminViewController.swift */,
 				48E0E6FE27174DE60002FD97 /* MotivoController.swift */,
 				48FBB20C271B44D700CB69DA /* TanatologoChartController.swift */,
 				6550C364271DFF2C009DDD9C /* CuotasController.swift */,
@@ -584,6 +590,7 @@
 				652B6A42270DE3DE007E4FD7 /* herramientasPickerView.swift in Sources */,
 				652B6A44270DE3FB007E4FD7 /* intervencionPickerView.swift in Sources */,
 				652B6A2E270DDF49007E4FD7 /* Colors.swift in Sources */,
+				6579BE1D271E56A60074F28B /* SesionDetalleAdminViewController.swift in Sources */,
 				6550C363271DFE53009DDD9C /* CuotasChartViewController.swift in Sources */,
 				48DA5057270511BA00745442 /* LoginViewController.swift in Sources */,
 				652B6A38270DE1A7007E4FD7 /* UsuarioTableViewCell.swift in Sources */,
@@ -610,6 +617,7 @@
 				652B6A3E270DE36A007E4FD7 /* EncuadreViewController.swift in Sources */,
 				650A7331271A5CEE00E29861 /* generoPickerView.swift in Sources */,
 				650A7337271A6B1E00E29861 /* SesionTableViewCell.swift in Sources */,
+				6579BE1B271E51770074F28B /* UsuariosTanTableViewController.swift in Sources */,
 				48D29C3526D5B9AD007FF79B /* SceneDelegate.swift in Sources */,
 				481EC14C27092A2500987AE1 /* SingUp2ViewController.swift in Sources */,
 				48FBB20D271B44D700CB69DA /* TanatologoChartController.swift in Sources */,

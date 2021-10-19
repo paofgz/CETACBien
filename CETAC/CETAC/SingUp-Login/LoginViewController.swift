@@ -9,6 +9,8 @@ import UIKit
 import Firebase
 import FirebaseAuth
 
+var correo = ""
+
 class LoginViewController: UIViewController, UITextFieldDelegate {
     var loginController = LoginController()
     var validators = Validators()
@@ -44,7 +46,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             let passwordClean = passwordText.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             loginController.logIn( passwordClean: passwordClean, emailClean: emailClean){ (result) in
                 switch result{
-                    case .success(let email): self.loginController.isAdministrator(email: email){
+                    case .success(let email):
+                        correo = email
+                        self.loginController.isAdministrator(email: email){
                         (tmp)in
                         self.actualizaUi(tmp: tmp)
                     }

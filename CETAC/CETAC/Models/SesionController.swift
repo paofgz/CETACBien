@@ -50,6 +50,24 @@ class SesionesController{
             }
         }
     }
+    
+    func updateSesion(usuarioId:String, sesionId:String, serv:String, int:String, herr:String, eval:String, rec:Float, completion: @escaping (Result<String, Error>) -> Void){
+        db.collection("Usuarios").document(usuarioId).collection("Sesion").document(sesionId).updateData([
+            "servicio": serv,
+            "tipoDeIntervencion": int,
+            "herramienta": herr,
+            "evaluacionSesion": eval,
+            "cuotaDeRecuperacion": rec
+        ]) { err in
+            if let err = err {
+                print("Error updating document: \(err)")
+                completion(.failure(err))
+            } else {
+                print("Document successfully updated")
+                completion(.success("Document successfully updated"))
+            }
+        }
+    }
 }
 
 

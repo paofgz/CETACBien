@@ -26,5 +26,10 @@ class servicioPickerView: UIPickerView, UIPickerViewDelegate, UIPickerViewDataSo
     func getSelected(_ pickerView: UIPickerView, selectedRow row: Int) -> String? {
         return servicios[row]
     }
+    
+    func set(_ pickerView: UIPickerView, selectedServ: String) -> Void {
+        let ind = servicios.firstIndex(of: selectedServ) ?? 0
+        selectRow(ind, inComponent: 0, animated: false)
+    }
 
 }

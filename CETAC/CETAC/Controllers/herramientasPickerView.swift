@@ -26,5 +26,10 @@ class herramientasPickerView: UIPickerView, UIPickerViewDelegate, UIPickerViewDa
     func getSelected(_ pickerView: UIPickerView, selectedRow row: Int) -> String? {
         return herramientas[row]
     }
+    
+    func set(_ pickerView: UIPickerView, selectedHerr: String) -> Void {
+        let ind = herramientas.firstIndex(of: selectedHerr) ?? 0
+        selectRow(ind, inComponent: 0, animated: false)
+    }
 
 }

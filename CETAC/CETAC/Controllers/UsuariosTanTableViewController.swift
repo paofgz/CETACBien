@@ -1,32 +1,28 @@
 //
-//  SesionesTableViewController.swift
+//  UsuariosTanTableViewController.swift
 //  CETAC
 //
-//  Created by Paola Fernández on 15/10/21.
-//
-
-//
-//  UsuariosTableViewController.swift
-//  CETAC
-//
-//  Created by Paola Fernández on 30/09/21.
+//  Created by Paola Fernández on 18/10/21.
 //
 
 import UIKit
 
-class SesionesTableViewController: UITableViewController {
 
-    var sesionesControlador = SesionesController()
-    var datos = [Sesion]()
-    var idUsuario: String = "0"
+
+class UsuariosTanTableViewController: UITableViewController {
+
+    var usuarioControlador = UsuarioController()
+    var datos = [Usuario]()
+    var sections = [Section]()
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        sesionesControlador.fetchSesiones(idUsuario){ (result) in
+        usuarioControlador.fetchUsuariosByTan(idTan: correo){ (result) in
             switch result{
-            case .success(let sesiones):self.updateUI(with: sesiones)
-            case .failure(let error):self.displayError(error, title: "No se pudo acceder a las sesiones")
+            case .success(let usuarios):self.updateUI(with: usuarios)
+            case .failure(let error):self.displayError(error, title: "No se pudo acceder a los usuarios")
             }
+            
         }
     }
 
@@ -34,29 +30,36 @@ class SesionesTableViewController: UITableViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        tableView.rowHeight =  70.0
-        tableView.estimatedRowHeight = 70.0
-        sesionesControlador.fetchSesiones(idUsuario){ (result) in
+        tableView.rowHeight =  80.0
+        tableView.estimatedRowHeight = 80.0
+        usuarioControlador.fetchUsuariosByTan(idTan: correo){ (result) in
             switch result{
-            case .success(let sesiones):self.updateUI(with: sesiones)
-            case .failure(let error):self.displayError(error, title: "No se pudo acceder a las sesiones")
+            case .success(let usuarios):self.updateUI(with: usuarios)
+            case .failure(let error):self.displayError(error, title: "No se pudo acceder a los usuarios")
             }
-    }
+            
+        }
     }
     
-    func updateUI(with sesiones:Sesiones){
+    func updateUI(with usuarios:Usuarios){
+        let groupedDictionary = Dictionary(grouping: usuarios, by: {String($0.nombre.prefix(1))})
+        let keys = groupedDictionary.keys.sorted()
+            // map the sorted keys to a struct
+        sections = keys.map{ Section(letter: $0, users: groupedDictionary[$0]!) }
         DispatchQueue.main.async {
-            self.datos = sesiones
+            self.datos = usuarios
             self.tableView.reloadData()
         }
     }
     
     func updateUI(){
-        sesionesControlador.fetchSesiones(idUsuario){ (result) in
+        
+        usuarioControlador.fetchUsuariosByTan(idTan: correo){ (result) in
             switch result{
-            case .success(let sesiones):self.updateUI(with: sesiones)
-            case .failure(let error):self.displayError(error, title: "No se pudo acceder a las sesiones")
+            case .success(let usuarios):self.updateUI(with: usuarios)
+            case .failure(let error):self.displayError(error, title: "No se pudo acceder a los usuarios")
             }
+            
         }
         
     }
@@ -78,25 +81,43 @@ class SesionesTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return sections.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return datos.count
+        return sections[section].users.count
     }
     
+    override func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        return sections.map{$0.letter}
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sections[section].letter
+    }
+    
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int){
+        view.tintColor = color1
+        let header = view as! UITableViewHeaderFooterView
+        header.textLabel?.textColor = UIColor.white
+    }
+
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SesionTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "zelda", for: indexPath) as! UsuarioTableViewCell
+        let section = sections[indexPath.section]
         // Configure the cell...
 //        cell.textLabel?.text = datos[indexPath.row].nombre
-        cell.update(with: datos[indexPath.row], index: indexPath.row)
+        cell.update(with: section.users[indexPath.row])
+
+
         return cell
     }
     
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
         if segue.identifier == "detalle"{
@@ -104,24 +125,6 @@ class SesionesTableViewController: UITableViewController {
             let section = self.tableView.indexPathForSelectedRow?.section
             let indice = self.tableView.indexPathForSelectedRow?.row
             siguiente.elUsuario = sections[section!].users[indice!]
-        }
-    }*/
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-        if segue.identifier == "detalleSes"{
-            let siguiente = segue.destination as! SesionDetalleViewController
-            let indice = self.tableView.indexPathForSelectedRow?.row
-            siguiente.laSesion = datos[indice!]
-            siguiente.idUsuario = self.idUsuario
-            siguiente.ind = indice
-        }
-        if segue.identifier == "detalleSesAdmin"{
-            let siguiente = segue.destination as! SesionDetalleAdminViewController
-            let indice = self.tableView.indexPathForSelectedRow?.row
-            siguiente.laSesion = datos[indice!]
-            siguiente.idUsuario = self.idUsuario
-            siguiente.ind = indice
         }
     }
 }

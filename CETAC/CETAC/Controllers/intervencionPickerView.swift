@@ -26,5 +26,10 @@ class intervencionPickerView: UIPickerView, UIPickerViewDelegate, UIPickerViewDa
     func getSelected(_ pickerView: UIPickerView, selectedRow row: Int) -> String? {
         return intervenciones[row]
     }
+    
+    func set(_ pickerView: UIPickerView, selectedInt: String) -> Void {
+        let ind = intervenciones.firstIndex(of: selectedInt) ?? 0
+        selectRow(ind, inComponent: 0, animated: false)
+    }
 
 }
