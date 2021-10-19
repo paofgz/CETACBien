@@ -45,7 +45,6 @@ class UsuariosChartViewController: UIViewController {
         barChart.heightToWidth(of: barras)
         barChart.xAxis.granularity = 1
         
-        
         motivoController.fetchUsuarios(fechaInicio: fechaInicio, fechaFinal: fechaFin){ (result) in
             switch result{
             case .success(let usuarios):self.countSexo(with: usuarios)

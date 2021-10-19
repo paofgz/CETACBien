@@ -63,7 +63,6 @@ class MotivoChartViewController: UIViewController {
         let data = BarChartData(dataSet: sesionesDataSet)
         horizontalBarChart.data = data
         horizontalBarChart.xAxis.granularity = 1
-
         horizontalBarChart.chartDescription?.text = "Motivo"
         horizontalBarChart.xAxis.valueFormatter = IndexAxisValueFormatter(values: usuarios)
         horizontalBarChart.notifyDataSetChanged()

@@ -42,7 +42,7 @@ class CuotasChartViewController: UIViewController {
             (result) in
             switch result {
             case .success(let cuotas):
-                print(cuotas)
+                //print(cuotas)
                 self.nueva(with: cuotas)
             case .failure(_):print("No se pudo acceder a las cuotas globales")
             }
@@ -57,12 +57,15 @@ class CuotasChartViewController: UIViewController {
         var arreglo = [BarChartDataEntry]()
         var i = 1.0
         var tanatologos = [""]
-        for (key, value) in cuotas{
-            arreglo.append(BarChartDataEntry(x: i, y: value))
-            i += 1
-            tanatologos.append(key)
+        if cuotas.count > 0 {
+            for (key, value) in cuotas{
+                arreglo.append(BarChartDataEntry(x: i, y: value))
+                i += 1
+                tanatologos.append(key)
+            }
+        }else{
+            print("no hay datos")
         }
-        
        
         let dataSet = BarChartDataSet(entries: arreglo, label: "Cuota")
         let data = BarChartData(dataSet: dataSet)

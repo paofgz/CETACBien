@@ -28,29 +28,9 @@ class MotivoController{
             }
         }
     }
-    /*
-    func fetchSesiones(_ idUsuario:String, fechaInicio: Date, fechaFinal: Date, completion: @escaping (Result<Sesiones, Error>) -> Void){
-        var sesiones = [Sesion]()
-        db.collection("Usuarios").document(idUsuario).collection("Sesion").whereField("fecha", isLessThan: fechaFinal).whereField("fecha", isGreaterThan: fechaInicio).getDocuments() { (querySnapshot, err) in
-            if let err = err {
-                print("Error getting documents: \(err)")
-                completion(.failure(err))
-            } else {
-                for document in querySnapshot!.documents {
-                    let s = Sesion(aDoc: document)
-                    print(s)
-                    sesiones.append(s)
-                }
-                completion(.success(sesiones))
-            }
-        }
-       
-    }*/
     
     func fetchUsuariosByTan(idTan:String, fechaInicio: Date, fechaFinal: Date, completion: @escaping (Result<Usuarios, Error>) -> Void){
         
-        //.whereField("fecha", isGreaterThan: fechaInicio).whereField("fecha", isLessThan: fechaFinal)
-        //
         var usuarios = [Usuario]()
         db.collection("Usuarios").whereField("idTanatologo", isEqualTo: idTan).whereField("fecha", isGreaterThan: fechaInicio).whereField("fecha", isLessThan: fechaFinal).getDocuments() { (querySnapshot, err) in
             if let err = err {
@@ -65,25 +45,6 @@ class MotivoController{
                 completion(.success(usuarios))
             }
         }
-       
     }
-    /*
-    func fetchTanatologo(fechaInicio: Date, fechaFinal: Date,completion: @escaping (Result<Tanatologos, Error>) -> Void){
-        var tanatologos = [Tanatologo]()
-        db.collection("Tanatologo").whereField("fecha", isLessThan: fechaFinal).whereField("fecha", isGreaterThan: fechaInicio).getDocuments() { (querySnapshot, err) in
-            if let err = err {
-                print("Error getting documents: \(err)")
-                completion(.failure(err))
-            } else {
-                for document in querySnapshot!.documents {
-                    let t = Tanatologo(aDoc: document)
-                    print(t)
-                    tanatologos.append(t)
-                }
-                completion(.success(tanatologos))
-            }
-        }
-       
-    }*/
-  
+   
 }

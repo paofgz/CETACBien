@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fDO-Uz-3zg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Sy-gC-5Rp">
     <device id="ipad10_2" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -1162,7 +1162,7 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
             <objects>
                 <viewController id="5Zb-rA-dNv" customClass="CuotasChartViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oYe-MR-B0p">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuota Recuperación Global" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GyM-04-pw8">
@@ -1263,7 +1263,7 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
             <objects>
                 <viewController id="GGo-ff-3ga" customClass="UsuariosChartViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ems-VX-jKE">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="52F-iG-Xo0" customClass="UsuariosChartViewController.swift">
@@ -1770,69 +1770,47 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                                     <constraint firstAttribute="height" constant="330" id="N03-OJ-ycM"/>
                                 </constraints>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CS8-hb-4ov">
-                                <rect key="frame" x="95" y="870" width="600" height="130"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RLp-pp-nEx">
-                                        <rect key="frame" x="40" y="37.5" width="130" height="55"/>
-                                        <color key="backgroundColor" name="AccentColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="130" id="MDj-lE-4RA"/>
-                                            <constraint firstAttribute="height" constant="55" id="Ww9-zL-0vp"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                        <state key="normal" title="Semana">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="15"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnL-Dw-f13">
-                                        <rect key="frame" x="430" y="37.5" width="130" height="55"/>
-                                        <color key="backgroundColor" name="AccentColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="130" id="M5f-Yb-a5k"/>
-                                            <constraint firstAttribute="height" constant="55" id="p4S-eK-cUG"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="Año">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="15"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fo6-qe-TjK">
-                                        <rect key="frame" x="235" y="37.5" width="130" height="55"/>
-                                        <color key="backgroundColor" name="AccentColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="130" id="2G6-M8-l0c"/>
-                                            <constraint firstAttribute="height" constant="55" id="fdz-Sm-VQ3"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                        <state key="normal" title="Mes">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="15"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                    </button>
-                                </subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reporte indicadores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhd-XX-Rn7">
+                                <rect key="frame" x="253.5" y="69" width="303" height="35"/>
                                 <constraints>
-                                    <constraint firstItem="fo6-qe-TjK" firstAttribute="leading" secondItem="RLp-pp-nEx" secondAttribute="trailing" constant="65" id="1tk-ce-8Xp"/>
-                                    <constraint firstItem="RnL-Dw-f13" firstAttribute="leading" secondItem="fo6-qe-TjK" secondAttribute="trailing" constant="65" id="YL7-pC-KTA"/>
+                                    <constraint firstAttribute="height" constant="35" id="CxN-ln-B8M"/>
                                 </constraints>
-                            </view>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="1XD-Hb-MFY">
+                                <rect key="frame" x="444" y="233" width="367" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="AF4-T2-CWM">
+                                <rect key="frame" x="95" y="234" width="352" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha inicial" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0PC-VH-TCw">
+                                <rect key="frame" x="113" y="174" width="166" height="47"/>
+                                <color key="backgroundColor" red="0.10444407040000001" green="0.84421763819999995" blue="0.78330162859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="166" id="1aA-IP-2St"/>
+                                    <constraint firstAttribute="height" constant="47" id="3Gg-Vc-bjQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha final" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ohD-kg-fre">
+                                <rect key="frame" x="453" y="174" width="166" height="47"/>
+                                <color key="backgroundColor" red="0.10444407040000001" green="0.84421763819999995" blue="0.78330162859999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="S7p-WU-hae"/>
+                                    <constraint firstAttribute="width" constant="166" id="dZ0-ts-aPc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eHg-IP-OYl">
-                                <rect key="frame" x="95" y="350" width="620" height="500"/>
+                                <rect key="frame" x="95" y="468" width="620" height="500"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Sou-6Q-IBG" userLabel="intervencionServicio">
                                         <rect key="frame" x="30" y="295" width="220" height="155"/>
@@ -1916,35 +1894,18 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="620" id="Bng-kz-4Zi"/>
-                                    <constraint firstItem="IxK-l3-dUY" firstAttribute="leading" secondItem="eHg-IP-OYl" secondAttribute="leading" constant="30" id="COb-O4-VCk"/>
-                                    <constraint firstItem="Sou-6Q-IBG" firstAttribute="leading" secondItem="eHg-IP-OYl" secondAttribute="leading" constant="30" id="JQW-Sx-MSQ"/>
-                                    <constraint firstItem="ALN-Hb-1tb" firstAttribute="top" secondItem="eHg-IP-OYl" secondAttribute="top" constant="50" id="KXp-EJ-Tbi"/>
-                                    <constraint firstAttribute="bottom" secondItem="Sou-6Q-IBG" secondAttribute="bottom" constant="50" id="Lu5-g8-UjQ"/>
-                                    <constraint firstAttribute="bottom" secondItem="eIZ-nS-AcC" secondAttribute="bottom" constant="50" id="XRG-59-wU0"/>
-                                    <constraint firstAttribute="trailing" secondItem="eIZ-nS-AcC" secondAttribute="trailing" constant="30" id="a7L-bx-okw"/>
-                                    <constraint firstItem="IxK-l3-dUY" firstAttribute="top" secondItem="eHg-IP-OYl" secondAttribute="top" constant="50" id="p3c-Lv-Mta"/>
-                                    <constraint firstAttribute="height" constant="500" id="pAH-Du-1GD"/>
-                                    <constraint firstAttribute="trailing" secondItem="ALN-Hb-1tb" secondAttribute="trailing" constant="30" id="pAo-m5-8Li"/>
+                                    <constraint firstAttribute="trailing" secondItem="eIZ-nS-AcC" secondAttribute="trailing" constant="30" id="9mx-Yp-erE"/>
+                                    <constraint firstAttribute="bottom" secondItem="Sou-6Q-IBG" secondAttribute="bottom" constant="50" id="EKZ-SN-3jJ"/>
+                                    <constraint firstItem="Sou-6Q-IBG" firstAttribute="leading" secondItem="eHg-IP-OYl" secondAttribute="leading" constant="30" id="KeV-HB-Cf0"/>
+                                    <constraint firstItem="ALN-Hb-1tb" firstAttribute="top" secondItem="eHg-IP-OYl" secondAttribute="top" constant="50" id="Ub6-LV-eFi"/>
+                                    <constraint firstItem="IxK-l3-dUY" firstAttribute="leading" secondItem="eHg-IP-OYl" secondAttribute="leading" constant="30" id="fcT-My-fr0"/>
+                                    <constraint firstAttribute="height" constant="500" id="g7G-Mn-amO"/>
+                                    <constraint firstAttribute="bottom" secondItem="eIZ-nS-AcC" secondAttribute="bottom" constant="50" id="lv5-hc-JdH"/>
+                                    <constraint firstItem="IxK-l3-dUY" firstAttribute="top" secondItem="eHg-IP-OYl" secondAttribute="top" constant="50" id="pGX-hD-09h"/>
+                                    <constraint firstAttribute="width" constant="620" id="rVT-rY-Dhk"/>
+                                    <constraint firstAttribute="trailing" secondItem="ALN-Hb-1tb" secondAttribute="trailing" constant="30" id="w1y-Xs-nHf"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reporte indicadores" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhd-XX-Rn7">
-                                <rect key="frame" x="253.5" y="69" width="303" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="CxN-ln-B8M"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="1XD-Hb-MFY">
-                                <rect key="frame" x="443" y="144" width="367" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </datePicker>
-                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="AF4-T2-CWM">
-                                <rect key="frame" x="83" y="144" width="352" height="216"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nh7-Ma-4lG"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -1952,10 +1913,15 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                             <constraint firstItem="sYk-Cx-wp5" firstAttribute="leading" secondItem="nh7-Ma-4lG" secondAttribute="leading" id="2Iz-uG-L5H"/>
                             <constraint firstItem="qhd-XX-Rn7" firstAttribute="centerX" secondItem="hAF-1E-muH" secondAttribute="centerX" id="2av-xI-4OG"/>
                             <constraint firstItem="sYk-Cx-wp5" firstAttribute="bottom" secondItem="nh7-Ma-4lG" secondAttribute="bottom" id="8FV-aj-icl"/>
-                            <constraint firstItem="eHg-IP-OYl" firstAttribute="centerX" secondItem="hAF-1E-muH" secondAttribute="centerX" id="RC0-kx-HFB"/>
+                            <constraint firstItem="0PC-VH-TCw" firstAttribute="leading" secondItem="nh7-Ma-4lG" secondAttribute="leading" constant="113" id="Cav-gK-56o"/>
+                            <constraint firstItem="nh7-Ma-4lG" firstAttribute="trailing" secondItem="ohD-kg-fre" secondAttribute="trailing" constant="191" id="EMG-jQ-0O4"/>
+                            <constraint firstItem="eHg-IP-OYl" firstAttribute="leading" secondItem="nh7-Ma-4lG" secondAttribute="leading" constant="95" id="ae3-59-3li"/>
+                            <constraint firstItem="nh7-Ma-4lG" firstAttribute="trailing" secondItem="eHg-IP-OYl" secondAttribute="trailing" constant="95" id="fyV-Qj-Y1s"/>
                             <constraint firstItem="sYk-Cx-wp5" firstAttribute="trailing" secondItem="nh7-Ma-4lG" secondAttribute="trailing" id="gD2-hf-Bg2"/>
+                            <constraint firstItem="nh7-Ma-4lG" firstAttribute="bottom" secondItem="eHg-IP-OYl" secondAttribute="bottom" constant="62" id="gTL-IL-yoc"/>
+                            <constraint firstItem="ohD-kg-fre" firstAttribute="top" secondItem="qhd-XX-Rn7" secondAttribute="bottom" constant="70" id="mhS-6e-bt7"/>
+                            <constraint firstItem="0PC-VH-TCw" firstAttribute="top" secondItem="qhd-XX-Rn7" secondAttribute="bottom" constant="70" id="pRP-NW-CLg"/>
                             <constraint firstItem="qhd-XX-Rn7" firstAttribute="top" secondItem="nh7-Ma-4lG" secondAttribute="top" constant="69" id="xID-6a-gfM"/>
-                            <constraint firstItem="nh7-Ma-4lG" firstAttribute="bottom" secondItem="eHg-IP-OYl" secondAttribute="bottom" constant="180" id="xbg-mt-A0O"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Indicadores" image="line.horizontal.star.fill.line.horizontal" catalog="system" id="WxS-gW-p2y"/>
@@ -2220,13 +2186,16 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
             <objects>
                 <viewController id="qwZ-mP-qLD" customClass="ServicioIntervencionChartViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mMp-FB-mzn">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Intervención y servicio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9PI-FF-zj8">
-                                <rect key="frame" x="142" y="47" width="400" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intervención" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9PI-FF-zj8">
+                                <rect key="frame" x="108" y="35" width="202" height="60"/>
                                 <color key="backgroundColor" red="0.75875407459999999" green="0.87285679579999997" blue="0.37572741510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="HMR-IW-MLZ"/>
+                                    <constraint firstAttribute="width" constant="202" id="Hi1-7L-yTJ"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -2236,21 +2205,63 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IKa-cc-zkQ">
-                                <rect key="frame" x="310" y="195" width="384" height="244"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Servicio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8Z-Av-YER">
+                                <rect key="frame" x="472" y="515" width="158" height="60"/>
+                                <color key="backgroundColor" red="0.75875407459999999" green="0.87285679579999997" blue="0.37572741510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="hyX-Wz-a5H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IKa-cc-zkQ">
+                                <rect key="frame" x="196" y="642" width="388" height="244"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ecD-Rr-2Zz">
-                                <rect key="frame" x="10" y="550" width="374" height="243"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="DecoMotivo" translatesAutoresizingMaskIntoConstraints="NO" id="2zE-Uh-axc">
-                                <rect key="frame" x="125" y="886" width="454" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DecoRec1" translatesAutoresizingMaskIntoConstraints="NO" id="2zE-Uh-axc">
+                                <rect key="frame" x="73" y="580" width="87" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="S6I-of-DCM"/>
+                                    <constraint firstAttribute="height" constant="85" id="srL-Oz-L8c"/>
+                                </constraints>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="decoUsuarios" translatesAutoresizingMaskIntoConstraints="NO" id="WC0-ed-DXp">
+                                <rect key="frame" x="509" y="79" width="137" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="137" id="Vrt-xE-B2T"/>
+                                    <constraint firstAttribute="height" constant="114" id="ol7-kM-Zt0"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ecD-Rr-2Zz">
+                                <rect key="frame" x="20" y="194" width="429" height="243"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fa3-Bh-y1Z"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ecD-Rr-2Zz" firstAttribute="top" secondItem="9PI-FF-zj8" secondAttribute="bottom" constant="99" id="4jg-iV-OaG"/>
+                            <constraint firstItem="fa3-Bh-y1Z" firstAttribute="trailing" secondItem="IKa-cc-zkQ" secondAttribute="trailing" constant="120" id="5IM-wq-OUO"/>
+                            <constraint firstItem="9PI-FF-zj8" firstAttribute="top" secondItem="fa3-Bh-y1Z" secondAttribute="top" constant="35" id="5xm-cR-Jsh"/>
+                            <constraint firstItem="fa3-Bh-y1Z" firstAttribute="bottom" secondItem="IKa-cc-zkQ" secondAttribute="bottom" constant="109.5" id="7Bm-c8-24M"/>
+                            <constraint firstItem="fa3-Bh-y1Z" firstAttribute="bottom" secondItem="2zE-Uh-axc" secondAttribute="bottom" constant="330.5" id="8p4-GT-Cgm"/>
+                            <constraint firstItem="2zE-Uh-axc" firstAttribute="leading" secondItem="fa3-Bh-y1Z" secondAttribute="leading" constant="73" id="OKg-6g-xtI"/>
+                            <constraint firstItem="k8Z-Av-YER" firstAttribute="leading" secondItem="fa3-Bh-y1Z" secondAttribute="leading" constant="472" id="Pzz-C8-fIv"/>
+                            <constraint firstItem="fa3-Bh-y1Z" firstAttribute="trailing" secondItem="ecD-Rr-2Zz" secondAttribute="trailing" constant="255" id="Vut-4h-O93"/>
+                            <constraint firstItem="WC0-ed-DXp" firstAttribute="top" secondItem="fa3-Bh-y1Z" secondAttribute="top" constant="79" id="ZVf-ua-DdU"/>
+                            <constraint firstItem="fa3-Bh-y1Z" firstAttribute="trailing" secondItem="WC0-ed-DXp" secondAttribute="trailing" constant="58" id="cD9-eo-wV1"/>
+                            <constraint firstItem="9PI-FF-zj8" firstAttribute="leading" secondItem="fa3-Bh-y1Z" secondAttribute="leading" constant="108" id="caU-Tt-EDe"/>
+                            <constraint firstItem="ecD-Rr-2Zz" firstAttribute="leading" secondItem="mMp-FB-mzn" secondAttribute="leadingMargin" id="cg1-wj-44W"/>
+                            <constraint firstAttribute="bottom" secondItem="ecD-Rr-2Zz" secondAttribute="bottom" constant="558.5" id="cnh-PN-f1W"/>
+                            <constraint firstItem="IKa-cc-zkQ" firstAttribute="leading" secondItem="2zE-Uh-axc" secondAttribute="trailing" constant="36" id="hkZ-rc-DaM"/>
+                            <constraint firstItem="IKa-cc-zkQ" firstAttribute="top" secondItem="k8Z-Av-YER" secondAttribute="bottom" constant="67" id="idF-p0-fzp"/>
+                            <constraint firstItem="IKa-cc-zkQ" firstAttribute="top" secondItem="mMp-FB-mzn" secondAttribute="top" constant="642" id="ieY-ph-EiS"/>
+                            <constraint firstItem="fa3-Bh-y1Z" firstAttribute="trailing" secondItem="k8Z-Av-YER" secondAttribute="trailing" constant="74" id="j1y-Wf-OI0"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Intervención y servicio" id="MuI-Ce-6eE"/>
                     <connections>
@@ -2260,14 +2271,14 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EVq-jD-SvW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4156" y="4233"/>
+            <point key="canvasLocation" x="4155.5555555555557" y="4231.666666666667"/>
         </scene>
         <!--Motivo-->
         <scene sceneID="uAi-uz-w7F">
             <objects>
                 <viewController id="DRT-cs-BNt" customClass="MotivoChartViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SDq-5R-ipM">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qO9-xp-6A8">
@@ -3664,7 +3675,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
             <objects>
                 <viewController id="5hg-zc-p0l" customClass="SesionDetalleViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aZ1-pA-2j4">
-                        <rect key="frame" x="0.0" y="0.0" width="604" height="205"/>
+                        <rect key="frame" x="0.0" y="0.0" width="604" height="205.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NombrePas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ACj-73-mWW">
@@ -3894,7 +3905,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
             <objects>
                 <viewController id="TMO-d9-HKG" customClass="DetalleUsuarioViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TMA-AF-o5j">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z3m-Cy-pIU">
@@ -4274,7 +4285,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
             <objects>
                 <viewController id="1wN-aq-pGM" customClass="DetalleUsuarioViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oxl-Rp-Gvx">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5j7-6l-kRY">
@@ -5259,7 +5270,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
             <objects>
                 <tableViewController id="WLV-P0-gju" customClass="SesionesTableViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cBr-qv-jZJ">
-                        <rect key="frame" x="0.0" y="0.0" width="604" height="225"/>
+                        <rect key="frame" x="0.0" y="0.0" width="604" height="225.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -5318,7 +5329,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
             <objects>
                 <viewController id="7tb-JJ-7x8" customClass="SesionDetalleAdminViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BwA-Jw-4uF">
-                        <rect key="frame" x="0.0" y="0.0" width="604" height="205"/>
+                        <rect key="frame" x="0.0" y="0.0" width="604" height="205.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NombrePas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xI6-tm-6Yu">
@@ -5608,7 +5619,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
             <objects>
                 <tableViewController id="Dls-ne-4Gb" customClass="SesionesTableViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="p3M-b2-EIN">
-                        <rect key="frame" x="0.0" y="0.0" width="604" height="225"/>
+                        <rect key="frame" x="0.0" y="0.0" width="604" height="225.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -5686,7 +5697,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
         <image name="decoUsuarios" width="125.5" height="135.5"/>
         <image name="email" width="256" height="256"/>
         <image name="eye" catalog="system" width="128" height="81"/>
-        <image name="eyeglasses" catalog="system" width="32" height="32"/>
+        <image name="eyeglasses" catalog="system" width="128" height="54"/>
         <image name="floresBach1" width="510" height="295"/>
         <image name="fondo1" width="1777" height="704.5"/>
         <image name="grupal1" width="512" height="312"/>

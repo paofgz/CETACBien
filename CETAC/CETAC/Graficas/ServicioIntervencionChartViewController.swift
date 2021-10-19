@@ -22,23 +22,25 @@ class ServicioIntervencionChartViewController: UIViewController {
         let horizontalBarChartView = HorizontalBarChartView()
         return horizontalBarChartView
     }()
-    lazy var BarChartHorizontalServ: HorizontalBarChartView = {
-        let horizontalBarChartView = HorizontalBarChartView()
-        return horizontalBarChartView
+   
+    lazy var pieChart: PieChartView = {
+        let pieChartView = PieChartView()
+        return pieChartView
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        vistaServicio.addSubview(pieChart)
+        pieChart.center(in: vistaServicio)
+        pieChart.width(to: vistaServicio)
+        pieChart.heightToWidth(of: vistaServicio)
+        
         vistaInt.addSubview(BarChartHorizaontal)
         BarChartHorizaontal.center(in: vistaInt)
         BarChartHorizaontal.width(to: vistaInt)
         BarChartHorizaontal.heightToWidth(of: vistaInt)
        
-        vistaServicio.addSubview(BarChartHorizontalServ)
-        BarChartHorizontalServ.center(in: vistaServicio)
-        BarChartHorizontalServ.width(to: vistaServicio)
-        BarChartHorizontalServ.heightToWidth(of: vistaServicio)
-        
         ControladorServicio.fetchSesiones(fechaInicio: fechaInicio, fechaFin: fechaFin){ (result) in
             switch result{
             case .success(let sesion):
@@ -107,35 +109,27 @@ class ServicioIntervencionChartViewController: UIViewController {
         }
     }
     func update(){
-        var sesionesArreglo = [BarChartDataEntry]()
+        var sesionesArreglo = [PieChartDataEntry]()
         var i = 1.0
         var sesiones = [""]
         for (key, value) in servicio{
-            sesionesArreglo.append(BarChartDataEntry(x: i, y: Double(value)))
+            sesionesArreglo.append(PieChartDataEntry(value: Double(value), label: key))
             i += 1
             sesiones.append(key)
         }
        
-        let sesionesDataSet = BarChartDataSet(entries: sesionesArreglo, label: "Servicio")
-        let data = BarChartData(dataSet: sesionesDataSet)
-        BarChartHorizontalServ.data = data
-        BarChartHorizontalServ.chartDescription?.text = "Sesiones"
-        
-        BarChartHorizontalServ.xAxis.valueFormatter = IndexAxisValueFormatter(values: sesiones)
-        BarChartHorizontalServ.xAxis.granularity = 1
+        let sesionesDataSet = PieChartDataSet(entries: sesionesArreglo, label: "Servicio")
+        let data = PieChartData(dataSet: sesionesDataSet)
+        pieChart.data = data
+        pieChart.chartDescription?.text = "Sesiones"
 
-        BarChartHorizontalServ.notifyDataSetChanged()
+        sesionesDataSet.colors = ChartColorTemplates.material()
+        pieChart.holeColor = UIColor.clear
+        pieChart.holeColor = UIColor.clear
+        pieChart.chartDescription?.textColor = UIColor.blue
+        pieChart.legend.textColor = UIColor.blue
+
+        pieChart.notifyDataSetChanged()
     }
-
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

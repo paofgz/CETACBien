@@ -19,13 +19,13 @@ class TanatologoChartController{
                 if document != nil && document!.exists {
                     let documentData = document!.data()
                     let n = documentData!["nombre"] as! String
-                    completion(n.capitalizingFirstLetter2())
+                    completion(n.capitalizingFirstLetter())
                 }
             }
         }
     }
 }
-
+/*
 extension String {
     func capitalizingFirstLetter2() -> String {
         return prefix(1).capitalized + dropFirst()
@@ -35,4 +35,4 @@ extension String {
         self = self.capitalizingFirstLetter()
     }
 }
-
+*/
