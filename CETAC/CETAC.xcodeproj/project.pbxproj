@@ -32,7 +32,6 @@
 		48CB2027270CCE5400E2DB22 /* SingUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48CB2026270CCE5400E2DB22 /* SingUpController.swift */; };
 		48D29C3326D5B9AD007FF79B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D29C3226D5B9AD007FF79B /* AppDelegate.swift */; };
 		48D29C3526D5B9AD007FF79B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D29C3426D5B9AD007FF79B /* SceneDelegate.swift */; };
-		48D29C3726D5B9AD007FF79B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48D29C3626D5B9AD007FF79B /* ViewController.swift */; };
 		48D29C3A26D5B9AD007FF79B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48D29C3826D5B9AD007FF79B /* Main.storyboard */; };
 		48D29C3C26D5B9B3007FF79B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48D29C3B26D5B9B3007FF79B /* Assets.xcassets */; };
 		48D29C3F26D5B9B3007FF79B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48D29C3D26D5B9B3007FF79B /* LaunchScreen.storyboard */; };
@@ -126,7 +125,6 @@
 		48D29C2F26D5B9AD007FF79B /* CETAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CETAC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48D29C3226D5B9AD007FF79B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48D29C3426D5B9AD007FF79B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		48D29C3626D5B9AD007FF79B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		48D29C3926D5B9AD007FF79B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48D29C3B26D5B9B3007FF79B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48D29C3E26D5B9B3007FF79B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -336,15 +334,14 @@
 				652B6A2C270DDF20007E4FD7 /* Helpers */,
 				652B6A2B270DDF0C007E4FD7 /* Models */,
 				482FC93326D9C9530008D31F /* Controllers */,
-				48D29C3226D5B9AD007FF79B /* AppDelegate.swift */,
 				48F81A0226F59FAB000197FB /* iconos */,
 				48D29C3426D5B9AD007FF79B /* SceneDelegate.swift */,
-				48D29C3626D5B9AD007FF79B /* ViewController.swift */,
+				48D29C3226D5B9AD007FF79B /* AppDelegate.swift */,
+				4803865D271650790096C52D /* servicios */,
 				48D29C3826D5B9AD007FF79B /* Main.storyboard */,
 				4881CC8A26DEA1A600258340 /* AppIcon.appiconset */,
 				488332B826D9B853002F0FCC /* PantallasCETAC */,
 				48D29C3B26D5B9B3007FF79B /* Assets.xcassets */,
-				4803865D271650790096C52D /* servicios */,
 				48D29C3D26D5B9B3007FF79B /* LaunchScreen.storyboard */,
 				48C66E532700E13000EA57B9 /* GoogleService-Info.plist */,
 				48D29C4026D5B9B3007FF79B /* Info.plist */,
@@ -630,7 +627,6 @@
 				48DA5057270511BA00745442 /* LoginViewController.swift in Sources */,
 				652B6A38270DE1A7007E4FD7 /* UsuarioTableViewCell.swift in Sources */,
 				4823AA44270FAE9E00DDDC25 /* Validators.swift in Sources */,
-				48D29C3726D5B9AD007FF79B /* ViewController.swift in Sources */,
 				48C9E0C9270A6001002B72A9 /* LoginController.swift in Sources */,
 				652B6A48270DE434007E4FD7 /* estadoCivilPickerView.swift in Sources */,
 				48B5B571271E2080004A9A06 /* IndicadoresInicialViewController.swift in Sources */,
