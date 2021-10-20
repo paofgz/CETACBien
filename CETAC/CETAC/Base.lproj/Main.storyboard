@@ -1706,26 +1706,6 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YkJ-oj-bQl">
-                                        <rect key="frame" x="175" y="648" width="200" height="50"/>
-                                        <color key="backgroundColor" name="AccentColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="anX-Ki-tfZ"/>
-                                            <constraint firstAttribute="height" constant="50" id="xS0-C3-rJO"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                        <state key="normal" title="Crear cuenta">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="15"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="singUpTapped:" destination="P6u-5P-JJD" eventType="touchUpInside" id="g5g-M8-e6J"/>
-                                        </connections>
-                                    </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tdv-dF-evE">
                                         <rect key="frame" x="150" y="570" width="250" height="45"/>
                                         <subviews>
@@ -1759,6 +1739,21 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                                             <constraint firstAttribute="height" constant="45" id="rjG-UQ-Txe"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zpj-Pa-MNo">
+                                        <rect key="frame" x="200" y="643" width="150" height="57"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="57" id="bFM-cy-ukC"/>
+                                            <constraint firstAttribute="width" constant="150" id="quw-7m-zWh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Crear Cuenta ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapp:" destination="P6u-5P-JJD" eventType="touchUpInside" id="Egi-S2-DHt"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="jkl-ZE-TYi" firstAttribute="leading" secondItem="Egz-5j-Ix8" secondAttribute="leading" constant="50" id="752-RY-pUd"/>
@@ -1769,15 +1764,15 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                                     <constraint firstAttribute="height" constant="700" id="GRp-Uh-tLK"/>
                                     <constraint firstItem="oMZ-ZH-3F3" firstAttribute="leading" secondItem="Egz-5j-Ix8" secondAttribute="leading" constant="50" id="H2c-50-iv7"/>
                                     <constraint firstItem="0ll-W6-X0N" firstAttribute="leading" secondItem="Egz-5j-Ix8" secondAttribute="leading" constant="50" id="KV2-Pv-g6e"/>
-                                    <constraint firstItem="YkJ-oj-bQl" firstAttribute="top" secondItem="tdv-dF-evE" secondAttribute="bottom" constant="33" id="Mj1-aG-Q6Q"/>
                                     <constraint firstItem="0ll-W6-X0N" firstAttribute="top" secondItem="up6-lf-w3F" secondAttribute="bottom" constant="20" id="OKw-TY-LS1"/>
                                     <constraint firstItem="9yF-jB-2k5" firstAttribute="leading" secondItem="Egz-5j-Ix8" secondAttribute="leading" constant="50" id="PUd-ad-vlT"/>
                                     <constraint firstItem="d7K-KH-Sog" firstAttribute="top" secondItem="jkl-ZE-TYi" secondAttribute="bottom" constant="20" id="X0F-2e-9ML"/>
+                                    <constraint firstItem="Zpj-Pa-MNo" firstAttribute="centerX" secondItem="Egz-5j-Ix8" secondAttribute="centerX" id="Z85-Av-DXf"/>
                                     <constraint firstItem="tdv-dF-evE" firstAttribute="top" secondItem="oMZ-ZH-3F3" secondAttribute="bottom" constant="25" id="coV-qX-xNf"/>
-                                    <constraint firstItem="YkJ-oj-bQl" firstAttribute="centerX" secondItem="Egz-5j-Ix8" secondAttribute="centerX" id="dxn-27-Zd2"/>
                                     <constraint firstItem="ySf-qO-TTk" firstAttribute="top" secondItem="iSa-12-h5C" secondAttribute="bottom" constant="20" id="eMw-IX-C2g"/>
                                     <constraint firstItem="oMZ-ZH-3F3" firstAttribute="top" secondItem="9yF-jB-2k5" secondAttribute="bottom" constant="20" id="euD-O7-OPr"/>
                                     <constraint firstItem="tdv-dF-evE" firstAttribute="centerX" secondItem="Egz-5j-Ix8" secondAttribute="centerX" id="kCO-x8-ZIy"/>
+                                    <constraint firstItem="Zpj-Pa-MNo" firstAttribute="top" secondItem="tdv-dF-evE" secondAttribute="bottom" constant="28" id="kbH-7p-eRx"/>
                                     <constraint firstItem="ySf-qO-TTk" firstAttribute="leading" secondItem="Egz-5j-Ix8" secondAttribute="leading" constant="50" id="lya-Bp-Jfg"/>
                                     <constraint firstAttribute="width" constant="550" id="mkn-RJ-iBo"/>
                                     <constraint firstItem="d7K-KH-Sog" firstAttribute="leading" secondItem="Egz-5j-Ix8" secondAttribute="leading" constant="50" id="pRf-Uf-dh4"/>
@@ -1828,7 +1823,6 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                         <outlet property="correoText" destination="0ll-W6-X0N" id="HVH-yo-SdT"/>
                         <outlet property="nombreText" destination="ySf-qO-TTk" id="vMJ-ef-uki"/>
                         <outlet property="passwordText" destination="oMZ-ZH-3F3" id="Vpu-aL-4UU"/>
-                        <outlet property="singUpButton" destination="YkJ-oj-bQl" id="Qdt-sX-LPL"/>
                         <outlet property="soporteSwitch" destination="ltN-P7-dyM" id="UN2-ef-PSf"/>
                     </connections>
                 </viewController>
@@ -1839,7 +1833,7 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="4316" y="2547"/>
+            <point key="canvasLocation" x="4315.5555555555557" y="2546.6666666666665"/>
         </scene>
         <!--Indicadores-->
         <scene sceneID="6qQ-uG-zDJ">

@@ -58,7 +58,7 @@ class SingUp2ViewController: UIViewController, UITextFieldDelegate {
       }
     
     
-    @IBAction func singUpTapped(_ sender: Any) {
+    @IBAction func tapp(_ sender: Any) {
         let error = validators.validateFields(nombreText:nombreText.text!, apellidoText:apelllidoText.text!,correoText:correoText.text!,passwordText:passwordText.text!)
         if error != nil {
             showError(error!)
@@ -85,6 +85,37 @@ class SingUp2ViewController: UIViewController, UITextFieldDelegate {
             }
         }
                
+    }
+    
+    
+    @IBAction func singUpTapped(_ sender: Any) {
+        /*
+        let error = validators.validateFields(nombreText:nombreText.text!, apellidoText:apelllidoText.text!,correoText:correoText.text!,passwordText:passwordText.text!)
+        if error != nil {
+            showError(error!)
+        }else {
+            let nombreClean = nombreText.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let apellidoClean = apelllidoText.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let correoClean = correoText.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let passwordClean = passwordText.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let switchCase = soporteSwitch.isOn
+                    
+            Auth.auth().createUser(withEmail: correoClean, password: passwordClean) { result, err in
+                if err != nil {
+                    self.showError("fail")
+                }else{
+                    let db = Firestore.firestore()
+                    db.collection("Administradores").document(correoClean).setData(["apellido": apellidoClean, "correo": correoClean, "nombre": nombreClean, "uid":result!.user.uid, "esSoporte": switchCase]) { (error) in
+                        if let error = error {
+                            self.showError("fail 2 :(")
+                        }
+                                
+                    }
+                    self.transitionToHome()
+                }
+            }
+        }
+          */
     }
     
     func showError(_ message:String){
