@@ -1265,7 +1265,7 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OS2-H9-0ha">
-                                <rect key="frame" x="150" y="203" width="149" height="70"/>
+                                <rect key="frame" x="150" y="180" width="149" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="gsI-8z-ScG"/>
                                 </constraints>
@@ -1281,7 +1281,7 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuota Recuperación Por Tanatólogo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bho-sa-hEe">
-                                <rect key="frame" x="154" y="348" width="500" height="60"/>
+                                <rect key="frame" x="154" y="290" width="500" height="60"/>
                                 <color key="backgroundColor" red="0.75875407459999999" green="0.87285679579999997" blue="0.37572741510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="8kP-dS-9ec"/>
@@ -1297,17 +1297,16 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DecoRec2" translatesAutoresizingMaskIntoConstraints="NO" id="9F1-3u-nFH">
-                                <rect key="frame" x="0.0" y="265" width="146" height="154"/>
+                                <rect key="frame" x="0.0" y="240" width="146" height="154"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="154" id="bc8-bK-jNM"/>
                                     <constraint firstAttribute="width" constant="146" id="qgW-Vf-0d2"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GlJ-EZ-pGA">
-                                <rect key="frame" x="65" y="499" width="574" height="421.5"/>
+                                <rect key="frame" x="65" y="550" width="574" height="295.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="421.5" id="2n2-CI-NCN"/>
                                     <constraint firstAttribute="width" constant="574" id="d3J-Qi-tdC"/>
                                 </constraints>
                             </view>
@@ -1316,16 +1315,17 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="V6L-KW-Wfv" firstAttribute="trailing" secondItem="Bho-sa-hEe" secondAttribute="trailing" constant="50" id="0GY-Ha-6x3"/>
-                            <constraint firstItem="GlJ-EZ-pGA" firstAttribute="top" secondItem="9F1-3u-nFH" secondAttribute="bottom" constant="80" id="AyK-2g-DJI"/>
-                            <constraint firstItem="Bho-sa-hEe" firstAttribute="top" secondItem="OS2-H9-0ha" secondAttribute="bottom" constant="75" id="BxI-up-i89"/>
-                            <constraint firstItem="V6L-KW-Wfv" firstAttribute="bottom" secondItem="GlJ-EZ-pGA" secondAttribute="bottom" constant="75" id="GIB-LN-7Fh"/>
+                            <constraint firstItem="Bho-sa-hEe" firstAttribute="top" secondItem="OS2-H9-0ha" secondAttribute="bottom" constant="40" id="BxI-up-i89"/>
+                            <constraint firstItem="V6L-KW-Wfv" firstAttribute="bottom" secondItem="GlJ-EZ-pGA" secondAttribute="bottom" constant="150" id="GIB-LN-7Fh"/>
                             <constraint firstItem="9F1-3u-nFH" firstAttribute="leading" secondItem="oYe-MR-B0p" secondAttribute="leading" id="Il7-Np-9Bt"/>
-                            <constraint firstItem="9F1-3u-nFH" firstAttribute="top" secondItem="GyM-04-pw8" secondAttribute="bottom" constant="155" id="Isd-8o-wWm"/>
+                            <constraint firstItem="9F1-3u-nFH" firstAttribute="top" secondItem="GyM-04-pw8" secondAttribute="bottom" constant="130" id="Isd-8o-wWm"/>
                             <constraint firstItem="V6L-KW-Wfv" firstAttribute="trailing" secondItem="Op0-Hg-rNW" secondAttribute="trailing" constant="20" id="V7W-EI-zlC"/>
-                            <constraint firstItem="OS2-H9-0ha" firstAttribute="top" secondItem="GyM-04-pw8" secondAttribute="bottom" constant="93" id="Xxg-I9-ZyF"/>
+                            <constraint firstItem="OS2-H9-0ha" firstAttribute="top" secondItem="GyM-04-pw8" secondAttribute="bottom" constant="70" id="Xxg-I9-ZyF"/>
                             <constraint firstItem="GyM-04-pw8" firstAttribute="leading" secondItem="V6L-KW-Wfv" secondAttribute="leading" constant="50" id="Yut-0w-Gvu"/>
                             <constraint firstItem="OS2-H9-0ha" firstAttribute="leading" secondItem="V6L-KW-Wfv" secondAttribute="leading" constant="150" id="ZM2-WE-HO7"/>
                             <constraint firstItem="GlJ-EZ-pGA" firstAttribute="leading" secondItem="V6L-KW-Wfv" secondAttribute="leading" constant="65" id="aAF-pr-kcM"/>
+                            <constraint firstItem="GlJ-EZ-pGA" firstAttribute="top" secondItem="Bho-sa-hEe" secondAttribute="bottom" constant="200" id="bgF-g5-Vx1"/>
+                            <constraint firstItem="GlJ-EZ-pGA" firstAttribute="centerX" secondItem="oYe-MR-B0p" secondAttribute="centerX" id="fxV-tz-sVS"/>
                             <constraint firstItem="GyM-04-pw8" firstAttribute="top" secondItem="V6L-KW-Wfv" secondAttribute="top" constant="50" id="gCm-jx-Ch7"/>
                             <constraint firstItem="V6L-KW-Wfv" firstAttribute="trailing" secondItem="GlJ-EZ-pGA" secondAttribute="trailing" constant="65" id="oIR-Dh-uVg"/>
                             <constraint firstItem="Op0-Hg-rNW" firstAttribute="top" secondItem="V6L-KW-Wfv" secondAttribute="top" constant="50" id="rKC-qj-EnI"/>
@@ -1354,8 +1354,11 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HO5-op-x6S">
-                                <rect key="frame" x="155" y="676" width="338" height="219.5"/>
+                                <rect key="frame" x="155" y="649" width="338" height="246.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="246.5" id="2BA-5g-HZf"/>
+                                </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuarios atendidos por género" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="425-GV-4hi">
                                 <rect key="frame" x="59" y="60" width="415" height="66"/>
@@ -1369,7 +1372,7 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usuarios atendidos por tanatólogo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUt-vi-71D">
-                                <rect key="frame" x="202" y="525" width="469" height="61"/>
+                                <rect key="frame" x="202" y="468" width="469" height="61"/>
                                 <color key="backgroundColor" red="0.75875407459999999" green="0.87285679579999997" blue="0.37572741510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="469" id="gOD-D5-LEK"/>
@@ -1407,11 +1410,10 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                             <constraint firstItem="425-GV-4hi" firstAttribute="leading" secondItem="vBc-Tu-WdB" secondAttribute="leading" constant="59" id="2K7-AT-RaT"/>
                             <constraint firstItem="vBc-Tu-WdB" firstAttribute="trailing" secondItem="HO5-op-x6S" secondAttribute="trailing" constant="211" id="9Va-dD-y3E"/>
                             <constraint firstItem="vBc-Tu-WdB" firstAttribute="bottom" secondItem="HO5-op-x6S" secondAttribute="bottom" constant="100" id="A9S-pO-g3p"/>
-                            <constraint firstItem="mUt-vi-71D" firstAttribute="top" secondItem="52F-iG-Xo0" secondAttribute="bottom" constant="77" id="FXm-tq-jZG"/>
+                            <constraint firstItem="mUt-vi-71D" firstAttribute="top" secondItem="52F-iG-Xo0" secondAttribute="bottom" constant="20" id="FXm-tq-jZG"/>
                             <constraint firstAttribute="bottom" secondItem="52F-iG-Xo0" secondAttribute="bottom" constant="547.5" id="KMJ-NR-3rt"/>
                             <constraint firstItem="vBc-Tu-WdB" firstAttribute="trailing" secondItem="mUt-vi-71D" secondAttribute="trailing" constant="33" id="Q3J-BF-bGz"/>
                             <constraint firstItem="52F-iG-Xo0" firstAttribute="trailing" secondItem="425-GV-4hi" secondAttribute="trailing" id="TZT-Xy-njR"/>
-                            <constraint firstItem="HO5-op-x6S" firstAttribute="top" secondItem="mUt-vi-71D" secondAttribute="bottom" constant="90" id="WMI-Mg-x99"/>
                             <constraint firstItem="HO5-op-x6S" firstAttribute="leading" secondItem="vBc-Tu-WdB" secondAttribute="leading" constant="155" id="gue-QI-SPM"/>
                             <constraint firstItem="vBc-Tu-WdB" firstAttribute="trailing" secondItem="Dpz-MT-zO2" secondAttribute="trailing" constant="33" id="h1g-n1-E7e"/>
                             <constraint firstItem="Dpz-MT-zO2" firstAttribute="top" secondItem="vBc-Tu-WdB" secondAttribute="top" constant="162" id="oyr-Kv-npS"/>
@@ -2273,7 +2275,7 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intervención" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9PI-FF-zj8">
-                                <rect key="frame" x="108" y="35" width="202" height="60"/>
+                                <rect key="frame" x="452" y="50" width="202" height="60"/>
                                 <color key="backgroundColor" red="0.75875407459999999" green="0.87285679579999997" blue="0.37572741510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="HMR-IW-MLZ"/>
@@ -2289,9 +2291,10 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Servicio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8Z-Av-YER">
-                                <rect key="frame" x="472" y="515" width="158" height="60"/>
+                                <rect key="frame" x="50" y="650.5" width="158" height="60"/>
                                 <color key="backgroundColor" red="0.75875407459999999" green="0.87285679579999997" blue="0.37572741510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="158" id="LiS-N1-Nq6"/>
                                     <constraint firstAttribute="height" constant="60" id="hyX-Wz-a5H"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
@@ -2304,46 +2307,47 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IKa-cc-zkQ">
-                                <rect key="frame" x="196" y="642" width="388" height="244"/>
+                                <rect key="frame" x="260" y="642" width="394" height="244"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="394" id="BDh-lK-2mT"/>
+                                </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DecoRec1" translatesAutoresizingMaskIntoConstraints="NO" id="2zE-Uh-axc">
-                                <rect key="frame" x="73" y="580" width="87" height="85"/>
+                                <rect key="frame" x="73" y="810.5" width="87" height="85"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="87" id="S6I-of-DCM"/>
                                     <constraint firstAttribute="height" constant="85" id="srL-Oz-L8c"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="decoUsuarios" translatesAutoresizingMaskIntoConstraints="NO" id="WC0-ed-DXp">
-                                <rect key="frame" x="509" y="79" width="137" height="114"/>
+                                <rect key="frame" x="509" y="250" width="137" height="114"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="137" id="Vrt-xE-B2T"/>
                                     <constraint firstAttribute="height" constant="114" id="ol7-kM-Zt0"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ecD-Rr-2Zz">
-                                <rect key="frame" x="20" y="194" width="429" height="243"/>
+                                <rect key="frame" x="20" y="209" width="429" height="228"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fa3-Bh-y1Z"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ecD-Rr-2Zz" firstAttribute="top" secondItem="9PI-FF-zj8" secondAttribute="bottom" constant="99" id="4jg-iV-OaG"/>
-                            <constraint firstItem="fa3-Bh-y1Z" firstAttribute="trailing" secondItem="IKa-cc-zkQ" secondAttribute="trailing" constant="120" id="5IM-wq-OUO"/>
-                            <constraint firstItem="9PI-FF-zj8" firstAttribute="top" secondItem="fa3-Bh-y1Z" secondAttribute="top" constant="35" id="5xm-cR-Jsh"/>
+                            <constraint firstItem="fa3-Bh-y1Z" firstAttribute="trailing" secondItem="IKa-cc-zkQ" secondAttribute="trailing" constant="50" id="5IM-wq-OUO"/>
+                            <constraint firstItem="9PI-FF-zj8" firstAttribute="top" secondItem="fa3-Bh-y1Z" secondAttribute="top" constant="50" id="5xm-cR-Jsh"/>
                             <constraint firstItem="fa3-Bh-y1Z" firstAttribute="bottom" secondItem="IKa-cc-zkQ" secondAttribute="bottom" constant="109.5" id="7Bm-c8-24M"/>
-                            <constraint firstItem="fa3-Bh-y1Z" firstAttribute="bottom" secondItem="2zE-Uh-axc" secondAttribute="bottom" constant="330.5" id="8p4-GT-Cgm"/>
+                            <constraint firstItem="fa3-Bh-y1Z" firstAttribute="bottom" secondItem="2zE-Uh-axc" secondAttribute="bottom" constant="100" id="8p4-GT-Cgm"/>
+                            <constraint firstItem="fa3-Bh-y1Z" firstAttribute="trailing" secondItem="9PI-FF-zj8" secondAttribute="trailing" constant="50" id="9Q9-YG-5as"/>
+                            <constraint firstItem="2zE-Uh-axc" firstAttribute="top" secondItem="k8Z-Av-YER" secondAttribute="bottom" constant="100" id="CL5-xZ-GzH"/>
                             <constraint firstItem="2zE-Uh-axc" firstAttribute="leading" secondItem="fa3-Bh-y1Z" secondAttribute="leading" constant="73" id="OKg-6g-xtI"/>
-                            <constraint firstItem="k8Z-Av-YER" firstAttribute="leading" secondItem="fa3-Bh-y1Z" secondAttribute="leading" constant="472" id="Pzz-C8-fIv"/>
+                            <constraint firstItem="k8Z-Av-YER" firstAttribute="leading" secondItem="fa3-Bh-y1Z" secondAttribute="leading" constant="50" id="Pzz-C8-fIv"/>
                             <constraint firstItem="fa3-Bh-y1Z" firstAttribute="trailing" secondItem="ecD-Rr-2Zz" secondAttribute="trailing" constant="255" id="Vut-4h-O93"/>
-                            <constraint firstItem="WC0-ed-DXp" firstAttribute="top" secondItem="fa3-Bh-y1Z" secondAttribute="top" constant="79" id="ZVf-ua-DdU"/>
+                            <constraint firstItem="WC0-ed-DXp" firstAttribute="top" secondItem="fa3-Bh-y1Z" secondAttribute="top" constant="250" id="ZVf-ua-DdU"/>
                             <constraint firstItem="fa3-Bh-y1Z" firstAttribute="trailing" secondItem="WC0-ed-DXp" secondAttribute="trailing" constant="58" id="cD9-eo-wV1"/>
-                            <constraint firstItem="9PI-FF-zj8" firstAttribute="leading" secondItem="fa3-Bh-y1Z" secondAttribute="leading" constant="108" id="caU-Tt-EDe"/>
                             <constraint firstItem="ecD-Rr-2Zz" firstAttribute="leading" secondItem="mMp-FB-mzn" secondAttribute="leadingMargin" id="cg1-wj-44W"/>
                             <constraint firstAttribute="bottom" secondItem="ecD-Rr-2Zz" secondAttribute="bottom" constant="558.5" id="cnh-PN-f1W"/>
-                            <constraint firstItem="IKa-cc-zkQ" firstAttribute="leading" secondItem="2zE-Uh-axc" secondAttribute="trailing" constant="36" id="hkZ-rc-DaM"/>
-                            <constraint firstItem="IKa-cc-zkQ" firstAttribute="top" secondItem="k8Z-Av-YER" secondAttribute="bottom" constant="67" id="idF-p0-fzp"/>
                             <constraint firstItem="IKa-cc-zkQ" firstAttribute="top" secondItem="mMp-FB-mzn" secondAttribute="top" constant="642" id="ieY-ph-EiS"/>
-                            <constraint firstItem="fa3-Bh-y1Z" firstAttribute="trailing" secondItem="k8Z-Av-YER" secondAttribute="trailing" constant="74" id="j1y-Wf-OI0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Intervención y servicio" id="MuI-Ce-6eE"/>
