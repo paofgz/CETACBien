@@ -96,8 +96,8 @@ class SeguimientoViewController: UIViewController,UIPickerViewDelegate, UIPicker
                 let switchCase = action.isOn
                 let usuarioId = self.getSelected(usuariosPV, selectedRow: self.usuariosPV.selectedRow(inComponent: 0)) ?? ""
                 let newSesion = Sesion(fecha: fecha, herramienta: herramienta, tipoDeIntervencion: inter, evaluacionSesion: self.evaluacionSes.text ?? "", servicio: servicio, cuotaDeRecuperacion: cuota ?? 0.0, cerrarExpediente: switchCase)
+                let numSes = self.getNumSes(usuariosPV, selectedRow: self.usuariosPV.selectedRow(inComponent: 0)) ?? 0
                                       
-                   
                 let alert = UIAlertController(title: "¿Guardar hoja de seguimiento?", message: "Se guardarán los datos del seguimiento", preferredStyle: .alert)
                 
                 alert.addAction(UIAlertAction(title: "Si", style: .cancel, handler: { action in self.sesionControlador.insertSesion(idUsuario: usuarioId , nuevaSesion: newSesion, completion:{ (result) in
@@ -109,11 +109,11 @@ class SeguimientoViewController: UIViewController,UIPickerViewDelegate, UIPicker
                         } else {
                             status = 1
                         }
-                            self.usuarioControlador.updateStatus(usuarioId: usuarioId, status: status, completion: { (result) in
+                        self.usuarioControlador.updateUser(usuarioId: usuarioId, status: status, numSes: numSes+1, lastSes: fecha, completion: { (result) in
                                 switch result {
                                 case .success(_):
-                                    print("Se actualizó el status del usuario")
-                                case .failure(let error): self.displayError(error, title:"No se pudo guardar la sesión")
+                                    print("Se actualizó el usuario")
+                                case .failure(let error): self.displayError(error, title:"No se pudo actualizar el usuario")
                                 }
                         })
                             self.displayExito(title: "Se guardó la sesión con id: \(retorno)", detalle: "Se guardó la sesión")
@@ -149,6 +149,10 @@ class SeguimientoViewController: UIViewController,UIPickerViewDelegate, UIPicker
         
         func getSelected(_ pickerView: UIPickerView, selectedRow row: Int) -> String? {
             return usuarios[row].id
+        }
+    
+        func  getNumSes(_ pickerView: UIPickerView, selectedRow row: Int) -> Int? {
+            return usuarios[row].numSes
         }
     /*
     // MARK: - Navigation

@@ -77,7 +77,9 @@ class UsuarioController{
                 "proximaSesion": nuevoUsuario.proximaSesion,
                 "status": nuevoUsuario.status,
                 "edad": nuevoUsuario.edad,
-                "sexo": nuevoUsuario.sexo
+                "sexo": nuevoUsuario.sexo,
+                "numSes": nuevoUsuario.numSes,
+                "lastSes": nuevoUsuario.lastSes
             ]) { err in
                 if let err = err {
                     print("Error adding document: \(err)")
@@ -91,7 +93,7 @@ class UsuarioController{
     
     func getUsuario(id:String, completion: @escaping (Result<Usuario, Error>) -> Void){
         let now = Date()
-        var usuario:Usuario = Usuario(fecha: now, idTanatologo: "", nombre: "", ocupacion: "", religion: "", procedencia: "", domicilio: "", telefonoDeCasa: "", celular: "", estadoCivil: "", edadPareja: 0, sexoPareja: "", hijos: "", referido: "", motivo: "", identificacionDeRespuesta: "", EKR: "", status: 0, proximaSesion: "", sexo: "", edad: 0)
+        var usuario:Usuario = Usuario(fecha: now, idTanatologo: "", nombre: "", ocupacion: "", religion: "", procedencia: "", domicilio: "", telefonoDeCasa: "", celular: "", estadoCivil: "", edadPareja: 0, sexoPareja: "", hijos: "", referido: "", motivo: "", identificacionDeRespuesta: "", EKR: "", status: 0, proximaSesion: "", sexo: "", edad: 0, numSes: 0, lastSes: now)
         db.collection("Usuarios").document(id).getDocument() { (querySnapshot, err) in
             if let err = err {
                 completion(.failure(err))
@@ -108,7 +110,7 @@ class UsuarioController{
         db.collection("Usuarios").document(usuarioId).updateData([
             "edad": ed ?? 0,
             "sexo": sexo,
-            "proximaSesion": proxSes
+            "proximaSesion": proxSes,
         ]) { err in
             if let err = err {
                 print("Error updating document: \(err)")
@@ -134,9 +136,11 @@ class UsuarioController{
         }
     }
     
-    func updateStatus(usuarioId:String, status:Int, completion: @escaping (Result<String, Error>) -> Void){
+    func updateUser(usuarioId:String, status:Int, numSes:Int, lastSes:Date, completion: @escaping (Result<String, Error>) -> Void){
         db.collection("Usuarios").document(usuarioId).updateData([
-            "status": status
+            "status": status,
+            "numSes": numSes,
+            "lastSes": lastSes
         ]) { err in
             if let err = err {
                 print("Error updating document: \(err)")

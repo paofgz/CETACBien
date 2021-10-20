@@ -13,6 +13,8 @@ class DetalleUsuarioViewController: UIViewController {
     var usuarioControlador = UsuarioController()
     var sesionControlador = SesionesController()
     var tanatologoControlador = TanatologoController()
+    var usuarioTable = UsuariosTableViewController()
+    var usuarioTanTable = UsuariosTanTableViewController()
     var validator = Validators()
     
     let dateFormatter = DateFormatter()
@@ -102,7 +104,8 @@ class DetalleUsuarioViewController: UIViewController {
             self.edad.text = String(edad)
             self.sexo.text = self.elUsuario?.sexo
             self.numExp.text = self.elUsuario?.id
-            self.numSes.text = String(length)
+            let numero = self.elUsuario?.numSes ?? 0
+            self.numSes.text = String(numero)
             self.motiv.text = self.elUsuario?.motivo
             self.serv.text = lastSes.servicio
             self.tan.text = tanatologo.nombre + " " + tanatologo.apellido
@@ -204,6 +207,8 @@ class DetalleUsuarioViewController: UIViewController {
                     } else {
                         self.status.image = UIImage(named: "rojo")
                     }
+                    self.usuarioTable.tableView.reloadData()
+                    self.usuarioTanTable.tableView.reloadData()
                 case .failure(let error):self.displayError(error, title: "No se pudo modificar el registro")
                 }
                 

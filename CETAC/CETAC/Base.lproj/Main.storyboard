@@ -3714,8 +3714,56 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmR-w5-vqL">
-                                            <rect key="frame" x="85" y="25" width="59.5" height="20"/>
+                                            <rect key="frame" x="85" y="19" width="59.5" height="23"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="23" id="lMn-q2-WOB"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="numSes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6G4-D3-V2d">
+                                            <rect key="frame" x="327.5" y="19" width="66.5" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="0Sb-GU-eyH"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="exp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gb-Jf-vs7">
+                                            <rect key="frame" x="120" y="52" width="25" height="18"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="18" id="hCC-Vp-b1E"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ult. Ses:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H3b-2b-poN">
+                                            <rect key="frame" x="444" y="19" width="65" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="8sp-n9-4yM"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Rockwell-Italic" family="Rockwell" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Num. Sesiones:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQC-o5-C0g">
+                                            <rect key="frame" x="194.5" y="19" width="125" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="MwF-7S-fZE"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Rockwell-Italic" family="Rockwell" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exp:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="paA-tH-iJP">
+                                            <rect key="frame" x="85" y="52" width="28" height="18"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="18" id="pTX-Sh-nOg"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Rockwell-Italic" family="Rockwell" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -3726,16 +3774,40 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <constraint firstAttribute="height" constant="50" id="TFH-uT-HeJ"/>
                                             </constraints>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="proxSes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hE2-lU-CAP">
+                                            <rect key="frame" x="517" y="19" width="67.5" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="STW-DM-8z0"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="lmR-w5-vqL" firstAttribute="centerY" secondItem="6Sq-az-82S" secondAttribute="centerY" id="6IC-Db-0LE"/>
+                                        <constraint firstItem="hE2-lU-CAP" firstAttribute="leading" secondItem="H3b-2b-poN" secondAttribute="trailing" constant="8" id="3c2-iD-fSR"/>
+                                        <constraint firstItem="paA-tH-iJP" firstAttribute="leading" secondItem="d5o-mZ-fEq" secondAttribute="trailing" constant="15" id="4D5-by-83j"/>
+                                        <constraint firstItem="H3b-2b-poN" firstAttribute="top" secondItem="6Sq-az-82S" secondAttribute="topMargin" constant="8" id="5I5-Ob-Cau"/>
                                         <constraint firstItem="d5o-mZ-fEq" firstAttribute="leading" secondItem="6Sq-az-82S" secondAttribute="leading" constant="20" id="7Fj-M4-2vM"/>
+                                        <constraint firstItem="6G4-D3-V2d" firstAttribute="leading" secondItem="NQC-o5-C0g" secondAttribute="trailing" constant="8" id="7lC-3n-4sE"/>
                                         <constraint firstItem="d5o-mZ-fEq" firstAttribute="centerY" secondItem="6Sq-az-82S" secondAttribute="centerY" id="Chx-R1-55k"/>
+                                        <constraint firstItem="lmR-w5-vqL" firstAttribute="top" secondItem="6Sq-az-82S" secondAttribute="topMargin" constant="8" id="DG0-Sg-mz9"/>
+                                        <constraint firstItem="NQC-o5-C0g" firstAttribute="leading" secondItem="lmR-w5-vqL" secondAttribute="trailing" constant="50" id="FWo-us-x1C"/>
                                         <constraint firstItem="lmR-w5-vqL" firstAttribute="leading" secondItem="d5o-mZ-fEq" secondAttribute="trailing" constant="15" id="G42-7t-KFZ"/>
+                                        <constraint firstItem="NQC-o5-C0g" firstAttribute="top" secondItem="6Sq-az-82S" secondAttribute="topMargin" constant="8" id="MKm-Ur-s38"/>
+                                        <constraint firstItem="6G4-D3-V2d" firstAttribute="top" secondItem="6Sq-az-82S" secondAttribute="topMargin" constant="8" id="ZZi-cN-kN1"/>
+                                        <constraint firstItem="paA-tH-iJP" firstAttribute="top" secondItem="lmR-w5-vqL" secondAttribute="bottom" constant="10" id="Zah-x8-BgS"/>
+                                        <constraint firstItem="H3b-2b-poN" firstAttribute="leading" secondItem="6G4-D3-V2d" secondAttribute="trailing" constant="50" id="bC8-hn-LmS"/>
+                                        <constraint firstItem="1gb-Jf-vs7" firstAttribute="leading" secondItem="paA-tH-iJP" secondAttribute="trailing" constant="7" id="bmW-cs-Qvh"/>
+                                        <constraint firstItem="1gb-Jf-vs7" firstAttribute="top" secondItem="lmR-w5-vqL" secondAttribute="bottom" constant="10" id="jjm-db-DLu"/>
+                                        <constraint firstItem="hE2-lU-CAP" firstAttribute="top" secondItem="6Sq-az-82S" secondAttribute="topMargin" constant="8" id="sDh-KR-37i"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="exp" destination="1gb-Jf-vs7" id="hMi-xo-xWK"/>
                                     <outlet property="nombreUsuario" destination="lmR-w5-vqL" id="R96-7Q-u3M"/>
+                                    <outlet property="numSes" destination="6G4-D3-V2d" id="c8t-dM-fZt"/>
+                                    <outlet property="proxSes" destination="hE2-lU-CAP" id="Iph-DU-xWD"/>
                                     <outlet property="semaforo" destination="d5o-mZ-fEq" id="xmN-xH-leE"/>
                                     <segue destination="TMO-d9-HKG" kind="show" identifier="detalle" id="vBw-HC-g9Y"/>
                                 </connections>
@@ -4080,7 +4152,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iw3-Bg-i0b">
-                                <rect key="frame" x="315" y="230" width="74.5" height="35"/>
+                                <rect key="frame" x="315" y="220" width="74.5" height="45"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="25"/>
                                 <color key="textColor" red="0.30588235289999999" green="0.67843137249999996" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -4226,7 +4298,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edad:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vq3-ut-E7t">
-                                <rect key="frame" x="426.5" y="268" width="59" height="25"/>
+                                <rect key="frame" x="434" y="268" width="59" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="k7x-yP-kvk"/>
                                 </constraints>
@@ -4235,16 +4307,16 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9hJ-4o-egt">
-                                <rect key="frame" x="134" y="260" width="97" height="34"/>
+                                <rect key="frame" x="134" y="260" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="4Wl-FN-DR8"/>
-                                    <constraint firstAttribute="width" constant="97" id="rFB-aJ-Tgp"/>
+                                    <constraint firstAttribute="width" constant="200" id="rFB-aJ-Tgp"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y6S-AJ-AVf">
-                                <rect key="frame" x="515.5" y="260" width="97" height="34"/>
+                                <rect key="frame" x="523" y="260" width="97" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="0Im-Ds-nO5"/>
                                     <constraint firstAttribute="height" constant="34" id="QKq-PG-3df"/>
@@ -4300,7 +4372,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                             <constraint firstItem="22u-Os-HJr" firstAttribute="top" secondItem="A7H-aL-Buv" secondAttribute="bottom" constant="20" id="erb-n6-KCk"/>
                             <constraint firstItem="GyA-lv-dQm" firstAttribute="leading" secondItem="5y1-Pd-04y" secondAttribute="leading" constant="50" id="fp5-ah-eZ4"/>
                             <constraint firstItem="e2l-Op-6Fb" firstAttribute="leading" secondItem="5y1-Pd-04y" secondAttribute="leading" constant="50" id="jkJ-H0-ydw"/>
-                            <constraint firstItem="Vq3-ut-E7t" firstAttribute="leading" secondItem="9hJ-4o-egt" secondAttribute="trailing" constant="195.5" id="kov-Af-adP"/>
+                            <constraint firstItem="Vq3-ut-E7t" firstAttribute="leading" secondItem="9hJ-4o-egt" secondAttribute="trailing" constant="100" id="kov-Af-adP"/>
                             <constraint firstItem="Z3m-Cy-pIU" firstAttribute="top" secondItem="5y1-Pd-04y" secondAttribute="top" constant="40" id="lcW-Cd-ckf"/>
                             <constraint firstItem="uq3-hc-o6B" firstAttribute="top" secondItem="e2l-Op-6Fb" secondAttribute="bottom" constant="20" id="lsh-xW-plm"/>
                             <constraint firstItem="8pM-Qw-MdA" firstAttribute="leading" secondItem="Ew1-1V-yXF" secondAttribute="trailing" constant="15" id="m7p-1a-8jp"/>
@@ -4318,7 +4390,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                             <constraint firstItem="Vq3-ut-E7t" firstAttribute="top" secondItem="5y1-Pd-04y" secondAttribute="top" constant="268" id="yPC-mT-hXA"/>
                             <constraint firstItem="jWs-tH-rgG" firstAttribute="leading" secondItem="5y1-Pd-04y" secondAttribute="leading" constant="50" id="ys5-8o-MZ5"/>
                             <constraint firstItem="16t-h7-5DI" firstAttribute="top" secondItem="5y1-Pd-04y" secondAttribute="top" constant="45" id="zFV-kl-1qX"/>
-                            <constraint firstItem="iw3-Bg-i0b" firstAttribute="top" secondItem="Z3m-Cy-pIU" secondAttribute="bottom" constant="40" id="zMG-WJ-1uC"/>
+                            <constraint firstItem="iw3-Bg-i0b" firstAttribute="top" secondItem="Z3m-Cy-pIU" secondAttribute="bottom" constant="30" id="zMG-WJ-1uC"/>
                             <constraint firstItem="rlf-h2-PgX" firstAttribute="leading" secondItem="5y1-Pd-04y" secondAttribute="leading" constant="50" id="zTV-hW-wCc"/>
                             <constraint firstItem="Yqu-3f-17e" firstAttribute="leading" secondItem="gLI-YE-3va" secondAttribute="trailing" constant="30" id="zwf-cs-R9g"/>
                         </constraints>
@@ -4369,7 +4441,10 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfT-qb-KVU">
-                                            <rect key="frame" x="85" y="25" width="59.5" height="20"/>
+                                            <rect key="frame" x="85" y="19" width="59.5" height="23"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="23" id="P14-OW-N4l"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="20"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -4381,16 +4456,85 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                                 <constraint firstAttribute="height" constant="50" id="qXm-92-shg"/>
                                             </constraints>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Num. Sesiones:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qbu-7a-HsW">
+                                            <rect key="frame" x="194.5" y="19" width="125" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="nmQ-HF-fyv"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Rockwell-Italic" family="Rockwell" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="numSes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1sf-bG-rvg">
+                                            <rect key="frame" x="327.5" y="19" width="66.5" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="xmF-bI-y12"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ult. Ses:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v2T-hD-SFd">
+                                            <rect key="frame" x="444" y="19" width="65" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="lVL-Pp-Up1"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Rockwell-Italic" family="Rockwell" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="proxSes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOi-ND-N9k">
+                                            <rect key="frame" x="517" y="19" width="67.5" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="SjP-K4-vnN"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exp:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsb-2T-dWy">
+                                            <rect key="frame" x="85" y="52" width="28" height="17"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="17" id="K6f-OP-Zpr"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Rockwell-Italic" family="Rockwell" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="exp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CsY-uY-TFy">
+                                            <rect key="frame" x="120" y="52" width="25" height="17"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="17" id="zwd-Xu-8Gw"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="sOi-ND-N9k" firstAttribute="top" secondItem="2Wc-x0-YKZ" secondAttribute="topMargin" constant="8" id="4um-cX-eRF"/>
                                         <constraint firstItem="utD-Gt-1a6" firstAttribute="leading" secondItem="2Wc-x0-YKZ" secondAttribute="leading" constant="20" id="8AM-Dy-TVT"/>
-                                        <constraint firstItem="xfT-qb-KVU" firstAttribute="centerY" secondItem="2Wc-x0-YKZ" secondAttribute="centerY" id="FXr-GP-JIN"/>
+                                        <constraint firstItem="Qbu-7a-HsW" firstAttribute="leading" secondItem="xfT-qb-KVU" secondAttribute="trailing" constant="50" id="995-YC-RXA"/>
+                                        <constraint firstItem="CsY-uY-TFy" firstAttribute="top" secondItem="xfT-qb-KVU" secondAttribute="bottom" constant="10" id="GAG-Kw-ng5"/>
+                                        <constraint firstItem="CsY-uY-TFy" firstAttribute="leading" secondItem="rsb-2T-dWy" secondAttribute="trailing" constant="7" id="Gx0-ie-Vuf"/>
+                                        <constraint firstItem="v2T-hD-SFd" firstAttribute="top" secondItem="2Wc-x0-YKZ" secondAttribute="topMargin" constant="8" id="TR6-UZ-TDX"/>
                                         <constraint firstItem="xfT-qb-KVU" firstAttribute="leading" secondItem="utD-Gt-1a6" secondAttribute="trailing" constant="15" id="WIv-44-279"/>
+                                        <constraint firstItem="sOi-ND-N9k" firstAttribute="leading" secondItem="v2T-hD-SFd" secondAttribute="trailing" constant="8" id="Z0l-VA-4q0"/>
+                                        <constraint firstItem="xfT-qb-KVU" firstAttribute="top" secondItem="2Wc-x0-YKZ" secondAttribute="topMargin" constant="8" id="alL-12-fy8"/>
                                         <constraint firstItem="utD-Gt-1a6" firstAttribute="centerY" secondItem="2Wc-x0-YKZ" secondAttribute="centerY" id="hMF-nY-RB8"/>
+                                        <constraint firstItem="rsb-2T-dWy" firstAttribute="leading" secondItem="utD-Gt-1a6" secondAttribute="trailing" constant="15" id="hYG-42-Aax"/>
+                                        <constraint firstItem="rsb-2T-dWy" firstAttribute="top" secondItem="xfT-qb-KVU" secondAttribute="bottom" constant="10" id="lVz-Pv-HFS"/>
+                                        <constraint firstItem="v2T-hD-SFd" firstAttribute="leading" secondItem="1sf-bG-rvg" secondAttribute="trailing" constant="50" id="nAP-dj-rPl"/>
+                                        <constraint firstItem="1sf-bG-rvg" firstAttribute="top" secondItem="2Wc-x0-YKZ" secondAttribute="topMargin" constant="8" id="rpV-oD-BYE"/>
+                                        <constraint firstItem="Qbu-7a-HsW" firstAttribute="top" secondItem="2Wc-x0-YKZ" secondAttribute="topMargin" constant="8" id="uYv-WC-WZG"/>
+                                        <constraint firstItem="1sf-bG-rvg" firstAttribute="leading" secondItem="Qbu-7a-HsW" secondAttribute="trailing" constant="8" id="z3E-et-iEh"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="exp" destination="CsY-uY-TFy" id="wBX-AV-HNc"/>
                                     <outlet property="nombreUsuario" destination="xfT-qb-KVU" id="pM4-0t-1MV"/>
+                                    <outlet property="numSes" destination="1sf-bG-rvg" id="bpH-zk-0Z3"/>
+                                    <outlet property="proxSes" destination="sOi-ND-N9k" id="ams-2d-9kW"/>
                                     <outlet property="semaforo" destination="utD-Gt-1a6" id="wJm-h6-7K6"/>
                                     <segue destination="1wN-aq-pGM" kind="show" identifier="detalle" id="nTm-6A-GhI"/>
                                 </connections>
@@ -4406,14 +4550,14 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vyF-5b-BYQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2664" y="3326"/>
+            <point key="canvasLocation" x="2663.7037037037035" y="3325.5555555555557"/>
         </scene>
         <!--Detalle Usuario View Controller-->
         <scene sceneID="AW8-bB-3O8">
             <objects>
                 <viewController id="1wN-aq-pGM" customClass="DetalleUsuarioViewController" customModule="CETAC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oxl-Rp-Gvx">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="995"/>
+                        <rect key="frame" x="0.0" y="0.0" width="704" height="995.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5j7-6l-kRY">
@@ -4505,7 +4649,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qby-6V-s8S">
-                                <rect key="frame" x="315" y="235" width="74.5" height="30"/>
+                                <rect key="frame" x="315" y="225" width="74.5" height="40"/>
                                 <fontDescription key="fontDescription" name="Rockwell-Bold" family="Rockwell" pointSize="25"/>
                                 <color key="textColor" red="0.30588235289999999" green="0.67843137249999996" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -4651,7 +4795,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edad:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBq-E8-IcW">
-                                <rect key="frame" x="426.5" y="273" width="59" height="25"/>
+                                <rect key="frame" x="434" y="273" width="59" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="U8h-fk-L0n"/>
                                 </constraints>
@@ -4660,16 +4804,16 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cFb-GJ-DSa">
-                                <rect key="frame" x="134" y="265" width="97" height="34"/>
+                                <rect key="frame" x="134" y="265" width="200" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="97" id="7Et-ps-8fz"/>
+                                    <constraint firstAttribute="width" constant="200" id="7Et-ps-8fz"/>
                                     <constraint firstAttribute="height" constant="34" id="Osd-23-kwb"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Teb-0P-ppu">
-                                <rect key="frame" x="515.5" y="265" width="97" height="34"/>
+                                <rect key="frame" x="523" y="265" width="97" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="Mi1-OO-hJB"/>
                                     <constraint firstAttribute="height" constant="34" id="wcB-pu-5oN"/>
@@ -4712,7 +4856,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                             <constraint firstItem="3Fm-lC-ERX" firstAttribute="bottom" secondItem="gZ9-A8-gd8" secondAttribute="bottom" constant="20" id="NWJ-9W-2zh"/>
                             <constraint firstItem="Bcs-2L-5ab" firstAttribute="leading" secondItem="3Fm-lC-ERX" secondAttribute="leading" constant="50" id="Ner-AG-Ipg"/>
                             <constraint firstItem="3Fm-lC-ERX" firstAttribute="trailing" secondItem="YzC-xe-4ka" secondAttribute="trailing" constant="50" id="RZj-Ib-NPI"/>
-                            <constraint firstItem="fBq-E8-IcW" firstAttribute="leading" secondItem="cFb-GJ-DSa" secondAttribute="trailing" constant="195.5" id="Rl9-az-vZf"/>
+                            <constraint firstItem="fBq-E8-IcW" firstAttribute="leading" secondItem="cFb-GJ-DSa" secondAttribute="trailing" constant="100" id="Rl9-az-vZf"/>
                             <constraint firstItem="0GN-WX-odg" firstAttribute="top" secondItem="opH-uj-j2C" secondAttribute="bottom" constant="20" id="SsX-bV-Jib"/>
                             <constraint firstItem="k5P-o6-19S" firstAttribute="top" secondItem="OSg-JR-7Te" secondAttribute="bottom" constant="20" id="T1p-vM-L3a"/>
                             <constraint firstItem="5j7-6l-kRY" firstAttribute="top" secondItem="3Fm-lC-ERX" secondAttribute="top" constant="45" id="ToC-cu-Baf"/>
@@ -4730,7 +4874,7 @@ Humildad: Tener la sabiduría de reconocer y respetar las habilidades, cualidade
                             <constraint firstItem="SbL-oO-rrT" firstAttribute="leading" secondItem="3Fm-lC-ERX" secondAttribute="leading" constant="50" id="hUR-P6-wdd"/>
                             <constraint firstItem="opH-uj-j2C" firstAttribute="leading" secondItem="3Fm-lC-ERX" secondAttribute="leading" constant="50" id="htL-kh-m2M"/>
                             <constraint firstItem="eFg-AZ-BVi" firstAttribute="top" secondItem="Jjr-pw-Exc" secondAttribute="bottom" constant="20" id="iFW-oo-zob"/>
-                            <constraint firstItem="Qby-6V-s8S" firstAttribute="top" secondItem="5j7-6l-kRY" secondAttribute="bottom" constant="40" id="iTg-6C-g1k"/>
+                            <constraint firstItem="Qby-6V-s8S" firstAttribute="top" secondItem="5j7-6l-kRY" secondAttribute="bottom" constant="30" id="iTg-6C-g1k"/>
                             <constraint firstItem="OSg-JR-7Te" firstAttribute="top" secondItem="rhE-5n-dJn" secondAttribute="bottom" constant="20" id="iqp-BN-gOF"/>
                             <constraint firstItem="y8V-qe-dax" firstAttribute="top" secondItem="k5P-o6-19S" secondAttribute="bottom" constant="20" id="jbJ-Qy-yn1"/>
                             <constraint firstItem="cFb-GJ-DSa" firstAttribute="top" secondItem="3Fm-lC-ERX" secondAttribute="top" constant="265" id="ktF-41-27q"/>
