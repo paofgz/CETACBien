@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Visión-3.png",
+      "filename" : "Visión-3.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Visión-4.png",
+      "filename" : "Visión-4.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Visión.png",
+      "filename" : "Visión.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

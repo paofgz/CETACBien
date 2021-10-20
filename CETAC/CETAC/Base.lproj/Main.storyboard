@@ -2680,7 +2680,7 @@ C.P. 03810</string>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="crh-y0-Tge">
-                                <rect key="frame" x="125" y="839" width="560" height="180"/>
+                                <rect key="frame" x="125" y="819" width="560" height="180"/>
                                 <color key="backgroundColor" red="0.33583194020000001" green="0.65900397300000002" blue="0.8941541314" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="560" id="JDs-pz-lAX"/>
@@ -2706,7 +2706,7 @@ C.P. 03810</string>
                             <constraint firstItem="0C4-Ab-cWH" firstAttribute="top" secondItem="eGs-F7-3sk" secondAttribute="bottom" constant="50" id="Tkl-V9-evN"/>
                             <constraint firstItem="eGs-F7-3sk" firstAttribute="top" secondItem="XiW-S9-VWW" secondAttribute="top" constant="80" id="UBi-Oi-Dcx"/>
                             <constraint firstItem="0C4-Ab-cWH" firstAttribute="centerX" secondItem="jv3-bd-6wA" secondAttribute="centerX" id="abM-5c-yBz"/>
-                            <constraint firstItem="crh-y0-Tge" firstAttribute="top" secondItem="0C4-Ab-cWH" secondAttribute="bottom" constant="40" id="kU5-SF-ofY"/>
+                            <constraint firstItem="crh-y0-Tge" firstAttribute="top" secondItem="0C4-Ab-cWH" secondAttribute="bottom" constant="20" id="kU5-SF-ofY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Servicios de Acompañamiento" id="VDe-ay-M8W"/>
@@ -2748,7 +2748,7 @@ C.P. 03810</string>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Iy4-kT-x5M">
-                                <rect key="frame" x="125" y="829" width="560" height="210"/>
+                                <rect key="frame" x="125" y="809" width="560" height="210"/>
                                 <color key="backgroundColor" red="0.33583194020000001" green="0.65900397300000002" blue="0.8941541314" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="210" id="3x2-ih-JTW"/>
@@ -2774,7 +2774,7 @@ C.P. 03810</string>
                             <constraint firstItem="5Dd-sd-zhO" firstAttribute="centerX" secondItem="3Hj-V4-1SU" secondAttribute="centerX" id="C5D-6F-aDO"/>
                             <constraint firstItem="3Yl-qG-FeB" firstAttribute="top" secondItem="5Dd-sd-zhO" secondAttribute="bottom" constant="40" id="DBZ-Vg-3Sw"/>
                             <constraint firstItem="5Dd-sd-zhO" firstAttribute="top" secondItem="TvG-rC-slj" secondAttribute="top" constant="80" id="N3M-La-dQj"/>
-                            <constraint firstItem="Iy4-kT-x5M" firstAttribute="top" secondItem="3Yl-qG-FeB" secondAttribute="bottom" constant="40" id="bmz-ag-d0O"/>
+                            <constraint firstItem="Iy4-kT-x5M" firstAttribute="top" secondItem="3Yl-qG-FeB" secondAttribute="bottom" constant="20" id="bmz-ag-d0O"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Servicios de Acompañamiento" id="mfQ-o2-5IG"/>
@@ -2961,7 +2961,7 @@ C.P. 03810</string>
                                 </userDefinedRuntimeAttributes>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="biomagnetismo1" translatesAutoresizingMaskIntoConstraints="NO" id="9Ci-5y-QUM">
-                                <rect key="frame" x="20" y="452" width="770" height="539"/>
+                                <rect key="frame" x="20" y="432" width="770" height="539"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="539" id="Ubb-O9-Wvp"/>
                                     <constraint firstAttribute="width" constant="770" id="eWQ-cd-Et1"/>
@@ -2972,7 +2972,7 @@ C.P. 03810</string>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="9Ci-5y-QUM" firstAttribute="centerX" secondItem="IHg-A3-YKE" secondAttribute="centerX" id="1wp-iK-eZ7"/>
-                            <constraint firstItem="9Ci-5y-QUM" firstAttribute="top" secondItem="Pav-ob-a77" secondAttribute="bottom" constant="50" id="ERm-G6-cw5"/>
+                            <constraint firstItem="9Ci-5y-QUM" firstAttribute="top" secondItem="Pav-ob-a77" secondAttribute="bottom" constant="30" id="ERm-G6-cw5"/>
                             <constraint firstItem="3cb-s5-9ZA" firstAttribute="centerX" secondItem="IHg-A3-YKE" secondAttribute="centerX" id="Q6W-gx-U8m"/>
                             <constraint firstItem="Pav-ob-a77" firstAttribute="top" secondItem="3cb-s5-9ZA" secondAttribute="bottom" constant="40" id="Wfk-Cq-k7u"/>
                             <constraint firstItem="Pav-ob-a77" firstAttribute="centerX" secondItem="IHg-A3-YKE" secondAttribute="centerX" id="t2p-jE-e6a"/>
@@ -3229,7 +3229,7 @@ C.P. 03810</string>
                                 </userDefinedRuntimeAttributes>
                             </textView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cristales1" translatesAutoresizingMaskIntoConstraints="NO" id="xT9-gy-9yh">
-                                <rect key="frame" x="20" y="504" width="770" height="548"/>
+                                <rect key="frame" x="20" y="484" width="770" height="548"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="548" id="Hzt-JR-mmG"/>
                                     <constraint firstAttribute="width" constant="770" id="Sql-Lg-kvf"/>
@@ -3239,7 +3239,7 @@ C.P. 03810</string>
                         <viewLayoutGuide key="safeArea" id="Y19-Wl-PPg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="xT9-gy-9yh" firstAttribute="top" secondItem="YSc-Na-9gk" secondAttribute="bottom" constant="50" id="4tW-PE-TgI"/>
+                            <constraint firstItem="xT9-gy-9yh" firstAttribute="top" secondItem="YSc-Na-9gk" secondAttribute="bottom" constant="30" id="4tW-PE-TgI"/>
                             <constraint firstItem="xT9-gy-9yh" firstAttribute="centerX" secondItem="2g5-eM-TM4" secondAttribute="centerX" id="8yO-Lj-va9"/>
                             <constraint firstItem="YSc-Na-9gk" firstAttribute="top" secondItem="7fw-q5-Gen" secondAttribute="bottom" constant="40" id="CdX-ad-GSB"/>
                             <constraint firstItem="7fw-q5-Gen" firstAttribute="top" secondItem="Y19-Wl-PPg" secondAttribute="top" constant="80" id="GaW-ms-xNw"/>
@@ -3278,10 +3278,13 @@ C.P. 03810</string>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Uso-9A-aYI">
-                                <rect key="frame" x="135" y="818" width="541" height="189"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Uso-9A-aYI">
+                                <rect key="frame" x="135" y="753" width="541" height="189"/>
                                 <color key="backgroundColor" red="0.33583194020000001" green="0.65900397300000002" blue="0.8941541314" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="189" id="KGi-13-Nmz"/>
+                                    <constraint firstAttribute="width" constant="541" id="tDQ-zG-64a"/>
+                                </constraints>
                                 <string key="text">                                                                                                   Proceso para guiar a la persona en su búsqueda del sentido de vida y permite descubrir la capacidad que tienen los humanos para superar los condicionamientos más difíciles “sanar a través del sentido”. Sanar, cuidar, acompañar lo que implica buscar sentido y esencia para vivir en plenitud.
 </string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3307,6 +3310,8 @@ C.P. 03810</string>
                             <constraint firstItem="Sig-Qv-sj4" firstAttribute="centerX" secondItem="h7d-XB-j1b" secondAttribute="centerX" id="HIc-GU-HgA"/>
                             <constraint firstItem="LF5-iK-Bhu" firstAttribute="top" secondItem="Sig-Qv-sj4" secondAttribute="bottom" constant="60" id="Wjj-Rc-7Xp"/>
                             <constraint firstItem="Sig-Qv-sj4" firstAttribute="top" secondItem="f5W-cc-nFh" secondAttribute="top" constant="80" id="ZjT-HW-r1P"/>
+                            <constraint firstItem="Uso-9A-aYI" firstAttribute="top" secondItem="LF5-iK-Bhu" secondAttribute="bottom" constant="20" id="bzB-hc-gw0"/>
+                            <constraint firstItem="Uso-9A-aYI" firstAttribute="leading" secondItem="f5W-cc-nFh" secondAttribute="leading" constant="135" id="qnF-z4-nBp"/>
                             <constraint firstItem="LF5-iK-Bhu" firstAttribute="centerX" secondItem="h7d-XB-j1b" secondAttribute="centerX" id="xYi-Kw-xoF"/>
                         </constraints>
                     </view>
@@ -3349,7 +3354,7 @@ C.P. 03810</string>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bjR-Uh-D2A">
-                                <rect key="frame" x="137" y="835" width="536" height="160"/>
+                                <rect key="frame" x="137" y="793" width="536" height="160"/>
                                 <color key="backgroundColor" red="0.33583194020000001" green="0.65900397300000002" blue="0.8941541314" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="tVL-JV-B5j"/>
@@ -3372,7 +3377,7 @@ C.P. 03810</string>
                             <constraint firstItem="OKa-gv-htQ" firstAttribute="centerX" secondItem="RPf-jx-qIR" secondAttribute="centerX" id="APt-os-P4A"/>
                             <constraint firstItem="Otk-1P-HRq" firstAttribute="top" secondItem="OKa-gv-htQ" secondAttribute="bottom" constant="80" id="C33-RH-XvT"/>
                             <constraint firstItem="OKa-gv-htQ" firstAttribute="top" secondItem="akW-zC-265" secondAttribute="top" constant="65" id="DOM-Bl-I01"/>
-                            <constraint firstItem="bjR-Uh-D2A" firstAttribute="top" secondItem="Otk-1P-HRq" secondAttribute="bottom" constant="82" id="F5x-hg-nGU"/>
+                            <constraint firstItem="bjR-Uh-D2A" firstAttribute="top" secondItem="Otk-1P-HRq" secondAttribute="bottom" constant="40" id="F5x-hg-nGU"/>
                             <constraint firstItem="Otk-1P-HRq" firstAttribute="centerX" secondItem="RPf-jx-qIR" secondAttribute="centerX" id="mbf-Zp-r4q"/>
                             <constraint firstItem="bjR-Uh-D2A" firstAttribute="centerX" secondItem="RPf-jx-qIR" secondAttribute="centerX" id="rZN-Vh-akK"/>
                         </constraints>
@@ -3416,7 +3421,7 @@ C.P. 03810</string>
                                 </constraints>
                             </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WhU-As-Dla">
-                                <rect key="frame" x="137" y="798" width="536" height="225"/>
+                                <rect key="frame" x="137" y="778" width="536" height="225"/>
                                 <color key="backgroundColor" red="0.33583194020000001" green="0.65900397300000002" blue="0.8941541314" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="536" id="7rv-Sb-ihX"/>
@@ -3438,7 +3443,7 @@ C.P. 03810</string>
                         <constraints>
                             <constraint firstItem="jUv-ZT-klZ" firstAttribute="centerX" secondItem="8Mq-5Q-sW0" secondAttribute="centerX" id="GuB-Yf-IrC"/>
                             <constraint firstItem="jUv-ZT-klZ" firstAttribute="top" secondItem="cnZ-lh-zoL" secondAttribute="top" constant="80" id="HuT-mO-fjC"/>
-                            <constraint firstItem="WhU-As-Dla" firstAttribute="top" secondItem="Xub-oU-XxY" secondAttribute="bottom" constant="40" id="VKJ-yt-RWd"/>
+                            <constraint firstItem="WhU-As-Dla" firstAttribute="top" secondItem="Xub-oU-XxY" secondAttribute="bottom" constant="20" id="VKJ-yt-RWd"/>
                             <constraint firstItem="Xub-oU-XxY" firstAttribute="centerX" secondItem="8Mq-5Q-sW0" secondAttribute="centerX" id="XGw-0L-Wu6"/>
                             <constraint firstItem="Xub-oU-XxY" firstAttribute="top" secondItem="jUv-ZT-klZ" secondAttribute="bottom" constant="45" id="YPu-OH-NC8"/>
                             <constraint firstItem="WhU-As-Dla" firstAttribute="centerX" secondItem="8Mq-5Q-sW0" secondAttribute="centerX" id="uTq-PE-lGJ"/>

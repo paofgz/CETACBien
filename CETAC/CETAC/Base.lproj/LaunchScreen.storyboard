@@ -23,14 +23,19 @@
                                     <constraint firstAttribute="height" constant="4" id="DJG-lb-cws"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LogoCETAC" translatesAutoresizingMaskIntoConstraints="NO" id="eth-sc-chd">
-                                <rect key="frame" x="37" y="224" width="753" height="303"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoCETAC" translatesAutoresizingMaskIntoConstraints="NO" id="eth-sc-chd">
+                                <rect key="frame" x="72" y="240" width="666" height="253"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="253" id="03D-b4-RuS"/>
+                                    <constraint firstAttribute="width" constant="666" id="ieI-dc-8ir"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="eth-sc-chd" firstAttribute="top" secondItem="Oeg-jp-3xO" secondAttribute="bottom" constant="86" id="7Kk-ea-xL3"/>
+                            <constraint firstItem="eth-sc-chd" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Onu-kB-B70"/>
                             <constraint firstItem="Oeg-jp-3xO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="n8E-ye-aRX"/>
                         </constraints>
                     </view>
