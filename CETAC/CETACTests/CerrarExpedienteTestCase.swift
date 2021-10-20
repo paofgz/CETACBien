@@ -26,7 +26,7 @@ class CerrarExpedienteTestCase: XCTestCase {
     
     func testCerrarExpediente() throws {
         let exp = self.expectation(description: "test to close the user record")
-        usuarioControlador.updateUser(usuarioId: "gx4v8HdbuG2Ugoc2nThK", status: 0, numSes: 23, lastSes: Date()){
+        usuarioControlador.updateStatus(usuarioId: "gx4v8HdbuG2Ugoc2nThK", status: 0){
             (result)in
             switch result{
             case .success(let res):
@@ -40,7 +40,7 @@ class CerrarExpedienteTestCase: XCTestCase {
     
     func testCerrarExpedienteWrong() throws {
         let exp = self.expectation(description: "test to close the user record wrong")
-        usuarioControlador.updateUser(usuarioId: "gx4v8HdbuG2Ugoc2nT", status: 0, numSes: 23, lastSes: Date()){ (result) in
+        usuarioControlador.updateStatus(usuarioId: "gx4v8HdbuG2Ugoc2nT", status: 0){ (result) in
             switch result{
             case .success(let res):
                 XCTAssertEqual(res, "Doc")

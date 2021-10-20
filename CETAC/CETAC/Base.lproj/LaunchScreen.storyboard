@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oeg-jp-3xO">
-                                <rect key="frame" x="0.0" y="150" width="810" height="5"/>
+                                <rect key="frame" x="0.0" y="150" width="810" height="4"/>
                                 <color key="backgroundColor" red="0.1309456527" green="0.56108677389999995" blue="0.77331161500000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="5" id="DJG-lb-cws"/>
+                                    <constraint firstAttribute="height" constant="4" id="DJG-lb-cws"/>
                                 </constraints>
                             </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LogoCETAC" translatesAutoresizingMaskIntoConstraints="NO" id="eth-sc-chd">
