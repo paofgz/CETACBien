@@ -2181,7 +2181,7 @@ Dar acompañamiento y consejería a personas y pacientes que enfrentan situacion
                                             <constraint firstAttribute="height" constant="40" id="XbS-0w-hC9"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                     </textField>
                                 </subviews>
                                 <constraints>

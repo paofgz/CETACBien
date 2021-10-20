@@ -27,6 +27,7 @@ class SingUpViewController: UIViewController, UITextFieldDelegate {
         apellidoText.resignFirstResponder()
         correoText.resignFirstResponder()
         passwordText.resignFirstResponder()
+        experienciaText.resignFirstResponder()
     }
     
     override func viewDidLoad() {
