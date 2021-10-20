@@ -10,9 +10,11 @@ import Firebase
 import FirebaseAuth
 
 var correo = ""
+var soporte:Bool? // 0 admin, 1 soporte admin
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     var loginController = LoginController()
+    var signUpController = SingUpController()
     var validators = Validators()
 
     @IBOutlet weak var correoText: UITextField!
@@ -51,6 +53,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                         self.loginController.isAdministrator(email: email){
                         (tmp)in
                         self.actualizaUi(tmp: tmp)
+                        self.signUpController.dbIsAdmin(email: email) {
+                            (sop) in
+                            soporte = sop
+                        }
                     }
                 case .failure(_):self.showError("El usuario y la contraseña no coinciden")
                 }

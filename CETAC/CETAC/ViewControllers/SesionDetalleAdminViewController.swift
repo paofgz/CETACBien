@@ -47,6 +47,11 @@ class SesionDetalleAdminViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        if (soporte == true){
+            editar = false
+            botones(estado: editar)
+            editButton.isHidden = true
+        }
         
         self.setupToHideKeyboardOnTapOnView()
         
@@ -79,6 +84,9 @@ class SesionDetalleAdminViewController: UIViewController {
         super.viewDidLoad()
         editar = false
         botones(estado: editar)
+        if (soporte == true){
+            editButton.isHidden = true
+        }
         
         self.setupToHideKeyboardOnTapOnView()
         

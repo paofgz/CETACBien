@@ -51,7 +51,11 @@ class DetalleUsuarioViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
+        if (soporte == true){
+            editar = false
+            botones(estado: editar)
+            editButton.isHidden = true
+        }
         sesionControlador.fetchSesiones(self.elUsuario!.id){ (result) in
                     switch result{
                     case .success(let sesiones):
@@ -72,8 +76,8 @@ class DetalleUsuarioViewController: UIViewController {
         self.embedvc?.idUsuario = elUsuario?.id ?? ""
         editar = false
         botones(estado: editar)
-        if (elUsuario != nil) {
-            print(elUsuario ?? "")
+        if (soporte == true){
+            editButton.isHidden = true
         }
         status.layer.borderWidth = 1
         status.layer.masksToBounds = false
